@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tpcamera": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"ride": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/ride @p[r=3,tag=fb_tablet_camera] start_riding @s"
+					]
+				},
+				"ride": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/ride @p[r=3,tag=fb_tablet_camera] start_riding @s"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.golden_freddy.new": {
+			"loop": true,
+			"bones": {
+				"body5": {
+					"position": [
+						0,
+						-12,
+						0
+					]
+				},
+				"body4": {
+					"position": [
+						0,
+						-2,
+						0
+					]
+				},
+				"head2": {
+					"rotation": [
+						32.6382,
+						-10.41196,
+						14.885
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						-17.25002,
+						-2.99318,
+						-9.54589
+					]
+				},
+				"right_forearm_custom_b4": {
+					"rotation": [
+						26.06663,
+						9.08661,
+						-17.89244
+					]
+				},
+				"bone2": {
+					"rotation": [
+						28.22975,
+						-52.42246,
+						-34.11397
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						0,
+						17.5,
+						12.5
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						0,
+						25
+					]
+				},
+				"rightLeg2": {
+					"rotation": [
+						-105,
+						0,
+						0
+					]
+				},
+				"bone3": {
+					"rotation": [
+						47.5,
+						0,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						55.44638,
+						15.61632,
+						27.21479
+					]
+				},
+				"leftLeg2": {
+					"rotation": [
+						-105,
+						0,
+						0
+					]
+				},
+				"bone4": {
+					"rotation": [
+						47.5,
+						0,
+						0
+					]
+				},
+				"bone5": {
+					"rotation": [
+						55.81908,
+						-11.34144,
+						-23.71757
+					]
+				}
+			}
+		}
+	}
+}

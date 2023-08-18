@@ -1,0 +1,552 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:phone",
+			"is_experimental": false,
+			"properties": {
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"fb:channel": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			},
+			"minecraft:block_light_filter": 0,
+			"minecraft:explosion_resistance": 0.1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ph2",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.phone_1",
+			"minecraft:aim_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					3,
+					11
+				]
+			},
+			"minecraft:block_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					3,
+					11
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			},
+			"minecraft:on_placed": {
+				"event": "fb:destroy"
+			},
+			"minecraft:rotation": [
+				0,
+				0,
+				0
+			]
+		},
+		"events": {
+			"fb:destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"summon fb:radio-turn_off ~~~"
+							]
+						}
+					}
+				]
+			},
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "q.cardinal_facing_2d"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:channel": 0
+						}
+					}
+				]
+			},
+			"fb:event_off": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 0
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @a ~~~ 1 1.5",
+								"stopsound @a[r=15]"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §cRadio §lOFF"
+							]
+						}
+					}
+				]
+			},
+			"fb:switch_1": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_1",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:switch_2": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_2",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:switch_3": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_3",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:switch_4": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_4",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:switch_5": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_5",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:switch_6": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_0",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:off_phone": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:event_off",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:channel_0",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:channel_0": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 0
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @p ~~~ 1 2",
+								"playsound random.fizz @a[r=15] ~~~ 40",
+								"stopsound @a[r=15] fb:phone5"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §7Connection error... §l§c[Call deactivated]"
+							]
+						}
+					}
+				]
+			},
+			"fb:channel_1": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 1
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @p ~~~ 1 2",
+								"stopsound @a[r=15] fb:phone5",
+								"playsound fb:phone1 @a[r=15] ~~~"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §7Receiving call... §l§f[Call Night 1]"
+							]
+						}
+					}
+				]
+			},
+			"fb:channel_2": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 2
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @p ~~~ 1 2",
+								"stopsound @a[r=15] fb:phone1",
+								"playsound fb:phone2 @a[r=15] ~~~"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §7Receiving call... §l§f[Call Night 2]"
+							]
+						}
+					}
+				]
+			},
+			"fb:channel_3": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 3
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @p ~~~ 1 2",
+								"stopsound @a[r=15] fb:phone2",
+								"playsound fb:phone3 @a[r=15] ~~~"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §7Receiving call... §l§f[Call Night 3]"
+							]
+						}
+					}
+				]
+			},
+			"fb:channel_4": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 4
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @p ~~~ 1 2",
+								"stopsound @a[r=15] fb:phone3",
+								"playsound fb:phone4 @a[r=15] ~~~"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §7Receiving call... §l§f[Call Night 4]"
+							]
+						}
+					}
+				]
+			},
+			"fb:channel_5": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:channel": 5
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound random.click @p ~~~ 1 2",
+								"stopsound @a[r=15] fb:phone4",
+								"playsound fb:phone5 @a[r=15] ~~~"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"title @s actionbar §7Receiving call... §l§f[Call Night 5]"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 0",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:switch_1"
+					},
+					"minecraft:geometry": "geometry.phone_1",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 1",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:switch_2"
+					},
+					"minecraft:geometry": "geometry.phone_2",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 2",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:switch_3"
+					},
+					"minecraft:geometry": "geometry.phone_3",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 3",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:switch_4"
+					},
+					"minecraft:geometry": "geometry.phone_4",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 4",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:switch_5"
+					},
+					"minecraft:geometry": "geometry.phone_5",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 5",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:switch_6"
+					},
+					"minecraft:geometry": "geometry.phone_6",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:channel') == 6",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:off_phone"
+					},
+					"minecraft:geometry": "geometry.phone_1",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			}
+		]
+	}
+}

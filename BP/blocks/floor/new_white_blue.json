@@ -1,0 +1,224 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:floor_7",
+			"properties": {
+				"p:var": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:var') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "floor_white_blue_1",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "!q.is_sneaking",
+						"event": "e:add.var"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:var') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "floor_white_blue_2",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "q.get_equipped_item_name=='changer_tool_item'",
+						"event": "e:remove.var"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:var') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "floor_white_blue_3",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "q.get_equipped_item_name=='broom'",
+						"event": "e:remove.var"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:var') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.model_floor_c",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "floor_white_blue_1",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						},
+						"c": {
+							"texture": "confetti",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "q.get_equipped_item_name=='broom'",
+						"event": "e:remove.var"
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "floor_white_blue_1",
+					"render_method": "opaque",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:display_name": "fb:floor_7",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:geometry": "geometry.model_floor",
+			"minecraft:map_color": "#C10404",
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 1,
+			"minecraft:block_light_absorption": 15,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 40,
+				"burn_odds": 50
+			},
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
+		"events": {
+			"e:add.var": {
+				"sequence": [
+					{
+						"condition": "q.get_equipped_item_name=='changer_tool_item'",
+						"decrement_stack": {},
+						"set_block_property": {
+							"p:var": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound block.lantern.break @p ~~~",
+								"particle foxes:texture ~~~"
+							]
+						}
+					},
+					{
+						"condition": "q.get_equipped_item_name=='dust'",
+						"decrement_stack": {},
+						"set_block_property": {
+							"p:var": 2
+						},
+						"run_command": {
+							"command": [
+								"playsound step.sand @p ~~~",
+								"particle fb:smoke ~ ~ ~"
+							]
+						}
+					},
+					{
+						"condition": "q.get_equipped_item_name=='confetti_bag'",
+						"decrement_stack": {},
+						"set_block_property": {
+							"p:var": 3
+						},
+						"run_command": {
+							"command": [
+								"playsound block.sweet_berry_bush.place @p ~~~",
+								"particle fb:confetti ~ ~0.5 ~"
+							]
+						}
+					}
+				]
+			},
+			"e:remove.var": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"p:var": 0
+						},
+						"run_command": {
+							"command": [
+								""
+							]
+						}
+					},
+					{
+						"condition": "q.block_property('p:var')==1",
+						"run_command": {
+							"command": [
+								"playsound block.lantern.break @p ~~~",
+								"particle foxes:texture ~~~"
+							]
+						}
+					},
+					{
+						"condition": "q.block_property('p:var')==2",
+						"run_command": {
+							"command": [
+								"playsound hit.sand @p ~~~",
+								"particle fb:smoke_2 ~ ~0.5 ~",
+								"playanimation @p[r=2] animation.humanoid.broom"
+							]
+						}
+					},
+					{
+						"condition": "q.block_property('p:var')==3",
+						"run_command": {
+							"command": [
+								"playsound block.sweet_berry_bush.place @p ~~~",
+								"particle fb:smoke_2 ~ ~0.5 ~",
+								"playanimation @p[r=2] animation.humanoid.broom"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

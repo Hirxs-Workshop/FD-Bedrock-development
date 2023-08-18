@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.house_window",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-1
+							],
+							"size": [
+								16,
+								16,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									]
+								},
+								"east": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										2,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										0,
+										16
+									],
+									"uv_size": [
+										16,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										16,
+										16
+									],
+									"uv_size": [
+										2,
+										16
+									]
+								},
+								"up": {
+									"uv": [
+										18,
+										0
+									],
+									"uv_size": [
+										16,
+										2
+									]
+								},
+								"down": {
+									"uv": [
+										18,
+										4
+									],
+									"uv_size": [
+										16,
+										-2
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

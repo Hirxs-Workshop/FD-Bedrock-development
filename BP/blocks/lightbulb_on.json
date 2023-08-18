@@ -1,0 +1,94 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:lightbulb_on"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "lightbulb_on",
+					"render_method": "blend",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.lightbulb_down",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0.9,
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					0,
+					5
+				],
+				"on_tick": {
+					"event": "endrod"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-1,
+					0,
+					-1
+				],
+				"size": [
+					2,
+					16,
+					2
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-1,
+					0,
+					-1
+				],
+				"size": [
+					2,
+					16,
+					2
+				]
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "destroy"
+			},
+			"minecraft:explosion_resistance": 0.1,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"fb:lightbulb_up"
+						],
+						"allowed_faces": [
+							"down"
+						]
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json"
+		},
+		"events": {
+			"endrod": {
+				"run_command": {
+					"command": [
+						"particle minecraft:endrod ~~0.29~"
+					]
+				}
+			},
+			"destroy": {
+				"set_block_at_pos": {
+					"block_type": "minecraft:air",
+					"block_offset": [
+						0,
+						1,
+						0
+					]
+				},
+				"spawn_loot": {
+					"table": "loot_tables/blocks/empty.json"
+				}
+			}
+		}
+	}
+}

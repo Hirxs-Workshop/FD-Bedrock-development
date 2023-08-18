@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:fnaf4_drawers",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/blocks/fnaf4/fnaf4_drawers"
+			},
+			"geometry": {
+				"default": "geometry.fnaf4_drawers"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "invalid_texture"
+			}
+		}
+	}
+}

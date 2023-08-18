@@ -1,0 +1,198 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bonno.idle1": {
+			"loop": true,
+			"bones": {
+				"freddy": {
+					"rotation": [
+						-15,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-16,
+						0
+					]
+				},
+				"head2": {
+					"rotation": [
+						19.71975,
+						3.40487,
+						-9.40804
+					]
+				},
+				"head_up": {
+					"rotation": [
+						7.47178,
+						0.65182,
+						-4.95744
+					]
+				},
+				"right_forearm_custom_b4": {
+					"rotation": [
+						0,
+						0,
+						20
+					]
+				},
+				"bone2": {
+					"rotation": [
+						0,
+						0,
+						25
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						0,
+						0,
+						30
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						0,
+						25
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						-101.77445,
+						16.41684,
+						-6.04413
+					],
+					"position": [
+						-1,
+						1,
+						-5
+					]
+				},
+				"bone3": {
+					"rotation": [
+						57.5,
+						0,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						57.10125,
+						-8.42145,
+						5.41207
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-78.19132,
+						-31.94715,
+						-6.31274
+					],
+					"position": [
+						1,
+						2,
+						-3
+					]
+				},
+				"bone4": {
+					"rotation": [
+						12.54624,
+						-4.88119,
+						-1.08482
+					]
+				}
+			}
+		},
+		"animation.bonno.idle2": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [
+						0,
+						0,
+						-2.5
+					]
+				},
+				"head2": {
+					"rotation": [
+						5,
+						0,
+						-7.5
+					]
+				},
+				"head_up": {
+					"rotation": [
+						5,
+						0,
+						-7.5
+					]
+				},
+				"right_forearm_custom_b4": {
+					"rotation": [
+						0,
+						0,
+						-7.5
+					]
+				},
+				"bone2": {
+					"rotation": [
+						0.23341,
+						0.19478,
+						9.99733
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						0,
+						0,
+						15
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						0,
+						-7.5
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						0,
+						17.5,
+						0
+					]
+				},
+				"bone7": {
+					"rotation": [
+						-5,
+						0,
+						0
+					]
+				},
+				"bone3": {
+					"rotation": [
+						5,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-5,
+						-17.5,
+						0
+					]
+				},
+				"bone4": {
+					"rotation": [
+						5,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

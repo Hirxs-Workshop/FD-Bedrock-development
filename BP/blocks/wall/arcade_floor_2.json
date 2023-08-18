@@ -1,0 +1,137 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:arcade_floor_blue",
+			"properties": {
+				"p:var": [
+					0,
+					1
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:var') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "arcade1",
+							"render_method": "opaque"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "!q.is_sneaking",
+						"event": "e:add.var"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:var') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "arcade2",
+							"render_method": "opaque"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "q.get_equipped_item_name=='broom'",
+						"event": "e:remove.var"
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "arcade1",
+					"render_method": "opaque",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:display_name": "fb:arcade_floor_blue",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:geometry": "geometry.solid_block",
+			"minecraft:map_color": "#937131",
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 1,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 40,
+				"burn_odds": 50
+			},
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
+		"events": {
+			"e:add.var": {
+				"sequence": [
+					{
+						"condition": "q.get_equipped_item_name=='confetti_bag'",
+						"decrement_stack": {},
+						"set_block_property": {
+							"p:var": 1
+						},
+						"run_command": {
+							"command": [
+								"playsound block.sweet_berry_bush.place @p ~~~",
+								"particle fb:confetti ~ ~0.5 ~"
+							]
+						}
+					}
+				]
+			},
+			"e:remove.var": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"p:var": 0
+						},
+						"run_command": {
+							"command": [
+								""
+							]
+						}
+					},
+					{
+						"condition": "q.block_property('p:var')==1",
+						"run_command": {
+							"command": [
+								"playsound block.sweet_berry_bush.place @p ~~~",
+								"particle fb:smoke_2 ~ ~0.5 ~",
+								"playanimation @p[r=2] animation.humanoid.broom"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

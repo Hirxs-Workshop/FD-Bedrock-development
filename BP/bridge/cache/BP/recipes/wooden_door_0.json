@@ -1,0 +1,217 @@
+{
+	"file_path": "C:\\Users\\chupi\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Your Doors BP\\recipes\\wooden_door_0.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "274db273_c202_450c_abb9_6c2d6218457a",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "yd:wooden_door_0_r"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"## ",
+							" # ",
+							"## "
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:planks"
+							}
+						},
+						"result": [
+							{
+								"item": "yd:wooden_door_0"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:wooden_door_0_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"## ",
+								" # ",
+								"## "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:wooden_door_0"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "yd:wooden_door_0_r"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:wooden_door_0_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"## ",
+								" # ",
+								"## "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:wooden_door_0"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:wooden_door_0_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"## ",
+								" # ",
+								"## "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:wooden_door_0"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"## ",
+							" # ",
+							"## "
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:wooden_door_0_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"## ",
+								" # ",
+								"## "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:wooden_door_0"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:planks"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:planks"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:wooden_door_0_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"## ",
+								" # ",
+								"## "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:planks"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:wooden_door_0"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "yd:wooden_door_0"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "yd:wooden_door_0"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:foxy_room_block_blue"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"group": "construction",
+				"category": "construction"
+			}
+		}
+	}
+}

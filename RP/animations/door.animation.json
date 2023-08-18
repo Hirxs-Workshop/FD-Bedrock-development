@@ -1,0 +1,83 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fnaf_door_open": {
+			"loop": true,
+			"animation_length": 1000,
+			"bones": {
+				"bone3": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5417": {
+							"post": [
+								0,
+								90,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1.25": {
+							"post": [
+								0,
+								80,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1000.0": [
+							0,
+							80,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.fnaf_door_close": {
+			"loop": true,
+			"animation_length": 1000,
+			"bones": {
+				"bone3": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								0,
+								80,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0417": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1000.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

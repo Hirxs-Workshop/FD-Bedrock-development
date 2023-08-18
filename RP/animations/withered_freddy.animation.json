@@ -1,0 +1,206 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.withered_freddy.idle1": {
+			"loop": true,
+			"bones": {
+				"body5": {
+					"rotation": [
+						12.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-15,
+						-2
+					]
+				},
+				"head2": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"head_down": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				},
+				"right_forearm_custom_b4": {
+					"rotation": [
+						41.7633,
+						15.18892,
+						13.16783
+					]
+				},
+				"bone2": {
+					"rotation": [
+						7.98205,
+						23.7695,
+						19.18246
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-57.99794,
+						19.3546,
+						11.70092
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						0,
+						-45,
+						-17.5
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						-27.5,
+						0
+					]
+				},
+				"rightLeg2": {
+					"rotation": [
+						-131.95076,
+						33.79783,
+						-7.17758
+					],
+					"position": [
+						0,
+						3,
+						-3
+					]
+				},
+				"bone3": {
+					"rotation": [
+						75,
+						0,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						42.5,
+						0,
+						0
+					]
+				},
+				"leftLeg2": {
+					"rotation": [
+						-97.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						4,
+						-2
+					]
+				},
+				"bone4": {
+					"rotation": [
+						0,
+						-22.5,
+						0
+					]
+				},
+				"bone5": {
+					"rotation": [
+						60.29172,
+						-1.79048,
+						-16.39643
+					],
+					"position": [
+						0,
+						0,
+						1
+					]
+				}
+			}
+		},
+		"animation.withered_freddy.idle2": {
+			"loop": true,
+			"bones": {
+				"body4": {
+					"rotation": [
+						20,
+						0,
+						0
+					]
+				},
+				"head2": {
+					"rotation": [
+						15,
+						0,
+						0
+					]
+				},
+				"head_down": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				},
+				"left_arm_custom2": {
+					"rotation": [
+						25,
+						0,
+						0
+					]
+				},
+				"right_arm_custom2": {
+					"rotation": [
+						-37.5,
+						0,
+						0
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						-31.28223,
+						-9.29798,
+						-14.89149
+					]
+				},
+				"bone": {
+					"rotation": [
+						-15,
+						-25,
+						-20
+					]
+				},
+				"bone7": {
+					"rotation": [
+						0,
+						12.5,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						0,
+						2.5,
+						0
+					]
+				},
+				"bone5": {
+					"rotation": [
+						0,
+						-15,
+						0
+					]
+				}
+			}
+		},
+		"animation.withered_freddy.idle3": {
+			"loop": true
+		}
+	}
+}

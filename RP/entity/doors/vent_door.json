@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:vent_door",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/door/vent_door"
+			},
+			"animations": {
+				"default_pose": "animation.vent_door.close",
+				"no_pose": "animation.vent_door.open",
+				"solemn_pose": "animation.vent_door.close",
+				"athena_pose": "animation.vent_door.open",
+				"brandish_pose": "animation.vent_door.open",
+				"honor_pose": "animation.vent_door.close",
+				"entertain_pose": "animation.vent_door.open",
+				"salute_pose": "animation.vent_door.close",
+				"riposte_pose": "animation.vent_door.open",
+				"zombie_pose": "animation.vent_door.close",
+				"cancan_a_pose": "animation.vent_door.open",
+				"cancan_b_pose": "animation.vent_door.close",
+				"hero_pose": "animation.vent_door.open",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.vent_door"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "vent_door"
+			}
+		}
+	}
+}

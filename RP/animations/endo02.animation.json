@@ -1,0 +1,118 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.endo_02.idle": {
+			"loop": true
+		},
+		"animation.endo_02.sit": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"position": [
+						0,
+						-19,
+						-4
+					]
+				},
+				"body": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				},
+				"bone11": {
+					"rotation": [
+						-22.5,
+						0,
+						0
+					]
+				},
+				"bone12": {
+					"rotation": [
+						-12.39638,
+						1.61888,
+						7.32417
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						-15,
+						0
+					]
+				},
+				"bone8": {
+					"rotation": [
+						-12.5,
+						0,
+						0
+					]
+				},
+				"bone9": {
+					"rotation": [
+						-22.5,
+						0,
+						-15
+					]
+				},
+				"bone10": {
+					"rotation": [
+						0,
+						-35,
+						0
+					]
+				},
+				"head": {
+					"rotation": [
+						20,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-77.5,
+						0,
+						0
+					]
+				},
+				"bone13": {
+					"rotation": [
+						85,
+						0,
+						0
+					]
+				},
+				"bone4": {
+					"rotation": [
+						40,
+						0,
+						0
+					]
+				},
+				"leftRight": {
+					"rotation": [
+						-77.5,
+						0,
+						0
+					]
+				},
+				"bone15": {
+					"rotation": [
+						87.5,
+						0,
+						0
+					]
+				},
+				"bone16": {
+					"rotation": [
+						30,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

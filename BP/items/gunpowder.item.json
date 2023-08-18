@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:dust",
+			"category": "construction"
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "dust"
+			},
+			"minecraft:display_name": {
+				"value": "item.fb_dust.name"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.items"
+			}
+		},
+		"events": {}
+	}
+}

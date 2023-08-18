@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:toy_chica",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/toys/toy_chica"
+			},
+			"spawn_egg": {
+				"texture": "toy_chica_icon"
+			},
+			"animations": {
+				"default_pose": "animation.toy_chica.idle",
+				"no_pose": "animation.toy_chica.showtime",
+				"solemn_pose": "animation.toy_chica.attack",
+				"athena_pose": "animation.toy_chica.idle",
+				"brandish_pose": "animation.toy_chica.showtime",
+				"honor_pose": "animation.toy_chica.attack",
+				"entertain_pose": "animation.toy_chica.idle",
+				"salute_pose": "animation.toy_chica.showtime",
+				"riposte_pose": "animation.toy_chica.attack",
+				"zombie_pose": "animation.toy_chica.idle",
+				"cancan_a_pose": "animation.toy_chica.showtime",
+				"cancan_b_pose": "animation.toy_chica.attack",
+				"hero_pose": "animation.toy_chica.idle",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.toy_chica"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true
+		}
+	}
+}

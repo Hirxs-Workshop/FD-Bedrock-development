@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:chica",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/blocks/shelf/chica",
+				"blue": "textures/blocks/shelf/chica_movie",
+				"var1": "textures/blocks/shelf/vars/hellish_chicken"
+			},
+			"animations": {
+				"default_pose": "animation.chica_redo.pose1",
+				"no_pose": "animation.chica_redo.stage_1",
+				"solemn_pose": "animation.chica_redo.stage_2",
+				"athena_pose": "animation.chica_redo.dinning_pose1",
+				"brandish_pose": "animation.chica_redo.dinning_pose2",
+				"honor_pose": "animation.chica_redo.cam7",
+				"entertain_pose": "animation.chica_redo.cam2",
+				"salute_pose": "animation.chica_redo.east_hall",
+				"riposte_pose": "animation.chica_redo.east_hall2",
+				"zombie_pose": "animation.chica_redo.east_hall3",
+				"cancan_a_pose": "animation.chica_redo.east_hall4",
+				"cancan_b_pose": "animation.chica_redo.door_pose",
+				"hero_pose": "animation.chica.showtime2",
+				"wiggle": "animation.chica.cool_chica",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.chica"
+			},
+			"render_controllers": [
+				"controller.render.chica"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "chica_icon"
+			}
+		}
+	}
+}

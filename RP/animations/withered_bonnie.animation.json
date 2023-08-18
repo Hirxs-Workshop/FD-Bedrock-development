@@ -1,0 +1,185 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.withered_bonnie.idle1": {
+			"loop": true,
+			"bones": {
+				"freddy": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-15,
+						-3
+					]
+				},
+				"body": {
+					"rotation": [
+						-37.5,
+						0,
+						0
+					]
+				},
+				"head2": {
+					"rotation": [
+						11.74769,
+						-6.27967,
+						13.64973
+					]
+				},
+				"left_arm_custom2": {
+					"rotation": [
+						0,
+						0,
+						-12.5
+					]
+				},
+				"rightArm2": {
+					"rotation": [
+						-22.19157,
+						3.81024,
+						19.25249
+					]
+				},
+				"right_arm_custom2": {
+					"rotation": [
+						69.98246,
+						2.34914,
+						9.14447
+					],
+					"position": [
+						0,
+						-1,
+						1
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						-36.26198,
+						11.55798,
+						-21.69601
+					]
+				},
+				"bone": {
+					"rotation": [
+						-26.56505,
+						-37.76124,
+						39.23152
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						-122.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						4,
+						0
+					]
+				},
+				"bone7": {
+					"rotation": [
+						0,
+						0,
+						22.5
+					]
+				},
+				"bone3": {
+					"rotation": [
+						67.5,
+						0,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						35,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-125,
+						0,
+						0
+					],
+					"position": [
+						0,
+						4,
+						0
+					]
+				},
+				"left_leg_custom_b2": {
+					"rotation": [
+						0,
+						0,
+						-12.5
+					]
+				},
+				"bone8": {
+					"rotation": [
+						7.32417,
+						1.61888,
+						-12.39638
+					]
+				},
+				"bone4": {
+					"rotation": [
+						54.06134,
+						12.2403,
+						-8.73739
+					]
+				},
+				"bone5": {
+					"rotation": [
+						42.25489,
+						-5.05904,
+						5.54401
+					]
+				}
+			}
+		},
+		"animation.withered_bonnie.idle2": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [
+						22.5,
+						0,
+						0
+					]
+				},
+				"head2": {
+					"rotation": [
+						25,
+						0,
+						0
+					]
+				},
+				"left_arm_custom2": {
+					"rotation": [
+						22.5,
+						0,
+						0
+					]
+				},
+				"right_arm_custom2": {
+					"rotation": [
+						-22.5,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.withered_bonnie.idle3": {
+			"loop": true
+		}
+	}
+}

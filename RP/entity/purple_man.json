@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:purple_man",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/purple_man"
+			},
+			"animations": {
+				"default_pose": "animation.purple_man.idle",
+				"no_pose": "animation.purple_man.idle2",
+				"solemn_pose": "animation.purple_man.idle3",
+				"athena_pose": "animation.purple_man.walk_idle",
+				"brandish_pose": "animation.purple_man.move1",
+				"honor_pose": "animation.purple_man.move2",
+				"entertain_pose": "animation.purple_man.idle",
+				"salute_pose": "animation.purple_man.idle2",
+				"riposte_pose": "animation.purple_man.idle3",
+				"zombie_pose": "animation.purple_man.walk_idle",
+				"cancan_a_pose": "animation.purple_man.move1",
+				"cancan_b_pose": "animation.purple_man.move2",
+				"hero_pose": "animation.purple_man.idle",
+				"wiggle": "animation.purple_man.idle2",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.purple_man"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "purple_man"
+			}
+		}
+	}
+}

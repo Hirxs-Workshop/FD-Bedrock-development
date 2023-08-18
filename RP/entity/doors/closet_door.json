@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:closet_door",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/blocks/fnaf4/closed_doors"
+			},
+			"animations": {
+				"default_pose": "animation.closed_doors.open",
+				"no_pose": "animation.closed_doors.open_all",
+				"solemn_pose": "animation.closed_doors.close",
+				"athena_pose": "animation.closed_doors.open",
+				"brandish_pose": "animation.closed_doors.open_all",
+				"honor_pose": "animation.closed_doors.close",
+				"entertain_pose": "animation.closed_doors.open",
+				"salute_pose": "animation.closed_doors.open_all",
+				"riposte_pose": "animation.closed_doors.open",
+				"zombie_pose": "animation.closed_doors.close",
+				"cancan_a_pose": "animation.closed_doors.open",
+				"cancan_b_pose": "animation.closed_doors.open_all",
+				"hero_pose": "animation.closed_doors.close",
+				"wiggle": "animation.closed_doors.open",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.closed_doors"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "only_door"
+			}
+		}
+	}
+}

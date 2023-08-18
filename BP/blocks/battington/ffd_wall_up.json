@@ -1,0 +1,214 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:battington_floor",
+			"properties": {
+				"p:facing": [
+					0,
+					1,
+					2,
+					3
+				],
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:facing') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b1",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b2",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b3",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b4",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b5",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b6",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "b7",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:wall": {},
+			"minecraft:display_name": "fb:battington_floor",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:map_color": "#ffffff",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 15,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "e:set.facing"
+			}
+		},
+		"events": {
+			"e:set.facing": {
+				"set_block_property": {
+					"p:facing": "q.cardinal_facing_2d-2"
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==6?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			}
+		}
+	}
+}

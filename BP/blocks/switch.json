@@ -1,0 +1,191 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:switch",
+			"is_experimental": false,
+			"properties": {
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"fb:block_status": [
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:block_light_filter": 0,
+			"minecraft:explosion_resistance": 0.1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "switch_on",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.switch_off",
+			"minecraft:aim_collision": {
+				"origin": [
+					-4,
+					4,
+					-8
+				],
+				"size": [
+					8,
+					9,
+					2
+				]
+			},
+			"minecraft:block_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side"
+						],
+						"block_filter": [
+							{
+								"tags": "!q.any_tag('non_full')"
+							}
+						]
+					}
+				]
+			},
+			"tag:non_full": {},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			},
+			"minecraft:rotation": [
+				0,
+				0,
+				0
+			],
+			"minecraft:creative_category": {
+				"group": "construction",
+				"category": "construction"
+			}
+		},
+		"events": {
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "query.block_face"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					}
+				]
+			},
+			"fb:event_off": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"fill ~-8 ~-2 ~8 ~8 ~5 ~-8 fb:light_off 0 replace fb:light_on",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:lightbulb_down 0 replace fb:lightbulb_on",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:roof_light_off 0 replace fb:roof_light_on",
+								"playsound random.click @a[r=5] ~~~ 10 1.5"
+							]
+						}
+					}
+				]
+			},
+			"fb:event_on": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 2
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"fill ~-8 ~-2 ~8 ~8 ~5 ~-8 fb:light_on 0 replace fb:light_off",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:lightbulb_on 0 replace fb:lightbulb_down",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:roof_light_on 0 replace fb:roof_light_off",
+								"playsound random.click @a[r=5] ~~~ 10 1.5"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.switch_on",
+					"minecraft:on_interact": {
+						"event": "fb:event_on"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.switch_off",
+					"minecraft:on_interact": {
+						"event": "fb:event_off"
+					}
+				}
+			}
+		]
+	}
+}

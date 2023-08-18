@@ -1,0 +1,15 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.13.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:remover_tool",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": "fb:remover_tool",
+			"minecraft:render_offsets": "miscellaneous",
+			"minecraft:use_animation": "drink"
+		}
+	}
+}

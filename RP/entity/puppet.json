@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:puppet",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/puppet"
+			},
+			"animations": {
+				"default_pose": "animation.puppet_box.attack",
+				"no_pose": "animation.puppet_box.closed",
+				"solemn_pose": "animation.puppet_box.idle",
+				"athena_pose": "animation.puppet_box.idle2",
+				"brandish_pose": "animation.puppet_box.open",
+				"honor_pose": "animation.puppet_box.closed",
+				"entertain_pose": "animation.puppet_box.idle",
+				"salute_pose": "animation.puppet_box.idle2",
+				"riposte_pose": "animation.puppet_box.attack",
+				"zombie_pose": "animation.puppet_box.closed",
+				"cancan_a_pose": "animation.puppet_box.idle",
+				"cancan_b_pose": "animation.puppet_box.idle2",
+				"hero_pose": "animation.puppet_box.attack",
+				"wiggle": "animation.puppet_box.idle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.puppet_box"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "puppet"
+			}
+		}
+	}
+}

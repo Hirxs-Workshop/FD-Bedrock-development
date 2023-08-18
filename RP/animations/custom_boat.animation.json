@@ -1,0 +1,103 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_boat.move": {
+			"loop": true,
+			"animation_length": 1.4,
+			"bones": {
+				"paddle_left": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.24": [
+							0,
+							27.5,
+							0
+						],
+						"0.52": [
+							27.5,
+							27.5,
+							0
+						],
+						"0.8": [
+							27.5,
+							-32.5,
+							0
+						],
+						"1.12": [
+							0,
+							-32.5,
+							0
+						],
+						"1.4": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"paddle_right": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.24": [
+							0,
+							-27.5,
+							0
+						],
+						"0.52": [
+							27.5,
+							-27.5,
+							0
+						],
+						"0.8": [
+							27.5,
+							32.5,
+							0
+						],
+						"1.12": [
+							0,
+							32.5,
+							0
+						],
+						"1.4": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.custom_boat.point": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [
+						0,
+						"query.target_y_rotation",
+						0
+					]
+				}
+			}
+		},
+		"animation.custom_boat.damage": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [
+						"math.sin(query.anim_time*100)*3",
+						0,
+						"math.sin(query.anim_time*500)*10"
+					]
+				}
+			}
+		}
+	}
+}

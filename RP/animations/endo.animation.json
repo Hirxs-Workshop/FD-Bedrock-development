@@ -1,0 +1,90 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.endo.seat": {
+			"loop": true,
+			"bones": {
+				"Freddy": {
+					"position": [0, -14, -3]
+				},
+				"head": {
+					"rotation": [37.5, 0, 0],
+					"position": [0, -1, -2]
+				},
+				"bone": {
+					"rotation": [17.5, 0, 0]
+				},
+				"body": {
+					"rotation": [12.5, 0, 0]
+				},
+				"armR": {
+					"rotation": [-12.45392, -1.08089, -14.88206]
+				},
+				"lower": {
+					"rotation": [-9.85228, -10.75553, -15.74773]
+				},
+				"armL": {
+					"rotation": [19.37006, -5.07855, 14.13272]
+				},
+				"lower5": {
+					"rotation": [16.53889, -12.59483, -27.18087]
+				},
+				"legR": {
+					"rotation": [-75, 0, 0]
+				},
+				"lower3": {
+					"rotation": [50.29111, 16.58974, 18.97287]
+				},
+				"legL": {
+					"rotation": [-77.5, 0, 0]
+				},
+				"lower4": {
+					"rotation": [65, 0, 0]
+				}
+			}
+		},
+		"animation.endo.idle": {
+			"loop": true,
+			"bones": {
+				"head2": {
+					"rotation": [0, 0, -10],
+					"position": [2, -1, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 7.5]
+				},
+				"armR": {
+					"rotation": [0, 0, -7.5]
+				},
+				"armL": {
+					"rotation": [0, 0, 12.5]
+				},
+				"foot3": {
+					"rotation": [0, 5, 0]
+				},
+				"foot2": {
+					"rotation": [0, -12.5, 0]
+				}
+			}
+		},
+		"animation.endo.idle2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [35, 0, 0],
+					"position": [0, -1, -5]
+				},
+				"body": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"armR": {
+					"rotation": [-12.5, 0, -20]
+				},
+				"armL": {
+					"rotation": [14.33501, -4.46375, 16.93839]
+				}
+			}
+		}
+	}
+}

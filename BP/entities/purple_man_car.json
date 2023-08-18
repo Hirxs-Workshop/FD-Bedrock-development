@@ -1,0 +1,1230 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:purple_guy_car",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"fb:vehicle_smoke": {
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 0.1,
+					"time_down_event": {
+						"event": "fb:vehicle_smoke2"
+					}
+				},
+				"minecraft:is_ignited": {}
+			},
+			"fb:fb_smoke2": {
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 2,
+					"time_down_event": {
+						"event": "fb:function_smoke"
+					}
+				}
+			},
+			"fb:vehicle_rideable": {
+				"minecraft:inventory": {
+					"container_type": "horse",
+					"inventory_size": 20
+				},
+				"minecraft:rideable": {
+					"seat_count": 1,
+					"interact_text": "Hop in",
+					"family_types": [
+						"player"
+					],
+					"rider_can_interact": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								0.2,
+								0
+							]
+						}
+					]
+				},
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"slot": 0,
+							"item": "fb:changer_tool_item",
+							"accepted_items": [
+								"fb:changer_tool_item"
+							],
+							"on_equip": {
+								"event": "fb:changer_tool_key"
+							},
+							"on_unequip": {
+								"event": "fb:changer_tool_unkey"
+							}
+						}
+					]
+				},
+				"minecraft:is_chested": {}
+			},
+			"fb:key_in": {
+				"minecraft:is_saddled": {},
+				"minecraft:behavior.controlled_by_player": {},
+				"minecraft:behavior.player_ride_tamed": {},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:movement.basic": {},
+				"minecraft:jump.static": {},
+				"minecraft:navigation.walk": {
+					"can_path_over_water": true,
+					"is_amphibious": true,
+					"can_float": true
+				}
+			},
+			"fb:vehicle_hurt": {
+				"minecraft:is_baby": {},
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 0.02,
+					"time_down_event": {
+						"event": "fb:hurt_b"
+					}
+				}
+			},
+			"fb:vehicle_v1": {
+				"minecraft:movement": {
+					"value": 0.3
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magma",
+							"deals_damage": true
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "suffocation",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": true
+						},
+						{
+							"cause": "contact",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "projectile",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "block_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "anvil",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "falling_block",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "lightning",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_attack",
+							"on_damage": {
+								"event": "fb:function_edit",
+								"filters": {
+									"none_of": [
+										{
+											"test": "is_riding",
+											"subject": "player",
+											"value": true
+										}
+									]
+								}
+							},
+							"deals_damage": true
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "damager"
+										},
+										{
+											"test": "is_family",
+											"subject": "damager",
+											"value": "player"
+										}
+									]
+								}
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"fb:vehicle_v2": {
+				"minecraft:movement": {
+					"value": 0.6
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magma",
+							"deals_damage": true
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "suffocation",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": true
+						},
+						{
+							"cause": "contact",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "projectile",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "block_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "anvil",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "falling_block",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "lightning",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_attack",
+							"on_damage": {
+								"event": "fb:function_edit",
+								"filters": {
+									"none_of": [
+										{
+											"test": "is_riding",
+											"subject": "player",
+											"value": true
+										}
+									]
+								}
+							},
+							"deals_damage": true
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "damager"
+										},
+										{
+											"test": "is_family",
+											"subject": "damager",
+											"value": "player"
+										}
+									]
+								},
+								"event": "fb:function_tov1"
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"fb:vehicle_v3": {
+				"minecraft:movement": {
+					"value": 0.7
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magma",
+							"deals_damage": true
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "suffocation",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": true
+						},
+						{
+							"cause": "contact",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "projectile",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "block_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "anvil",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "falling_block",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "lightning",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_attack",
+							"on_damage": {
+								"event": "fb:function_edit",
+								"filters": {
+									"none_of": [
+										{
+											"test": "is_riding",
+											"subject": "player",
+											"value": true
+										}
+									]
+								}
+							},
+							"deals_damage": true
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "damager"
+										},
+										{
+											"test": "is_family",
+											"subject": "damager",
+											"value": "player"
+										}
+									]
+								},
+								"event": "fb:function_tov2"
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"fb:vehicle_v4": {
+				"minecraft:movement": {
+					"value": 0.8
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magma",
+							"deals_damage": true
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "suffocation",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": true
+						},
+						{
+							"cause": "contact",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "projectile",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "block_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "anvil",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "falling_block",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "lightning",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_attack",
+							"on_damage": {
+								"event": "fb:function_edit",
+								"filters": {
+									"none_of": [
+										{
+											"test": "is_riding",
+											"subject": "player",
+											"value": true
+										}
+									]
+								}
+							},
+							"deals_damage": true
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "damager"
+										},
+										{
+											"test": "is_family",
+											"subject": "damager",
+											"value": "player"
+										}
+									]
+								},
+								"event": "fb:function_tov3"
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"fb:vehicle_v5": {
+				"minecraft:movement": {
+					"value": 0.9
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magma",
+							"deals_damage": true
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "suffocation",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": true
+						},
+						{
+							"cause": "contact",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "projectile",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "block_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "anvil",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "falling_block",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "lightning",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_attack",
+							"on_damage": {
+								"event": "fb:function_edit",
+								"filters": {
+									"none_of": [
+										{
+											"test": "is_riding",
+											"subject": "player",
+											"value": true
+										}
+									]
+								}
+							},
+							"deals_damage": true
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "damager"
+										},
+										{
+											"test": "is_family",
+											"subject": "damager",
+											"value": "player"
+										}
+									]
+								},
+								"event": "fb:function_tov4"
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"fb:vehicle_v6": {
+				"minecraft:movement": {
+					"value": 1
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magma",
+							"deals_damage": true
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "suffocation",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": true
+						},
+						{
+							"cause": "contact",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "projectile",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "block_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_explosion",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "anvil",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "falling_block",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "lightning",
+							"on_damage": {
+								"event": "fb:function_edit"
+							},
+							"deals_damage": true
+						},
+						{
+							"cause": "entity_attack",
+							"on_damage": {
+								"event": "fb:function_edit",
+								"filters": {
+									"none_of": [
+										{
+											"test": "is_riding",
+											"subject": "player",
+											"value": true
+										}
+									]
+								}
+							},
+							"deals_damage": true
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "damager"
+										},
+										{
+											"test": "is_family",
+											"subject": "damager",
+											"value": "player"
+										}
+									]
+								},
+								"event": "fb:function_tov5"
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"fb:vehicle_lonoff": {
+				"minecraft:is_stunned": {}
+			},
+			"fb:vehicle_cbump1": {
+				"minecraft:area_attack": {
+					"damage_per_tick": 1,
+					"cause": "contact",
+					"entity_filter": {
+						"none_of": [
+							{
+								"test": "is_riding",
+								"subject": "other",
+								"value": true
+							}
+						]
+					}
+				}
+			},
+			"fb:vehicle_cbump2": {
+				"minecraft:area_attack": {
+					"damage_per_tick": 3,
+					"cause": "contact",
+					"entity_filter": {
+						"none_of": [
+							{
+								"test": "is_riding",
+								"subject": "other",
+								"value": true
+							}
+						]
+					}
+				}
+			},
+			"fb:vehicle_cbump3": {
+				"minecraft:area_attack": {
+					"damage_per_tick": 10,
+					"cause": "contact",
+					"entity_filter": {
+						"none_of": [
+							{
+								"test": "is_riding",
+								"subject": "other",
+								"value": true
+							}
+						]
+					}
+				}
+			},
+			"fb:vehicle_cbump4": {
+				"minecraft:area_attack": {
+					"damage_per_tick": 15,
+					"cause": "contact",
+					"entity_filter": {
+						"none_of": [
+							{
+								"test": "is_riding",
+								"subject": "other",
+								"value": true
+							}
+						]
+					}
+				}
+			},
+			"fb:vehicle_cbump5": {
+				"minecraft:area_attack": {
+					"damage_per_tick": 20,
+					"cause": "contact",
+					"entity_filter": {
+						"none_of": [
+							{
+								"test": "is_riding",
+								"subject": "other",
+								"value": true
+							}
+						]
+					}
+				}
+			},
+			"fb:vehicle_cbump6": {
+				"minecraft:area_attack": {
+					"damage_per_tick": 25,
+					"cause": "contact",
+					"entity_filter": {
+						"none_of": [
+							{
+								"test": "is_riding",
+								"subject": "other",
+								"value": true
+							}
+						]
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"car"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:collision_box": {
+				"width": 3,
+				"height": 3
+			},
+			"minecraft:health": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:fall_damage": {
+				"value": 0
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:is_stackable": {},
+			"minecraft:nameable": {},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"bamboo",
+					"bamboo_sapling",
+					"carved_pumpkin",
+					"chorus_flower",
+					"chorus_plant",
+					"leaves",
+					"leaves2",
+					"lit_pumpkin",
+					"melon_block",
+					"pumpkin",
+					"sweet_berry_bush",
+					"waterlily"
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_rideable"
+					]
+				}
+			},
+			"fb:function_rsmoke": {
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_smoke",
+						"fb:fb_smoke2"
+					]
+				}
+			},
+			"fb:vehicle_smoke2": {
+				"add": {
+					"component_groups": [
+						"fb:fb_smoke2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_smoke"
+					]
+				}
+			},
+			"fb:function_smoke": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_smoke"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:fb_smoke2"
+					]
+				}
+			},
+			"fb:function_edit": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_hurt"
+					]
+				}
+			},
+			"fb:hurt_b": {
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_hurt"
+					]
+				}
+			},
+			"fb:changer_tool_key": {
+				"add": {
+					"component_groups": [
+						"fb:key_in",
+						"fb:vehicle_v1"
+					]
+				}
+			},
+			"fb:changer_tool_unkey": {
+				"remove": {
+					"component_groups": [
+						"fb:key_in",
+						"fb:vehicle_v1",
+						"fb:vehicle_v2",
+						"fb:vehicle_v3",
+						"fb:vehicle_v4",
+						"fb:vehicle_v5",
+						"fb:vehicle_v6"
+					]
+				}
+			},
+			"fb:function_v2": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v1"
+					]
+				}
+			},
+			"fb:function_v3": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v2"
+					]
+				}
+			},
+			"fb:function_v4": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v3"
+					]
+				}
+			},
+			"fb:function_v5": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v4"
+					]
+				}
+			},
+			"fb:function_v6": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v6"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v5"
+					]
+				}
+			},
+			"fb:function_tov1": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v2"
+					]
+				}
+			},
+			"fb:function_tov2": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v3"
+					]
+				}
+			},
+			"fb:function_tov3": {
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v4"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v3"
+					]
+				}
+			},
+			"fb:function_tov4": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v5"
+					]
+				}
+			},
+			"fb:function_tov5": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v6"
+					]
+				}
+			},
+			"fb:function_loff": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_lonoff"
+					]
+				}
+			},
+			"fb:function_lon": {
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_lonoff"
+					]
+				}
+			},
+			"fb:function_cv1": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_v1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_v2",
+						"fb:vehicle_v3",
+						"fb:vehicle_v4",
+						"fb:vehicle_v5",
+						"fb:vehicle_v6"
+					]
+				}
+			},
+			"fb:function_cbump1": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_cbump1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump2",
+						"fb:vehicle_cbump3",
+						"fb:vehicle_cbump4",
+						"fb:vehicle_cbump5",
+						"fb:vehicle_cbump6",
+						"fb:vehicle_cbump3"
+					]
+				}
+			},
+			"fb:function_cbump2": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_cbump2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump1",
+						"fb:vehicle_cbump3",
+						"fb:vehicle_cbump4",
+						"fb:vehicle_cbump5",
+						"fb:vehicle_cbump6"
+					]
+				}
+			},
+			"fb:function_cbump3": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_cbump3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump1",
+						"fb:vehicle_cbump2",
+						"fb:vehicle_cbump4",
+						"fb:vehicle_cbump5",
+						"fb:vehicle_cbump6"
+					]
+				}
+			},
+			"fb:function_cbump4": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_cbump4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump1",
+						"fb:vehicle_cbump2",
+						"fb:vehicle_cbump3",
+						"fb:vehicle_cbump5",
+						"fb:vehicle_cbump6"
+					]
+				}
+			},
+			"fb:function_cbump5": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_cbump5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump1",
+						"fb:vehicle_cbump2",
+						"fb:vehicle_cbump3",
+						"fb:vehicle_cbump4",
+						"fb:vehicle_cbump6"
+					]
+				}
+			},
+			"fb:function_cbump6": {
+				"add": {
+					"component_groups": [
+						"fb:vehicle_cbump6"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump1",
+						"fb:vehicle_cbump2",
+						"fb:vehicle_cbump3",
+						"fb:vehicle_cbump4",
+						"fb:vehicle_cbump5"
+					]
+				}
+			},
+			"fb:function_cbumpremove": {
+				"remove": {
+					"component_groups": [
+						"fb:vehicle_cbump1",
+						"fb:vehicle_cbump2",
+						"fb:vehicle_cbump3",
+						"fb:vehicle_cbump4",
+						"fb:vehicle_cbump5",
+						"fb:vehicle_cbump6"
+					]
+				}
+			}
+		}
+	}
+}

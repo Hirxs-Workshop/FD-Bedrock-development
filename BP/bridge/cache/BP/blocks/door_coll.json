@@ -1,0 +1,1006 @@
+{
+	"file_path": "C:\\Users\\chupi\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Your Doors BP\\blocks\\door_coll.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "4f8b4252_c8d9_4ee2_8491_47092ea0a6c9",
+	"file_version": 43,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:block": {
+						"description": {
+							"identifier": "yd:door_coll",
+							"is_experimental": true,
+							"properties": {
+								"minecraft:direction": {}
+							}
+						},
+						"components": {
+							"minecraft:material_instances": {
+								"*": {
+									"render_method": "alpha_test",
+									"ambient_occlusion": false,
+									"face_dimming": false
+								}
+							},
+							"minecraft:destroy_time": 100,
+							"minecraft:explosion_resistance": 2,
+							"minecraft:on_player_destroyed": {
+								"event": "on_destroy"
+							},
+							"minecraft:loot": "loot_tables/nothing.json",
+							"minecraft:placement_filter": {
+								"conditions": [
+									{
+										"block_filter": [
+											"yd:glass_door",
+											"yd:black_glass_block",
+											"yd:door_coll",
+											"yd:glass_door_double",
+											"yd:black_glass_block_double",
+											"yd:black_iron_glass_door",
+											"yd:bunker_door",
+											"yd:factory_door",
+											"yd:shoji_door",
+											"yd:shoji_door_double",
+											"yd:barn_door",
+											"yd:black_iron_glass_door_double",
+											"yd:wooden_door_0",
+											"yd:wooden_door_1",
+											"yd:shoji_door_with_painting",
+											"yd:shoji_door_with_painting_double"
+										],
+										"allowed_faces": [
+											"up",
+											"down"
+										]
+									}
+								]
+							},
+							"minecraft:entity_collision": {
+								"origin": [
+									-8,
+									0,
+									-8
+								],
+								"size": [
+									16,
+									16,
+									2
+								]
+							},
+							"minecraft:pick_collision": false,
+							"minecraft:geometry": "geometry.invisible",
+							"minecraft:block_light_absorption": 0
+						},
+						"permutations": [
+							{
+								"condition": "query.block_property('minecraft:direction') == 0",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										180,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('minecraft:direction') == 1",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										0,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('minecraft:direction') == 2",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										270,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('minecraft:direction') == 3",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										90,
+										0
+									]
+								}
+							}
+						],
+						"events": {
+							"on_destroy": {
+								"set_block_at_pos": {
+									"block_offset": [
+										0,
+										-1,
+										0
+									],
+									"block_type": "minecraft:air"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:door_coll",
+								"is_experimental": true,
+								"properties": {
+									"minecraft:direction": {}
+								}
+							},
+							"components": {
+								"minecraft:material_instances": {
+									"*": {
+										"render_method": "alpha_test",
+										"ambient_occlusion": false,
+										"face_dimming": false
+									}
+								},
+								"minecraft:destroy_time": 100,
+								"minecraft:explosion_resistance": 2,
+								"minecraft:on_player_destroyed": {
+									"event": "on_destroy"
+								},
+								"minecraft:loot": "loot_tables/nothing.json",
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"yd:glass_door",
+												"yd:black_glass_block",
+												"yd:door_coll",
+												"yd:glass_door_double",
+												"yd:black_glass_block_double",
+												"yd:black_iron_glass_door",
+												"yd:bunker_door",
+												"yd:factory_door",
+												"yd:shoji_door",
+												"yd:shoji_door_double",
+												"yd:barn_door",
+												"yd:black_iron_glass_door_double",
+												"yd:wooden_door_0",
+												"yd:wooden_door_1",
+												"yd:shoji_door_with_painting",
+												"yd:shoji_door_with_painting_double"
+											],
+											"allowed_faces": [
+												"up",
+												"down"
+											]
+										}
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										2
+									]
+								},
+								"minecraft:pick_collision": false,
+								"minecraft:geometry": "geometry.invisible",
+								"minecraft:block_light_absorption": 0
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('minecraft:direction') == 0",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 1",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								}
+							],
+							"events": {
+								"on_destroy": {
+									"set_block_at_pos": {
+										"block_offset": [
+											0,
+											-1,
+											0
+										],
+										"block_type": "minecraft:air"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "yd:door_coll",
+									"is_experimental": true,
+									"properties": {
+										"minecraft:direction": {}
+									}
+								},
+								"data": "yd:door_coll",
+								"key": "identifier"
+							},
+							{
+								"data": "true",
+								"key": "is_experimental"
+							},
+							{
+								"open": {
+									"identifier": "yd:door_coll",
+									"is_experimental": true,
+									"properties": {
+										"minecraft:direction": {}
+									}
+								},
+								"key": "properties",
+								"is_minified": true,
+								"children": {
+									"minecraft:direction": {}
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:door_coll",
+								"is_experimental": true,
+								"properties": {
+									"minecraft:direction": {}
+								}
+							},
+							"components": {
+								"minecraft:material_instances": {
+									"*": {
+										"render_method": "alpha_test",
+										"ambient_occlusion": false,
+										"face_dimming": false
+									}
+								},
+								"minecraft:destroy_time": 100,
+								"minecraft:explosion_resistance": 2,
+								"minecraft:on_player_destroyed": {
+									"event": "on_destroy"
+								},
+								"minecraft:loot": "loot_tables/nothing.json",
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"yd:glass_door",
+												"yd:black_glass_block",
+												"yd:door_coll",
+												"yd:glass_door_double",
+												"yd:black_glass_block_double",
+												"yd:black_iron_glass_door",
+												"yd:bunker_door",
+												"yd:factory_door",
+												"yd:shoji_door",
+												"yd:shoji_door_double",
+												"yd:barn_door",
+												"yd:black_iron_glass_door_double",
+												"yd:wooden_door_0",
+												"yd:wooden_door_1",
+												"yd:shoji_door_with_painting",
+												"yd:shoji_door_with_painting_double"
+											],
+											"allowed_faces": [
+												"up",
+												"down"
+											]
+										}
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										2
+									]
+								},
+								"minecraft:pick_collision": false,
+								"minecraft:geometry": "geometry.invisible",
+								"minecraft:block_light_absorption": 0
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('minecraft:direction') == 0",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 1",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								}
+							],
+							"events": {
+								"on_destroy": {
+									"set_block_at_pos": {
+										"block_offset": [
+											0,
+											-1,
+											0
+										],
+										"block_type": "minecraft:air"
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:material_instances",
+								"is_minified": true,
+								"children": {
+									"*": {
+										"render_method": "alpha_test",
+										"ambient_occlusion": false,
+										"face_dimming": false
+									}
+								}
+							},
+							{
+								"data": "100",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"data": "2",
+								"key": "minecraft:explosion_resistance"
+							},
+							{
+								"key": "minecraft:on_player_destroyed",
+								"is_minified": true,
+								"children": {
+									"event": "on_destroy"
+								}
+							},
+							{
+								"data": "loot_tables/nothing.json",
+								"key": "minecraft:loot"
+							},
+							{
+								"open": {
+									"minecraft:material_instances": {
+										"*": {
+											"render_method": "alpha_test",
+											"ambient_occlusion": false,
+											"face_dimming": false
+										}
+									},
+									"minecraft:destroy_time": 100,
+									"minecraft:explosion_resistance": 2,
+									"minecraft:on_player_destroyed": {
+										"event": "on_destroy"
+									},
+									"minecraft:loot": "loot_tables/nothing.json",
+									"minecraft:placement_filter": {
+										"conditions": [
+											{
+												"block_filter": [
+													"yd:glass_door",
+													"yd:black_glass_block",
+													"yd:door_coll",
+													"yd:glass_door_double",
+													"yd:black_glass_block_double",
+													"yd:black_iron_glass_door",
+													"yd:bunker_door",
+													"yd:factory_door",
+													"yd:shoji_door",
+													"yd:shoji_door_double",
+													"yd:barn_door",
+													"yd:black_iron_glass_door_double",
+													"yd:wooden_door_0",
+													"yd:wooden_door_1",
+													"yd:shoji_door_with_painting",
+													"yd:shoji_door_with_painting_double"
+												],
+												"allowed_faces": [
+													"up",
+													"down"
+												]
+											}
+										]
+									},
+									"minecraft:entity_collision": {
+										"origin": [
+											-8,
+											0,
+											-8
+										],
+										"size": [
+											16,
+											16,
+											2
+										]
+									},
+									"minecraft:pick_collision": false,
+									"minecraft:geometry": "geometry.invisible",
+									"minecraft:block_light_absorption": 0
+								},
+								"key": "minecraft:placement_filter",
+								"children": [
+									{
+										"open": {
+											"conditions": [
+												{
+													"block_filter": [
+														"yd:glass_door",
+														"yd:black_glass_block",
+														"yd:door_coll",
+														"yd:glass_door_double",
+														"yd:black_glass_block_double",
+														"yd:black_iron_glass_door",
+														"yd:bunker_door",
+														"yd:factory_door",
+														"yd:shoji_door",
+														"yd:shoji_door_double",
+														"yd:barn_door",
+														"yd:black_iron_glass_door_double",
+														"yd:wooden_door_0",
+														"yd:wooden_door_1",
+														"yd:shoji_door_with_painting",
+														"yd:shoji_door_with_painting_double"
+													],
+													"allowed_faces": [
+														"up",
+														"down"
+													]
+												}
+											]
+										},
+										"key": "conditions",
+										"children": [
+											{
+												"open": [
+													{
+														"block_filter": [
+															"yd:glass_door",
+															"yd:black_glass_block",
+															"yd:door_coll",
+															"yd:glass_door_double",
+															"yd:black_glass_block_double",
+															"yd:black_iron_glass_door",
+															"yd:bunker_door",
+															"yd:factory_door",
+															"yd:shoji_door",
+															"yd:shoji_door_double",
+															"yd:barn_door",
+															"yd:black_iron_glass_door_double",
+															"yd:wooden_door_0",
+															"yd:wooden_door_1",
+															"yd:shoji_door_with_painting",
+															"yd:shoji_door_with_painting_double"
+														],
+														"allowed_faces": [
+															"up",
+															"down"
+														]
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"block_filter": [
+																"yd:glass_door",
+																"yd:black_glass_block",
+																"yd:door_coll",
+																"yd:glass_door_double",
+																"yd:black_glass_block_double",
+																"yd:black_iron_glass_door",
+																"yd:bunker_door",
+																"yd:factory_door",
+																"yd:shoji_door",
+																"yd:shoji_door_double",
+																"yd:barn_door",
+																"yd:black_iron_glass_door_double",
+																"yd:wooden_door_0",
+																"yd:wooden_door_1",
+																"yd:shoji_door_with_painting",
+																"yd:shoji_door_with_painting_double"
+															],
+															"allowed_faces": [
+																"up",
+																"down"
+															]
+														},
+														"key": "block_filter",
+														"is_minified": true,
+														"children": [
+															"yd:glass_door",
+															"yd:black_glass_block",
+															"yd:door_coll",
+															"yd:glass_door_double",
+															"yd:black_glass_block_double",
+															"yd:black_iron_glass_door",
+															"yd:bunker_door",
+															"yd:factory_door",
+															"yd:shoji_door",
+															"yd:shoji_door_double",
+															"yd:barn_door",
+															"yd:black_iron_glass_door_double",
+															"yd:wooden_door_0",
+															"yd:wooden_door_1",
+															"yd:shoji_door_with_painting",
+															"yd:shoji_door_with_painting_double"
+														]
+													},
+													{
+														"open": {
+															"block_filter": [
+																"yd:glass_door",
+																"yd:black_glass_block",
+																"yd:door_coll",
+																"yd:glass_door_double",
+																"yd:black_glass_block_double",
+																"yd:black_iron_glass_door",
+																"yd:bunker_door",
+																"yd:factory_door",
+																"yd:shoji_door",
+																"yd:shoji_door_double",
+																"yd:barn_door",
+																"yd:black_iron_glass_door_double",
+																"yd:wooden_door_0",
+																"yd:wooden_door_1",
+																"yd:shoji_door_with_painting",
+																"yd:shoji_door_with_painting_double"
+															],
+															"allowed_faces": [
+																"up",
+																"down"
+															]
+														},
+														"key": "allowed_faces",
+														"is_minified": true,
+														"children": [
+															"up",
+															"down"
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:entity_collision",
+								"is_minified": true,
+								"children": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										2
+									]
+								}
+							},
+							{
+								"data": "false",
+								"key": "minecraft:pick_collision"
+							},
+							{
+								"data": "geometry.invisible",
+								"key": "minecraft:geometry"
+							},
+							{
+								"data": "0",
+								"key": "minecraft:block_light_absorption"
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:door_coll",
+								"is_experimental": true,
+								"properties": {
+									"minecraft:direction": {}
+								}
+							},
+							"components": {
+								"minecraft:material_instances": {
+									"*": {
+										"render_method": "alpha_test",
+										"ambient_occlusion": false,
+										"face_dimming": false
+									}
+								},
+								"minecraft:destroy_time": 100,
+								"minecraft:explosion_resistance": 2,
+								"minecraft:on_player_destroyed": {
+									"event": "on_destroy"
+								},
+								"minecraft:loot": "loot_tables/nothing.json",
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"yd:glass_door",
+												"yd:black_glass_block",
+												"yd:door_coll",
+												"yd:glass_door_double",
+												"yd:black_glass_block_double",
+												"yd:black_iron_glass_door",
+												"yd:bunker_door",
+												"yd:factory_door",
+												"yd:shoji_door",
+												"yd:shoji_door_double",
+												"yd:barn_door",
+												"yd:black_iron_glass_door_double",
+												"yd:wooden_door_0",
+												"yd:wooden_door_1",
+												"yd:shoji_door_with_painting",
+												"yd:shoji_door_with_painting_double"
+											],
+											"allowed_faces": [
+												"up",
+												"down"
+											]
+										}
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										2
+									]
+								},
+								"minecraft:pick_collision": false,
+								"minecraft:geometry": "geometry.invisible",
+								"minecraft:block_light_absorption": 0
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('minecraft:direction') == 0",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 1",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								}
+							],
+							"events": {
+								"on_destroy": {
+									"set_block_at_pos": {
+										"block_offset": [
+											0,
+											-1,
+											0
+										],
+										"block_type": "minecraft:air"
+									}
+								}
+							}
+						},
+						"key": "permutations",
+						"is_minified": true,
+						"children": [
+							{
+								"condition": "query.block_property('minecraft:direction') == 0",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										180,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('minecraft:direction') == 1",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										0,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('minecraft:direction') == 2",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										270,
+										0
+									]
+								}
+							},
+							{
+								"condition": "query.block_property('minecraft:direction') == 3",
+								"components": {
+									"minecraft:rotation": [
+										0,
+										90,
+										0
+									]
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:door_coll",
+								"is_experimental": true,
+								"properties": {
+									"minecraft:direction": {}
+								}
+							},
+							"components": {
+								"minecraft:material_instances": {
+									"*": {
+										"render_method": "alpha_test",
+										"ambient_occlusion": false,
+										"face_dimming": false
+									}
+								},
+								"minecraft:destroy_time": 100,
+								"minecraft:explosion_resistance": 2,
+								"minecraft:on_player_destroyed": {
+									"event": "on_destroy"
+								},
+								"minecraft:loot": "loot_tables/nothing.json",
+								"minecraft:placement_filter": {
+									"conditions": [
+										{
+											"block_filter": [
+												"yd:glass_door",
+												"yd:black_glass_block",
+												"yd:door_coll",
+												"yd:glass_door_double",
+												"yd:black_glass_block_double",
+												"yd:black_iron_glass_door",
+												"yd:bunker_door",
+												"yd:factory_door",
+												"yd:shoji_door",
+												"yd:shoji_door_double",
+												"yd:barn_door",
+												"yd:black_iron_glass_door_double",
+												"yd:wooden_door_0",
+												"yd:wooden_door_1",
+												"yd:shoji_door_with_painting",
+												"yd:shoji_door_with_painting_double"
+											],
+											"allowed_faces": [
+												"up",
+												"down"
+											]
+										}
+									]
+								},
+								"minecraft:entity_collision": {
+									"origin": [
+										-8,
+										0,
+										-8
+									],
+									"size": [
+										16,
+										16,
+										2
+									]
+								},
+								"minecraft:pick_collision": false,
+								"minecraft:geometry": "geometry.invisible",
+								"minecraft:block_light_absorption": 0
+							},
+							"permutations": [
+								{
+									"condition": "query.block_property('minecraft:direction') == 0",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											180,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 1",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											0,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 2",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											270,
+											0
+										]
+									}
+								},
+								{
+									"condition": "query.block_property('minecraft:direction') == 3",
+									"components": {
+										"minecraft:rotation": [
+											0,
+											90,
+											0
+										]
+									}
+								}
+							],
+							"events": {
+								"on_destroy": {
+									"set_block_at_pos": {
+										"block_offset": [
+											0,
+											-1,
+											0
+										],
+										"block_type": "minecraft:air"
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"on_destroy": {
+										"set_block_at_pos": {
+											"block_offset": [
+												0,
+												-1,
+												0
+											],
+											"block_type": "minecraft:air"
+										}
+									}
+								},
+								"key": "on_destroy",
+								"is_minified": true,
+								"children": {
+									"set_block_at_pos": {
+										"block_offset": [
+											0,
+											-1,
+											0
+										],
+										"block_type": "minecraft:air"
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.fb_sign": {
+			"geometry": "array.geos[query.is_baby]",
+			"materials": [
+				{
+					"*": "fb"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"uv_anim": {
+				"offset": [
+					0,
+					"math.mod(math.floor(query.life_time*frames_per_second),frame_count)/frame_count"
+				],
+				"scale": [
+					1,
+					"1/frame_count"
+				]
+			}
+		}
+	}
+}

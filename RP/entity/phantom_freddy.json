@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:phantom_freddy",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/phantom_freddy"
+			},
+			"spawn_egg": {
+				"texture": "phantom_freddy_icon"
+			},
+			"animations": {
+				"default_pose": "animation.phantom_freddy.idle1",
+				"no_pose": "animation.phantom_freddy.idle2",
+				"solemn_pose": "animation.phantom_freddy.seat",
+				"athena_pose": "animation.phantom_freddy.idle1",
+				"brandish_pose": "animation.phantom_freddy.idle2",
+				"honor_pose": "animation.phantom_freddy.seat",
+				"entertain_pose": "animation.phantom_freddy.idle1",
+				"salute_pose": "animation.phantom_freddy.idle2",
+				"riposte_pose": "animation.phantom_freddy.seat",
+				"zombie_pose": "animation.phantom_freddy.idle1",
+				"cancan_a_pose": "animation.phantom_freddy.idle2",
+				"cancan_b_pose": "animation.phantom_freddy.seat",
+				"hero_pose": "animation.phantom_freddy.idle1",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.phantom_freddy"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true
+		}
+	}
+}

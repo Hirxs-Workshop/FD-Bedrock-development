@@ -1,0 +1,331 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.nethercat.look_at_target": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
+				}
+			}
+		},
+		"controller.animation.nethercat.move": {
+			"initial_state": "walking",
+			"states": {
+				"walking": {
+					"animations": [
+						{
+							"walk": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"attacking": "query.is_delayed_attacking==1"
+						}
+					]
+				},
+				"attacking": {
+					"animations": [
+						"attack"
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"walking": "query.is_delayed_attacking==0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.fbstand": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.fbmove": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"move": "query.modified_move_speed"
+						},
+						"look_at_target"
+					]
+				}
+			}
+		},
+		"controller.animation.fbbase": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"base": "!query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"run": "query.is_moving&&query.is_angry"
+						}
+					]
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving||query.is_playing_dead"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.lampeo": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"run": "query.is_moving&&query.is_angry"
+						}
+					]
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving||query.is_playing_dead"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ourano": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"run": "query.is_moving&&query.is_angry"
+						}
+					]
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving||query.is_playing_dead"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.stegosaurus": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.ankylo": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"run": "query.is_moving&&query.is_angry"
+						}
+					]
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving||query.is_playing_dead"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spiny": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"swimming": "query.is_moving"
+						}
+					]
+				},
+				"swimming": {
+					"animations": [
+						{
+							"swim": "query.is_swimming"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving||query.is_playing_dead||!query.is_swimming"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.trex": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					]
+				}
+			}
+		},
+		"controller.animation.tricera": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"stand": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					]
+				}
+			}
+		},
+		"controller.animation.tylosaur": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"still": "!query.modified_move_speed"
+						},
+						{
+							"swim": "query.modified_move_speed"
+						},
+						"look_at_target"
+					]
+				}
+			}
+		},
+		"controller.animation.rhinoceros": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"idle": "!query.modified_move_speed"
+						},
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"mad": "query.is_moving&&query.is_angry"
+						}
+					]
+				},
+				"mad": {
+					"animations": [
+						{
+							"mad": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving||query.is_playing_dead"
+						}
+					]
+				}
+			}
+		}
+	}
+}

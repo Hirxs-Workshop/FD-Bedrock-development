@@ -1,0 +1,210 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:fb2_deco2",
+			"is_experimental": false,
+			"properties": {
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"fb:block_status": [
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:block_light_filter": 0,
+			"minecraft:explosion_resistance": 0.1,
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "fb:fb2_deco2",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.fb2_deco2",
+			"minecraft:aim_collision": {
+				"origin": [
+					-7,
+					0,
+					-5
+				],
+				"size": [
+					14,
+					12,
+					8
+				]
+			},
+			"minecraft:block_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			},
+			"minecraft:rotation": [
+				0,
+				0,
+				0
+			]
+		},
+		"events": {
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "query.cardinal_facing_2d"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					}
+				]
+			},
+			"fb:event_alarm": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								""
+							]
+						}
+					}
+				]
+			},
+			"fb:event_off": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"fb:event_on": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 2
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								""
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fb:fb2_deco2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "fb:event_on"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fb:fb2_deco2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.9,
+							0.9
+						],
+						"on_tick": {
+							"event": "fb:event_alarm"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "fb:event_off"
+					}
+				}
+			}
+		]
+	}
+}

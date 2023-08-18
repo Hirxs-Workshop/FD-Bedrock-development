@@ -1,0 +1,39 @@
+{
+	"file_type": "block",
+	"display_name": "Create a Block",
+	"template": {
+		"data_path": "minecraft:block",
+		"force_default_scope": true,
+		"data": {
+			"description": {
+				"identifier": "",
+				"register_to_creative_menu": true,
+				"is_experimental": false
+			},
+			"components": {
+				"minecraft:loot": {
+					"table": {}
+				},
+				"minecraft:destroy_time": {
+					"value": 1
+				},
+				"minecraft:explosion_resistance": {
+					"value": 1
+				},
+				"minecraft:flammable": {
+					"flame_odds": 0,
+					"burn_odds": 0
+				},
+				"minecraft:map_color": {
+					"color": "#737373"
+				},
+				"minecraft:block_light_emission": {
+					"emission": 1
+				},
+				"minecraft:block_light_absorption": {
+					"value": 1
+				}
+			}
+		}
+	}
+}

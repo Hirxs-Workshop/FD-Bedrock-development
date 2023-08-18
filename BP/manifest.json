@@ -1,0 +1,90 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Hirxs"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"header": {
+		"name": "FNAF's Decorations - v4 [Preview #3.7.2]",
+		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
+		"min_engine_version": [
+			1,
+			18,
+			0
+		],
+		"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
+		"version": [
+			4,
+			3,
+			72
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e91a6659-4bc8-4006-83db-94e045b526da",
+			"version": [
+				4,
+				3,
+				72
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "322cef0e-cca1-427a-91af-ca7bfa460eba",
+			"entry": "scripts/test_maincamerasys.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.4.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-gametest",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		},
+		{
+			"uuid": "b257d765-f49d-4e40-a043-5eb2463a9033",
+			"version": [
+				4,
+				3,
+				72
+			]
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "1.19.70-",
+			"name": "§lFD - 1.19.70- | Support\n\n§l§r§gFeatures:§7\n-All normal blocks\n-Desks & Supply Room Shelve\n-Electric wires\n-Light lever and office light function\nCurtains (Glass panel)\n\n§l§cUnsupported:§r\n§7-Faztab / Cameras",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "1.20.10",
+			"name": "§lFD - 1.20.10+ | Support\n\n§l§r§gFeatures:§7\n-All normal blocks\n-Desks & Supply Room Shelve\n-Electric wires\n-Light lever and office light function\nCurtains (Glass panel)\n-Faztab / Cameras\n\n§l§cUnsupported:§r\n§7-Nothing yeahh",
+			"memory_tier": 0
+		}
+	]
+}

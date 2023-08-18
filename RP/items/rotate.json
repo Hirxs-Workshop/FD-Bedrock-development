@@ -1,0 +1,15 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.13.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:rotate",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": "fb:rotate",
+			"minecraft:render_offsets": "miscellaneous",
+			"minecraft:use_animation": "drink"
+		}
+	}
+}

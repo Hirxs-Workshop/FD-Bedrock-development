@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:light",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/invisible"
+			},
+			"geometry": {
+				"default": "geometry.flashlight_light"
+			},
+			"render_controllers": [
+				"controller.render.flashlight_light"
+			]
+		}
+	}
+}

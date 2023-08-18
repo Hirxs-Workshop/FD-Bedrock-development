@@ -1,0 +1,116 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:poster_2",
+			"is_experimental": false,
+			"properties": {
+				"bridge:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side"
+						]
+					}
+				]
+			},
+			"minecraft:geometry": "geometry.poster_2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "fb_poster_2",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-7,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-7,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_player_placing": {
+				"event": "bridge:update_rotation"
+			},
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"bridge:update_rotation": {
+				"set_block_property": {
+					"bridge:block_rotation": "query.cardinal_facing_2d"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fb.smoke": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"smoking": "query.is_moving"
+						}
+					]
+				},
+				"smoking": {
+					"particle_effects": [
+						{
+							"effect": "smoke"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.fb.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"spinudtilt",
+						"turnstilt"
+					]
+				}
+			}
+		},
+		"controller.animation.fb.hurt": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"hurt": "query.is_baby"
+						}
+					],
+					"blend_transition": 0
+				},
+				"hurt": {
+					"animations": [
+						"hurt"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_baby"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

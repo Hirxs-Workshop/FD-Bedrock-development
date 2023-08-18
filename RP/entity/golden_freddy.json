@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:golden_freddy",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/blocks/shelf/golden_freddy"
+			},
+			"spawn_egg": {
+				"texture": "golden_freddy_icon"
+			},
+			"animations": {
+				"default_pose": "animation.goldenfreddy.sit",
+				"no_pose": "animation.goldenfreddy.sit",
+				"solemn_pose": "animation.goldenfreddy.sit",
+				"athena_pose": "animation.goldenfreddy.sit",
+				"brandish_pose": "animation.goldenfreddy.sit",
+				"honor_pose": "animation.goldenfreddy.sit",
+				"entertain_pose": "animation.goldenfreddy.sit",
+				"salute_pose": "animation.goldenfreddy.sit",
+				"riposte_pose": "animation.goldenfreddy.sit",
+				"zombie_pose": "animation.goldenfreddy.sit",
+				"cancan_a_pose": "animation.goldenfreddy.sit",
+				"cancan_b_pose": "animation.goldenfreddy.sit",
+				"hero_pose": "animation.goldenfreddy.sit",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.golden_freddy"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true
+		}
+	}
+}

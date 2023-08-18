@@ -1,0 +1,93 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:office_chair",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"chair"
+				]
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:collision_box": {
+				"width": 0.85,
+				"height": 1.3
+			},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:navigation.walk": {
+				"can_float": false,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {},
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"interact_text": "Sit",
+				"family_types": [
+					"player"
+				],
+				"seats": [
+					{
+						"position": [
+							0,
+							0.5,
+							0
+						]
+					}
+				]
+			},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:can_power_jump": {},
+			"minecraft:physics": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"event": "remove"
+						},
+						"cause": "entity_attack"
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"remove": {
+				"minecraft:instant_despawn": {},
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"num_to_spawn": 1,
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "fb:office_chair_spawn_egg",
+							"single_use": true
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"remove": {
+				"add": {
+					"component_groups": [
+						"remove"
+					]
+				}
+			}
+		}
+	}
+}

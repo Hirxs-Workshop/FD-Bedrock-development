@@ -1,0 +1,179 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:floor_2_slab",
+			"properties": {
+				"bridge:slab": [
+					0,
+					1,
+					2
+				],
+				"p:changer": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.Construction",
+				"category": "construction"
+			},
+			"minecraft:destroy_time": 0.5,
+			"minecraft:on_player_placing": {
+				"event": "bridge:up",
+				"target": "self",
+				"condition": "query.target_x_rotation<=0"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white1",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white2",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white3",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:slab') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.slab_down",
+					"minecraft:block_light_absorption": 0,
+					"minecraft:on_interact": {
+						"event": "bridge:block",
+						"target": "self",
+						"condition": "query.get_equipped_item_name('main_hand')=='floor_2_slab'&&query.block_face==1"
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:slab') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.slab_up",
+					"minecraft:block_light_absorption": 0,
+					"minecraft:on_interact": {
+						"event": "bridge:block",
+						"target": "self",
+						"condition": "query.get_equipped_item_name('main_hand')=='floor_2_slab'&&query.block_face==0"
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:slab') == 2",
+				"components": {
+					"minecraft:unit_cube": {},
+					"minecraft:loot": "loot_tables/blocks/color_bricks_slab_double.json",
+					"minecraft:block_light_absorption": 15
+				}
+			}
+		],
+		"events": {
+			"bridge:block": {
+				"set_block_property": {
+					"bridge:slab": 2
+				},
+				"decrement_stack": {},
+				"run_command": {
+					"command": [
+						"playsound use.stone @p ~~~ 1 1 0"
+					]
+				}
+			},
+			"bridge:up": {
+				"set_block_property": {
+					"bridge:slab": 1
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			}
+		}
+	}
+}

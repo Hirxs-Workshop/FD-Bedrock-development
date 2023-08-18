@@ -1,0 +1,66 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.microphone",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"pivot": [-3, 14, 3],
+					"rotation": [180, 0, 0],
+					"cubes": [
+						{
+							"origin": [-4.458, 21.40396, 1.11184],
+							"size": [2.7, 2.6, 2.6],
+							"pivot": [-3.133, 15.02774, 5.41588],
+							"rotation": [87.5, 0, 0],
+							"uv": {
+								"north": {"uv": [24, 56], "uv_size": [20, 20]},
+								"east": {"uv": [24, 56], "uv_size": [20, 20]},
+								"south": {"uv": [24, 56], "uv_size": [20, 20]},
+								"west": {"uv": [24, 56], "uv_size": [20, 20]},
+								"up": {"uv": [44, 76], "uv_size": [-20, -20]},
+								"down": {"uv": [44, 76], "uv_size": [-20, -20]}
+							}
+						},
+						{
+							"origin": [-4, 11.3, -1],
+							"size": [2, 2, 7],
+							"pivot": [-3.675, 12.725, -4],
+							"rotation": [-2.5, 0, 0],
+							"uv": {
+								"north": {"uv": [26, 122], "uv_size": [2, 2]},
+								"east": {"uv": [26, 124], "uv_size": [7, -2]},
+								"south": {"uv": [26, 122], "uv_size": [2, 2]},
+								"west": {"uv": [33, 122], "uv_size": [-7, 2]},
+								"up": {"uv": [26, 112], "uv_size": [2, 7]},
+								"down": {"uv": [28, 119], "uv_size": [-2, -7]}
+							}
+						},
+						{
+							"origin": [-4.6, 10.8, -4],
+							"size": [3, 3, 3],
+							"pivot": [-3.675, 12.725, -4],
+							"rotation": [-2.5, 0, 0],
+							"uv": {
+								"north": {"uv": [63, 126], "uv_size": [-3, -3]},
+								"east": {"uv": [63, 126], "uv_size": [-3, -3]},
+								"south": {"uv": [63, 126], "uv_size": [-3, -3]},
+								"west": {"uv": [63, 126], "uv_size": [-3, -3]},
+								"up": {"uv": [60, 123], "uv_size": [3, 3]},
+								"down": {"uv": [60, 123], "uv_size": [3, 3]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

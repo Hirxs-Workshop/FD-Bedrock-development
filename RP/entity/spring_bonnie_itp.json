@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:itp_spring_bonnie",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/itp_springbonnie"
+			},
+			"spawn_egg": {
+				"texture": "itp"
+			},
+			"animations": {
+				"default_pose": "animation.bonnie.death",
+				"no_pose": "animation.bonnie.off",
+				"solemn_pose": "animation.bonnie.showtime",
+				"athena_pose": "animation.bonnie.showtime2",
+				"brandish_pose": "animation.bonnie.attack",
+				"honor_pose": "animation.bonnie.off",
+				"entertain_pose": "animation.bonnie.showtime",
+				"salute_pose": "animation.bonnie.showtime2",
+				"riposte_pose": "animation.bonnie.attack",
+				"zombie_pose": "animation.bonnie.off",
+				"cancan_a_pose": "animation.bonnie.showtime",
+				"cancan_b_pose": "animation.bonnie.showtime2",
+				"hero_pose": "animation.bonnie.attack",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.itp_springbonnie"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true
+		}
+	}
+}

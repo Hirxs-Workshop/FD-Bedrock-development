@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fbrider": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"ride": "query.has_rider"
+						}
+					],
+					"on_entry": []
+				},
+				"ride": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": []
+				}
+			}
+		}
+	}
+}

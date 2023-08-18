@@ -1,0 +1,253 @@
+{
+	"file_path": "C:\\Users\\chupi\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Your Doors BP\\recipes\\black_iron_glass_door_double.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "abe1269d_3916_4cfe_b1ce_953bdd9ac6d3",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "yd:black_iron_glass_r_d"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							" ##",
+							" ii",
+							" ##"
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:iron_ingot"
+							},
+							"i": {
+								"item": "minecraft:glass"
+							}
+						},
+						"result": [
+							{
+								"item": "yd:black_iron_glass_door_double"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:black_iron_glass_r_d"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" ##",
+								" ii",
+								" ##"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_ingot"
+								},
+								"i": {
+									"item": "minecraft:glass"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:black_iron_glass_door_double"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "yd:black_iron_glass_r_d"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:black_iron_glass_r_d"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" ##",
+								" ii",
+								" ##"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_ingot"
+								},
+								"i": {
+									"item": "minecraft:glass"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:black_iron_glass_door_double"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:black_iron_glass_r_d"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" ##",
+								" ii",
+								" ##"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_ingot"
+								},
+								"i": {
+									"item": "minecraft:glass"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:black_iron_glass_door_double"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							" ##",
+							" ii",
+							" ##"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:black_iron_glass_r_d"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" ##",
+								" ii",
+								" ##"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_ingot"
+								},
+								"i": {
+									"item": "minecraft:glass"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:black_iron_glass_door_double"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:iron_ingot"
+									},
+									"i": {
+										"item": "minecraft:glass"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:iron_ingot"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:iron_ingot"
+									},
+									"i": {
+										"item": "minecraft:glass"
+									}
+								},
+								"key": "i",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:glass"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:black_iron_glass_r_d"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" ##",
+								" ii",
+								" ##"
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_ingot"
+								},
+								"i": {
+									"item": "minecraft:glass"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:black_iron_glass_door_double"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "yd:black_iron_glass_door_double"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "yd:black_iron_glass_door_double"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

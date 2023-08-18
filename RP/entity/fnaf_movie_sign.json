@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:fnaf_movie_sign",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf_movie_sign"
+			},
+			"geometry": {
+				"default": "geometry.fnaf_movie_sign"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "movie"
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:blue_pirate_cove_curtains_placeholder"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.panel_block_placeholder",
+			"minecraft:flammable": {
+				"flame_odds": 15,
+				"burn_odds": 25
+			},
+			"minecraft:on_placed": {
+				"event": "fb:destroy"
+			},
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pirate_cove3_curtain",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:unwalkable": true,
+			"minecraft:destroy_time": 0.5,
+			"minecraft:map_color": "#2D22FF",
+			"minecraft:block_light_absorption": 1,
+			"tag:fence_connect": {},
+			"tag:wood": {},
+			"tag:wires": {}
+		},
+		"events": {
+			"fb:destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"setblock ~ ~ ~ fb:blue_pirate_cove_curtains"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:facing') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			}
+		]
+	}
+}

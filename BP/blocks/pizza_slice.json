@@ -1,0 +1,186 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:pizza_slice",
+			"is_experimental": false,
+			"properties": {
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"fb:block_status": [
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 0.1,
+			"minecraft:block_light_filter": 0,
+			"minecraft:explosion_resistance": 0.1,
+			"minecraft:loot": "loot_tables/pizza_slice.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pizza_slice",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.pizza_slice",
+			"minecraft:aim_collision": {
+				"origin": [
+					-7,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					2,
+					10
+				]
+			},
+			"minecraft:block_collision": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							{
+								"tags": "!q.any_tag('non_full')"
+							}
+						]
+					}
+				]
+			},
+			"tag:non_full": {},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			},
+			"minecraft:rotation": [
+				0,
+				0,
+				0
+			]
+		},
+		"events": {
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "query.block_face"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					}
+				]
+			},
+			"fb:event_off": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"setblock ~ ~ ~ air 0 destroy",
+								"playsound break.big_dripleaf @a[r=3] ~~~ 1",
+								"particle fb:dot ~ ~ ~"
+							]
+						}
+					}
+				]
+			},
+			"fb:event_on": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 2
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"setblock ~ ~ ~ air 0 destroy",
+								"playsound break.big_dripleaf @a[r=3] ~~~ 1",
+								"particle fb:dot ~ ~ ~"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.pizza_slice",
+					"minecraft:on_interact": {
+						"event": "fb:event_on"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.pizza_slice",
+					"minecraft:on_interact": {
+						"event": "fb:event_off"
+					}
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:bday",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/birthday_banner"
+			},
+			"geometry": {
+				"default": "geometry.birthday_banner"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "bday"
+			}
+		}
+	}
+}

@@ -1,0 +1,192 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.withered_chica.idle1": {
+			"loop": true,
+			"bones": {
+				"freddy": {
+					"position": [
+						0,
+						-15,
+						0
+					]
+				},
+				"body": {
+					"rotation": [
+						22.5,
+						0,
+						0
+					]
+				},
+				"head2": {
+					"rotation": [
+						7.5,
+						0,
+						-17.5
+					]
+				},
+				"left_arm_custom2": {
+					"rotation": [
+						247.35801,
+						-169.64913,
+						154.93943
+					]
+				},
+				"right_forearm_custom_b4": {
+					"rotation": [
+						8.44961,
+						-20.91466,
+						-23.44767
+					]
+				},
+				"right_arm_custom2": {
+					"rotation": [
+						-42.5,
+						0,
+						47.5
+					]
+				},
+				"right_forearm_custom_b3": {
+					"rotation": [
+						-27.5,
+						0,
+						-17.5
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						-102.92638,
+						14.63639,
+						-3.31914
+					],
+					"position": [
+						0,
+						4,
+						-2
+					]
+				},
+				"bone3": {
+					"rotation": [
+						62.5,
+						0,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						45.68718,
+						8.80348,
+						8.90928
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-100.23772,
+						-12.3071,
+						2.20462
+					],
+					"position": [
+						0,
+						4,
+						-2
+					]
+				},
+				"bone4": {
+					"rotation": [
+						52.5,
+						0,
+						0
+					]
+				},
+				"bone5": {
+					"rotation": [
+						51.33099,
+						-11.14485,
+						-13.57875
+					]
+				}
+			}
+		},
+		"animation.withered_chica.idle2": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [
+						14.87739,
+						1.93597,
+						-7.24721
+					]
+				},
+				"head2": {
+					"rotation": [
+						0,
+						0,
+						15
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						0,
+						0,
+						-72.5
+					]
+				},
+				"bone2": {
+					"rotation": [
+						0,
+						0,
+						-65
+					],
+					"position": [
+						2,
+						0,
+						0
+					]
+				},
+				"rightArm2": {
+					"rotation": [
+						0,
+						0,
+						67.5
+					]
+				},
+				"bone": {
+					"rotation": [
+						0,
+						0,
+						-57.5
+					],
+					"position": [
+						2,
+						0,
+						0
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						0,
+						32.5,
+						0
+					]
+				},
+				"bone6": {
+					"rotation": [
+						0,
+						-20,
+						0
+					]
+				},
+				"bone4": {
+					"rotation": [
+						0,
+						-25,
+						0
+					]
+				}
+			}
+		},
+		"animation.withered_chica.idle3": {
+			"loop": true
+		}
+	}
+}

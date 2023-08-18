@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.faztab",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"pivot": [-3, 14, 3],
+					"rotation": [180, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8.758, 8.20078, -6.0723],
+							"size": [12, 9, 1],
+							"pivot": [0.242, 12.70078, -5.5723],
+							"rotation": [92.5, 0, -180],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [12, 9]},
+								"east": {"uv": [12, 2], "uv_size": [1, 9]},
+								"south": {"uv": [0, 9], "uv_size": [12, 9]},
+								"west": {"uv": [12, 2], "uv_size": [1, 9]},
+								"up": {"uv": [12, 0], "uv_size": [12, 1]},
+								"down": {"uv": [12, 2], "uv_size": [12, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

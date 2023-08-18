@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:pirate_cove_place",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/foxy_room"
+			},
+			"animations": {
+				"default_pose": "animation.pirate_cove_place.close",
+				"no_pose": "animation.pirate_cove_place.open",
+				"solemn_pose": "animation.pirate_cove_place.close",
+				"athena_pose": "animation.pirate_cove_place.open",
+				"brandish_pose": "animation.pirate_cove_place.open",
+				"honor_pose": "animation.pirate_cove_place.close",
+				"entertain_pose": "animation.pizzeria_door_open",
+				"salute_pose": "animation.pizzeria_door_close",
+				"riposte_pose": "animation.pizzeria_door_open",
+				"zombie_pose": "animation.pizzeria_door_close",
+				"cancan_a_pose": "animation.pizzeria_door_open",
+				"cancan_b_pose": "animation.pizzeria_door_close",
+				"hero_pose": "animation.pizzeria_door_open",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.pirate_cove_place"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "pizzeria_door"
+			}
+		}
+	}
+}

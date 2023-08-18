@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fb:banjo_item",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/items/banjo_model"
+      },
+      "geometry": {
+        "default": "geometry.banjo"
+      },
+      "animations": {
+        "first_person": "animation.item.first_person_2"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person": "c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:electric_block_on",
+			"is_experimental": false,
+			"properties": {
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:creative_category": {
+				"category": "commands",
+				"group": "none"
+			},
+			"minecraft:block_light_absorption": 15,
+			"minecraft:block_light_filter": 0,
+			"minecraft:explosion_resistance": 0.1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electricon",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": "geometry.electric_block",
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:block_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:on_placed": {
+				"event": "fb:destroy"
+			},
+			"minecraft:rotation": [
+				0,
+				0,
+				0
+			],
+			"tag:fence_connect": {},
+			"tag:wires": {}
+		},
+		"events": {
+			"fb:destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_block_on [] replace fb:electric_block_off",
+								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_wires_on [] replace fb:electric_wires_off"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		]
+	}
+}

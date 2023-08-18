@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.hammer": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "variable.is_enchanted?material.enchanted:material.default"
+				}
+			],
+			"textures": [
+				"texture.default",
+				"texture.enchanted"
+			]
+		}
+	}
+}

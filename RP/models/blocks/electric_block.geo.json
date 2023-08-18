@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.electric_block",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								16,
+								16,
+								16
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										5.33333,
+										0
+									],
+									"uv_size": [
+										5.33333,
+										5.33333
+									]
+								},
+								"east": {
+									"uv": [
+										5.33333,
+										0
+									],
+									"uv_size": [
+										5.33333,
+										5.33333
+									]
+								},
+								"south": {
+									"uv": [
+										5.33333,
+										0
+									],
+									"uv_size": [
+										5.33333,
+										5.33333
+									]
+								},
+								"west": {
+									"uv": [
+										5.33333,
+										0
+									],
+									"uv_size": [
+										5.33333,
+										5.33333
+									]
+								},
+								"up": {
+									"uv": [
+										5.33333,
+										5.33333
+									],
+									"uv_size": [
+										-5.33333,
+										-5.33333
+									]
+								},
+								"down": {
+									"uv": [
+										5.33333,
+										5.33333
+									],
+									"uv_size": [
+										-5.33333,
+										-5.33333
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

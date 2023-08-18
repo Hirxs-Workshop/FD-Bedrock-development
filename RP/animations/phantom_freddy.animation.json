@@ -1,0 +1,118 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.phantom_freddy.idle1": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [0, 0, -7.5]
+				},
+				"jaw": {
+					"rotation": [7.5, 0, 0]
+				},
+				"armR": {
+					"rotation": [-25.25579, -13.03163, 13.93878]
+				},
+				"lower": {
+					"rotation": [-25, -20, -12.5]
+				},
+				"hand": {
+					"rotation": [0, 70, 0]
+				},
+				"armL": {
+					"rotation": [45.88579, -26.66839, -62.59784]
+				},
+				"lower5": {
+					"rotation": [-7.5, -20, 57.5]
+				},
+				"hand3": {
+					"rotation": [92.69218, 57.27724, 142.70893]
+				}
+			}
+		},
+		"animation.phantom_freddy.idle2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [0, 0, 12.5],
+					"position": [0, -2, -7]
+				},
+				"jaw": {
+					"rotation": [12.5, 0, 0]
+				},
+				"body": {
+					"rotation": [25, 0, 0]
+				},
+				"lower": {
+					"rotation": [-47.81374, 17.38772, -18.2489]
+				},
+				"hand": {
+					"rotation": [0, 7.5, -12.5]
+				},
+				"armL": {
+					"rotation": [65, 0, 0]
+				},
+				"lower5": {
+					"rotation": [52.5, -32.5, 0]
+				},
+				"hand3": {
+					"rotation": [0, 52.5, 0]
+				},
+				"lower4": {
+					"rotation": [0, -15, 0]
+				},
+				"foot2": {
+					"rotation": [0, 20, 0]
+				}
+			}
+		},
+		"animation.phantom_freddy.seat": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [0, 0, -20],
+					"position": [0, -2, -5]
+				},
+				"jaw": {
+					"rotation": [15, 0, 0]
+				},
+				"body": {
+					"rotation": [12.5, 0, 0]
+				},
+				"armR": {
+					"rotation": [-22.74831, 9.63678, -9.4247]
+				},
+				"lower": {
+					"rotation": [-12.5, 0, -15]
+				},
+				"hand": {
+					"rotation": [0, 37.5, 0]
+				},
+				"armL": {
+					"rotation": [17.89807, 11.91276, 11.31397]
+				},
+				"lower5": {
+					"rotation": [28.00403, 22.46515, -10.8232]
+				},
+				"hand3": {
+					"rotation": [122.73241, -32.79775, -139.87926]
+				},
+				"legR": {
+					"rotation": [-40, 0, 0]
+				},
+				"legL": {
+					"rotation": [-95, 0, 0]
+				},
+				"lower4": {
+					"rotation": [95, 0, 0]
+				},
+				"foot2": {
+					"rotation": [0, -22.5, 0]
+				},
+				"Freddy": {
+					"position": [0, -13, -7]
+				}
+			}
+		}
+	}
+}

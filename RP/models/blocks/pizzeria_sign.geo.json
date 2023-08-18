@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pizzeria_sign",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [
+					0,
+					2.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-64,
+								0,
+								5
+							],
+							"size": [
+								128,
+								88,
+								1
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									]
+								},
+								"east": {
+									"uv": [
+										-97.82857,
+										-33.82857
+									],
+									"uv_size": [
+										98.59048,
+										34.81905
+									]
+								},
+								"south": {
+									"uv": [
+										-97.82857,
+										-33.82857
+									],
+									"uv_size": [
+										98.59048,
+										34.81905
+									]
+								},
+								"west": {
+									"uv": [
+										-97.82857,
+										-33.82857
+									],
+									"uv_size": [
+										98.59048,
+										34.81905
+									]
+								},
+								"up": {
+									"uv": [
+										0.7619,
+										0.99048
+									],
+									"uv_size": [
+										-98.59048,
+										-34.81905
+									]
+								},
+								"down": {
+									"uv": [
+										0.7619,
+										0.99048
+									],
+									"uv_size": [
+										-98.59048,
+										-34.81905
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

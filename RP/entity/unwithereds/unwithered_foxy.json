@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:unwithered_foxy",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/unwithered/unwithered_foxy"
+			},
+			"spawn_egg": {
+				"texture": "w_foxy"
+			},
+			"animations": {
+				"default_pose": "animation.foxy.off",
+				"no_pose": "animation.foxy.showtime",
+				"solemn_pose": "animation.foxy.showtime2",
+				"athena_pose": "animation.foxy.attack",
+				"brandish_pose": "animation.foxy.off",
+				"honor_pose": "animation.foxy.showtime",
+				"entertain_pose": "animation.foxy.showtime2",
+				"salute_pose": "animation.foxy.attack",
+				"riposte_pose": "animation.foxy.off",
+				"zombie_pose": "animation.foxy.showtime",
+				"cancan_a_pose": "animation.foxy.showtime2",
+				"cancan_b_pose": "animation.foxy.attack",
+				"hero_pose": "animation.foxy.off",
+				"wiggle": "animation.armor_stand.wiggle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.unwithered_foxy"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true
+		}
+	}
+}

@@ -1,0 +1,169 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:ball_pit",
+			"properties": {
+				"p:north_neighbor": [
+					false,
+					true
+				],
+				"p:east_neighbor": [
+					false,
+					true
+				],
+				"p:south_neighbor": [
+					false,
+					true
+				],
+				"p:west_neighbor": [
+					false,
+					true
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "!q.block_property('p:north_neighbor')&&!q.block_property('p:east_neighbor')&&!q.block_property('p:south_neighbor')&&!q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit"
+				}
+			},
+			{
+				"condition": "q.block_property('p:north_neighbor')&&!q.block_property('p:east_neighbor')&&!q.block_property('p:south_neighbor')&&!q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.end1"
+				}
+			},
+			{
+				"condition": "!q.block_property('p:north_neighbor')&&q.block_property('p:east_neighbor')&&!q.block_property('p:south_neighbor')&&!q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.end2"
+				}
+			},
+			{
+				"condition": "!q.block_property('p:north_neighbor')&&!q.block_property('p:east_neighbor')&&q.block_property('p:south_neighbor')&&!q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.end3"
+				}
+			},
+			{
+				"condition": "!q.block_property('p:north_neighbor')&&!q.block_property('p:east_neighbor')&&!q.block_property('p:south_neighbor')&&q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.end4"
+				}
+			},
+			{
+				"condition": "q.block_property('p:north_neighbor')&&!q.block_property('p:east_neighbor')&&!q.block_property('p:south_neighbor')&&q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.corner1"
+				}
+			},
+			{
+				"condition": "q.block_property('p:north_neighbor')&&q.block_property('p:east_neighbor')&&!q.block_property('p:south_neighbor')&&!q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.corner2"
+				}
+			},
+			{
+				"condition": "!q.block_property('p:north_neighbor')&&q.block_property('p:east_neighbor')&&q.block_property('p:south_neighbor')&&!q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.corner3"
+				}
+			},
+			{
+				"condition": "!q.block_property('p:north_neighbor')&&!q.block_property('p:east_neighbor')&&q.block_property('p:south_neighbor')&&q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.corner4"
+				}
+			},
+			{
+				"condition": "q.block_property('p:north_neighbor')&&q.block_property('p:south_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.center"
+				}
+			},
+			{
+				"condition": "q.block_property('p:east_neighbor')&&q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.center"
+				}
+			},
+			{
+				"condition": "q.block_property('p:north_neighbor')&&q.block_property('p:south_neighbor')&&q.block_property('p:east_neighbor')&&q.block_property('p:west_neighbor')",
+				"components": {
+					"minecraft:geometry": "geometry.ball_pit.center"
+				}
+			}
+		],
+		"components": {
+			"tag:rustic": {},
+			"tag:ball_pit": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ball_pit",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:display_name": "fb:ball_pit",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:map_color": "#b8945f",
+			"minecraft:destroy_time": 2,
+			"minecraft:explosion_resistance": 2,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					2,
+					16
+				]
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					0,
+					0
+				],
+				"on_tick": {
+					"event": "e:update.neighbors"
+				}
+			}
+		},
+		"events": {
+			"e:update.neighbors": {
+				"set_block_property": {
+					"p:north_neighbor": "q.block_neighbor_has_any_tag(0,0,-1,'ball_pit')?true:false",
+					"p:east_neighbor": "q.block_neighbor_has_any_tag(1,0,0,'ball_pit')?true:false",
+					"p:south_neighbor": "q.block_neighbor_has_any_tag(0,0,1,'ball_pit')?true:false",
+					"p:west_neighbor": "q.block_neighbor_has_any_tag(-1,0,0,'ball_pit')?true:false"
+				}
+			}
+		}
+	}
+}

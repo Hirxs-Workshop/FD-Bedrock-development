@@ -1,0 +1,496 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fB:light_unfuctional",
+			"category": "Nature",
+			"properties": {
+				"fb:block_rotation": [
+					1,
+					2,
+					3,
+					4,
+					5
+				],
+				"fb:box": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"components": {
+			"tag:wood": {},
+			"tag:planks": {},
+			"minecraft:destroy_time": 1,
+			"minecraft:friction": 0.7,
+			"minecraft:map_color": "#C25128",
+			"minecraft:explosion_resistance": 1,
+			"minecraft:flammable": {
+				"flame_odds": 1,
+				"burn_odds": 1
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:on_player_destroyed": {
+				"event": "remove:block",
+				"target": "self"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_off",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_step_on": {
+				"event": "step:on",
+				"target": "self"
+			},
+			"minecraft:on_step_off": {
+				"event": "step:off",
+				"target": "self"
+			},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			},
+			"minecraft:on_placed": {
+				"event": "fb:destroy"
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "random:tick",
+					"target": "self"
+				}
+			},
+			"minecraft:on_fall_on": {
+				"event": "fall:on",
+				"target": "self"
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					10,
+					10
+				],
+				"on_tick": {
+					"event": "on_tick",
+					"target": "self"
+				}
+			},
+			"minecraft:geometry": "geometry.light_1",
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.construction"
+			}
+		},
+		"events": {
+			"fb:destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": []
+						}
+					}
+				]
+			},
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "q.cardinal_facing_2d"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:box": 1
+						}
+					}
+				]
+			},
+			"fb:var_1": {
+				"sequence": [
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_2",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:var_2": {
+				"sequence": [
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_3",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:var_3": {
+				"sequence": [
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_4",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:var_4": {
+				"sequence": [
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_5",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:var_5": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_1",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:box_1": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 1
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"fb:box_2": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 2
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"fb:box_3": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 3
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"fb:box_4": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 4
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"fb:box_5": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 5
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"tree_chop": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false"
+							]
+						}
+					}
+				]
+			},
+			"remove:block": {},
+			"step:on": {},
+			"step:off": {},
+			"on_tick": {},
+			"random:tick": {},
+			"fall:on": {}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 1",
+				"components": {
+			"minecraft:block_light_emission": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_off",
+					"render_method": "alpha_test"
+				}
+			},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fb:var_1",
+							"target": "block"
+						}
+					},
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 2",
+				"components": {
+			"minecraft:block_light_emission": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_on",
+					"render_method": "alpha_test"
+				}
+			},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fb:var_2",
+							"target": "block"
+						}
+					},
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 3",
+				"components": {
+			"minecraft:block_light_emission": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_off",
+					"render_method": "alpha_test"
+				}
+			},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fb:var_3",
+							"target": "block"
+						}
+					},
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 4",
+				"components": {
+			"minecraft:block_light_emission": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_on",
+					"render_method": "alpha_test"
+				}
+			},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.3,
+							0.3
+						],
+						"on_tick": {
+							"event": "fb:var_4",
+							"target": "block"
+						}
+					},
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 5",
+				"components": {
+			"minecraft:block_light_emission": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_on",
+					"render_method": "alpha_test"
+				}
+			},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.3,
+							0.3
+						],
+						"on_tick": {
+							"event": "fb:var_1",
+							"target": "block"
+						}
+					},
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 6",
+				"components": {
+			"minecraft:block_light_emission": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "light_off",
+					"render_method": "alpha_test"
+				}
+			},
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fb:var_1",
+							"target": "block"
+						}
+					},
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			}
+		]
+	}
+}

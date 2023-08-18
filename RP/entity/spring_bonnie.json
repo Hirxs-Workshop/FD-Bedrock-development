@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:spring_bonnie",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fredbears/springbonnie"
+			},
+			"spawn_egg": {
+				"texture": "spring_bonnie_icon"
+			},
+			"animations": {
+				"default_pose": "animation.spring_bonnie.pose1",
+				"no_pose": "animation.spring_bonnie.dinning_area_pose1",
+				"solemn_pose": "animation.spring_bonnie.backstage_pose1",
+				"athena_pose": "animation.spring_bonnie.facereveal",
+				"brandish_pose": "animation.spring_bonnie.west_hall_pose1",
+				"honor_pose": "animation.spring_bonnie.west_hall_pose2",
+				"entertain_pose": "animation.spring_bonnie.door_pose",
+				"salute_pose": "animation.spring_bonnie.stage_1",
+				"riposte_pose": "animation.spring_bonnie.stage_2",
+				"zombie_pose": "animation.spring_bonnie.showtime2",
+				"cancan_a_pose": "animation.spring_bonnie.saferoom_pose",
+				"cancan_b_pose": "animation.spring_bonnie.backstage_pose1",
+				"hero_pose": "animation.spring_bonnie.facereveal",
+				"wiggle": "animation.spring_bonnie.west_hall_pose1",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.springbonnie"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true
+		}
+	}
+}

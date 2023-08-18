@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fb_fredbear_suit": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"walking": "1"
+						}
+					],
+					"on_entry": [
+						"/function fb_fredbear_suit"
+					]
+				},
+				"walking": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name=='fredbear_suit'&&query.is_using_item"
+						}
+					],
+					"on_entry": [
+						"/function fb_fredbear_suit"
+					]
+				}
+			}
+		}
+	}
+}

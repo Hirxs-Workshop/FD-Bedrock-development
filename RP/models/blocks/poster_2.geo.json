@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.poster_2",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main2",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "bb_main",
+					"pivot": [8, 6.41667, -0.35833],
+					"cubes": [
+						{
+							"origin": [-8, -13, 7],
+							"size": [16, 26, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 26]},
+								"east": {"uv": [30.6087, 3.2], "uv_size": [1.3913, 27.73333]},
+								"south": {"uv": [16, 0], "uv_size": [16, 26]},
+								"west": {"uv": [30.6087, 4.26667], "uv_size": [1.3913, 27.73333]},
+								"up": {"uv": [26.43478, 32], "uv_size": [-22.26087, -1.06667]},
+								"down": {"uv": [26.43478, 32], "uv_size": [-22.26087, -1.06667]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:light",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:timer": {
+				"looping": true,
+				"time": 0.1,
+				"time_down_event": {
+					"event": "despawn_process"
+				}
+			},
+			"minecraft:is_baby": {},
+			"minecraft:ageable": {
+				"duration": 1,
+				"grow_up": {
+					"event": "despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement.hover": {},
+			"minecraft:navigation.hover": {},
+			"minecraft:can_fly": {},
+			"minecraft:fire_immune": true,
+			"minecraft:type_family": {
+				"family": [
+					"flashlight_dummy"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"run_command": {
+					"command": [
+						"fill ~~~ ~~~ light_block 8 replace air"
+					]
+				}
+			},
+			"despawn_process": {
+				"run_command": {
+					"command": [
+						"fill ~~~ ~~~ air 0 replace light_block 8",
+						"execute @s ~~~ detect ~~~ air 0 event entity @s despawn"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

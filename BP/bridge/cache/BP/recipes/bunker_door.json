@@ -1,0 +1,253 @@
+{
+	"file_path": "C:\\Users\\chupi\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Your Doors BP\\recipes\\bunker_door.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "0b5954f0_d170_403c_ae74_bb9599fdfc5e",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "yd:bunker_door_r"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"ii ",
+							"## ",
+							"ii "
+						],
+						"key": {
+							"#": {
+								"item": "minecraft:iron_block"
+							},
+							"i": {
+								"item": "minecraft:iron_ingot"
+							}
+						},
+						"result": [
+							{
+								"item": "yd:bunker_door"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:bunker_door_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"ii ",
+								"## ",
+								"ii "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_block"
+								},
+								"i": {
+									"item": "minecraft:iron_ingot"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:bunker_door"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "yd:bunker_door_r"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:bunker_door_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"ii ",
+								"## ",
+								"ii "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_block"
+								},
+								"i": {
+									"item": "minecraft:iron_ingot"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:bunker_door"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:bunker_door_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"ii ",
+								"## ",
+								"ii "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_block"
+								},
+								"i": {
+									"item": "minecraft:iron_ingot"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:bunker_door"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"ii ",
+							"## ",
+							"ii "
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:bunker_door_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"ii ",
+								"## ",
+								"ii "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_block"
+								},
+								"i": {
+									"item": "minecraft:iron_ingot"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:bunker_door"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:iron_block"
+									},
+									"i": {
+										"item": "minecraft:iron_ingot"
+									}
+								},
+								"key": "#",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:iron_block"
+								}
+							},
+							{
+								"open": {
+									"#": {
+										"item": "minecraft:iron_block"
+									},
+									"i": {
+										"item": "minecraft:iron_ingot"
+									}
+								},
+								"key": "i",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:iron_ingot"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "yd:bunker_door_r"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"ii ",
+								"## ",
+								"ii "
+							],
+							"key": {
+								"#": {
+									"item": "minecraft:iron_block"
+								},
+								"i": {
+									"item": "minecraft:iron_ingot"
+								}
+							},
+							"result": [
+								{
+									"item": "yd:bunker_door"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "yd:bunker_door"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "yd:bunker_door"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

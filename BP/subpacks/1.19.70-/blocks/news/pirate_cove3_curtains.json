@@ -1,0 +1,576 @@
+{
+	"format_version": "1.19.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:blue_pirate_cove_curtains",
+			"properties": {
+				"fb:south": [
+					0,
+					1
+				],
+				"fb:east": [
+					0,
+					1
+				],
+				"fb:west": [
+					0,
+					1
+				],
+				"fb:sideways": [
+					0,
+					1
+				],
+				"fb:north": [
+					0,
+					1
+				],
+				"p:changer": [
+					0,
+					1,
+					2
+				]
+			},
+			"menu_category": {
+				"group": "commands",
+				"category": "commands"
+			}
+		},
+		"events": {
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			},
+			"fb:wires": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,0,-1,'wires')",
+						"set_block_property": {
+							"fb:north": 1
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(0,0,-1,'wires')",
+						"set_block_property": {
+							"fb:north": 0
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,0,1,'wires')",
+						"set_block_property": {
+							"fb:south": 1
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(0,0,1,'wires')",
+						"set_block_property": {
+							"fb:south": 0
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'wires')",
+						"set_block_property": {
+							"fb:east": 1
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(1,0,0,'wires')",
+						"set_block_property": {
+							"fb:east": 0
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'wires')",
+						"set_block_property": {
+							"fb:west": 1
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(-1,0,0,'wires')",
+						"set_block_property": {
+							"fb:west": 0
+						}
+					}
+				]
+			}
+		},
+		"components": {
+			"minecraft:on_player_placing": {
+				"event": "fb:wires"
+			},
+			"minecraft:on_placed": {
+				"event": "fb:destroy"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pirate_cove2_curtain",
+					"render_method": "alpha_test"
+				}
+			},
+			"tag:wires": {},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"on_tick": {
+					"event": "fb:wires",
+					"condition": "query.block_property('fb:place')==0||query.block_property('fb:place')==1"
+				},
+				"interval_range": [
+					0,
+					0
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					2,
+					16,
+					2
+				],
+				"origin": [
+					-1,
+					0,
+					-1
+				]
+			},
+			"minecraft:collision_box": {
+				"size": [
+					0,
+					0,
+					0
+				],
+				"origin": [
+					0,
+					0,
+					0
+				]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.panel_block",
+				"bone_visibility": {
+					"south": false,
+					"east": false,
+					"west": false,
+					"north": false
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('fb:north') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							2,
+							16,
+							9
+						],
+						"origin": [
+							-1,
+							0,
+							-8
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:south') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							2,
+							16,
+							9
+						],
+						"origin": [
+							-1,
+							0,
+							-1
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:east') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							9,
+							16,
+							2
+						],
+						"origin": [
+							-8,
+							0,
+							-1
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:west') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							9,
+							16,
+							2
+						],
+						"origin": [
+							-1,
+							0,
+							-1
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:north') == 1 && query.block_property('fb:south') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							2,
+							16,
+							16
+						],
+						"origin": [
+							-1,
+							0,
+							-8
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:west') == 1 && query.block_property('fb:east') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							16,
+							16,
+							2
+						],
+						"origin": [
+							-8,
+							0,
+							-1
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:north') == 1 && query.block_property('fb:east') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:north') == 1 && query.block_property('fb:west') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:west') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:east') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:east') == 1 && query.block_property('fb:west') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:east') == 1 && query.block_property('fb:north') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:west') == 1 && query.block_property('fb:north') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:east') == 1 && query.block_property('fb:west') == 1 && query.block_property('fb:north') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:east') == 1 && query.block_property('fb:west') == 1 && query.block_property('fb:north') == 1 && query.block_property('fb:south') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"size": [
+							16,
+							16,
+							16
+						],
+						"origin": [
+							-8,
+							0,
+							-8
+						]
+					},
+					"minecraft:collision_box": {
+						"size": [
+							0,
+							0,
+							0
+						],
+						"origin": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pirate_cove3_curtain",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pirate_cove3_curtain_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pirate_cove3_curtain_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		]
+	}
+}

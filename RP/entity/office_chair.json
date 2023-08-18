@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:office_chair",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/blocks/office_chair"
+			},
+			"geometry": {
+				"default": "geometry.office_chair"
+			},
+			"animations": {
+				"resting": "animation.bat.resting",
+				"flying": "animation.bat.flying"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.bat.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.bat"
+			],
+			"spawn_egg": {
+				"texture": "office_chair"
+			}
+		}
+	}
+}

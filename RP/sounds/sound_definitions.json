@@ -1,0 +1,181 @@
+{
+	"format_version": "1.17.0",
+	"sound_definitions": {
+		"fb.office_door_open": {
+			"category": "block",
+			"sounds": [
+				"sounds/doors/office_door_open"
+			]
+		},
+		"fb.office_door_close": {
+			"category": "block",
+			"sounds": [
+				"sounds/doors/office_door_open"
+			]
+		},
+		"fb.office_door_button": {
+			"category": "block",
+			"sounds": [
+				"sounds/doors/door_button"
+			]
+		},
+		"fb:plushy": {
+			"category": "block",
+			"sounds": [
+				"sounds/doors/plush"
+			]
+		},
+		"fb:phone1": {
+			"category": "block",
+			"sounds": [
+				"sounds/phone/officenight1"
+			]
+		},
+		"fb:fan": {
+			"category": "block",
+			"sounds": [
+				"sounds/fan"
+			]
+		},
+		"fb:phone3": {
+			"category": "block",
+			"sounds": [
+				"sounds/phone/officenight3"
+			]
+		},
+		"fb:phone4": {
+			"category": "block",
+			"sounds": [
+				"sounds/phone/officenight4"
+			]
+		},
+		"fb:phone5": {
+			"category": "block",
+			"sounds": [
+				"sounds/phone/officenight5"
+			]
+		},
+		"fb:phone2": {
+			"category": "block",
+			"sounds": [
+				"sounds/phone/officenight2"
+			]
+		},
+		"fb1": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/fnaf1"
+			]
+		},
+		"fb2": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/it's been so long"
+			]
+		},
+		"fb3": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Showtime"
+			]
+		},
+		"fb4": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Music Box 1"
+			]
+		},
+		"fb5": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Music Box 2"
+			]
+		},
+		"fb6": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Birthday"
+			]
+		},
+		"fb7": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Stage Performance"
+			]
+		},
+		"fb8": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/I cant fix you"
+			]
+		},
+		"fb9": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Never be alone"
+			]
+		},
+		"fb10": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Bad Ending FNAF 3"
+			]
+		},
+		"fb11": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Creepin_Towards_the_Door"
+			]
+		},
+		"fb12": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Showtime_instrumental"
+			]
+		},
+		"fb13": {
+			"category": "music",
+			"sounds": [
+				"sounds/songs/Follow_Me"
+			]
+		},
+		"fb:freddy_noze": {
+			"category": "block",
+			"sounds": [
+				"sounds/freddy_noze"
+			]
+		},
+		"pc_startup": {
+			"category": "block",
+			"sounds": [
+				"sounds/startup"
+			]
+		},
+		"flashlight.click": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/flashlight_click"
+			]
+		},
+		"mc.driving": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/car"
+			]
+		},
+		"mc.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/hurt1",
+				"sounds/hurt2",
+				"sounds/hurt3"
+			]
+		},
+		"mc.cdsmoke": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/cdsmoke"
+			]
+		}
+	}
+}

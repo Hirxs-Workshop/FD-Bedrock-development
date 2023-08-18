@@ -1,0 +1,116 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:stage_floor",
+			"properties": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stage_floor_1",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stage_floor_2",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stage_floor_3",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_stage_variant",
+							"render_method": "blend"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:display_name": "fb:stage_floor",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:map_color": "#ffffff",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:geometry": "geometry.stage_floor",
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
+		"events": {
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			}
+		}
+	}
+}

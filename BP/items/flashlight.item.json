@@ -1,0 +1,59 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:flashlight"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:display_name": {
+				"value": "item.fb:flashlight.name"
+			},
+			"minecraft:icon": {
+				"texture": "flashlight"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "switch_mode"
+				}
+			},
+			"minecraft:durability": {
+				"max_durability": 1
+			}
+		},
+		"events": {
+			"switch_mode": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"replaceitem entity @s slot.weapon.mainhand 1 fb:off_flashlight",
+								"scoreboard players set @s flashlight 5600",
+								"tag @s remove horror_2",
+								"playsound flashlight.click @a ~~~",
+								"playanimation @p[r=2] animation.humanoid.active_on"
+							],
+							"target": "holder"
+						},
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						},
+						"condition": "query.remaining_durability!=0"
+					},
+					{
+						"run_command": {
+							"command": [
+								"replaceitem entity @s slot.weapon.mainhand 0 fb:off_flashlight"
+							],
+							"target": "holder"
+						},
+						"condition": "query.remaining_durability==0"
+					}
+				]
+			}
+		}
+	}
+}
