@@ -18,7 +18,7 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "purple_wall_middle",
-					"render_method": "alpha_test"
+					"render_method": "opaque"
 				}
 			},
 			"minecraft:pick_collision": {

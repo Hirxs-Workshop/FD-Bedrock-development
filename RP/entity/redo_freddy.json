@@ -8,11 +8,11 @@
 				"default": "spider"
 			},
 			"textures": {
-				"default": "textures/blocks/shelf/freddy",
-				"blue": "textures/blocks/shelf/bear5",
-				"red": "textures/blocks/shelf/golden_freddy",
-				"purple": "textures/blocks/shelf/purple_bear",
-				"orange": "textures/blocks/shelf/freddy_glow_eyes",
+				"default": "textures/entity/fnaf1/freddy",
+				"blue": "textures/entity/fnaf1/freddy_white_eyes",
+				"red": "textures/entity/fnaf1/purple_bear",
+				"purple": "textures/entity/fnaf1/bear5",
+				"orange": "textures/entity/fnaf1/freddy",
 				"green": "textures/blocks/shelf/freddy_movie",
 				"shadow": "textures/blocks/shelf/shadow_freddy",
 				"var1": "textures/blocks/shelf/vars/dreadbear",
@@ -20,15 +20,15 @@
 				"var3": "textures/blocks/shelf/vars/frostbear"
 			},
 			"animations": {
-				"default_pose": "animation.freddy_fazbear.stage_3",
-				"no_pose": "animation.freddy.east_hall_pose1",
-				"solemn_pose": "animation.freddy_fazbear.east_hall_pose2",
-				"athena_pose": "animation.freddy_fazbear.gameover",
-				"brandish_pose": "animation.freddy_fazbear.dinning_area_pose1",
-				"honor_pose": "animation.freddy_fazbear.stage_1",
-				"entertain_pose": "animation.freddy_fazbear.stage_2",
-				"salute_pose": "animation.freddy_fazbear.golden_freddy",
-				"riposte_pose": "animation.freddy.pose",
+				"default_pose": "animation.feddy.geo.CAM1A",
+				"no_pose": "animation.feddy.geo.CAM1Astare",
+				"solemn_pose": "animation.feddy.geo.CAM4B",
+				"athena_pose": "animation.feddy.geo.CAM7",
+				"brandish_pose": "animation.feddy.geo.bellyopen",
+				"honor_pose": "animation.feddy.geo.CAM1A",
+				"entertain_pose": "animation.feddy.geo.CAM1Astare",
+				"salute_pose": "animation.feddy.geo.CAM4B",
+				"riposte_pose": "animation.feddy.geo.CAM7",
 				"zombie_pose": "animation.freddy_fazbear.showtime",
 				"cancan_a_pose": "animation.freddy.east_hall_pose1",
 				"cancan_b_pose": "animation.freddy_fazbear.gameover",
@@ -48,14 +48,15 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.freddy_fazbear"
+				"default": "geometry.new_freddy_fazbear"
 			},
 			"render_controllers": [
 				"controller.render.freddy"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "freddy_icon"
+				"base_color": "#a64d00",
+				"overlay_color": "#e98835"
 			}
 		}
 	}

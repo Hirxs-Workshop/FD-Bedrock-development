@@ -122,8 +122,7 @@
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
+			"tag:wall": {},
 			"minecraft:display_name": "fb:pirate_cove_curtain_red",
 			"minecraft:creative_category": {
 				"category": "construction",

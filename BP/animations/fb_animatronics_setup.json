@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.freddy_fazbear.attack": {
+            "timeline": {
+                "0": [
+                    "/replaceitem entity @s slot.weapon.mainhand 0 air",
+                    "/playanimation @s freddy_attack_jumpscare",
+                    "/stopsound @s fb_jumpscare_sound"
+                ],
+                "0.2": [
+                    "/playsound fb_jumpscare_sound @s"
+                ],
+                "3.5": [
+                    "/kill @s"
+                ]
+            },
+            "animation_length": 4
+        }
+    }
+}

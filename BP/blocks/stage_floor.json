@@ -19,7 +19,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "stage_floor_1",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -30,7 +30,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "stage_floor_2",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -41,7 +41,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "stage_floor_3",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -52,7 +52,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "new_stage_variant",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}

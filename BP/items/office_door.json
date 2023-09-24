@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ex:office_door",
+      "category": "construction"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "iron_door"
+      },
+      "minecraft:block_placer": {
+        "block": "ex:office_door_bottom"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.door"
+      }
+    },
+    "events": {}
+  }
+}

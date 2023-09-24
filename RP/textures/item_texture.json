@@ -288,6 +288,21 @@
 		},
 		"freddy_mask": {
 			"textures": "textures/items/freddy_mask"
+		},
+		"freddy_mask_disable": {
+			"textures": "textures/items/freddy_mask_disable"
+		},
+		"fb_security_guard_helmet": {
+			"textures": "textures/items/security_guard_helmet"
+		},
+		"fb_security_guard_chestplate": {
+			"textures": "textures/items/security_guard_chestplate"
+		},
+		"fb_security_guard_leggings": {
+			"textures": "textures/items/security_guard_leggings"
+		},
+		"fb_security_guard_boots": {
+			"textures": "textures/items/security_guard_boots"
 		}
 	},
 	"texture_name": "atlas.items"

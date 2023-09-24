@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fredbear_nightmare.door_pose": {
+			"loop": true,
+			"bones": {
+				"Freddy": {
+					"rotation": [0, 0, 10],
+					"position": [7, 0, 0]
+				},
+				"head": {
+					"rotation": [0, -17.5, -7.5],
+					"position": [0, 1, 0]
+				},
+				"armL": {
+					"rotation": [31.42523, 32.28122, -3.43229]
+				},
+				"lower5": {
+					"rotation": [14.02394, 17.28982, -39.23608]
+				},
+				"legL": {
+					"rotation": [0, -17.5, -10]
+				},
+				"upper4": {
+					"rotation": [0, -12.5, 0]
+				},
+				"foot2": {
+					"rotation": [0, -10, 0]
+				},
+				"hand3": {
+					"rotation": [19.8423, 2.55868, -29.55239]
+				}
+			}
+		}
+	}
+}

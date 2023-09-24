@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.camera_effect": {
+			"arrays": {
+				"textures": {
+					"array.textures": [
+						"texture.camera_effect",
+						"texture.camera_effect_1",
+						"texture.camera_effect_2",
+						"texture.camera_effect_3"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "variable.is_enchanted?material.enchanted:material.default"
+				}
+			],
+			"textures": [
+				"temp.life_time=query.life_time*8;return array.textures[temp.life_time];",
+				"texture.enchanted"
+			]
+		}
+	}
+}

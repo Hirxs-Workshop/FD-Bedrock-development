@@ -14,10 +14,10 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.fnaf2_wall_solid",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "ex_middle_2",
+					"texture": "new_exterior_f&f_wall_texture",
 					"render_method": "opaque"
 				}
 			},

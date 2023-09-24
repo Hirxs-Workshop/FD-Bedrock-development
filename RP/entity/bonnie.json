@@ -8,15 +8,15 @@
 				"default": "spider"
 			},
 			"textures": {
-				"default": "textures/blocks/shelf/bonnie",
-				"blue": "textures/blocks/shelf/blue_bonnie",
-				"red": "textures/blocks/shelf/bonnie_glow_eyes",
+				"default": "textures/entity/fnaf1/bonnie",
+				"blue": "textures/entity/fnaf1/bonnie_hw",
+				"red": "textures/entity/fnaf1/bonnie_possed",
 				"purple": "textures/blocks/shelf/bonnie_movie",
 				"var1": "textures/blocks/shelf/vars/golden_bonnie",
 				"var2": "textures/blocks/shelf/vars/chocolate_bonnie"
 			},
 			"animations": {
-				"default_pose": "animation.bonnie.pose1",
+				"default_pose": "animation.new_bonnie_bunny.idle",
 				"no_pose": "animation.bonnie.dinning_area_pose1",
 				"solemn_pose": "animation.bonnie.backstage_pose1",
 				"athena_pose": "animation.bonnie.facereveal",
@@ -44,14 +44,15 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.redobonnie"
+				"default": "geometry.new_bonnie_bunny"
 			},
 			"render_controllers": [
 				"controller.render.bonnie"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "bonnie_icon"
+				"base_color": "#3B2278",
+				"overlay_color": "#9F94CB"
 			}
 		}
 	}

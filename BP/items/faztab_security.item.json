@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "fb:faztab_security",
+			"identifier": "fb:faztab_security_head",
 			"category": "equipment"
 		},
 		"components": {

@@ -13,7 +13,7 @@
 				]
 			},
 			"animations": {
-				"bridge_execute_commands": "controller.animation.door_execute.execute_commands"
+				"bridge_execute_commands": "controller.animation.doors.execute_commands"
 			}
 		},
 		"component_groups": {
@@ -123,15 +123,6 @@
 					"component_groups": [
 						"bridge:execute_command_id_2"
 					]
-				},
-				"run_command": {
-					"command": [
-						"function place",
-						"tp @s ~ ~ ~ ~-90",
-						"particle fb:rotate ~ ~1 ~",
-						"playsound dig.sand @a[r=5] ~ ~ ~"
-					],
-					"target": "self"
 				}
 			},
 			"bridge:remove_command_id_1": {

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:red_door_item",
+			"category": "construction"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "placeholder"
+			},
+			"minecraft:block_placer": {
+				"block": "fb:red_door"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.door"
+			},
+			"minecraft:fuel": {
+				"duration": 10
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.mask_freddy.first_person_wield": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [ "c.is_first_person ? 85.0 : 0.0", "c.is_first_person ? 55.0 : 0.0", "c.is_first_person ? -35.0 : 0.0" ],
+					"position": [ "c.is_first_person ? 1.0 : 0.0", "c.is_first_person ? 1.0 : 0.0", "c.is_first_person ? 1.0 : 0.0" ],
+					"scale": [0.7, 0.7, 0.7]
+				}
+			}
+		},
+		"animation.mask_freddy.default": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [-1, 0, 0],
+					"position": [0, -5, -5],
+					"scale": [0.5, 0.5, 0.5]
+				}
+			}
+		}
+	}
+}

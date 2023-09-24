@@ -1,0 +1,337 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.pizzeria_door_bottom",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "open",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                0,
+                -1
+              ],
+              "size": [
+                2,
+                16,
+                16
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    23.5
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    -16,
+                    24
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    -2,
+                    24
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    24
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    2,
+                    0
+                  ],
+                  "uv_size": [
+                    -2,
+                    13
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    24,
+                    16
+                  ],
+                  "uv_size": [
+                    -2,
+                    -16
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                8,
+                0,
+                -2
+              ],
+              "size": [
+                2,
+                16,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    24
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    4,
+                    24
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    24
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    20,
+                    0
+                  ],
+                  "uv_size": [
+                    4,
+                    24
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    19
+                  ],
+                  "uv_size": [
+                    1,
+                    -2
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "closed",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8,
+                0,
+                -2
+              ],
+              "size": [
+                2,
+                16,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    24
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    4,
+                    24
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    24
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    20,
+                    0
+                  ],
+                  "uv_size": [
+                    4,
+                    24
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    19
+                  ],
+                  "uv_size": [
+                    1,
+                    -2
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -8,
+                0,
+                -1
+              ],
+              "size": [
+                16,
+                16,
+                2
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    24
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    24
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    -16,
+                    24
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    2,
+                    24
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    0,
+                    2
+                  ],
+                  "uv_size": [
+                    16,
+                    -2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    16,
+                    2
+                  ],
+                  "uv_size": [
+                    -16,
+                    -2
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

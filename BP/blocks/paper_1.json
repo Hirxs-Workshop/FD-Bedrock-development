@@ -13,7 +13,8 @@
 				"p:changer": [
 					0,
 					1,
-					2
+					2,
+					3
 				]
 			}
 		},
@@ -61,7 +62,7 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
-					"minecraft:geometry": "geometry.paper_1",
+					"minecraft:geometry": "geometry.paper_2",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "bridge_paper_1",
@@ -74,10 +75,10 @@
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.paper_2",
+					"minecraft:geometry": "geometry.paper_1",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "bridge_paper_2",
+							"texture": "new_wall_paper_1",
 							"render_method": "alpha_test"
 						}
 					}
@@ -86,10 +87,22 @@
 			{
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
-					"minecraft:geometry": "geometry.paper_3",
+					"minecraft:geometry": "geometry.wall_paper_10",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "bridge_paper_2",
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.wall_paper_11",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
 							"render_method": "alpha_test"
 						}
 					}
@@ -148,7 +161,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

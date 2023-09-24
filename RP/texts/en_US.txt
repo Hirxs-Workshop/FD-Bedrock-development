@@ -315,3 +315,34 @@ FNaF's Decorations Menu (Interaction)
 §7(?) §Here you will find some interesting categories about the addon  (Interaction)
 
 Have you ever wanted to replicate a restaurant from FNAF but in Minecraft? (Pack description)
+
+Blood trail
+Wall paper
+Floor pipes
+Celling pipes
+Horizontal pipes
+Hanging Stars (Large) 
+Celling Roots
+Celling Large Light
+Wires props
+White Chair
+Yellow lamp
+Blue lamp
+Robot toy
+Closet clothes
+Alarm
+Lavalamp
+Floor lines (X icon)
+House window (FNaF 4)
+Kid phone
+FNaF4 Wall (White patterns)
+FNaF4 Wall (Orange patterns)
+FNaF4 Wall (Down + brown)
+FNaF4 Wall (Down + blue lines)
+FNaF4 Wall (Up + orange patterns)
+FNaF4 Wall (Up + white patterns)
+FNaF4 Celling house (White)
+Drawers (Left)
+Drawers (Right)
+
+//Currently they will only be available to translate this because I do not want to spoil some new blocks added to the addon and have not been shown yet (No translate this)

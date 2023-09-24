@@ -64,9 +64,9 @@
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
-				"*": {
-					"texture": "window_corner",
-					"render_method": "blend",
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
 							"ambient_occlusion": false
 						},
 						"corner": {
@@ -86,11 +86,11 @@
 							"render_method": "opaque",
 							"ambient_occlusion": false
 						},
-				"*": {
-					"texture": "window_corner",
-					"render_method": "blend",
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
 							"ambient_occlusion": false
-						} 
+						}
 					}
 				}
 			},
@@ -103,11 +103,11 @@
 							"render_method": "opaque",
 							"ambient_occlusion": false
 						},
-				"*": {
-					"texture": "window_corner",
-					"render_method": "blend",
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
 							"ambient_occlusion": false
-						} 
+						}
 					}
 				}
 			},
@@ -120,11 +120,11 @@
 							"render_method": "opaque",
 							"ambient_occlusion": false
 						},
-				"*": {
-					"texture": "window_corner",
-					"render_method": "blend",
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
 							"ambient_occlusion": false
-						} 
+						}
 					}
 				}
 			},
@@ -137,11 +137,11 @@
 							"render_method": "opaque",
 							"ambient_occlusion": false
 						},
-				"*": {
-					"texture": "window_corner",
-					"render_method": "blend",
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
 							"ambient_occlusion": false
-						} 
+						}
 					}
 				}
 			}
@@ -152,17 +152,17 @@
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
 			},
-					"minecraft:material_instances": {
-						"corner": {
-							"texture": "w_w1",
-							"render_method": "opaque"
-						},
+			"minecraft:material_instances": {
+				"corner": {
+					"texture": "w_w1",
+					"render_method": "opaque"
+				},
 				"window": {
 					"texture": "window_corner",
 					"render_method": "blend",
-							"ambient_occlusion": false
-						} 
-					},
+					"ambient_occlusion": false
+				}
+			},
 			"minecraft:map_color": "#ffffff",
 			"minecraft:destroy_time": 4,
 			"minecraft:explosion_resistance": 4,

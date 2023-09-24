@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:ghost_child",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/ghost_child"
+			},
+			"animations": {
+				"default_pose": "animation.ghost_child.idle",
+				"no_pose": "animation.ghost_child.idle",
+				"solemn_pose": "animation.ghost_child.idle",
+				"athena_pose": "animation.ghost_child.idle",
+				"brandish_pose": "animation.ghost_child.idle",
+				"honor_pose": "animation.ghost_child.idle",
+				"entertain_pose": "animation.ghost_child.idle",
+				"salute_pose": "animation.ghost_child.idle",
+				"riposte_pose": "animation.ghost_child.idle",
+				"zombie_pose": "animation.ghost_child.idle",
+				"cancan_a_pose": "animation.ghost_child.idle",
+				"cancan_b_pose": "animation.ghost_child.idle",
+				"hero_pose": "animation.ghost_child.idle",
+				"wiggle": "animation.ghost_child.idle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.ghost_child"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#E0DFDF",
+				"overlay_color": "#1C1A1A"
+			}
+		}
+	}
+}

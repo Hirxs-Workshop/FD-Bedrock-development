@@ -1,0 +1,42 @@
+{
+  "format_version": "1.16.0",
+  "animation_controllers": {
+    "controller.animation.fb_animatronics.showtime": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "on": "query.mark_variant == 2"
+            },
+            {
+              "off": "query.mark_variant == 1"
+            }
+          ],
+          "blend_transition": 0.0001
+        },
+        "on": {
+          "animations": [
+            "showtime"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 2"
+            }
+          ],
+          "blend_transition": 0.0001
+        },
+        "off": {
+          "animations": [
+            "showtime_off"
+          ],
+          "transitions": [
+            {
+              "default": "query.mark_variant != 1"
+            }
+          ],
+          "blend_transition": 0.0001
+        }
+      }
+    }
+  }
+}

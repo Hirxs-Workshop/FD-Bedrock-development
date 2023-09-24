@@ -2,18 +2,18 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "fb:flashlight",
+      "identifier": "fb:mask_freddy",
       "materials": {
         "default": "enderman"
       },
       "textures": {
-        "default": "textures/entity/flashlight_model"
+        "default": "textures/entity/freddy_mask"
       },
       "geometry": {
-        "default": "geometry.flashlight"
+        "default": "geometry.freddy_mask"
       },
       "animations": {
-        "first_person": "animation.item.first_person_4"
+        "first_person": "animation.item.first_person_5"
       },
       "scripts": {
         "animate": [

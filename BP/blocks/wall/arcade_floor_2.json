@@ -4,67 +4,114 @@
 		"description": {
 			"identifier": "fb:arcade_floor_blue",
 			"properties": {
-				"p:var": [
+				"p:facing": [
 					0,
-					1
+					1,
+					2,
+					3
+				],
+				"p:changer": [
+					0,
+					1,
+					2
 				]
 			}
 		},
 		"permutations": [
 			{
-				"condition": "q.block_property('p:var') == 0",
+				"condition": "q.block_property('p:facing') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "arcade1",
-							"render_method": "opaque"
+							"texture": "new_arcade_floor_1_blue",
+							"render_method": "opaque",
+							"ambient_occlusion": true
 						}
-					},
-					"minecraft:on_interact": {
-						"condition": "!q.is_sneaking",
-						"event": "e:add.var"
 					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:var') == 1",
+				"condition": "q.block_property('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "arcade2",
-							"render_method": "opaque"
+							"texture": "new_arcade_floor_2_blue",
+							"render_method": "opaque",
+							"ambient_occlusion": true
 						}
-					},
-					"minecraft:on_interact": {
-						"condition": "q.get_equipped_item_name=='broom'",
-						"event": "e:remove.var"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_arcade_floor_3_blue",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
 					}
 				}
 			}
 		],
 		"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "arcade1",
-					"render_method": "opaque",
-					"ambient_occlusion": false
-				}
-			},
+			"tag:wall": {},
 			"minecraft:display_name": "fb:arcade_floor_blue",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
 			},
-			"minecraft:geometry": "geometry.solid_block",
-			"minecraft:map_color": "#937131",
-			"minecraft:destroy_time": 1,
-			"minecraft:explosion_resistance": 1,
-			"minecraft:block_light_absorption": 0,
+			"minecraft:map_color": "#ffffff",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 15,
 			"minecraft:breathability": "air",
 			"minecraft:flammable": {
-				"flame_odds": 40,
-				"burn_odds": 50
+				"flame_odds": 30,
+				"burn_odds": 30
 			},
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,
@@ -88,49 +135,27 @@
 					16,
 					16
 				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "e:set.facing"
 			}
 		},
 		"events": {
-			"e:add.var": {
-				"sequence": [
-					{
-						"condition": "q.get_equipped_item_name=='confetti_bag'",
-						"decrement_stack": {},
-						"set_block_property": {
-							"p:var": 1
-						},
-						"run_command": {
-							"command": [
-								"playsound block.sweet_berry_bush.place @p ~~~",
-								"particle fb:confetti ~ ~0.5 ~"
-							]
-						}
-					}
-				]
+			"e:set.facing": {
+				"set_block_property": {
+					"p:facing": "q.cardinal_facing_2d-2"
+				}
 			},
-			"e:remove.var": {
-				"sequence": [
-					{
-						"set_block_property": {
-							"p:var": 0
-						},
-						"run_command": {
-							"command": [
-								""
-							]
-						}
-					},
-					{
-						"condition": "q.block_property('p:var')==1",
-						"run_command": {
-							"command": [
-								"playsound block.sweet_berry_bush.place @p ~~~",
-								"particle fb:smoke_2 ~ ~0.5 ~",
-								"playanimation @p[r=2] animation.humanoid.broom"
-							]
-						}
-					}
-				]
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
 			}
 		}
 	}

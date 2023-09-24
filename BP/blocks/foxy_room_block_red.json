@@ -5,6 +5,7 @@
 			"identifier": "fb:foxy_room_block_red"
 		},
 		"components": {
+			"tag:wall": {},
 			"minecraft:creative_category": {
 				"group": "construction",
 				"category": "construction"

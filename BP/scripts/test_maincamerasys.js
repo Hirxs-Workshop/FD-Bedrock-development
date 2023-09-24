@@ -1,6 +1,7 @@
 import { world, system } from "@minecraft/server";
 import { ActionFormData, ModalFormData, MessageFormData } from "@minecraft/server-ui";
 import { utilities } from "./utilsfb";
+import "./blocks/advanced_wall_test";
 
 world.beforeEvents.itemUse.subscribe((data) => {
     var player = data.source;
@@ -98,7 +99,6 @@ system.runInterval(async => {
 
         if (player.hasTag("fb_tablet_camera")) {
             player.addEffect('invisibility', 3 * 3)
-            player.runCommandAsync(`camera @s set minecraft:free ease 1 linear pos ~ ~ ~ rot 5 ~`)
             player.playAnimation('animation.player.camera', { blendOutTime: 0.1 })
         }
 

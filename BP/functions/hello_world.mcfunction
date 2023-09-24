@@ -59,3 +59,9 @@ execute @e[type=player,hasitem={location=slot.armor.head,item=fb:trimer_suit,qua
 execute @e[type=player,hasitem={location=slot.armor.head,item=fb:cyrus_suit,quantity=1}] ~~~ effect @s slowness 1 1 true
 execute @e[type=player,hasitem={location=slot.armor.head,item=fb:cyrus_suit,quantity=1}] ~~~ effect @s night_vision 1 1 true
 execute @e[type=player,hasitem={location=slot.armor.head,item=fb:cyrus_suit,quantity=1}] ~~~ effect @s invisibility 1 1 true
+
+execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,quantity=1}] ~~~ effect @s slowness 2 1 true
+
+execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,quantity=1}] ~~~ title @s actionbar "Now you are protected!"
+
+execute @e[type=fb:stage_plate_freddy] ~ ~ ~ tp @e[type=fb:showtime_freddy_fazbear,r=10] ~ ~ ~

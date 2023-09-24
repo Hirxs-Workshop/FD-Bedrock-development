@@ -17,7 +17,8 @@
 					3,
 					4,
 					5,
-					6
+					6,
+					7
 				]
 			}
 		},
@@ -152,11 +153,27 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"arcade": {
+							"texture": "arcade5",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "arcade5",
+							"render_method": "blend",
+							"ambient_occlusion": false,
+							"face_dimming": false
+						}
+					},
+					"minecraft:block_light_emission": 0.6
+				}
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
 			"minecraft:display_name": "fb:arcades",
 			"minecraft:creative_category": {
 				"category": "construction",
@@ -208,7 +225,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==6?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==7?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

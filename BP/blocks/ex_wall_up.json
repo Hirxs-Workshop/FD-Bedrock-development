@@ -62,10 +62,29 @@
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
-							"texture": "ex_1",
-							"render_method": "alpha_test",
-							"ambient_occlusion": true
+						"up": {
+							"texture": "new_exterior_f&f_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_exterior_f&f_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "new_exterior_f&f_wall_up",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "new_exterior_f&f_wall_up",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "new_exterior_f&f_wall_up",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "new_exterior_f&f_wall_up",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -74,10 +93,29 @@
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
-							"texture": "ex_2",
-							"render_method": "alpha_test",
-							"ambient_occlusion": true
+						"up": {
+							"texture": "new_exterior_f&f_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_exterior_f&f_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "new_exterior_f&f_wall_up_2",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "new_exterior_f&f_wall_up_2",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "new_exterior_f&f_wall_up_2",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "new_exterior_f&f_wall_up_2",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -86,10 +124,29 @@
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
-							"texture": "ex_3",
-							"render_method": "alpha_test",
-							"ambient_occlusion": true
+						"up": {
+							"texture": "new_exterior_f&f_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_exterior_f&f_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "new_exterior_f&f_wall_up_3",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "new_exterior_f&f_wall_up_3",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "new_exterior_f&f_wall_up_3",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "new_exterior_f&f_wall_up_3",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -111,7 +168,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.wall_top_block_1",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,

@@ -109,6 +109,7 @@
 			}
 		],
 		"components": {
+			"tag:wall": {},
 			"minecraft:display_name": "fb:wall_down_block_1",
 			"minecraft:creative_category": {
 				"category": "construction",

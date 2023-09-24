@@ -2,61 +2,24 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:pipes_1",
-			"is_experimental": false,
+			"identifier": "fb:pipe_1",
 			"properties": {
-				"bridge:block_rotation": [
+				"p:facing": [
+					0,
+					1,
 					2,
-					3,
-					4,
-					5
-				]
-			}
-		},
-		"components": {
-			"minecraft:geometry": "geometry.pipe_1",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "pipes",
-					"render_method": "alpha_test"
-				}
-			},
-			"minecraft:pick_collision": {
-				"origin": [
-					-8,
-					0,
-					-8
+					3
 				],
-				"size": [
-					16,
-					16,
-					16
+				"p:changer": [
+					0,
+					1,
+					2
 				]
-			},
-			"minecraft:entity_collision": {
-				"origin": [
-					0,
-					0,
-					0
-				],
-				"size": [
-					0,
-					0,
-					0
-				]
-			},
-			"minecraft:block_light_absorption": 0,
-			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
-			},
-			"minecraft:creative_category": {
-				"group": "construction",
-				"category": "construction"
 			}
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"condition": "q.block_property('p:facing') == 0",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -66,7 +29,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"condition": "q.block_property('p:facing') == 1",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -76,7 +39,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"condition": "q.block_property('p:facing') == 2",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -86,7 +49,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"condition": "q.block_property('p:facing') == 3",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -94,12 +57,107 @@
 						0
 					]
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.pipe_1"
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.pipe_1_one"
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.pipe_1_one_s",
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "water_particles", //custom
+							"range": [
+								5,
+								10
+							]
+						}
+					}
+				}
 			}
 		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pipes",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:display_name": "fb:pipe_1",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:map_color": "#ffffff",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:geometry": "geometry.pipe_1",
+			"minecraft:aim_collision": {
+				"origin": [
+					-2,
+					9,
+					-5
+				],
+				"size": [
+					4,
+					4,
+					13
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-2,
+					9,
+					-5
+				],
+				"size": [
+					4,
+					4,
+					13
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "e:set.facing"
+			}
+		},
 		"events": {
-			"bridge:update_rotation": {
+			"e:set.facing": {
 				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
+					"p:facing": "q.cardinal_facing_2d-2"
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			},
+			"water_particles": {
+				"run_command": {
+					"command": [
+						"particle minecraft:water_drip_particle ~ ~0.5 ~"
+					]
 				}
 			}
 		}

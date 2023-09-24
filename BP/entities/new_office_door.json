@@ -34,7 +34,7 @@
 											"subject": "other",
 											"domain": "hand",
 											"operator": "==",
-											"value": "fb:remover_tool"
+											"value": "fb:changer_tool_item"
 										}
 									]
 								},
@@ -87,7 +87,7 @@
 											"subject": "other",
 											"domain": "hand",
 											"operator": "==",
-											"value": "fb:remover_tool"
+											"value": "fb:changer_tool_item"
 										}
 									]
 								},

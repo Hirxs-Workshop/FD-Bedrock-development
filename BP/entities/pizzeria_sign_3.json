@@ -118,15 +118,6 @@
 					"component_groups": [
 						"bridge:execute_command_id_1"
 					]
-				},
-				"run_command": {
-					"command": [
-						"function place2",
-						"tp @s ~ ~ ~ ~-90",
-						"particle fb:rotate ~ ~1 ~",
-						"playsound dig.sand @a[r=5] ~ ~ ~"
-					],
-					"target": "self"
 				}
 			},
 			"rotate": {

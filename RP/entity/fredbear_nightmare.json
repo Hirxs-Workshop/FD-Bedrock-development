@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:fredbear_nightmare",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fredbears/fredbear_nightmare",
+				"blue": "textures/entity/fredbears/fredbear_bloody"
+			},
+			"animations": {
+				"default_pose": "animation.fredbear_nightmare.door_pose",
+				"no_pose": "animation.trimer.east_hall_pose1",
+				"solemn_pose": "animation.trimer.east_hall_pose2",
+				"athena_pose": "animation.trimer.gameover",
+				"brandish_pose": "animation.trimer.dinning_area_pose1",
+				"honor_pose": "animation.trimer.stage_1",
+				"entertain_pose": "animation.trimer.stage_2",
+				"salute_pose": "animation.trimer.stage_3",
+				"riposte_pose": "animation.trimer.pose",
+				"zombie_pose": "animation.trimer.showtime",
+				"cancan_a_pose": "animation.trimer.east_hall_pose1",
+				"cancan_b_pose": "animation.trimer.gameover",
+				"hero_pose": "animation.trimer.dinning_area_pose1",
+				"wiggle": "animation.trimer.stage_1",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.fredbear_nightmare"
+			},
+			"render_controllers": [
+				"controller.render.fredbear"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "fredbear_icon"
+			}
+		}
+	}
+}

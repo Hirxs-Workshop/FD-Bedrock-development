@@ -16,7 +16,9 @@
 					2,
 					3,
 					4,
-					5
+					5,
+					6,
+					7
 				]
 			}
 		},
@@ -64,79 +66,59 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "pp1",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.floor_papers"
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "pp2",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.floor_papers_2"
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "pp3",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.floor_papers_3"
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 3",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "pp4",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.floor_papers_4"
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 4",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "pp5",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.floor_papers_5"
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 5",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "pp6",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.floor_papers_6"
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.floor_papers_7"
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 7",
+				"components": {
+					"minecraft:geometry": "geometry.floor_papers_8"
 				}
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_wall_paper_1",
+					"render_method": "alpha_test"
+				}
+			},
 			"minecraft:display_name": "fb:floor_papers",
 			"minecraft:creative_category": {
 				"category": "construction",
@@ -188,7 +170,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==5?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==7?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

@@ -2,14 +2,21 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "fb:mask_freddy",
-			"category": "equipment"
+			"identifier": "fb:mask_freddy"
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:enchantable": {
-				"value": 9,
-				"slot": "armor_head"
+			"minecraft:display_name": {
+				"value": "item.fb:mask_freddy.name"
+			},
+			"minecraft:icon": {
+				"texture": "freddy_mask"
+			},
+			"minecraft:allow_off_hand": false,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "switch_mode"
+				}
 			},
 			"minecraft:durability": {
 				"max_durability": 165,
@@ -17,16 +24,6 @@
 					"min": 60,
 					"max": 100
 				}
-			},
-			"minecraft:icon": {
-				"texture": "freddy_mask"
-			},
-			"minecraft:render_offsets": "helmets",
-			"minecraft:armor": {
-				"protection": 2
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.head"
 			},
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.helmet"
@@ -44,6 +41,35 @@
 							"fb:mask_freddy"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					}
+				]
+			}
+		},
+		"events": {
+			"switch_mode": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"function mask_execute"
+							],
+							"target": "holder"
+						},
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						},
+						"condition": "query.remaining_durability!=0"
+					},
+					{
+						"run_command": {
+							"command": [
+								"function mask_execute"
+							],
+							"target": "holder"
+						},
+						"condition": "query.remaining_durability==0"
 					}
 				]
 			}
