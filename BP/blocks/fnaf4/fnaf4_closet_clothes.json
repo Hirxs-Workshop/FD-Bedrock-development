@@ -25,7 +25,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						0,
+						180,
 						0
 					]
 				}
@@ -45,7 +45,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						0,
+						270,
 						0
 					]
 				}
@@ -55,7 +55,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						0,
+						90,
 						0
 					]
 				}
@@ -129,7 +129,6 @@
 			"minecraft:map_color": "#ffffff",
 			"minecraft:destroy_time": 4,
 			"minecraft:explosion_resistance": 4,
-			"minecraft:breathability": "air",
 			"minecraft:flammable": {
 				"flame_odds": 30,
 				"burn_odds": 30
