@@ -61,7 +61,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						0,
+						180,
 						0
 					]
 				}
@@ -81,7 +81,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						0,
+						270,
 						0
 					]
 				}
@@ -91,7 +91,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						0,
+						90,
 						0
 					]
 				}
