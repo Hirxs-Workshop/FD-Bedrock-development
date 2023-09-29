@@ -10,6 +10,16 @@
 					3,
 					4,
 					5
+				],
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"fb:block_status": [
+					1,
+					2
 				]
 			}
 		},
@@ -23,52 +33,56 @@
 			},
 			"minecraft:pick_collision": {
 				"origin": [
-					-4.5,
+					-5,
 					0,
-					-4.5
+					-5
 				],
 				"size": [
-					9,
-					16,
-					9
+					10,
+					18,
+					10
 				]
 			},
 			"minecraft:entity_collision": {
 				"origin": [
-					-4.5,
+					-5,
 					0,
-					-4.5
+					-5
 				],
 				"size": [
-					9,
-					16,
-					9
+					10,
+					18,
+					10
 				]
 			},
 			"minecraft:block_light_absorption": 0,
-			"minecraft:block_light_emission": 0.8,
+			"minecraft:block_light_emission": 0,
 			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
+				"event": "fb:block_placed"
 			},
+			"minecraft:rotation": [
+				0,
+				0,
+				0
+			],
 			"minecraft:creative_category": {
 				"group": "construction",
 				"category": "construction"
-			},
-			"tag:wall": {}
+			}
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"condition": "query.block_property('fb:block_rotation') == 2",
 				"components": {
 					"minecraft:rotation": [
 						0,
-						180,
+						-180,
 						0
 					]
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"condition": "query.block_property('fb:block_rotation') == 3",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -78,17 +92,17 @@
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"condition": "query.block_property('fb:block_rotation') == 4",
 				"components": {
 					"minecraft:rotation": [
 						0,
-						270,
+						-90,
 						0
 					]
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"condition": "query.block_property('fb:block_rotation') == 5",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -96,13 +110,88 @@
 						0
 					]
 				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.fnaf4_lamp",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fnaf4_yellow_lamp",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "fb:event_on"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fb:block_status') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.fnaf4_lamp",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fnaf4_yellow_lamp",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "fb:event_off"
+					}
+				}
 			}
 		],
 		"events": {
-			"bridge:update_rotation": {
-				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
-				}
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "query.block_face"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					}
+				]
+			},
+			"fb:event_off": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 1
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"fill ~-6 ~-2 ~6 ~6 ~5 ~-6 fb:vent_light_on 0 replace fb:vent_light"
+							]
+						}
+					}
+				]
+			},
+			"fb:event_on": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_status": 2
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"fill ~-6 ~-2 ~6 ~6 ~5 ~-6 fb:vent_light 0 replace fb:vent_light_on"
+							]
+						}
+					}
+				]
 			}
 		}
 	}
