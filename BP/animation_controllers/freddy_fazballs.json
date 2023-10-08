@@ -50,16 +50,23 @@
                         {
                             "attack1": "variable.attack_time > 0"
                         }
+                    ],
+                    "on_entry": [
+                        "/effect @p[r=3] blindness 5 1 true",
+                        "/effect @p[r=3] slowness 5 5 true",
+                        "/playsound fb:jumpscare @a[=4]"
                     ]
                 },
                 "attack1": {
                     "transitions": [
                         {
-                            "default": "variable.attack_time > 0"
+                            "default": "variable.attack_time > 0.8"
                         }
                     ],
                     "on_entry": [
-                        "/music stop 1"
+                        "/effect @p[r=3] blindness 5 1 true",
+                        "/effect @p[r=3] slowness 5 5 true",
+                        "/kill @p[r=4]"
                     ]
                 }
             }

@@ -7,16 +7,13 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "placeholder"
+				"texture": "black_door_item"
 			},
 			"minecraft:block_placer": {
 				"block": "fb:black_door"
 			},
 			"minecraft:creative_category": {
-				"parent": "itemGroup.name.door"
-			},
-			"minecraft:fuel": {
-				"duration": 10
+				"parent": "none"
 			}
 		}
 	}

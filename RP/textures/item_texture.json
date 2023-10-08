@@ -303,6 +303,21 @@
 		},
 		"fb_security_guard_boots": {
 			"textures": "textures/items/security_guard_boots"
+		},
+		"red_door_item": {
+			"textures": "textures/items/red_door"
+		},
+		"black_door_item": {
+			"textures": "textures/items/black_door"
+		},
+		"wires_item": {
+			"textures": "textures/items/wires_item"
+		},
+		"office_door_item": {
+			"textures": "textures/items/office_door"
+		},
+		"new_item2": {
+			"textures": "textures/items/new_item2"
 		}
 	},
 	"texture_name": "atlas.items"

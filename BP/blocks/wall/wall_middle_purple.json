@@ -14,10 +14,30 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.wall_tiles",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
-				"*": {
-					"texture": "purple_wall_middle",
+				"up": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"north": {
+					"texture": "fnaf1_wall_tiles_purple",
+					"render_method": "opaque"
+				},
+				"west": {
+					"texture": "fnaf1_wall_tiles_purple",
+					"render_method": "opaque"
+				},
+				"south": {
+					"texture": "fnaf1_wall_tiles_purple",
+					"render_method": "opaque"
+				},
+				"east": {
+					"texture": "fnaf1_wall_tiles_purple",
 					"render_method": "opaque"
 				}
 			},

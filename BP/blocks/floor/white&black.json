@@ -102,7 +102,7 @@
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
 			},
-			"minecraft:map_color": "#ffffff",
+			"minecraft:map_color": "#858A6B",
 			"minecraft:destroy_time": 4,
 			"minecraft:explosion_resistance": 4,
 			"minecraft:block_light_absorption": 15,

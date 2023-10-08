@@ -15,8 +15,11 @@
 			"minecraft:icon": {
 				"texture": "confetti_bag"
 			},
+			"minecraft:block_placer": {
+				"block": "fb:confetti"
+			},
 			"minecraft:creative_category": {
-				"parent": "itemGroup.name.items"
+				"parent": "none"
 			}
 		},
 		"events": {}

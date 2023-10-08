@@ -12,8 +12,7 @@
 				],
 				"p:changer": [
 					0,
-					1,
-					2
+					1
 				]
 			}
 		},
@@ -62,9 +61,29 @@
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2_top_1",
-							"render_method": "alpha_test"
+						"up": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "fnaf2_wall_up",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "fnaf2_wall_up",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "fnaf2_wall_up",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "fnaf2_wall_up",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -73,20 +92,29 @@
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2_top_2",
-							"render_method": "alpha_test"
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2_top_3",
-							"render_method": "alpha_test"
+						"up": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "fnaf2_wall_up_2",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "fnaf2_wall_up_2",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "fnaf2_wall_up_2",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "fnaf2_wall_up_2",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -108,7 +136,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.fnaf2_wall_blocks",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,
@@ -145,7 +173,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

@@ -9,12 +9,6 @@
 					1,
 					2,
 					3
-				],
-				"p:changer": [
-					0,
-					1,
-					2,
-					3
 				]
 			}
 		},
@@ -24,7 +18,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						180,
+						0,
 						0
 					]
 				}
@@ -44,7 +38,7 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						270,
+						0,
 						0
 					]
 				}
@@ -54,57 +48,9 @@
 				"components": {
 					"minecraft:rotation": [
 						0,
-						90,
+						0,
 						0
 					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 0",
-				"components": {
-					"minecraft:geometry": "geometry.new_walls",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_wall_down_1",
-							"render_method": "opaque"
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 1",
-				"components": {
-					"minecraft:geometry": "geometry.new_walls",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_wall_down_2",
-							"render_method": "opaque"
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:geometry": "geometry.new_walls",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_wall_down_3",
-							"render_method": "opaque"
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:geometry": "geometry.new_walls",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_wall_down_4",
-							"render_method": "opaque"
-						}
-					}
 				}
 			}
 		],
@@ -115,6 +61,33 @@
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
 			},
+			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "fnaf1_wall_black_texture",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "fnaf1_wall_black_texture",
+					"render_method": "opaque"
+				},
+				"north": {
+					"texture": "fnaf1_wall_bottom_side",
+					"render_method": "opaque"
+				},
+				"west": {
+					"texture": "fnaf1_wall_bottom_side",
+					"render_method": "opaque"
+				},
+				"south": {
+					"texture": "fnaf1_wall_bottom_side",
+					"render_method": "opaque"
+				},
+				"east": {
+					"texture": "fnaf1_wall_bottom_side",
+					"render_method": "opaque"
+				}
+			},
 			"minecraft:map_color": "#ffffff",
 			"minecraft:destroy_time": 4,
 			"minecraft:explosion_resistance": 4,
@@ -124,7 +97,6 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.trash_1",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,
@@ -157,17 +129,6 @@
 			"e:set.facing": {
 				"set_block_property": {
 					"p:facing": "q.cardinal_facing_2d-2"
-				}
-			},
-			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
-				},
-				"run_command": {
-					"command": [
-						"playsound block.lantern.break @p ~~~",
-						"particle foxes:texture ~~~"
-					]
 				}
 			}
 		}

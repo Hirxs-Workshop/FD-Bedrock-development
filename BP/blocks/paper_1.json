@@ -110,12 +110,11 @@
 			}
 		],
 		"components": {
-			"minecraft:display_name": "fb:paper_1",
 			"minecraft:creative_category": {
 				"category": "construction",
-				"group": "itemGroup.name.Construction"
+				"group": "construction"
 			},
-			"minecraft:map_color": "#ffffff",
+			"minecraft:map_color": "#F4EDEA",
 			"minecraft:destroy_time": 4,
 			"minecraft:explosion_resistance": 4,
 			"minecraft:block_light_absorption": 0,

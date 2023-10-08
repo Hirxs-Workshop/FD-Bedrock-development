@@ -13,10 +13,7 @@
 				"p:changer": [
 					0,
 					1,
-					2,
-					3,
-					4,
-					5
+					2
 				]
 			}
 		},
@@ -64,78 +61,122 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
+					"minecraft:geometry": "geometry.wires_2",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "wires0",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
+							"texture": "wires_wall_2",
+							"render_method": "alpha_test"
 						}
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							1,
+							16
+						]
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							0,
+							0,
+							0
+						],
+						"size": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
+					"minecraft:geometry": "geometry.wires_3",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "wires1",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
+							"texture": "wires_wall",
+							"render_method": "alpha_test"
 						}
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							7
+						],
+						"size": [
+							16,
+							16,
+							1
+						]
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							0,
+							0,
+							0
+						],
+						"size": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
 			{
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
+					"minecraft:geometry": "geometry.wires_4",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "wires2",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
+							"texture": "wires_wall",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "wires_wall_2",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "wires_wall",
+							"render_method": "alpha_test"
 						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "wires3",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "wires4",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 5",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "wires5",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							0
+						],
+						"size": [
+							16,
+							8,
+							8
+						]
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							0,
+							0,
+							0
+						],
+						"size": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			}
 		],
 		"components": {
-			"minecraft:display_name": "fb:wires",
+			"minecraft:display_name": "fb:wires_props",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
@@ -149,7 +190,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.wires",
+			"minecraft:geometry": "geometry.wires_2",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,
@@ -164,9 +205,9 @@
 			},
 			"minecraft:entity_collision": {
 				"origin": [
-					-8,
 					0,
-					-8
+					0,
+					0
 				],
 				"size": [
 					0,
@@ -186,7 +227,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==5?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

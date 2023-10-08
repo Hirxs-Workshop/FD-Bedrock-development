@@ -3,25 +3,114 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:confetti",
-			"is_experimental": false,
 			"properties": {
-				"bridge:block_rotation": [
+				"p:facing": [
+					0,
+					1,
 					2,
-					3,
-					4,
-					5
+					3
+				],
+				"p:changer": [
+					0,
+					1,
+					2
 				]
 			}
 		},
-		"components": {
-			"minecraft:geometry": "geometry.confetti",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "confetti",
-					"render_method": "alpha_test"
+		"permutations": [
+			{
+				"condition": "q.block_property('p:facing') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
 				}
 			},
-			"minecraft:pick_collision": {
+			{
+				"condition": "q.block_property('p:facing') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "confetti_floor_1",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "confetti_floor_2",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "confetti_floor_3",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "commands",
+				"group": "commands"
+			},
+			"minecraft:map_color": "#EBF0AC",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:geometry": "geometry.confetti",
+			"minecraft:aim_collision": {
 				"origin": [
 					-8,
 					0,
@@ -29,7 +118,7 @@
 				],
 				"size": [
 					16,
-					2,
+					1,
 					16
 				]
 			},
@@ -40,66 +129,30 @@
 					-8
 				],
 				"size": [
-					0,
-					0,
-					0
+					16,
+					1,
+					16
 				]
 			},
-			"minecraft:block_light_absorption": 0,
 			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
-			},
-			"minecraft:creative_category": {
-				"group": "construction",
-				"category": "construction"
+				"event": "e:set.facing"
 			}
 		},
-		"permutations": [
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						270,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
-				}
-			}
-		],
 		"events": {
-			"bridge:update_rotation": {
+			"e:set.facing": {
 				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
+					"p:facing": "q.cardinal_facing_2d-2"
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
 				}
 			}
 		}

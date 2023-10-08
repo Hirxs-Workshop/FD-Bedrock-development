@@ -6,7 +6,7 @@
 		],
 		"generated_with": {
 			"bridge": [
-				"2.6.1"
+				"2.6.3"
 			],
 			"dash": [
 				"0.10.10"
@@ -14,7 +14,7 @@
 		}
 	},
 	"header": {
-		"name": "FNAF's Decorations - v4 [Pre release #1 - BETA #1]",
+		"name": "FNAF's Decorations - v4 [Pre release #1.1]",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
@@ -23,9 +23,9 @@
 		],
 		"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
 		"version": [
-			4,
-			4,
-			1
+				4,
+				6,
+				1
 		]
 	},
 	"modules": [
@@ -34,7 +34,7 @@
 			"uuid": "e91a6659-4bc8-4006-83db-94e045b526da",
 			"version": [
 				4,
-				4,
+				6,
 				1
 			]
 		},
@@ -46,7 +46,7 @@
 			"version": [
 				1,
 				0,
-				0
+				1
 			]
 		}
 	],
@@ -70,7 +70,7 @@
 			"uuid": "b257d765-f49d-4e40-a043-5eb2463a9033",
 			"version": [
 				4,
-				4,
+				6,
 				1
 			]
 		}

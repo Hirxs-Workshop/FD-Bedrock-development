@@ -14,8 +14,8 @@
 				"look_at_target": "animation.common.look_at_target",
 				"fb_freddy_fazbear_base": "animation.new_freddy_fazbear.base",
 				"fb_freddy_fazbear_walk": "animation.feddy.geo.walk",
-				"fb_freddy_fazbear_start": "animation.new_freddy_fazbear.idle",
-				"fb_freddy_fazbear_attack": "animation.new_freddy_fazbear.attack",
+				"fb_freddy_fazbear_start": "animation.feddy.geo.idle",
+				"fb_freddy_fazbear_attack": "animation.feddy.geo.attack",
 				"base": "controller.animation.fb_freddy_fazbear.base",
 				"walk": "controller.animation.fb_freddy_fazbear.walk",
 				"attack": "controller.animation.fb_freddy_fazbear.attack",
@@ -35,10 +35,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.new_freddy_fazbear"
-			},
-			"sound_effects": {
-				"nose_freddy": "nose"
+				"default": "geometry.new_freddy_fazbear_2"
 			},
 			"render_controllers": [
 				"controller.render.freddy"
@@ -46,7 +43,7 @@
 			"enable_attachables": true,
 			"spawn_egg": {
 				"base_color": "#a64d00",
-				"overlay_color": "#e98835"
+				"overlay_color": "#1E1D1B"
 			}
 		}
 	}

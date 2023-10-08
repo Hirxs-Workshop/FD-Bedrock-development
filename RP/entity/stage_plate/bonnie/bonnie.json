@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:bonnie_bunny",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf1/bonnie",
+				"blue": "textures/entity/fnaf1/bonnie_possed"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"fb_freddy_fazbear_base": "animation.new_bonnie_bunny.idle",
+				"fb_freddy_fazbear_walk": "animation.bonnie_bunny.geo.walk",
+				"fb_freddy_fazbear_start": "animation.new_bonnie_bunny.idle",
+				"fb_freddy_fazbear_attack": "animation.new_bonnie_bunny.attack",
+				"base": "controller.animation.fb_freddy_fazbear.base",
+				"walk": "controller.animation.fb_freddy_fazbear.walk",
+				"attack": "controller.animation.fb_freddy_fazbear.attack",
+				"function": "controller.animation.fb_freddy_fazbear.function"
+			},
+			"scripts": {
+				"animate": [
+					"controller.pose",
+					"controller.wiggling",
+					"base",
+					"walk",
+					"attack",
+					"function"
+				],
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 10.0);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.new_bonnie_bunny_2"
+			},
+			"render_controllers": [
+				"controller.render.freddy"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#3B2278",
+				"overlay_color": "#1E1D1B"
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+tellraw @a[m=1] {"rawtext":[{"text":"§l§4WARNING!\n§cThe block can only be removed with the remover tool () item,so you keep it in mind and don't forget\n\n§l§4ADVERTENCIA!\n§cEl bloque solo se puede eliminar con el elemento herramienta de eliminación (),así que téngalo en cuenta y no lo olvides\n\n"}]}

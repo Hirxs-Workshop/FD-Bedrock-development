@@ -10,10 +10,6 @@
 	"fb:door_left_corner": {
 		"sound": "stone"
 	},
-	"fb:floor_1": {
-		"sound": "stone",
-		"textures": "bridge_floor_1"
-	},
 	"fb:foxy_room_block": {
 		"sound": "stone",
 		"textures": "foxy_room_block"
@@ -25,18 +21,6 @@
 	"fb:foxy_room_block_red": {
 		"sound": "stone",
 		"textures": "pirate_cove_block_red"
-	},
-	"fb:floor_2": {
-		"sound": "stone",
-		"textures": "bridge_floor_2"
-	},
-	"fb:floor_3": {
-		"sound": "stone",
-		"textures": "bridge_floor_3"
-	},
-	"fb:floor_5": {
-		"sound": "stone",
-		"textures": "fb_floor_5"
 	},
 	"fb:wall_block_2": {
 		"sound": "stone",
@@ -324,5 +308,22 @@
 			"down": "fnaf1_wall_side",
 			"up": "fnaf1_wall_bottom"
 		}
+	},
+	"fb:stage_curtain_red_block": {
+		"sound": "cloth",
+		"textures": "red_curtain_block"
+	},
+	// Floors
+	"fb:floor_2": {
+		"sound": "deepslate_bricks"
+	},
+	"fb:floor_3": {
+		"sound": "deepslate_bricks"
+	},
+	"fb:floor_5": {
+		"sound": "deepslate_bricks"
+	},
+	"fb:floor_1": {
+		"sound": "deepslate_bricks"
 	}
 }

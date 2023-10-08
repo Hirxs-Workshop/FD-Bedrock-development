@@ -1,0 +1,15 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:stage_curtain_red_block"
+		},
+		"components": {
+			"tag:wall": {},
+			"minecraft:creative_category": {
+				"group": "construction",
+				"category": "construction"
+			}
+		}
+	}
+}

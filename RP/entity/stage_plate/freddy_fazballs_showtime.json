@@ -1,4 +1,4 @@
-{
+	{
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
@@ -26,8 +26,8 @@
         "controller.render.nothing"
       ],
       "spawn_egg": {
-        "texture": "freddy_icon",
-        "texture_index": 0
+				"base_color": "#a64d00",
+				"overlay_color": "#e98835"
       }
     }
   }

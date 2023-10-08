@@ -14,11 +14,11 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.fnaf2_wall_blocks",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "hw_wall",
-					"render_method": "alpha_test"
+					"texture": "hw_wall_texture",
+					"render_method": "opaque"
 				}
 			},
 			"minecraft:pick_collision": {

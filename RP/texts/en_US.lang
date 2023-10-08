@@ -15,7 +15,6 @@ tile.fb:wall_top_block_1.name=FNAF1 Wall (Top)  
 tile.fb:wall_deco_1.name=FNAF1 Wall (Decoration 1)  
 tile.fb:wall_deco_2.name=FNAF1 Wall (Decoration 2)  
 tile.fb:door_top.name=Door frame (Top)  
-<<<<<<< Updated upstream
 tile.fb:pizza_1.name=Wall Pizzas  
 tile.fb:floor_1.name=Pizzeria Floor (Red and Blue Tiles) & 
 tile.fb:floor_2.name=Pizzeria Floor (Black and White Tiles) & 
@@ -52,21 +51,17 @@ tile.fb:trash.name=Floor props (Trash)  
 tile.fb:bathroom_letter_1.name=Womans bathroom sign  
 tile.fb:bathroom_letter_2.name=Mans bathroom sign  
 tile.fb:chair.name=Party kids chair (Purple)  
->>>>>>> Stashed changes
 tile.fb:table.name=White Party Table  
 tile.fb:shelves.name=Grey shelves  
 tile.fb:party_hat.name=Party Hats  
 tile.fb:cables.name=Hanging wires  
 tile.fb:cloud_1.name=Stage Cloud  
-<<<<<<< Updated upstream
 tile.fb:wed.name=Celling cobweb  
 tile.fb:office_window_down.name=Office Window Down  
 tile.fb:office_window_up.name=Office Window Up  
-=======
 tile.fb:wed.name=Celling Cobweb  
 tile.fb:office_window_down.name=Office Window (Down)  
 tile.fb:office_window_up.name=Office Window (Up)  
->>>>>>> Stashed changes
 tile.fb:party_floor.name=Party Floor  
 tile.fb:stage_wall_up.name=Stage Wall (Up)  
 tile.fb:stage_wall_down.name=Stage Wall (Down)  
@@ -317,15 +312,15 @@ item.spawn_egg.entity.fb:phantom_freddy.name=Phantom freddy  
 entity.fb:phantom_freddy.name=Phantom Freddy
 item.spawn_egg.entity.fb:purple_guy_car.name=Purple Vehicle 
 entity.fb:purple_guy_car.name=Purple Vehicle
-item.spawn_egg.entity.fb:freddy.name=Freddy Statue  
+item.spawn_egg.entity.fb:freddy.name=Freddy Statue
 entity.fb:freddy.name=Freddy
 item.spawn_egg.entity.fb:fredbear.name=Fredbear Statue  
 entity.fb:fredbear.name=Fredbear
 item.spawn_egg.entity.fb:fredbear_blood.name=Fredbear Blood Statue  
 entity.fb:fredbear_blood.name=Fredbear Blood
-item.spawn_egg.entity.fb:chica.name=Chica Statue  
+item.spawn_egg.entity.fb:chica.name=Chica Statue
 entity.fb:chica.name=Chica
-item.spawn_egg.entity.fb:bonnie.name=Bonnie Statue  
+item.spawn_egg.entity.fb:bonnie.name=Bonnie Statue
 entity.fb:bonnie.name=Bonnie
 item.spawn_egg.entity.fb:bonno.name=Bonno Statue  
 entity.fb:bonno.name=Bonno
@@ -446,7 +441,7 @@ item.fb:withered_freddy_suit.name=Withered Freddy Suit 
 item.fb:withered_bonnie_suit.name=Withered Bonnie Suit 
 item.fb:withered_chica_suit.name=Withered Chica Suit 
 item.fb:withered_foxy_suit.name=Withered Foxy Suit 
-item.fb:springtrap.name=Springtrap 
+item.fb:springtrap.name=Springtrap  
 
 ##Pizzeria Signs
 ##-------------------
@@ -470,7 +465,7 @@ action.interact.rotate=Rotate - Animatronic
 action.hint.exit.fb:sit=Jump to Exit!  
 action.hint.exit.fb:office_chair=Jump to Exit!  
 action.hint.exit.fb:purple_guy_car=Jump to Exit!  
-fb_rotate:door=Rotate Door 
+fb_rotate:door=Rotate Door  
 fb_remove:door=Remove Door 
 action.hint.exit.fb:camera_entity_testing=§3(!) §bUse the item (Faztab) to exit
 menu.howToPlay=FNaF's Decorations Menu
@@ -480,46 +475,65 @@ menu.howToPlay.generalMessage=§7(?) §Here you will find some interesting categ
 ##Pack description
 ##-------------------
 pack.description=Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?
-<<<<<<< Updated upstream
-=======
 
 ## FD PR#1
-tile.fb:blood_line.name=Blood trail
-tile.fb:paper_2.name=Wall Paper
-tile.fb:pipe_1.name=Floor pipes
-tile.fb:pipe_2.name=Celling pipes
-tile.fb:pipe_3.name=Horizontal pipes
-tile.fb:hanging_stars.name=Hanging Stars (Large) 
-tile.fb:hanging_roots.name=Celling Roots
-tile.fb:celling_large_light.name=Celling Large Light
-tile.fb:wires_props.name=Wires props
-tile.fb:fnaf4_white_chair.name=White Chair
-tile.fb:fnaf4_yellow_lamp.name=Yellow lamp
-tile.fb:fnaf4_blue_lamp.name=Blue lamp
-tile.fb:fnaf4_toy_robot.name=Robot toy
-tile.fb:fnaf4_room_toy.name=Room Toy
-tile.fb:fnaf4_closet_clothes.name=Closet Clothes
-tile.fb:fnaf4_alarm.name=Alarm
-tile.fb:fnaf4_lavalamp.name=Lavalamp
-tile.fb:fnaf4_floor_x.name=Floor lines (X icon)
-tile.fb:fnaf4_house_window.name=House window (FNaF 4)
-tile.fb:fnaf4_kid_phone.name=Kid Phone
-tile.fb:fnaf4_house_wall_middle.name=FNaF4 Wall (White patterns)
-tile.fb:fnaf4_house_wallpapers_middle.name=FNaF4 Wall (Orange patterns)
-tile.fb:fnaf4_house_wallpapers_lower.name=FNaF4 Wall (Lower + brown)
-tile.fb:fnaf4_house_wall_lower.name=FNaF4 Wall (Lower + blue lines)
-tile.fb:fnaf4_house_wallpapers_upper.name=FNaF4 Wall (Upper + orange patterns)
-tile.fb:fnaf4_house_wall_upper.name=FNaF4 Wall (Upper + white patterns)
-tile.fb:fnaf4_house_roof.name=FNaF4 Celling house (White)
-tile.fb:fnaf4_house_floor.name=FNaF4 House Floor
+tile.fb:stage_curtain_red_block.name=Stage Curtain Red Block  &  
+tile.fb:stage_plate_bonnie.name=Stage Plate Bonnie Bunny  
+tile.fb:stage_plate_freddy.name=Stage Plate Freddy Fazbear  
+tile.fb:stage_plate_chica.name=Stage Plate Chica Chicken  
+tile.fb:ceiling_large_light.name=Ceiling Large Light , &  
+tile.fb:large_ceiling_wires.name=Large Ceiling Wires , &  
+tile.fb:large_hanging_wires.name=Large Hanging Wires , &  
+tile.fb:wall_banners.name=Wall Banners ,, &  
+tile.fb:pizzeria_chairs.name=Pizzeria Chairs ,, &  
+tile.fb:ffd_posters.name=FFD Posters  
+item.fb:black_door_item=Black Door Item , &  
+item.fb:red_door_item=Red Door Item , &  
+tile.fb:blood_line.name=Blood trail & 
+tile.fb:paper_2.name=Wall Paper , & 
+tile.fb:pipe_1.name=Floor pipes  
+tile.fb:pipe_2.name=Ceiling pipes  
+tile.fb:pipe_3.name=Horizontal pipes  
+tile.fb:hanging_stars.name=Hanging Stars (Large) 
+tile.fb:hanging_roots.name=Ceiling Roots 
+tile.fb:wires_props.name=Wires props  
+tile.fb:fnaf4_white_chair.name=White Chair  
+tile.fb:fnaf4_yellow_lamp.name=Yellow lamp  
+tile.fb:fnaf4_blue_lamp.name=Blue lamp  
+tile.fb:fnaf4_toy_robot.name=Robot toy  
+tile.fb:fnaf4_room_toy.name=Room Toy  
+tile.fb:fnaf4_closet_clothes.name=Closet Clothes  
+tile.fb:fnaf4_alarm.name=Alarm  
+tile.fb:fnaf4_lavalamp.name=Lavalamp   
+tile.fb:fnaf4_floor_x.name=Floor lines (X icon)  
+tile.fb:fnaf4_house_window.name=House window (FNaF 4)  
+tile.fb:fnaf4_kid_phone.name=Kid Phone  
+tile.fb:fnaf4_house_wall_middle.name=FNaF4 Wall (White patterns) 
+tile.fb:fnaf4_house_wallpapers_middle.name=FNaF4 Wall (Orange patterns) 
+tile.fb:fnaf4_house_wallpapers_lower.name=FNaF4 Wall (Lower + brown) 
+tile.fb:fnaf4_house_wall_lower.name=FNaF4 Wall (Lower + blue lines) 
+tile.fb:fnaf4_house_wallpapers_upper.name=FNaF4 Wall (Upper + orange patterns) 
+tile.fb:fnaf4_house_wall_upper.name=FNaF4 Wall (Upper + white patterns) 
+tile.fb:fnaf4_house_roof.name=FNaF4 Celling house (White)  
+tile.fb:fnaf4_house_floor.name=FNaF4 House Floor 
+
+item.spawn_egg.entity.fb:bonnie_bunny.name=Bonnie Bunny (Souled)
+item.spawn_egg.entity.fb:chica_chicken.name=Chica Chiken (Souled)
+item.spawn_egg.entity.fb:freddy_fazbear.name=Freddy Fazbear (Souled)
+item.spawn_egg.entity.fb:showtime_bonnie_bunny.name=Bonnie Bunny (Showtime)
+item.spawn_egg.entity.fb:showtime_chica_chicken.name=Chica Chiken (Showtime)
+item.spawn_egg.entity.fb:showtime_freddy_fazbear.name=Freddy Fazbear (Showtime)
+item.spawn_egg.entity.fb:ghost_child.name=Ghost Child
 
 item.spawn_egg.entity.fb:closet_door.name=Closet door
 item.spawn_egg.entity.fb:fnaf4_drawers.name=Room drawers (Left)
 item.spawn_egg.entity.fb:fnaf4_drawers_2.name=Room drawers (Right)
 
-## Currently they will only be available to translate this because I do not want to spoil some new blocks added to the addon and have not been shown yet
-item.fb:security_guard_helmet=Security Guard Helmet
-item.fb:security_guard_chestplate=Security Guard Chestplate
-item.fb:security_guard_leggings=Security Guard Leggings
-item.fb:security_guard_boots=Security Guard Boots
->>>>>>> Stashed changes
+item.fb:security_guard_chestplate=Security Guard - Chestplate
+item.fb:security_guard_leggings=Security Guard - Leggings
+item.fb:security_guard_boots=Security Guard - Boots
+
+## fnaf 1 
+## fnaf 2 
+## fnaf 3 
+## fnaf 4 

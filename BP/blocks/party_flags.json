@@ -13,9 +13,7 @@
 				"p:changer": [
 					0,
 					1,
-					2,
-					3,
-					4
+					2
 				]
 			}
 		},
@@ -63,11 +61,11 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
-					"minecraft:geometry": "geometry.paper_cuts",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "party_flags",
+							"texture": "large_hanging_flags_1",
 							"render_method": "alpha_test",
+							"geometry": "trash_1",
 							"ambient_occlusion": false
 						}
 					}
@@ -76,11 +74,11 @@
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.paper_cuts_2",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "party_flags",
+							"texture": "large_hanging_flags_2",
 							"render_method": "alpha_test",
+							"geometry": "trash_2",
 							"ambient_occlusion": false
 						}
 					}
@@ -89,37 +87,11 @@
 			{
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
-					"minecraft:geometry": "geometry.paper_cuts_3",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "party_flags",
+							"texture": "large_hanging_flags_3",
 							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:geometry": "geometry.paper_cuts_3",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "party_flags_2",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:geometry": "geometry.paper_cuts_4",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "party_flags",
-							"render_method": "alpha_test",
+							"geometry": "trash_2",
 							"ambient_occlusion": false
 						}
 					}
@@ -127,9 +99,6 @@
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
-			"minecraft:display_name": "fb:party_flags",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
@@ -143,24 +112,24 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.paper_cuts",
+			"minecraft:geometry": "geometry.large_hanging_stars",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,
 					0,
-					0
+					-8
 				],
 				"size": [
 					16,
 					16,
-					1
+					16
 				]
 			},
 			"minecraft:entity_collision": {
 				"origin": [
 					-8,
 					0,
-					0
+					-8
 				],
 				"size": [
 					0,
@@ -180,7 +149,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

@@ -64,4 +64,10 @@ execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,qua
 
 execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,quantity=1}] ~~~ title @s actionbar "Now you are protected!"
 
+
+
 execute @e[type=fb:stage_plate_freddy] ~ ~ ~ tp @e[type=fb:showtime_freddy_fazbear,r=10] ~ ~ ~
+
+execute @e[type=fb:stage_plate_bonnie_bunny] ~ ~ ~ tp @e[type=fb:showtime_bonnie_bunny,r=10] ~ ~ ~
+
+execute @e[type=fb:stage_plate_chica_chicken] ~ ~ ~ tp @e[type=fb:showtime_chica_chicken,r=10] ~ ~ ~

@@ -176,6 +176,12 @@
 			"sounds": [
 				"sounds/cdsmoke"
 			]
+		},
+		"fb:jumpscare": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/jumpscare"
+			]
 		}
 	}
 }

@@ -12,12 +12,8 @@
 				"blue": "textures/entity/fnaf1/freddy_white_eyes",
 				"red": "textures/entity/fnaf1/purple_bear",
 				"purple": "textures/entity/fnaf1/bear5",
-				"orange": "textures/entity/fnaf1/freddy",
-				"green": "textures/blocks/shelf/freddy_movie",
-				"shadow": "textures/blocks/shelf/shadow_freddy",
-				"var1": "textures/blocks/shelf/vars/dreadbear",
-				"var2": "textures/blocks/shelf/vars/bonnie_movie",
-				"var3": "textures/blocks/shelf/vars/frostbear"
+				"orange": "textures/entity/fnaf1/freddy_movie",
+				"green": "textures/entity/fnaf1/shadow_freddy"
 			},
 			"animations": {
 				"default_pose": "animation.feddy.geo.CAM1A",

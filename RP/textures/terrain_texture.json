@@ -1166,6 +1166,12 @@
 		"stage_curtain": {
 			"textures": "textures/blocks/curtain"
 		},
+		"stage_curtain2": {
+			"textures": "textures/blocks/curtain2"
+		},
+		"stage_curtain3": {
+			"textures": "textures/blocks/curtain3"
+		},
 		"pirate_cove_curtain": {
 			"textures": "textures/blocks/foxy_room_block"
 		},
@@ -1582,64 +1588,6 @@
 		},
 		"pirate_cove_block_purple": {
 			"textures": "textures/blocks/pirate_cove/purple"
-			// New walls textures
-		},
-		"fnaf1_wall_bottom": {
-			"textures": "textures/blocks/new_walls/gray texture"
-		},
-		"fnaf1_wall_upper_side_1": {
-			"textures": "textures/blocks/new_walls/1"
-		},
-		"fnaf1_wall_upper_side_2": {
-			"textures": "textures/blocks/new_walls/2"
-		},
-		"fnaf1_wall_upper_side_3": {
-			"textures": "textures/blocks/new_walls/3"
-		},
-		"fnaf1_wall_side": {
-			"textures": "textures/blocks/new_walls/gray_single"
-		},
-		"fnaf1_wall_stage_texture": {
-			"textures": "textures/blocks/new_walls/stage_2"
-		},
-		"fnaf1_wall_stage_side_black": {
-			"textures": "textures/blocks/new_walls/stage_wall"
-		},
-		"fnaf1_wall_stage_side_red": {
-			"textures": "textures/blocks/new_walls/stage_wall_middle_2"
-		},
-		"fnaf1_wall_stage_side_purple": {
-			"textures": "textures/blocks/new_walls/stage_wall_middle_3"
-		},
-		"fnaf1_wall_bottom_side": {
-			"textures": "textures/blocks/new_walls/wall_block1"
-		},
-		"fnaf1_wall_middle_side": {
-			"textures": "textures/blocks/new_walls/wall_7"
-		},
-		"fnaf1_wall_tiles_purple": {
-			"textures": "textures/blocks/new_walls/wall_block3"
-		},
-		"fnaf1_wall_tiles_black": {
-			"textures": "textures/blocks/new_walls/wall_block9"
-		},
-		"fnaf1_wall_middle_side_2": {
-			"textures": "textures/blocks/new_walls/wall_block11"
-		},
-		"fnaf1_wall_tiles_side_bottom": {
-			"textures": "textures/blocks/new_walls/wall_block7"
-		},
-		"fnaf1_wall_tiles_side_middle": {
-			"textures": "textures/blocks/new_walls/wall_block8"
-		},
-		"fnaf1_wall_tiles_side_upper": {
-			"textures": "textures/blocks/new_walls/stage_wall_up"
-		},
-		"fnaf1_wall_tiles": {
-			"textures": "textures/blocks/new_walls/single_tiles"
-		},
-		"fnaf1_white_roof": {
-			"textures": "textures/blocks/new_walls/white_roof"
 		},
 		// FNAF 4 
 		"fnaf4_alarm": {
@@ -1921,7 +1869,16 @@
 			"textures": "textures/blocks/walls/testing/wall_block9"
 		},
 		"stage_plate": {
-			"textures": "textures/blocks/stage_plate"
+			"textures": "textures/blocks/stage_plate_empty"
+		},
+		"stage_plate_f": {
+			"textures": "textures/blocks/stage_plate_f"
+		},
+		"stage_plate_b": {
+			"textures": "textures/blocks/stage_plate_b"
+		},
+		"stage_plate_c": {
+			"textures": "textures/blocks/stage_plate_c"
 		},
 		"inv": {
 			"textures": "textures/blocks/inv"
@@ -1970,6 +1927,135 @@
 		},
 		"large_hanging_flags_4": {
 			"textures": "textures/blocks/hanging_flags/4"
+		},
+		// FNaF2
+		"fnaf2_wall_tiles": {
+			"textures": "textures/blocks/fnaf2/fnaf2_wall_1"
+		},
+		"fnaf2_wall_up": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_up_2"
+		},
+		"fnaf2_wall_up_2": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_up"
+		},
+		"fnaf2_wall_texture_2": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_middle_2"
+		},
+		"fnaf2_wall_down": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_down"
+		},
+		"fnaf2_wall_texture": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_middle"
+		},
+		"fnaf2_wall_hw": {
+			"textures": "textures/blocks/help-wanted/hw_wall_f2_1"
+		},
+		// FNaF HW
+		"hw_wall_tiles": {
+			"textures": "textures/blocks/help-wanted/hw_wall_1"
+		},
+		"hw_wall_up": {
+			"textures": "textures/blocks/help-wanted/1"
+		},
+		"hw_wall_up_2": {
+			"textures": "textures/blocks/help-wanted/2"
+		},
+		"hw_wall_up_3": {
+			"textures": "textures/blocks/help-wanted/3"
+		},
+		"hw_wall_down": {
+			"textures": "textures/blocks/help-wanted/hw_down_2"
+		},
+		"hw_wall_down_texture": {
+			"textures": "textures/blocks/help-wanted/hw_down"
+		},
+		"hw_wall_texture": {
+			"textures": "textures/blocks/help-wanted/hw_wall"
+		},
+		"large_hanging_papercuts_1": {
+			"textures": "textures/blocks/hanging_papercuts/1"
+		},
+		"large_hanging_papercuts_2": {
+			"textures": "textures/blocks/hanging_papercuts/2"
+		},
+		"large_hanging_papercuts_3": {
+			"textures": "textures/blocks/hanging_papercuts/3"
+		},
+		// New walls fnaf1
+		"fnaf1_wall_bottom": {
+			"textures": "textures/blocks/new_walls/gray texture"
+		},
+		"fnaf1_wall_upper_side_1": {
+			"textures": "textures/blocks/new_walls/1"
+		},
+		"fnaf1_wall_upper_side_2": {
+			"textures": "textures/blocks/new_walls/2"
+		},
+		"fnaf1_wall_upper_side_3": {
+			"textures": "textures/blocks/new_walls/3"
+		},
+		"fnaf1_wall_side": {
+			"textures": "textures/blocks/new_walls/gray_single"
+		},
+		"fnaf1_wall_stage_texture": {
+			"textures": "textures/blocks/new_walls/stage_2"
+		},
+		"fnaf1_wall_stage_side_black": {
+			"textures": "textures/blocks/new_walls/stage_wall"
+		},
+		"fnaf1_wall_stage_side_red": {
+			"textures": "textures/blocks/new_walls/stage_wall_middle_2"
+		},
+		"fnaf1_wall_stage_side_purple": {
+			"textures": "textures/blocks/new_walls/stage_wall_middle_3"
+		},
+		"fnaf1_wall_bottom_side": {
+			"textures": "textures/blocks/new_walls/wall_block1"
+		},
+		"fnaf1_wall_middle_side": {
+			"textures": "textures/blocks/new_walls/wall_7"
+		},
+		"fnaf1_wall_tiles_purple": {
+			"textures": "textures/blocks/new_walls/wall_block3"
+		},
+		"fnaf1_wall_tiles_black": {
+			"textures": "textures/blocks/new_walls/wall_block9"
+		},
+		"fnaf1_wall_tiles_red": {
+			"textures": "textures/blocks/new_walls/wall_block2"
+		},
+		"fnaf1_wall_middle_side_2": {
+			"textures": "textures/blocks/new_walls/wall_block11"
+		},
+		"fnaf1_wall_tiles_side_bottom": {
+			"textures": "textures/blocks/new_walls/wall_block7"
+		},
+		"fnaf1_wall_tiles_side_middle": {
+			"textures": "textures/blocks/new_walls/wall_block8"
+		},
+		"fnaf1_wall_tiles_side_upper": {
+			"textures": "textures/blocks/new_walls/stage_wall_up"
+		},
+		"fnaf1_wall_tiles": {
+			"textures": "textures/blocks/new_walls/single_tiles"
+		},
+		"fnaf1_wall_black_texture": {
+			"textures": "textures/blocks/new_walls/black_texture"
+		},
+		"fnaf1_white_roof": {
+			"textures": "textures/blocks/new_walls/white_roof"
+		},
+		"red_curtain_block": {
+			"textures": "textures/blocks/curtain"
+		},
+		"confetti_floor_1": {
+			"textures": "textures/blocks/confetti/1"
+		},
+		"confetti_floor_2": {
+			"textures": "textures/blocks/confetti/2"
+		},
+		"confetti_floor_3": {
+			"textures": "textures/blocks/confetti/3"
 		}
 	}
 }
