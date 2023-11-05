@@ -1,4 +1,4 @@
-![Image](https://cdn.discordapp.com/attachments/962161701040562206/1170592693798322266/FNAFS_DECORATIONS.png?ex=65599a66&is=65472566&hm=4125dbc9fbf6b942cd77c24277e1fe0d30f11aedb713c4282a7e5acf1d338fcc&)
+![Image](https://raw.githubusercontent.com/Hirxs-MC/FD-Bedrock-development/main/FNAF%E2%80%99S%20DECORATIONS.svg)
 
 > [!NOTE]
 > 🔧 This page is created so that you can see the development of FD and also be able to be aware of FD updates if the website is not working for you or something like that, you can also use FD for a personal project For you, if your project will be public, send a message to hyrxs commenting on this and see if he approves (you can also use this source to create a dlc for the addon)
