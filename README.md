@@ -1,5 +1,11 @@
-## ***Note:***
-> This page is created so that you can see the development of FD and also be able to be aware of FD updates if the website is not working for you or something like that, you can also use FD for a personal project For you, if your project will be public, send a message to hyrxs commenting on this and see if he approves (you can also use this source to create a dlc for the addon)
+![Image](https://cdn.discordapp.com/attachments/962161701040562206/1170592693798322266/FNAFS_DECORATIONS.png?ex=65599a66&is=65472566&hm=4125dbc9fbf6b942cd77c24277e1fe0d30f11aedb713c4282a7e5acf1d338fcc&)
+
+> [!NOTE]
+> 🔧 This page is created so that you can see the development of FD and also be able to be aware of FD updates if the website is not working for you or something like that, you can also use FD for a personal project For you, if your project will be public, send a message to hyrxs commenting on this and see if he approves (you can also use this source to create a dlc for the addon)
+
+_____________________________________
+<details>
+  <summary>📚 - FD Bedrock - Description</summary>
 
 ![Image](https://hirxs-web.weebly.com/uploads/1/4/3/7/143758318/bedrocksda_orig.png)
 ## FNaF's Decorations for Bedrock edition
@@ -23,6 +29,7 @@
 
 ![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
 ## ***Compatibility versions:***
+- 1.20.40 - Working on this support 🕛
 - 1.20.30 ✅
 - 1.20.20 ⚠️ (All blocks,items and entities works,but the cameras no)
 - 1.20.10 ⚠️ (All blocks,items and entities works,but the cameras no)
@@ -63,3 +70,4 @@ Helpers
 ![Image](https://media.discordapp.net/attachments/962161701040562206/1074891143898202164/Screenshot_2023-02-13_162254.png)
 
 Keep in mind that this addon is still in BETA status so there are many more blocks to add but don't worry, this addon will have constant updates to add more blocks!
+</details>
