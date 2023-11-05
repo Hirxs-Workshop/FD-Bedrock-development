@@ -2056,6 +2056,18 @@
 		},
 		"confetti_floor_3": {
 			"textures": "textures/blocks/confetti/3"
+		},
+		"cupcake_block": {
+			"textures": "textures/blocks/cupcake"
+		},
+		"cupcake_block_movie": {
+			"textures": "textures/blocks/cupcake_movie"
+		},
+		"electric_wall_wires_on": {
+			"textures": "textures/blocks/lever_wires_on"
+		},
+		"electric_wall_wires_off": {
+			"textures": "textures/blocks/lever_wires_off"
 		}
 	}
 }

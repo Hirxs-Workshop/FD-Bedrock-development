@@ -1,0 +1,125 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:lever_wires_off",
+			"is_experimental": false,
+			"properties": {
+				"bridge:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.light_wires_1",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electric_wall_wires_off",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_player_placing": {
+				"event": "bridge:update_rotation"
+			},
+			"minecraft:creative_category": {
+				"group": "construction",
+				"category": "construction"
+			},
+			"minecraft:on_placed": {
+				"event": "fb:electric_fuction",
+				"target": "self"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"bridge:update_rotation": {
+				"set_block_property": {
+					"bridge:block_rotation": "query.cardinal_facing_2d"
+				}
+			},
+			"fb:electric_fuction": {
+				"run_command": {
+					"command": [
+						"fill ~1 ~-1 ~-1 ~-1 ~ ~1 fb:electric_wires_on [] replace fb:electric_wires_off",
+						"fill ~1 ~-2 ~-1 ~-1 ~ ~1 fb:electric_block_on [] replace fb:electric_block_off",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:light_on [] replace fb:light_off",
+						"fill ~1 ~ ~-1 ~-1 ~-3 ~1 fb:lightbulb_on [] replace fb:lightbulb_down",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:vent_light_on [] replace fb:vent_light",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:roof_light_on [] replace fb:roof_light_off",
+						"function lights_on",
+						"function lights_wires_off"
+					]
+				}
+			}
+		}
+	}
+}

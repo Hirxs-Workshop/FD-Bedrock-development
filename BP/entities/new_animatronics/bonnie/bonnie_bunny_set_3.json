@@ -95,11 +95,12 @@
                         "event entity @e[type=fb:showtime_bonnie_bunny,r=3] fb:bonnie_bunny_normal"
                     ]
                 },
-                "add": "component_groups": [
-                    "despawn"
-                ]
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                }
             }
         }
     }
-}
 }

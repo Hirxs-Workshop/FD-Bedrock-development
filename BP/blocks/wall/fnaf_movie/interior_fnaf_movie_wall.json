@@ -62,10 +62,29 @@
 				"group": "itemGroup.name.Construction"
 			},
 			"minecraft:material_instances": {
-				"*": {
+				"up": {
+					"texture": "iwfm_down_2",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "iwfm_down",
+					"render_method": "opaque"
+				},
+				"north": {
 					"texture": "iwfm_1",
-					"render_method": "opaque",
-							"ambient_occlusion": true
+					"render_method": "opaque"
+				},
+				"west": {
+					"texture": "iwfm_1",
+					"render_method": "opaque"
+				},
+				"south": {
+					"texture": "iwfm_1",
+					"render_method": "opaque"
+				},
+				"east": {
+					"texture": "iwfm_1",
+					"render_method": "opaque"
 				}
 			},
 			"minecraft:map_color": "#ffffff",

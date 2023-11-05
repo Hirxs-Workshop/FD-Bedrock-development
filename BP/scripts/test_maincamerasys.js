@@ -99,6 +99,7 @@ system.runInterval(async => {
 
         if (player.hasTag("fb_tablet_camera")) {
             player.addEffect('invisibility', 3 * 3)
+            player.runCommandAsync(`execute at @e[type=fb:camera_entity_testing,r=3,tag="cameras:${player.nameTag}${cameraname}"] run camera @s set minecraft:free pos ~ ~0.5 ~ rot 0 ~`)
             player.playAnimation('animation.player.camera', { blendOutTime: 0.1 })
         }
 

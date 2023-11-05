@@ -4,8 +4,7 @@
     "description": {
       "identifier": "fb:golden_freddy_suit",
       "materials": {
-        "default": "armor",
-        "enchanted": "armor_enchanted"
+        "default": "armor"
       },
       "textures": {
         "default": "textures/entity/pamobile/fb_golden_freddy_suit"

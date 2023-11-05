@@ -100,7 +100,8 @@
 								"gamerule sendcommandfeedback false",
 								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_wires_off [] replace fb:electric_wires_on",
 								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_block_off [] replace fb:electric_block_on",
-								"playsound block.lantern.fall @a[r=8] ~~~ 10 1.5"
+								"playsound block.lantern.fall @a[r=8] ~~~ 10 1.5",
+								"function lights_wires_off"
 							]
 						}
 					}
@@ -120,7 +121,8 @@
 								"gamerule sendcommandfeedback false",
 								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_wires_on [] replace fb:electric_wires_off",
 								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_block_on [] replace fb:electric_block_off",
-								"playsound block.lantern.fall @a[r=8] ~~~ 10 1.5"
+								"playsound block.lantern.fall @a[r=8] ~~~ 10 1.5",
+								"function lights_wires_on"
 							]
 						}
 					}

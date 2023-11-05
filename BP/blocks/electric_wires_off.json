@@ -43,7 +43,8 @@
 								"fill ~1 ~ ~-1 ~-1 ~-3 ~1 fb:lightbulb_down [] replace fb:lightbulb_on",
 								"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:vent_light [] replace fb:vent_light_on",
 								"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:roof_light_off [] replace fb:roof_light_on",
-								"function lights_off"
+								"function lights_off",
+								"function lights_wires_off"
 							]
 						}
 					}

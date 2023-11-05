@@ -121,7 +121,9 @@
                 "is_pushable": false,
                 "is_pushable_by_piston": false
             },
-            "minecraft:physics": {}
+            "minecraft:physics": {
+                "has_gravity": false
+            }
         },
         "events": {
             "despawn": {

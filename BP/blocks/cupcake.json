@@ -24,7 +24,7 @@
 			"minecraft:explosion_resistance": 0.1,
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "cupcake",
+					"texture": "cupcake_block",
 					"render_method": "alpha_test"
 				}
 			},

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:stage_plate_chica",
+			"identifier": "fb:stage_plate_chica_chicken",
 			"category": "construction",
 			"properties": {
 				"block:rotation": [

@@ -80,7 +80,7 @@
 				"interactions": [
 					{
 						"hurt_item": 2,
-						"interact_text": "fb.bonnie_bunny.nose",
+						"interact_text": "fb.freddy.nose",
 						"on_interact": {
 							"event": "nose",
 							"target": "self",
@@ -213,7 +213,7 @@
 			"nose": {
 				"run_command": {
 					"command": [
-						"playanimation @s animation.fb_bonnie_bunny.nose",
+						"playanimation @s animation.fb_freddy_fazbear.nose",
 						"effect @s slowness 1 2 true"
 					]
 				}

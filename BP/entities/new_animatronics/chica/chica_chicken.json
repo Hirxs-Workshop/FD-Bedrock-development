@@ -293,7 +293,7 @@
                             "component_groups": [
                                 "minecraft:chica_chicken_function_adult",
                                 "minecraft:chica_chicken_function_calm",
-                                "fb:chica_no_function2"
+                                "fb:chica_chicken_no_function2"
                             ]
                         }
                     }
@@ -342,7 +342,7 @@
                     ]
                 }
             },
-            "fb:chica_chiken_showtime": {
+            "fb:chica_chicken_showtime": {
                 "add": {
                     "component_groups": [
                         "fb:showtime_chica_chicken"

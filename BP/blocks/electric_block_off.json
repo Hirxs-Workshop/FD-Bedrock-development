@@ -72,7 +72,8 @@
 							"target": "self",
 							"command": [
 								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_block_off [] replace fb:electric_block_on",
-								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_wires_off [] replace fb:electric_wires_on"
+								"fill ~1 ~1 ~-1 ~-1 ~-1 ~1 fb:electric_wires_off [] replace fb:electric_wires_on",
+								"function lights_wires_on"
 							]
 						}
 					}

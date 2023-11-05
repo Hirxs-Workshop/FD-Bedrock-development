@@ -17,7 +17,7 @@
 			"minecraft:geometry": "geometry.light_wires_1",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "lever_off",
+					"texture": "electric_wall_wires_on",
 					"render_method": "alpha_test"
 				}
 			},
@@ -52,6 +52,10 @@
 			"minecraft:creative_category": {
 				"group": "construction",
 				"category": "construction"
+			},
+			"minecraft:on_placed": {
+				"event": "fb:electric_fuction",
+				"target": "self"
 			}
 		},
 		"permutations": [
@@ -100,6 +104,20 @@
 			"bridge:update_rotation": {
 				"set_block_property": {
 					"bridge:block_rotation": "query.cardinal_facing_2d"
+				}
+			},
+			"fb:electric_fuction": {
+				"run_command": {
+					"command": [
+						"fill ~1 ~-1 ~-1 ~-1 ~ ~1 fb:electric_wires_on [] replace fb:electric_wires_off",
+						"fill ~1 ~-2 ~-1 ~-1 ~ ~1 fb:electric_block_on [] replace fb:electric_block_off",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:light_on [] replace fb:light_off",
+						"fill ~1 ~ ~-1 ~-1 ~-3 ~1 fb:lightbulb_on [] replace fb:lightbulb_down",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:vent_light_on [] replace fb:vent_light",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:roof_light_on [] replace fb:roof_light_off",
+						"function lights_on",
+						"function lights_wires_on"
+					]
 				}
 			}
 		}

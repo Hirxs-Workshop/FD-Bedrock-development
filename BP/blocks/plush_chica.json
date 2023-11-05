@@ -1,146 +1,108 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:chica_plush",
-			"is_experimental": false,
-			"properties": {
-				"fb:block_rotation": [
-					2,
-					3,
-					4,
-					5
-				],
-				"fb:box": [
-					0,
-					1
-				]
+			"menu_category": {
+				"category": "nature"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			},
+			"states": {
+				"wiki:rotation": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				},
+				"p:var": {
+					"values": {
+						"min": 0,
+						"max": 3
+					}
+				}
 			}
 		},
 		"components": {
-			"minecraft:destroy_time": 1,
-			"minecraft:block_light_absorption": 0,
-			"minecraft:block_light_filter": 0,
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
+			"minecraft:collision_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					9,
+					8
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					9,
+					8
+				]
 			},
 			"minecraft:loot": "loot_tables/chica_plushy.json",
-			"minecraft:explosion_resistance": 0.1,
+			"minecraft:geometry": {
+				"identifier": "geometry.chica_plushy",
+				"bone_visibility": {
+					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation'), 4)",
+					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation') - 1, 4)",
+					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation') - 2, 4)",
+					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation') - 3, 4)",
+					"side": "q.block_state('minecraft:block_face') != 'up'"
+				}
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "chica_plush",
 					"render_method": "alpha_test"
+				},
+				"lit": {
+					"texture": "chica_plush",
+					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:geometry": "geometry.chica_plushy",
-			"minecraft:aim_collision": {
-				"origin": [
-					-4,
-					0,
-					-1
-				],
-				"size": [
-					8,
-					13,
-					5
-				]
-			},
-			"minecraft:block_collision": {
-				"origin": [
-					-4,
-					0,
-					-1
-				],
-				"size": [
-					8,
-					13,
-					5
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up",
+							"side"
+						]
+					}
 				]
 			},
 			"minecraft:on_player_placing": {
-				"event": "fb:block_placed"
-			},
-			"minecraft:on_placed": {
-				"event": "fb:destroy"
-			},
-			"minecraft:rotation": [
-				0,
-				0,
-				0
-			]
+				"condition": "q.block_face == 1",
+				"event": "wiki:set_rotation"
+			}
 		},
 		"events": {
-			"fb:destroy": {
-				"sequence": [
-					{
-						"run_command": {
-							"target": "self",
-							"command": [
-								""
-							]
-						}
-					}
-				]
+			"wiki:set_rotation": {
+				"set_block_state": {
+					"wiki:rotation": "t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != math.abs(q.head_y_rotation(0))); t.block_rotation = math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation;"
+				}
 			},
-			"fb:block_placed": {
+			"e:add.var": {
 				"sequence": [
-					{
-						"set_block_property": {
-							"fb:block_rotation": "q.cardinal_facing_2d"
-						}
-					},
-					{
-						"set_block_property": {
-							"fb:box": 0
-						}
-					}
-				]
-			},
-			"fb:var_1": {
-				"sequence": [
-					{
-						"condition": "q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_2",
-							"target": "self"
-						}
-					},
 					{
 						"condition": "!q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_1",
-							"target": "self"
-						}
-					}
-				]
-			},
-			"fb:var_2": {
-				"sequence": [
-					{
-						"condition": "q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_2",
-							"target": "self"
-						}
-					},
-					{
-						"condition": "!q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_1",
-							"target": "self"
-						}
-					}
-				]
-			},
-			"fb:box_1": {
-				"sequence": [
-					{
-						"set_block_property": {
-							"fb:box": 1
-						}
-					},
-					{
+						"decrement_stack": {},
+						"set_block_state": {
+							"p:var": 1
+						},
 						"run_command": {
 							"target": "self",
 							"command": [
@@ -151,21 +113,25 @@
 					}
 				]
 			},
-			"fb:box_2": {
+			"e:remove.var": {
 				"sequence": [
 					{
-						"set_block_property": {
-							"fb:box": 2
+						"set_block_state": {
+							"p:var": 0
+						},
+						"run_command": {
+							"command": [
+								""
+							]
 						}
 					},
 					{
+						"condition": "q.block_state('p:var') == 1",
 						"run_command": {
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"playsound random.fizz @a[r=5] ~~~ 5",
-								"setblock ~ ~ ~ air 0 destroy",
-								"particle fb:smoke ~ ~ ~"
+								"playsound fb:freddy_noze @a[r=5] ~~~ 5"
 							]
 						}
 					}
@@ -174,66 +140,85 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_property('fb:block_rotation') == 2",
+				"condition": "q.block_state('wiki:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:block_rotation') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:block_rotation') == 4",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						-90,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:block_rotation') == 5",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:box') == 0",
-				"components": {
-					"minecraft:on_interact": {
-						"event": "fb:var_1"
-					},
-					"minecraft:geometry": "geometry.chica_plushy",
-					"minecraft:on_player_destroyed": {
-						"event": "fb:destroy"
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
 					}
 				}
 			},
 			{
-				"condition": "q.block_property('fb:box') == 1",
+				"condition": "q.block_state('wiki:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('wiki:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') != 'up'",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							5,
+							5
+						],
+						"size": [
+							6,
+							6,
+							3
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-3,
+							5,
+							5
+						],
+						"size": [
+							6,
+							6,
+							3
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:var') == 0",
 				"components": {
 					"minecraft:on_interact": {
-						"event": "fb:var_2"
-					},
-					"minecraft:geometry": "geometry.chica_plushy",
-					"minecraft:on_player_destroyed": {
-						"event": "fb:destroy"
+						"condition": "!q.is_sneaking",
+						"event": "e:add.var"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:var') == 1",
+				"components": {
+					"minecraft:on_interact": {
+						"condition": "!q.is_sneaking",
+						"event": "e:remove.var"
 					}
 				}
 			}

@@ -342,7 +342,7 @@
                     ]
                 }
             },
-            "fb:bonnie_showtime": {
+            "fb:bonnie_bunny_showtime": {
                 "add": {
                     "component_groups": [
                         "fb:showtime_bonnie_bunny"

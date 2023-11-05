@@ -96,7 +96,7 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"fill ~-5 ~-2 ~5 ~5 ~7 ~-5 fb:office_light_off 0 replace fb:office_light",
+								"fill ~-4 ~-2 ~4 ~4 ~7 ~-4 fb:office_light_off 0 replace fb:office_light",
 								"playsound fb.office_door_button @a[r=5] ~~~ 10"
 							]
 						}
@@ -115,7 +115,7 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"fill ~-5 ~-2 ~5 ~5 ~7 ~-5 fb:office_light 0 replace fb:office_light_off",
+								"fill ~-4 ~-2 ~4 ~4 ~7 ~-4 fb:office_light 0 replace fb:office_light_off",
 								"playsound fb.office_door_button @a[r=5] ~~~ 10"
 							]
 						}

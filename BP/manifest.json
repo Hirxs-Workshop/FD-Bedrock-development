@@ -6,7 +6,7 @@
 		],
 		"generated_with": {
 			"bridge": [
-				"2.6.3"
+				"2.6.7"
 			],
 			"dash": [
 				"0.10.10"
@@ -23,9 +23,9 @@
 		],
 		"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
 		"version": [
-				4,
-				6,
-				1
+			4,
+			6,
+			1
 		]
 	},
 	"modules": [
@@ -56,7 +56,7 @@
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.6.0-beta"
+			"version": "1.7.0-beta"
 		},
 		{
 			"module_name": "@minecraft/server-gametest",

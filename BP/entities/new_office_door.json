@@ -34,7 +34,7 @@
 											"subject": "other",
 											"domain": "hand",
 											"operator": "==",
-											"value": "fb:changer_tool_item"
+											"value": "fb:remover_tool"
 										}
 									]
 								},
@@ -87,7 +87,7 @@
 											"subject": "other",
 											"domain": "hand",
 											"operator": "==",
-											"value": "fb:changer_tool_item"
+											"value": "fb:remover_tool"
 										}
 									]
 								},
@@ -140,8 +140,8 @@
 				"min": 1
 			},
 			"minecraft:collision_box": {
-				"width": 0.15,
-				"height": 0.15
+				"width": 0.3,
+				"height": 0.3
 			}
 		},
 		"events": {

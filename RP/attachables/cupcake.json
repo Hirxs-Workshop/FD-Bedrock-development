@@ -7,7 +7,7 @@
         "default": "skeleton"
       },
       "textures": {
-        "default": "textures/blocks/plush/teddy3"
+        "default": "textures/blocks/cupcake"
       },
       "geometry": {
         "default": "geometry.cupcake"

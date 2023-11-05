@@ -1,4 +1,4 @@
-scoreboard objectives add join dummy
+scoreboard objectives add join dummy 
 scoreboard players set @a[tag=!join] join 100
 tag @a add join
 scoreboard players add @a[scores={join=!0}] join -1
@@ -66,8 +66,12 @@ execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,qua
 
 
 
-execute @e[type=fb:stage_plate_freddy] ~ ~ ~ tp @e[type=fb:showtime_freddy_fazbear,r=10] ~ ~ ~
+execute @e[type=fb:stage_plate_freddy] ~ ~ ~ tp @e[type=fb:showtime_freddy_fazbear,r=10] ~ ~-0.5 ~
 
-execute @e[type=fb:stage_plate_bonnie_bunny] ~ ~ ~ tp @e[type=fb:showtime_bonnie_bunny,r=10] ~ ~ ~
+execute @e[type=fb:stage_plate_bonnie_bunny] ~ ~ ~ tp @e[type=fb:showtime_bonnie_bunny,r=10] ~ ~-0.5 ~
 
-execute @e[type=fb:stage_plate_chica_chicken] ~ ~ ~ tp @e[type=fb:showtime_chica_chicken,r=10] ~ ~ ~
+execute @e[type=fb:stage_plate_chica_chicken] ~ ~ ~ tp @e[type=fb:showtime_chica_chicken,r=10] ~ ~-0.5 ~
+
+execute @e[type=player,hasitem={location=slot.weapon.mainhand,item=fb:remover_tool,quantity=1}] ~~~ function remover_particles
+
+execute @e[type=player,hasitem={location=slot.weapon.mainhand,item=fb:rotate,quantity=1}] ~~~ function rotate_particles

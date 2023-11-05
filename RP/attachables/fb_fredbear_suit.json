@@ -4,12 +4,10 @@
     "description": {
       "identifier": "fb:fredbear_suit",
       "materials": {
-        "default": "entity_emissive_alpha",
-        "enchanted": "entity_emissive_alpha_glint"
+        "default": "entity_emissive_alpha"
       },
       "textures": {
-        "default": "textures/entity/pamobile/fb_fredbear_suit",
-        "enchanted": "textures/misc/enchanted_item_glint"
+        "default": "textures/entity/pamobile/fb_fredbear_suit"
       },
       "geometry": {
         "default": "geometry.fb_fredbear_suit"
