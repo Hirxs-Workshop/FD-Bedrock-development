@@ -33,7 +33,7 @@ tile.fb:bathroom_letter_1.name=Bathroom Woman sign  
 tile.fb:bathroom_letter_2.name=Bathroom Man sign  
 tile.fb:paper_3.name=Wall papers  
 tile.fb:chair.name=Party kid chair  
-=======
+
 tile.fb:pizza_1.name=Wall Pizzas  
 tile.fb:floor_1.name=Pizzeria floor (Red and Blue Tiles) & 
 tile.fb:floor_2.name=Pizzeria floor (Black and White Tiles) & 
@@ -304,7 +304,7 @@ entity.fb:vent_door_2.name=Vent Door 2x2 (Entity)  
 item.spawn_egg.entity.fb:only_door.name=Employees only Door (Item)  
 entity.fb:only_door.name=Employees only Door (Entity)   
 item.spawn_egg.entity.fb:red_door.name=F&F Door (Item)  
-entity.fb:red_door.name=F&F Door (Entity)   
+entity.fb:red_door.name=F&F Door (Entity)    
 
 ##Entitys
 item.spawn_egg.entity.fb:jippy_jumper.name=Jippy jumper 
@@ -481,7 +481,7 @@ pack.description=Have you ever wanted to replicate a restaurant from FNAF but in
 tile.fb:stage_curtain_red_block.name=Stage Curtain Red Block  &  
 tile.fb:stage_plate_bonnie.name=Stage Plate Bonnie Bunny  
 tile.fb:stage_plate_freddy.name=Stage Plate Freddy Fazbear  
-tile.fb:stage_plate_chica.name=Stage Plate Chica Chicken  
+tile.fb:stage_plate_chica_chiken.name=Stage Plate Chica Chicken  
 tile.fb:ceiling_large_light.name=Ceiling Large Light , &  
 tile.fb:large_ceiling_wires.name=Large Ceiling Wires , &  
 tile.fb:large_hanging_wires.name=Large Hanging Wires , &  
