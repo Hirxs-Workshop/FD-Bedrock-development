@@ -315,7 +315,7 @@
 										}
 									]
 								},
-								"event": "fb:color_default"
+								"event": "fb:color_var1"
 							},
 							"use_item": false,
 							"interact_text": "action.interact.color"

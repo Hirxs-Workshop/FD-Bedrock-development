@@ -50,8 +50,8 @@
 				"event": "bridge:update_rotation"
 			},
 			"minecraft:creative_category": {
-				"group": "construction",
-				"category": "construction"
+				"group": "commands",
+				"category": "commands"
 			},
 			"minecraft:on_placed": {
 				"event": "fb:electric_fuction",

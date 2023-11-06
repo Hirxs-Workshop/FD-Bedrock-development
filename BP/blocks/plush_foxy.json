@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fb:foxy_plush",
 			"menu_category": {
-				"category": "nature"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_position": {
@@ -14,7 +14,7 @@
 				}
 			},
 			"states": {
-				"wiki:rotation": {
+				"fd:rotation": {
 					"values": {
 						"min": 0,
 						"max": 15
@@ -33,34 +33,34 @@
 				"origin": [
 					-4,
 					0,
-					-4
+					-2
 				],
 				"size": [
-					8,
-					9,
-					8
+					7,
+					13,
+					6
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-4,
 					0,
-					-4
+					-2
 				],
 				"size": [
-					8,
-					9,
-					8
+					7,
+					13,
+					6
 				]
 			},
 			"minecraft:loot": "loot_tables/foxy_plushy.json",
 			"minecraft:geometry": {
 				"identifier": "geometry.foxy_plushy",
 				"bone_visibility": {
-					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation'), 4)",
-					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation') - 1, 4)",
-					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation') - 2, 4)",
-					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('wiki:rotation') - 3, 4)",
+					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation'), 4)",
+					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 1, 4)",
+					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 2, 4)",
+					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 3, 4)",
 					"side": "q.block_state('minecraft:block_face') != 'up'"
 				}
 			},
@@ -86,13 +86,13 @@
 			},
 			"minecraft:on_player_placing": {
 				"condition": "q.block_face == 1",
-				"event": "wiki:set_rotation"
+				"event": "fd:set_rotation"
 			}
 		},
 		"events": {
-			"wiki:set_rotation": {
+			"fd:set_rotation": {
 				"set_block_state": {
-					"wiki:rotation": "t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != math.abs(q.head_y_rotation(0))); t.block_rotation = math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation;"
+					"fd:rotation": "t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != math.abs(q.head_y_rotation(0))); t.block_rotation = math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation;"
 				}
 			},
 			"e:add.var": {
@@ -140,7 +140,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('wiki:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+				"condition": "q.block_state('fd:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -152,7 +152,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('wiki:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+				"condition": "q.block_state('fd:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -164,7 +164,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('wiki:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+				"condition": "q.block_state('fd:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -180,26 +180,26 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
-							-3,
-							5,
-							5
+							-4,
+							0,
+							-2
 						],
 						"size": [
-							6,
-							6,
-							3
+							7,
+							13,
+							6
 						]
 					},
 					"minecraft:selection_box": {
 						"origin": [
-							-3,
-							5,
-							5
+							-4,
+							0,
+							-2
 						],
 						"size": [
-							6,
-							6,
-							3
+							7,
+							13,
+							6
 						]
 					}
 				}

@@ -46,7 +46,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "only_door"
+				"texture": "closed_doors"
 			}
 		}
 	}

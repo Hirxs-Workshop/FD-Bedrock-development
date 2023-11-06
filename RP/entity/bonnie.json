@@ -11,7 +11,9 @@
 				"default": "textures/entity/fnaf1/bonnie",
 				"blue": "textures/entity/fnaf1/bonnie_hw",
 				"red": "textures/entity/fnaf1/bonnie_possed",
-				"purple": "textures/entity/fnaf1/bonnie_movie"
+				"purple": "textures/entity/fnaf1/bonnie_movie",
+				"var1": "textures/entity/fnaf1/vars/glamrock_bonnie",
+				"var2": "textures/entity/fnaf1/vars/bonnie_battington"
 			},
 			"animations": {
 				"default_pose": "animation.new_bonnie_bunny.stage",

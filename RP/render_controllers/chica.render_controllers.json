@@ -17,7 +17,9 @@
 					"Array.variants": [
 						"Texture.default",
 						"Texture.blue",
-						"Texture.var1"
+						"Texture.var1",
+						"Texture.var2",
+						"Texture.var3"
 					]
 				}
 			}

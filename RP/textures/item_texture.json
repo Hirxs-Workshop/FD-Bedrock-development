@@ -318,6 +318,15 @@
 		},
 		"new_item2": {
 			"textures": "textures/items/new_item2"
+		},
+		"closed_doors": {
+			"textures": "textures/items/closed_doors"
+		},
+		"fnaf4_drawer_1": {
+			"textures": "textures/items/ffnaf4_drawers"
+		},
+		"fnaf4_drawer_2": {
+			"textures": "textures/items/dffnaf4_drawers"
 		}
 	},
 	"texture_name": "atlas.items"

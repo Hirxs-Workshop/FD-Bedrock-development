@@ -2,7 +2,7 @@
 	"format_version": "1.20.30",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:pirate_cove_sign",
+			"identifier": "fb:pirate_cove_sign_its_me",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -48,7 +48,7 @@
 				]
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.pirate_cove_sign",
+				"identifier": "geometry.pirate_cove_sign_2",
 				"bone_visibility": {
 					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation'), 4)",
 					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 1, 4)",
@@ -59,7 +59,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "pcs1",
+					"texture": "pcs2",
 					"render_method": "alpha_test"
 				}
 			},

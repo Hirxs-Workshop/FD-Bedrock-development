@@ -63,7 +63,7 @@
 			"loop": true,
 			"bones": {
 				"upperpart": {
-					"rotation": [-7.5, 0, 0]
+					"rotation": [-7.47178, 0.65182, 4.95744]
 				},
 				"head": {
 					"rotation": [-7.5, 10, 70],
@@ -337,6 +337,113 @@
 						"1.0833": [-15.83512, 7.55211, -4.28027],
 						"1.5": [-7.5, 0, 0]
 					}
+				}
+			}
+		},
+		"animation.zorra.geo.PoseC1": {
+			"loop": true,
+			"bones": {
+				"feddy": {
+					"position": [0, -4, 0]
+				},
+				"upperpart": {
+					"rotation": [20, 0, 0]
+				},
+				"head": {
+					"rotation": [-17.25002, 2.99318, 9.54589]
+				},
+				"eyepatch": {
+					"rotation": [-142.5, 0, 0]
+				},
+				"jaw": {
+					"rotation": [15, 0, 0]
+				},
+				"eyelid": {
+					"position": [0, 0.3, 0]
+				},
+				"eyelid2": {
+					"position": [0, 0.3, 0]
+				},
+				"armL": {
+					"rotation": [-33.21852, 23.65074, 7.73493]
+				},
+				"lower": {
+					"rotation": [-98.26511, -24.77164, 3.48303]
+				},
+				"hook": {
+					"rotation": [-23.66235, -8.31087, -18.25612]
+				},
+				"armR": {
+					"rotation": [-20, 0, -27.5]
+				},
+				"lower2": {
+					"rotation": [-15, 0, 25]
+				},
+				"hand2": {
+					"rotation": [-43.64293, 65.44683, -46.35707]
+				},
+				"thumb3": {
+					"rotation": [0, 42.5, 0]
+				},
+				"legL": {
+					"rotation": [-60, 42.5, 0]
+				},
+				"upper3": {
+					"rotation": [60, 0, 0],
+					"position": [0, 0, -0.4]
+				},
+				"legR": {
+					"rotation": [-65, -37.5, 0]
+				},
+				"upper4": {
+					"rotation": [65, 0, 0]
+				}
+			}
+		},
+		"animation.zorra.geo.PoseC2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [-7.5, 15, 0]
+				},
+				"jaw": {
+					"rotation": [22.5, 0, 0]
+				},
+				"pupil": {
+					"position": [0.2, 0, 0]
+				},
+				"eyelid": {
+					"position": [0, 0.7, 0]
+				},
+				"pupil2": {
+					"position": [0.2, 0, 0]
+				},
+				"eyelid2": {
+					"position": [0, 0.7, 0]
+				},
+				"armL": {
+					"rotation": [-139.74943, 14.98328, -106.98216]
+				},
+				"lower": {
+					"rotation": [0, 0, -87.5]
+				},
+				"armR": {
+					"rotation": [0, 0, -22.5]
+				},
+				"lower2": {
+					"rotation": [0, 17.5, 10]
+				},
+				"hand2": {
+					"rotation": [0, 20, 0]
+				},
+				"thumb3": {
+					"rotation": [25, 0, 0]
+				},
+				"legL": {
+					"rotation": [0, 15, 0]
+				},
+				"legR": {
+					"rotation": [0, -12.5, 0]
 				}
 			}
 		}

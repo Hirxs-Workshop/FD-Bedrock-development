@@ -165,7 +165,7 @@
 										}
 									]
 								},
-								"event": "fb:color_default"
+								"event": "fb:color_var1"
 							},
 							"use_item": false,
 							"interact_text": "action.interact.color"
@@ -220,6 +220,156 @@
 			"color:var1": {
 				"minecraft:variant": {
 					"value": 2
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
+								"event": "fb:color_var2"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:var2": {
+				"minecraft:variant": {
+					"value": 3
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
+								"event": "fb:color_var3"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:var3": {
+				"minecraft:variant": {
+					"value": 4
 				},
 				"minecraft:interact": {
 					"interactions": [
@@ -331,7 +481,9 @@
 				"remove": {
 					"component_groups": [
 						"color:blue",
-						"color:var1"
+						"color:var1",
+						"color:var2",
+						"color:var3"
 					]
 				}
 			},
@@ -344,7 +496,9 @@
 				"remove": {
 					"component_groups": [
 						"color:default",
-						"color:var1"
+						"color:var1",
+						"color:var2",
+						"color:var3"
 					]
 				}
 			},
@@ -357,7 +511,39 @@
 				"remove": {
 					"component_groups": [
 						"color:default",
-						"color:blue"
+						"color:blue",
+						"color:var2",
+						"color:var3"
+					]
+				}
+			},
+			"fb:color_var2": {
+				"add": {
+					"component_groups": [
+						"color:var2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:var1",
+						"color:var3"
+					]
+				}
+			},
+			"fb:color_var3": {
+				"add": {
+					"component_groups": [
+						"color:var3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:var1",
+						"color:var2"
 					]
 				}
 			},

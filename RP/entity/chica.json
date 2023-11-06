@@ -9,7 +9,10 @@
 			},
 			"textures": {
 				"default": "textures/entity/fnaf1/chica",
-				"blue": "textures/entity/fnaf1/chica_movie"
+				"blue": "textures/entity/fnaf1/chica_movie",
+				"var1": "textures/entity/fnaf1/vars/Hellborn_chica_skin_remake",
+				"var2": "textures/entity/fnaf1/vars/glamrock_chica",
+				"var3": "textures/entity/fnaf1/vars/fnaf_plus_chica"
 			},
 			"animations": {
 				"default_pose": "animation.chik.geo.stage",

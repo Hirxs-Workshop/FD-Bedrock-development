@@ -465,7 +465,7 @@
 										}
 									]
 								},
-								"event": "fb:color_default"
+								"event": "fb:color_shadow"
 							},
 							"use_item": false,
 							"interact_text": "action.interact.color"
@@ -615,7 +615,7 @@
 										}
 									]
 								},
-								"event": "fb:color_var2"
+								"event": "fb:color_default"
 							},
 							"use_item": false,
 							"interact_text": "action.interact.color"
