@@ -4,7 +4,7 @@ import SelectionBoxes from "../utils/selection_boxes"; // Import the SelectionBo
 // Support orientation along both horizontal axes
 const pots = {
   x: new SelectionBoxes({ origin: [-8, 0, -8], size: [16, 16, 0] }, { origin: [-8, 0, -8], size: [0, 16, 16] }, { origin: [-8, 0, 8], size: [16, 16, 0] }, { origin: [8, 0, -8], size: [0, 16, 16] }),
-  z: new SelectionBoxes({ origin: [-8, 0, -8], size: [16, 16, 0] }),
+  z: new SelectionBoxes({ origin: [8, 0, 8], size: [0, 16, 16] }, { origin: [8, 0, 8], size: [16, 16, 0] }, { origin: [8, 0, -8], size: [0, 16, 16] }, { origin: [-8, 0, 8], size: [16, 16, 0] }),
 };
 
 // The state value and sound associated with each plant
@@ -35,11 +35,11 @@ world.beforeEvents.itemUseOn.subscribe((e) => {
 
   const selectedPot = getSelectedPot(e);
 
-  if (selectedPot === undefined || isPotOccupied(e.block, selectedPot)) e.cancel = true;
+  if (selectedPot === undefined || isPotOccupied(e.block, selectedPot)) e.cancel = false;
 });
 
 // -------------------------------
-//    Plant in the selected pot
+//    Plant in the selected pot 
 // -------------------------------
 world.afterEvents.itemUseOn.subscribe((e) => {
   if (e.block.typeId !== "fb:advanced_wall" || !plants[e.itemStack.typeId] || e.source.isSneaking) return;

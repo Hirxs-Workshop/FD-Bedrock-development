@@ -15,7 +15,11 @@
 		},
 		"components": {
 			"minecraft:geometry": "geometry.window_up",
-			"minecraft:material_instances": {
+			"minecraft:material_instances": {  
+				"corner": {
+					"texture": "fb:hw_window",
+					"render_method": "opaque"
+				},
 				"*": {
 					"texture": "fb:hw_window",
 					"render_method": "blend"

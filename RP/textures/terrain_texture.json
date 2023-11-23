@@ -523,42 +523,50 @@
 		"light_on": {
 			"textures": "textures/blocks/light_on"
 		},
+		///////////////////////////////// - floors
 		"red1": {
-			"textures": "textures/blocks/redtiles/0"
+			"textures": "textures/blocks/floors/red_and_black_floor/0"
 		},
 		"red2": {
-			"textures": "textures/blocks/redtiles/1"
-		},
-		"red3": {
-			"textures": "textures/blocks/redtiles/2"
+			"textures": "textures/blocks/floors/red_and_black_floor/1"
 		},
 		"black1": {
-			"textures": "textures/blocks/blacktiles/0"
+			"textures": "textures/blocks/floors/blue_and_black_floor/0"
 		},
 		"black2": {
-			"textures": "textures/blocks/blacktiles/1"
-		},
-		"black3": {
-			"textures": "textures/blocks/blacktiles/2"
+			"textures": "textures/blocks/floors/blue_and_black_floor/1"
 		},
 		"purple1": {
-			"textures": "textures/blocks/purpletiles/0"
+			"textures": "textures/blocks/floors/red_and_blue_floor/0"
 		},
 		"purple2": {
-			"textures": "textures/blocks/purpletiles/1"
-		},
-		"purple3": {
-			"textures": "textures/blocks/purpletiles/2"
+			"textures": "textures/blocks/floors/red_and_blue_floor/1"
 		},
 		"white1": {
-			"textures": "textures/blocks/whitetiles/0"
+			"textures": "textures/blocks/floors/white_and_black_floor/0"
 		},
 		"white2": {
-			"textures": "textures/blocks/whitetiles/1"
+			"textures": "textures/blocks/floors/white_and_black_floor/1"
 		},
-		"white3": {
-			"textures": "textures/blocks/whitetiles/2"
+		"floor_white_red_1": {
+			"textures": "textures/blocks/floors/red_and_white_floor/0"
 		},
+		"floor_white_red_2": {
+			"textures": "textures/blocks/floors/red_and_white_floor/1"
+		},
+		"floor_white_blue_1": {
+			"textures": "textures/blocks/floors/blue_and_white_floor/0"
+		},
+		"floor_white_blue_2": {
+			"textures": "textures/blocks/floors/blue_and_white_floor/1"
+		},
+		"yellow_and_blue_floor_1": {
+			"textures": "textures/blocks/floors/yellow_and_blue_floor/0"
+		},
+		"yellow_and_blue_floor_2": {
+			"textures": "textures/blocks/floors/yellow_and_blue_floor/1"
+		},
+		///////////////////////////////// - floors
 		"ff2white1": {
 			"textures": "textures/blocks/ff2_white/0"
 		},
@@ -799,15 +807,6 @@
 		"soda_blue": {
 			"textures": "textures/blocks/soda_blue"
 		},
-		"party_flags": {
-			"textures": "textures/blocks/party_flags"
-		},
-		"party_flags_2": {
-			"textures": "textures/blocks/party_flags_2"
-		},
-		"paper_cuts": {
-			"textures": "textures/blocks/paper_cuts"
-		},
 		"ball_pit": {
 			"textures": "textures/blocks/ballpit"
 		},
@@ -916,24 +915,6 @@
 		"hw_down": {
 			"textures": "textures/blocks/help-wanted/hw_down"
 		},
-		"ex_down": {
-			"textures": "textures/blocks/extras/down"
-		},
-		"ex_middle": {
-			"textures": "textures/blocks/extras/middle"
-		},
-		"ex_middle_2": {
-			"textures": "textures/blocks/extras/middle_2"
-		},
-		"ex_1": {
-			"textures": "textures/blocks/extras/1"
-		},
-		"ex_2": {
-			"textures": "textures/blocks/extras/2"
-		},
-		"ex_3": {
-			"textures": "textures/blocks/extras/3"
-		},
 		"pcs1": {
 			"textures": "textures/blocks/pirate_cove_sign_1"
 		},
@@ -948,24 +929,6 @@
 		},
 		"wp2": {
 			"textures": "textures/blocks/wall_puppet/2"
-		},
-		"wires0": {
-			"textures": "textures/blocks/wires/0"
-		},
-		"wires1": {
-			"textures": "textures/blocks/wires/1"
-		},
-		"wires2": {
-			"textures": "textures/blocks/wires/2"
-		},
-		"wires3": {
-			"textures": "textures/blocks/wires/3"
-		},
-		"wires4": {
-			"textures": "textures/blocks/wires/4"
-		},
-		"wires5": {
-			"textures": "textures/blocks/wires/5"
 		},
 		"hirxs_plush": {
 			"textures": "textures/blocks/plush/1"
@@ -1286,21 +1249,6 @@
 		"supplycs_4": {
 			"textures": "textures/blocks/supply_closet_shelves_bottles_3"
 		},
-		"black4": {
-			"textures": "textures/blocks/blacktiles/3"
-		},
-		"arcade1": {
-			"textures": "textures/blocks/arcade_floor/blue_arcade_floor"
-		},
-		"arcade2": {
-			"textures": "textures/blocks/arcade_floor/blue_arcade_floor_confetti"
-		},
-		"arcadered3": {
-			"textures": "textures/blocks/arcade_floor/red_arcade_floor"
-		},
-		"arcadered4": {
-			"textures": "textures/blocks/arcade_floor/red_arcade_floor_confetti"
-		},
 		"stars1": {
 			"textures": "textures/blocks/stars/stars1"
 		},
@@ -1561,24 +1509,6 @@
 		},
 		"new_gifts_5": {
 			"textures": "textures/blocks/gifts/yellow"
-		},
-		"floor_white_red_1": {
-			"textures": "textures/blocks/new_floors/red/0"
-		},
-		"floor_white_red_2": {
-			"textures": "textures/blocks/new_floors/red/1"
-		},
-		"floor_white_red_3": {
-			"textures": "textures/blocks/new_floors/red/2"
-		},
-		"floor_white_blue_1": {
-			"textures": "textures/blocks/new_floors/blue/0"
-		},
-		"floor_white_blue_2": {
-			"textures": "textures/blocks/new_floors/blue/1"
-		},
-		"floor_white_blue_3": {
-			"textures": "textures/blocks/new_floors/blue/2"
 		},
 		"pirate_cove_block_blue": {
 			"textures": "textures/blocks/pirate_cove/blue"
@@ -2068,6 +1998,46 @@
 		},
 		"electric_wall_wires_off": {
 			"textures": "textures/blocks/lever_wires_off"
+		},
+		"fb_poster_3": {
+			"textures": "textures/blocks/poster_3"
+		},
+		"fb_poster_4": {
+			"textures": "textures/blocks/poster_4"
+		},
+		"bathroom_door_upper": {
+			"textures": "textures/blocks/doors/bathroom_door_upper"
+		},
+		"bathroom_door_lower": {
+			"textures": "textures/blocks/doors/bathroom_door_lower"
+		},
+		"office_door_upper": {
+			"textures": "textures/blocks/doors/office_door_upper"
+		},
+		////// FNAF Movie Blocks
+		"metal_chains": {
+			"textures": "textures/blocks/fnaf_movie/metal_chains"
+		},
+		"chisel_metal_block": {
+			"textures": "textures/blocks/fnaf_movie/chisel_metal_block"
+		},
+		"chisel_metal_block_2": {
+			"textures": "textures/blocks/fnaf_movie/chisel_metal_block_2"
+		},
+		"chisel_metal_block_3": {
+			"textures": "textures/blocks/fnaf_movie/chisel_metal_block_3"
+		},
+		"chisel_metal_block_4": {
+			"textures": "textures/blocks/fnaf_movie/chisel_metal_block_4"
+		},
+		"polished_bricks": {
+			"textures": "textures/blocks/fnaf_movie/polished_bricks"
+		},
+		"pole_2": {
+			"textures": "textures/blocks/fnaf_movie/pole_2"
+		},
+		"fm_wall_top_2": {
+			"textures": "textures/blocks/fnaf_movie/fm_wall_top_2"
 		}
 	}
 }

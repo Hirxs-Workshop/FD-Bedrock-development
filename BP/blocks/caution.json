@@ -62,7 +62,7 @@
 							0
 						],
 						"on_tick": {
-							"event": "e:test"
+							"event": ""
 						}
 					}
 				}

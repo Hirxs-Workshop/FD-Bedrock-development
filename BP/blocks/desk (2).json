@@ -162,300 +162,300 @@
 			"fb:office_desk_connect": {
 				"sequence": [
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect0')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( 1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( -1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(-1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect0') && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( -1, 0, 0, 'desk_corner') && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(-1,0,0,'desk_corner')&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 4 && query.block_property('fb:rotation') == 0 && !query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0') && !query.block_neighbor_has_any_tag( 1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==4&&query.block_property('fb:rotation')==0&&!query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')&&!query.block_neighbor_has_any_tag(1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 3 && query.block_property('fb:rotation') == 0 && !query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect0') && !query.block_neighbor_has_any_tag( -1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==3&&query.block_property('fb:rotation')==0&&!query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')&&!query.block_neighbor_has_any_tag(-1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect1')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( -1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(-1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( 1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect1') && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( 1, 0, 0, 'desk_corner') && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(1,0,0,'desk_corner')&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 4 && query.block_property('fb:rotation') == 1 && !query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1') && !query.block_neighbor_has_any_tag( -1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==4&&query.block_property('fb:rotation')==1&&!query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')&&!query.block_neighbor_has_any_tag(-1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 3 && query.block_property('fb:rotation') == 1 && !query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect1') && !query.block_neighbor_has_any_tag( 1, 0, 0, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==3&&query.block_property('fb:rotation')==1&&!query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')&&!query.block_neighbor_has_any_tag(1,0,0,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 0, 0, -1, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(0,0,-1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 0, 0, 1, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(0,0,1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect2') && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 0, 0, 1, 'desk_corner') && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(0,0,1,'desk_corner')&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 4 && query.block_property('fb:rotation') == 2 && !query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2') && !query.block_neighbor_has_any_tag( 0, 0, -1, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==4&&query.block_property('fb:rotation')==2&&!query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')&&!query.block_neighbor_has_any_tag(0,0,-1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 3 && query.block_property('fb:rotation') == 2 && !query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect2') && !query.block_neighbor_has_any_tag( 0, 0, 1, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==3&&query.block_property('fb:rotation')==2&&!query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')&&!query.block_neighbor_has_any_tag(0,0,1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( 0, 0, 1, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(0,0,1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 4
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( 0, 0, -1, 'desk_corner')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(0,0,-1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect3') && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( 0, 0, -1, 'desk_corner') && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(0,0,-1,'desk_corner')&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 4 && query.block_property('fb:rotation') == 3 && !query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3') && !query.block_neighbor_has_any_tag( 0, 0, 1, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==4&&query.block_property('fb:rotation')==3&&!query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')&&!query.block_neighbor_has_any_tag(0,0,1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:office_desk_connect') == 3 && query.block_property('fb:rotation') == 3 && !query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect3') && !query.block_neighbor_has_any_tag( 0, 0, -1, 'desk_corner')",
+						"condition": "query.block_property('fb:office_desk_connect')==3&&query.block_property('fb:rotation')==3&&!query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')&&!query.block_neighbor_has_any_tag(0,0,-1,'desk_corner')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect0') && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_property('fb:office_desk_connect') == 1 && query.block_neighbor_has_any_tag(-1, 0, 0, 'office_desk_connect0') && !query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_property('fb:office_desk_connect')==1&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')&&!query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_neighbor_has_any_tag(0, 0, 1, 'office_desk_connect3') && !query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect0') && query.block_property('fb:rotation') == 0 && query.block_property('fb:office_desk_connect') == 1",
+						"condition": "query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')&&!query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')&&query.block_property('fb:rotation')==0&&query.block_property('fb:office_desk_connect')==1",
 						"set_block_property": {
 							"fb:office_desk_connect": 0,
 							"fb:rotation": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect0') && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect0')&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1,
 							"fb:rotation": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 0 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0') && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==0&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1,
 							"fb:rotation": 2
 						}
 					},
 					{
-						"condition": "!query.block_neighbor_has_any_tag(0, 0, 1, 'office_desk_connect2') && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0') && query.block_property('fb:rotation') == 2 && query.block_property('fb:office_desk_connect') == 1",
+						"condition": "!query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')&&query.block_property('fb:rotation')==2&&query.block_property('fb:office_desk_connect')==1",
 						"set_block_property": {
 							"fb:office_desk_connect": 0,
 							"fb:rotation": 0
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0') && query.block_neighbor_has_any_tag( 0, 0, 1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')&&query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1,
 							"fb:rotation": 2
 						}
 					},
 					{
-						"condition": "query.block_neighbor_has_any_tag(0, 0, 1, 'office_desk_connect2') && !query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect0') && query.block_property('fb:rotation') == 2 && query.block_property('fb:office_desk_connect') == 1",
+						"condition": "query.block_neighbor_has_any_tag(0,0,1,'office_desk_connect2')&&!query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect0')&&query.block_property('fb:rotation')==2&&query.block_property('fb:office_desk_connect')==1",
 						"set_block_property": {
 							"fb:office_desk_connect": 0,
 							"fb:rotation": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1') && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1,
 							"fb:rotation": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_property('fb:office_desk_connect') == 1 && query.block_neighbor_has_any_tag(-1, 0, 0, 'office_desk_connect1') && !query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_property('fb:office_desk_connect')==1&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')&&!query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0,
 							"fb:rotation": 1
 						}
 					},
 					{
-						"condition": "query.block_neighbor_has_any_tag(0, 0, -1, 'office_desk_connect3') && !query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1') && query.block_property('fb:rotation') == 3 && query.block_property('fb:office_desk_connect') == 1",
+						"condition": "query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')&&!query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')&&query.block_property('fb:rotation')==3&&query.block_property('fb:office_desk_connect')==1",
 						"set_block_property": {
 							"fb:office_desk_connect": 0,
 							"fb:rotation": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 3 && query.block_neighbor_has_any_tag( -1, 0, 0, 'office_desk_connect1') && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect3')",
+						"condition": "query.block_property('fb:rotation')==3&&query.block_neighbor_has_any_tag(-1,0,0,'office_desk_connect1')&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect3')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1,
 							"fb:rotation": 3
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect1') && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 1 && query.block_property('fb:office_desk_connect') == 1 && query.block_neighbor_has_any_tag(1, 0, 0, 'office_desk_connect1') && !query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==1&&query.block_property('fb:office_desk_connect')==1&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')&&!query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 0
 						}
 					},
 					{
-						"condition": "query.block_neighbor_has_any_tag(0, 0, -1, 'office_desk_connect2') && !query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect1') && query.block_property('fb:rotation') == 1 && query.block_property('fb:office_desk_connect') == 1",
+						"condition": "query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')&&!query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')&&query.block_property('fb:rotation')==1&&query.block_property('fb:office_desk_connect')==1",
 						"set_block_property": {
 							"fb:office_desk_connect": 0,
 							"fb:rotation": 2
 						}
 					},
 					{
-						"condition": "query.block_property('fb:rotation') == 2 && query.block_neighbor_has_any_tag( 1, 0, 0, 'office_desk_connect1') && query.block_neighbor_has_any_tag( 0, 0, -1, 'office_desk_connect2')",
+						"condition": "query.block_property('fb:rotation')==2&&query.block_neighbor_has_any_tag(1,0,0,'office_desk_connect1')&&query.block_neighbor_has_any_tag(0,0,-1,'office_desk_connect2')",
 						"set_block_property": {
 							"fb:office_desk_connect": 1,
 							"fb:rotation": 1

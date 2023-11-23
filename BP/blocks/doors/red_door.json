@@ -42,13 +42,13 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "door_2_bottom",
-					"render_method": "blend",
+					"render_method": "alpha_test",
 					"face_dimming": true,
 					"ambient_occlusion": false
 				},
 				"upper": {
 					"texture": "door_2_top",
-					"render_method": "blend",
+					"render_method": "alpha_test",
 					"face_dimming": true,
 					"ambient_occlusion": false
 				}
@@ -313,31 +313,31 @@
 			"on_placed": {
 				"sequence": [
 					{
-						"condition": "query.block_property('fb:upper_block_bit') == false",
+						"condition": "query.block_property('fb:upper_block_bit')==false",
 						"trigger": "upper_block"
 					},
 					{
 						"sequence": [
 							{
-								"condition": "query.block_property('minecraft:cardinal_direction') == 'north' && query.block_neighbor_has_any_tag(-1,0,0,'fb:red_door') && !query.block_neighbor_has_any_tag(1,0,0,'fb:right_red_door')",
+								"condition": "query.block_property('minecraft:cardinal_direction')=='north'&&query.block_neighbor_has_any_tag(-1,0,0,'fb:red_door')&&!query.block_neighbor_has_any_tag(1,0,0,'fb:right_red_door')",
 								"set_block_property": {
 									"fb:hinge_bit": true
 								}
 							},
 							{
-								"condition": "query.block_property('minecraft:cardinal_direction') == 'south' && query.block_neighbor_has_any_tag(1,0,0,'fb:red_door') && !query.block_neighbor_has_any_tag(-1,0,0,'fb:right_red_door')",
+								"condition": "query.block_property('minecraft:cardinal_direction')=='south'&&query.block_neighbor_has_any_tag(1,0,0,'fb:red_door')&&!query.block_neighbor_has_any_tag(-1,0,0,'fb:right_red_door')",
 								"set_block_property": {
 									"fb:hinge_bit": true
 								}
 							},
 							{
-								"condition": "query.block_property('minecraft:cardinal_direction') == 'west' && query.block_neighbor_has_any_tag(0,0,1,'fb:red_door') && !query.block_neighbor_has_any_tag(0,0,-1,'fb:right_red_door')",
+								"condition": "query.block_property('minecraft:cardinal_direction')=='west'&&query.block_neighbor_has_any_tag(0,0,1,'fb:red_door')&&!query.block_neighbor_has_any_tag(0,0,-1,'fb:right_red_door')",
 								"set_block_property": {
 									"fb:hinge_bit": true
 								}
 							},
 							{
-								"condition": "(query.block_property('minecraft:cardinal_direction') == 'east' && query.block_neighbor_has_any_tag(0,0,-1,'fb:red_door') && !query.block_neighbor_has_any_tag(0,0,1,'fb:right_red_door')) || (query.block_neighbor_has_any_tag(0,-1,0,'fb:right_red_door')&&query.block_property('fb:upper_block_bit') == true)",
+								"condition": "(query.block_property('minecraft:cardinal_direction')=='east'&&query.block_neighbor_has_any_tag(0,0,-1,'fb:red_door')&&!query.block_neighbor_has_any_tag(0,0,1,'fb:right_red_door'))||(query.block_neighbor_has_any_tag(0,-1,0,'fb:right_red_door')&&query.block_property('fb:upper_block_bit')==true)",
 								"set_block_property": {
 									"fb:hinge_bit": true
 								}
@@ -350,18 +350,22 @@
 				"sequence": [
 					{
 						"run_command": {
-							"command": "playsound open.wooden_door @a ~ ~ ~"
+							"command": [
+								"playsound open.wooden_door @a ~ ~ ~"
+							]
 						}
 					},
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'north'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='north'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -369,12 +373,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'north'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='north'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -382,12 +388,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'south'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='south'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -395,12 +403,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'south'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='south'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -408,12 +418,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'west'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='west'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -421,12 +433,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'west'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='west'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -434,12 +448,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'east'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='east'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":true,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -447,12 +463,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'east'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='east'",
 								"set_block_property": {
 									"fb:open_bit": true
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":false,\"fb:open_bit\":true]"
+									]
 								}
 							}
 						]
@@ -463,18 +481,22 @@
 				"sequence": [
 					{
 						"run_command": {
-							"command": "playsound close.wooden_door @a ~ ~ ~"
+							"command": [
+								"playsound close.wooden_door @a ~ ~ ~"
+							]
 						}
 					},
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'north'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='north'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -482,12 +504,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'north'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='north'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -495,12 +519,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'south'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='south'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -508,12 +534,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'south'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='south'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -521,12 +549,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'west'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='west'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -534,12 +564,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'west'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='west'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -547,12 +579,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == false&&q.block_property('minecraft:cardinal_direction') == 'east'",
+								"condition": "q.block_property('fb:upper_block_bit')==false&&q.block_property('minecraft:cardinal_direction')=='east'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":true,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -560,12 +594,14 @@
 					{
 						"sequence": [
 							{
-								"condition": "q.block_property('fb:upper_block_bit') == true&&q.block_property('minecraft:cardinal_direction') == 'east'",
+								"condition": "q.block_property('fb:upper_block_bit')==true&&q.block_property('minecraft:cardinal_direction')=='east'",
 								"set_block_property": {
 									"fb:open_bit": false
 								},
 								"run_command": {
-									"command": "setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									"command": [
+										"setblock ~ ~-1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":false,\"fb:open_bit\":false]"
+									]
 								}
 							}
 						]
@@ -575,7 +611,7 @@
 			"upper_block": {
 				"sequence": [
 					{
-						"condition": "query.block_property('minecraft:cardinal_direction') == 'north'",
+						"condition": "query.block_property('minecraft:cardinal_direction')=='north'",
 						"run_command": {
 							"command": [
 								"fill ~ ~1 ~ ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"north\",\"fb:upper_block_bit\":true] replace air",
@@ -590,7 +626,7 @@
 						}
 					},
 					{
-						"condition": "query.block_property('minecraft:cardinal_direction') == 'south'",
+						"condition": "query.block_property('minecraft:cardinal_direction')=='south'",
 						"run_command": {
 							"command": [
 								"fill ~ ~1 ~ ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"south\",\"fb:upper_block_bit\":true] replace air",
@@ -605,7 +641,7 @@
 						}
 					},
 					{
-						"condition": "query.block_property('minecraft:cardinal_direction') == 'west'",
+						"condition": "query.block_property('minecraft:cardinal_direction')=='west'",
 						"run_command": {
 							"command": [
 								"fill ~ ~1 ~ ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"west\",\"fb:upper_block_bit\":true] replace air",
@@ -620,7 +656,7 @@
 						}
 					},
 					{
-						"condition": "query.block_property('minecraft:cardinal_direction') == 'east'",
+						"condition": "query.block_property('minecraft:cardinal_direction')=='east'",
 						"run_command": {
 							"command": [
 								"fill ~ ~1 ~ ~ ~1 ~ fb:red_door[\"minecraft:cardinal_direction\":\"east\",\"fb:upper_block_bit\":true] replace air",

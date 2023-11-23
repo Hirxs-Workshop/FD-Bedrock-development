@@ -12,7 +12,8 @@
 				],
 				"p:changer": [
 					0,
-					1
+					1,
+					2
 				]
 			}
 		},
@@ -80,6 +81,18 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fm_wall_top_2",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					}
+				}
 			}
 		],
 		"components": {
@@ -135,7 +148,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

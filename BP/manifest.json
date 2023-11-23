@@ -1,30 +1,17 @@
 {
 	"format_version": 2,
-	"metadata": {
-		"authors": [
-			"Hirxs"
-		],
-		"generated_with": {
-			"bridge": [
-				"2.6.7"
-			],
-			"dash": [
-				"0.10.10"
-			]
-		}
-	},
 	"header": {
-		"name": "FNAF's Decorations - v4 [Pre release #1.5 (Bug fix)]",
+		"name": "FNAF's Decorations - v4 [Pre release #2 (DEV)]",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
 			19,
-			0
+			40
 		],
 		"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
 		"version": [
 			4,
-			7,
+			8,
 			0
 		]
 	},
@@ -35,7 +22,7 @@
 			"version": [
 				4,
 				7,
-				0
+				5
 			]
 		},
 		{
@@ -45,7 +32,7 @@
 			"entry": "scripts/test_maincamerasys.js",
 			"version": [
 				4,
-				7,
+				8,
 				0
 			]
 		}
@@ -70,7 +57,7 @@
 			"uuid": "b257d765-f49d-4e40-a043-5eb2463a9033",
 			"version": [
 				4,
-				7,
+				8,
 				0
 			]
 		}
@@ -86,5 +73,15 @@
 			"name": "§lFD - 1.20.10+ | Support\n\n§l§r§gFeatures:§7\n-All normal blocks\n-Desks & Supply Room Shelve\n-Electric wires\n-Light lever and office light function\nCurtains (Glass panel)\n-Faztab / Cameras\n\n§l§cUnsupported:§r\n§7-Nothing yeahh",
 			"memory_tier": 0
 		}
-	]
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.7.5"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	}
 }

@@ -14,7 +14,10 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.wall_top_block_1",
+			"tag:wood": {},
+			"tag:wall": {},
+			"tag:custom_fence": {},
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "pizzeria_bricks",
@@ -45,7 +48,7 @@
 					16
 				]
 			},
-			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_absorption": 15,
 			"minecraft:on_player_placing": {
 				"event": "bridge:update_rotation"
 			},

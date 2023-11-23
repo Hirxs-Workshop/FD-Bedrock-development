@@ -14,7 +14,10 @@
 					0,
 					1,
 					2,
-					3
+					3,
+					4,
+					5,
+					6
 				]
 			}
 		},
@@ -107,6 +110,42 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.wall_paper_12",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "bridge_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.wall_paper_13",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.wall_paper_14",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
 			}
 		],
 		"components": {
@@ -160,7 +199,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==6?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

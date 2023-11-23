@@ -65,7 +65,7 @@
 				"*": {
 					"texture": "iwfm_3",
 					"render_method": "opaque",
-							"ambient_occlusion": true
+					"ambient_occlusion": true
 				}
 			},
 			"minecraft:map_color": "#ffffff",

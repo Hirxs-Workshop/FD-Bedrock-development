@@ -59,19 +59,14 @@
 			"tag:non_full": {},
 			"minecraft:on_player_placing": {
 				"event": "fb:block_placed"
-			},
-			"minecraft:rotation": [
-				0,
-				0,
-				0
-			]
+			}
 		},
 		"events": {
 			"fb:block_placed": {
 				"sequence": [
 					{
 						"set_block_property": {
-							"fb:block_rotation": "query.block_face"
+							"fb:block_rotation": "q.cardinal_facing_2d"
 						}
 					},
 					{

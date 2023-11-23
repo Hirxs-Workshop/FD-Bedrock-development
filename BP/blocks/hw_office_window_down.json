@@ -65,6 +65,11 @@
 							"texture": "fb:hw_window",
 							"render_method": "blend",
 							"ambient_occlusion": false
+						},
+						"corner": {
+							"texture": "fb:hw_window",
+							"render_method": "opaque",
+							"ambient_occlusion": false
 						}
 					}
 				}
@@ -73,9 +78,14 @@
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
+						"hw_window_2": {
 							"texture": "fb:hw_window_2",
 							"render_method": "blend",
+							"ambient_occlusion": false
+						},
+						"hw_corner_2": {
+							"texture": "fb:hw_window_2",
+							"render_method": "opaque",
 							"ambient_occlusion": false
 						}
 					}
