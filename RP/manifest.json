@@ -11,7 +11,7 @@
 		"uuid": "b257d765-f49d-4e40-a043-5eb2463a9033",
 		"version": [
 			4,
-			8,
+			9,
 			0
 		]
 	},
@@ -21,7 +21,7 @@
 			"uuid": "e14f36eb-f25e-4df3-a809-07297e5235ff",
 			"version": [
 				4,
-				8,
+				9,
 				0
 			]
 		}
@@ -31,7 +31,7 @@
 			"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
 			"version": [
 				4,
-				8,
+				9,
 				0
 			]
 		}
@@ -39,7 +39,7 @@
 	"metadata": {
 		"generated_with": {
 			"bridge": [
-				"2.7.5"
+				"2.7.6"
 			],
 			"dash": [
 				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
