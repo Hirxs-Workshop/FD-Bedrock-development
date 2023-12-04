@@ -532,6 +532,7 @@ item.spawn_egg.entity.fb:fnaf4_drawers_2.name=Room drawers (Right)
 
 item.fb:security_guard_chestplate=Security Guard - Chestplate
 item.fb:security_guard_leggings=Security Guard - Leggings
+item.fb_springlock_suit_legs=Spring Bonnie Suit Leggings
 item.fb:security_guard_boots=Security Guard - Boots
 
 ## fnaf 1 

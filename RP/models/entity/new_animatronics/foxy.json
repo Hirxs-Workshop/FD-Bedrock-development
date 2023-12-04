@@ -278,6 +278,11 @@
 					]
 				},
 				{
+					"name": "rightItem",
+					"parent": "hook",
+					"pivot": [-6, 15, 1]
+				},
+				{
 					"name": "armR",
 					"parent": "feddybod",
 					"pivot": [6, 29, 2]

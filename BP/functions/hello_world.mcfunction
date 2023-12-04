@@ -64,8 +64,6 @@ execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,qua
 
 execute @e[type=player,hasitem={location=slot.armor.head,item=fb:mask_freddy,quantity=1}] ~~~ title @s actionbar "Now you are protected!"
 
-
-
 execute @e[type=fb:stage_plate_freddy] ~ ~ ~ tp @e[type=fb:showtime_freddy_fazbear,r=10] ~ ~-0.5 ~
 
 execute @e[type=fb:stage_plate_bonnie_bunny] ~ ~ ~ tp @e[type=fb:showtime_bonnie_bunny,r=10] ~ ~-0.5 ~
@@ -75,3 +73,11 @@ execute @e[type=fb:stage_plate_chica_chicken] ~ ~ ~ tp @e[type=fb:showtime_chica
 execute @e[type=player,hasitem={location=slot.weapon.mainhand,item=fb:remover_tool,quantity=1}] ~~~ function remover_particles
 
 execute @e[type=player,hasitem={location=slot.weapon.mainhand,item=fb:rotate,quantity=1}] ~~~ function rotate_particles
+
+## Springlock - Functions
+execute @e[type=player,hasitem={location=slot.armor.legs,item=fb:springlock_suit_legs,slot=0,quantity=1}] ~~~ function animation_springlock
+execute @e[type=player,hasitem={location=slot.armor.legs,item=fb:springlock_suit_legs,location=slot.armor.chest,item=fb:springlock_suit_chest,quantity=1}] ~~~ function animation_springlock_legs_chest
+execute @e[type=player,hasitem={location=slot.armor.chest,item=fb:springlock_suit_failure,quantity=1}] ~~~ function animation_springlock_legs_chest
+execute @e[type=player,hasitem={location=slot.armor.head,item=fb:springlock_suit_head,quantity=1,location=slot.armor.legs,item=fb:springlock_suit_legs,quantity=1,location=slot.armor.chest,item=fb:springlock_suit_chest,quantity=1}] ~~~ effect @s slowness 10 2 true
+
+execute @e[type=player,hasitem={location=slot.armor.chest,item=fb:springlock_suit_failure,quantity=1}] ~~~ function springlock_failure

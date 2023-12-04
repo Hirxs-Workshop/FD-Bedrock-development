@@ -2014,6 +2014,9 @@
 		"office_door_upper": {
 			"textures": "textures/blocks/doors/office_door_upper"
 		},
+		"office_door_lower": {
+			"textures": "textures/blocks/doors/office_door_lower"
+		},
 		////// FNAF Movie Blocks
 		"metal_chains": {
 			"textures": "textures/blocks/fnaf_movie/metal_chains"
