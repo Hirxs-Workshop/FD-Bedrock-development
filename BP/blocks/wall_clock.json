@@ -1,0 +1,126 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:wall_clock",
+			"is_experimental": false,
+			"properties": {
+				"bridge:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.wall_clock",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "wall_clock",
+					"render_method": "alpha_test"
+				},
+				"big_tick": {
+					"texture": "wall_clock_big_tick",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_player_placing": {
+				"event": "bridge:update_rotation"
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					1,
+					1
+				],
+				"on_tick": {
+					"event": "tick_sound"
+				}
+			},
+			"minecraft:creative_category": {
+				"group": "construction",
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"bridge:update_rotation": {
+				"set_block_property": {
+					"bridge:block_rotation": "query.cardinal_facing_2d"
+				}
+			},
+			"tick_sound": {
+				"run_command": {
+					"command": "/playsound fb.clock_ticking @a[r=10]"
+				}
+			}
+		}
+	}
+}

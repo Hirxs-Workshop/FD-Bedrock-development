@@ -63,10 +63,11 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "balloons1",
-							"render_method": "blend",
+							"texture": "balloons_1",
+							"render_method": "alpha_test",
 							"geometry": "trash_1",
-							"ambient_occlusion": false
+							"ambient_occlusion": false,
+							"face_dimming": false
 						}
 					}
 				}
@@ -76,10 +77,11 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "balloons4",
-							"render_method": "blend",
+							"texture": "balloons_2",
+							"render_method": "alpha_test",
 							"geometry": "trash_2",
-							"ambient_occlusion": false
+							"ambient_occlusion": false,
+							"face_dimming": false
 						}
 					}
 				}
@@ -90,17 +92,16 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "balloons5",
-							"render_method": "blend",
+							"render_method": "alpha_test",
 							"geometry": "trash_3",
-							"ambient_occlusion": false
+							"ambient_occlusion": false,
+							"face_dimming": false
 						}
 					}
 				}
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
 			"minecraft:display_name": "fb:balloons_up",
 			"minecraft:map_color": "#ffffff",
 			"minecraft:destroy_time": 4,

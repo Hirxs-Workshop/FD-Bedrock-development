@@ -2041,6 +2041,61 @@
 		},
 		"fm_wall_top_2": {
 			"textures": "textures/blocks/fnaf_movie/fm_wall_top_2"
+		},
+		/// News
+		"party_cake": {
+			"textures": "textures/blocks/party_cake"
+		},
+		"warning_sign_1": {
+			"textures": "textures/blocks/warning_sign_1"
+		},
+		"neon_light": {
+			"textures": "textures/blocks/neon_light"
+		},
+		"kid_blue_chair": {
+			"textures": "textures/blocks/kids_chairs/kid_blue_chair"
+		},
+		"kid_red_chair": {
+			"textures": "textures/blocks/kids_chairs/kid_red_chair"
+		},
+		"kid_green_chair": {
+			"textures": "textures/blocks/kids_chairs/kid_green_chair"
+		},
+		"kid_yellow_chair": {
+			"textures": "textures/blocks/kids_chairs/kid_yellow_chair"
+		},
+		"kid_orange_chair": {
+			"textures": "textures/blocks/kids_chairs/kid_orange_chair"
+		},
+		"celling_large_light_off": {
+			"textures": "textures/blocks/celling_large_light_off"
+		},
+		"balloons_1": {
+			"textures": "textures/items/balloons_1"
+		},
+		"balloons_2": {
+			"textures": "textures/items/balloons_2"
+		},
+		"is_that_freddy_fazbear": {
+			"textures": "textures/blocks/isthatfreddyfazbear"
+		},
+		"wall_clock": {
+			"textures": "textures/blocks/fnaf_movie/wall_clock"
+		},
+		"wall_clock_big_tick": {
+			"textures": "textures/blocks/fnaf_movie/wall_clock_big_stick"
+		},
+		"office_wall_tiles": {
+			"textures": "textures/blocks/fnaf_movie/office_wall_tiles"
+		},
+		"grey_office_wall_tiles": {
+			"textures": "textures/blocks/fnaf_movie/grey_office_wall_tiles"
+		},
+		"blue_grey_office_wall_tiles": {
+			"textures": "textures/blocks/fnaf_movie/blue_grey_office_wall_tiles"
+		},
+		"vertical_pipe": {
+			"textures": "textures/blocks/vertical_pipe"
 		}
 	}
 }

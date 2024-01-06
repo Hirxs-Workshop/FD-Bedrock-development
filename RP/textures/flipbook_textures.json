@@ -154,9 +154,9 @@
     ]
   },
   {
-    "flipbook_texture": "textures/blocks/help-wanted/hw_fan_2",
-    "atlas_tile": "fb:hw_fan_2",
-    "ticks_per_frame": 0.01,
+    "flipbook_texture": "textures/blocks/fnaf_movie/wall_clock_big_stick",
+    "atlas_tile": "wall_clock_big_tick",
+    "ticks_per_frame": 320,
     "blend_frames": false,
     "frames": [
       0,
@@ -166,7 +166,39 @@
       4,
       5,
       6,
-      7
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/fnaf_movie/wall_clock",
+    "atlas_tile": "wall_clock",
+    "ticks_per_frame": 20.5,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
     ]
   }
 ]

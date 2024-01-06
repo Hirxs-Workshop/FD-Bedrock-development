@@ -1,0 +1,56 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wall_clock",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 1, 7],
+							"size": [12, 12, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [12, 12]},
+								"east": {"uv": [12, 19], "uv_size": [1, 12]},
+								"south": {"uv": [0, 12], "uv_size": [12, 12]},
+								"west": {"uv": [13, 19], "uv_size": [1, 12]},
+								"up": {"uv": [14, 19], "uv_size": [12, 1]},
+								"down": {"uv": [14, 21], "uv_size": [12, -1]}
+							}
+						},
+						{
+							"origin": [-5, 2, 6.7],
+							"size": [10, 10, 0],
+							"uv": {
+								"north": {"uv": [12, 0], "uv_size": [10, 10]}
+							}
+						},
+						{
+							"origin": [-4.5, 2.5, 6.5],
+							"size": [9, 9, 0],
+							"uv": {
+								"north": {"uv": [12, 10], "uv_size": [9, 9], "material_instance": "big_tick"}
+							}
+						},
+						{
+							"origin": [-4.5, 2.5, 6.3],
+							"size": [9, 9, 0],
+							"uv": {
+								"north": {"uv": [12, 10], "uv_size": [9, 9]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

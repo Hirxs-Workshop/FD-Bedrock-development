@@ -1,17 +1,17 @@
-	{
+{
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "fb:springlock_suit_failure",
+			"identifier": "fb:springlock_suit_failure_d",
 			"materials": {
 				"default": "armor",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/entity/suit/springbonnie_suit"
+				"default": "textures/entity/suit/springbonnie_suit_dirty"
 			},
 			"geometry": {
-				"default": "geometry.spring_bonnie_suit_chest"
+				"default": "geometry.spring_bonnie_suit_chest_d"
 			},
 			"scripts": {
 				"parent_setup": "variable.leg_layer_visible = 0.0;"

@@ -13,8 +13,7 @@
 				"p:changer": [
 					0,
 					1,
-					2,
-					3
+					2
 				]
 			}
 		},
@@ -64,7 +63,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "chisel_metal_block",
+							"texture": "office_wall_tiles",
 							"render_method": "opaque",
 							"ambient_occlusion": true
 						}
@@ -76,7 +75,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "chisel_metal_block_2",
+							"texture": "grey_office_wall_tiles",
 							"render_method": "opaque",
 							"ambient_occlusion": true
 						}
@@ -88,19 +87,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "chisel_metal_block_3",
-							"render_method": "opaque",
-							"ambient_occlusion": true
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "chisel_metal_block_4",
+							"texture": "blue_grey_office_wall_tiles",
 							"render_method": "opaque",
 							"ambient_occlusion": true
 						}
@@ -160,7 +147,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

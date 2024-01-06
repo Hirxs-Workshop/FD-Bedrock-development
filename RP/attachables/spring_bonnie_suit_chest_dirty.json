@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "fb:springlock_suit_chest_d",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/entity/suit/springbonnie_suit_dirty"
+			},
+			"geometry": {
+				"default": "geometry.spring_bonnie_suit_chest_d"
+			},
+			"scripts": {
+				"parent_setup": "variable.leg_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

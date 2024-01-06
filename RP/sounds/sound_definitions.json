@@ -13,6 +13,12 @@
 				"sounds/doors/office_door_open"
 			]
 		},
+		"fb.clock_ticking": {
+			"category": "block",
+			"sounds": [
+				"sounds/clock_ticking"
+			]
+		},
 		"fb.office_door_button": {
 			"category": "block",
 			"sounds": [

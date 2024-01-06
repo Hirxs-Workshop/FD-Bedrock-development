@@ -77,7 +77,7 @@
 	"metadata": {
 		"generated_with": {
 			"bridge": [
-				"2.7.6"
+				"2.7.8"
 			],
 			"dash": [
 				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"

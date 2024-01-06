@@ -51,7 +51,7 @@
 					0
 				]
 			},
-			"minecraft:block_light_absorption": 15,
+			"minecraft:block_light_absorption": 0,
 			"minecraft:on_player_placing": {
 				"event": "bridge:update_rotation"
 			},
