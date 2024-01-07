@@ -12,12 +12,11 @@ Coproyect manager
 
 Helpers
 - Cheez (Models & Textures)
-- Jenny (Textures)
+- Jennyfer (Textures)
 - Murasaki (Modeler,suits code,textures)
 
 Insiders/Testers
 - doortame
-- Mura
 - YellowRabbit
 - Myst
 - Dargelixt Gamer
@@ -35,6 +34,7 @@ Insiders/Testers
 - ManSam
 - The FantasticBOB
 - PuppetMZ
+- lasoyas
 
 _____________________________________
 <details>
