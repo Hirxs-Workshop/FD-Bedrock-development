@@ -2096,6 +2096,96 @@
 		},
 		"vertical_pipe": {
 			"textures": "textures/blocks/vertical_pipe"
+		},
+		"new_pepperoni_pizza": {
+			"textures": "textures/blocks/pizza_1"
+		},
+		"chicas_magic_rainbow_1": {
+			"textures": "textures/blocks/chicas_magic_rainbow"
+		},
+		"chicas_magic_rainbow_2": {
+			"textures": "textures/blocks/angry_chicas_magic_rainbow"
+		},
+		"chicas_magic_rainbow_3": {
+			"textures": "textures/blocks/evil_chicas_magic_rainbow"
+		},
+		"chicas_magic_rainbow_4": {
+			"textures": "textures/blocks/hmm_chicas_magic_rainbow"
+		},
+		"chicas_magic_rainbow_5": {
+			"textures": "textures/blocks/just_mouth_chicas_magic_rainbow"
+		},
+		"celebrate_fun_sign": {
+			"textures": "textures/blocks/celebrate_fun_sign"
+		},
+		"red_neon_light": {
+			"textures": "textures/blocks/red_neon_light"
+		},
+		"arcade_neon_sign": {
+			"textures": "textures/blocks/arcade_neon_sign"
+		},
+		"emergency_light_on": {
+			"textures": "textures/blocks/emergency_light_on"
+		},
+		"emergency_light_off": {
+			"textures": "textures/blocks/emergency_light_off"
+		},
+		"stage_purple_bricks": {
+			"textures": "textures/blocks/fnaf2/stage_purple_bricks"
+		},
+		"stage_white_wall": {
+			"textures": "textures/blocks/fnaf2/stage_wall"
+		},
+		"stage_white_wall_tiles": {
+			"textures": "textures/blocks/fnaf2/stage_wall_tiles"
+		},
+		"upper_sparkles_curtain_purple": {
+			"textures": "textures/blocks/curtains/upper_sparkles_curtain_purple"
+		},
+		"bottom_sparkles_curtain_purple": {
+			"textures": "textures/blocks/curtains/bottom_sparkles_curtain_purple"
+		},
+		"middle_sparkles_curtain_purple": {
+			"textures": "textures/blocks/curtains/middle_sparkles_curtain_purple"
+		},
+		"sparkles_curtain_purple": {
+			"textures": "textures/blocks/curtains/sparkles_curtain_purple"
+		},
+		"upper_sparkles_curtain_purple_gold": {
+			"textures": "textures/blocks/curtains/upper_sparkles_curtain_purple_gold"
+		},
+		"bottom_sparkles_curtain_purple_gold": {
+			"textures": "textures/blocks/curtains/bottom_sparkles_curtain_purple_gold"
+		},
+		"middle_sparkles_curtain_purple_gold": {
+			"textures": "textures/blocks/curtains/middle_sparkles_curtain_purple_gold"
+		},
+		"sparkles_curtain_purple_gold": {
+			"textures": "textures/blocks/curtains/sparkles_curtain_purple_gold"
+		},
+		"upper_sparkles_curtain_red": {
+			"textures": "textures/blocks/curtains/upper_sparkles_curtain_red"
+		},
+		"bottom_sparkles_curtain_red": {
+			"textures": "textures/blocks/curtains/bottom_sparkles_curtain_red"
+		},
+		"middle_sparkles_curtain_red": {
+			"textures": "textures/blocks/curtains/middle_sparkles_curtain_red"
+		},
+		"sparkles_curtain_red": {
+			"textures": "textures/blocks/curtains/sparkles_curtain_red"
+		},
+		"upper_sparkles_curtain_blue": {
+			"textures": "textures/blocks/curtains/upper_sparkles_curtain_blue"
+		},
+		"bottom_sparkles_curtain_blue": {
+			"textures": "textures/blocks/curtains/bottom_sparkles_curtain_blue"
+		},
+		"middle_sparkles_curtain_blue": {
+			"textures": "textures/blocks/curtains/middle_sparkles_curtain_blue"
+		},
+		"sparkles_curtain_blue": {
+			"textures": "textures/blocks/curtains/sparkles_curtain_blue"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:chisel_metal_block",
+			"identifier": "fb:office_wall_tiles",
 			"properties": {
 				"p:facing": [
 					0,

@@ -8,10 +8,10 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/withered/withered_bonnie"
+				"default": "textures/entity/fnaf2/witheredbonnie"
 			},
 			"animations": {
-				"default_pose": "animation.withered_bonnie.idle1",
+				"default_pose": "animation.withered_bonnie.idle",
 				"no_pose": "animation.withered_bonnie.idle2",
 				"solemn_pose": "animation.withered_bonnie.idle3",
 				"athena_pose": "animation.withered_bonnie.idle1",
@@ -39,7 +39,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.withered_bonnie"
+				"default": "geometry.new_withered_bonnie"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

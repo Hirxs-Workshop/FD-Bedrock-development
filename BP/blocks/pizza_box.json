@@ -32,11 +32,11 @@
 			"minecraft:explosion_resistance": 0.1,
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "pizza_box",
+					"texture": "new_pepperoni_pizza",
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:geometry": "geometry.pizza_box_1",
+			"minecraft:geometry": "geometry.pepperoni_pizza_box_1",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,
@@ -361,7 +361,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_1"
 					},
-					"minecraft:geometry": "geometry.pizza_box_1",
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_1",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -373,7 +373,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_2"
 					},
-					"minecraft:geometry": "geometry.pizza_box_2",
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_2",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -385,7 +385,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_3"
 					},
-					"minecraft:geometry": "geometry.pizza_box_3",
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_3",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -397,7 +397,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_4"
 					},
-					"minecraft:geometry": "geometry.pizza_box_4",
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_4",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -409,7 +409,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_5"
 					},
-					"minecraft:geometry": "geometry.pizza_box_5",
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_5",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}

@@ -8,16 +8,17 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/toys/toy_chica"
+				"default": "textures/entity/fnaf2/toy_chica",
+				"blue": "textures/entity/fnaf2/toy_chica_night_mode"
 			},
 			"spawn_egg": {
 				"texture": "toy_chica_icon"
 			},
 			"animations": {
-				"default_pose": "animation.toy_chica.idle",
-				"no_pose": "animation.toy_chica.showtime",
-				"solemn_pose": "animation.toy_chica.attack",
-				"athena_pose": "animation.toy_chica.idle",
+				"default_pose": "animation.new_toy_chica.geo.test_pose_1",
+				"no_pose": "animation.new_toy_chica.geo.test_pose_2",
+				"solemn_pose": "animation.new_toy_chica.geo.test_pose_3",
+				"athena_pose": "animation.new_toy_chica.geo.idk",
 				"brandish_pose": "animation.toy_chica.showtime",
 				"honor_pose": "animation.toy_chica.attack",
 				"entertain_pose": "animation.toy_chica.idle",
@@ -42,10 +43,10 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.toy_chica"
+				"default": "geometry.new_toy_chica"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.fredbear"
 			],
 			"enable_attachables": true
 		}

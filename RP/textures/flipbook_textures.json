@@ -200,5 +200,29 @@
       14,
       15
     ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/emergency_light_on",
+    "atlas_tile": "emergency_light_on",
+    "ticks_per_frame": 0.1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
   }
 ]

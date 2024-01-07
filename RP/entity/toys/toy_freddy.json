@@ -8,13 +8,13 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/toys/toy_freddy",
-				"blue": "textures/entity/toys/toy_freddy_white_eyes"
+				"default": "textures/entity/fnaf2/toy_freddy",
+				"blue": "textures/entity/fnaf2/toy_freddy"
 			},
 			"animations": {
-				"default_pose": "animation.freddy_fazbear.stage_3",
-				"no_pose": "animation.freddy.east_hall_pose1",
-				"solemn_pose": "animation.freddy_fazbear.east_hall_pose2",
+				"default_pose": "animation.toy_freddy.idle_test_1",
+				"no_pose": "animation.toy_freddy.idle_test_2",
+				"solemn_pose": "animation.toy_freddy.idle_test_3",
 				"athena_pose": "animation.freddy_fazbear.gameover",
 				"brandish_pose": "animation.freddy_fazbear.dinning_area_pose1",
 				"honor_pose": "animation.trimer.stage_1",
@@ -40,7 +40,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.toy_freddy"
+				"default": "geometry.new_toy_freddy"
 			},
 			"render_controllers": [
 				"controller.render.fredbear"

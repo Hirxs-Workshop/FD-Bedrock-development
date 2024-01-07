@@ -1,0 +1,211 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.new_toy_bonnie.test_idle_1": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [0, 0, 5]
+				},
+				"RightArm": {
+					"rotation": [-260, 80, -150]
+				},
+				"RightLowerArm": {
+					"rotation": [-52.18757, -0.66253, -22.88586]
+				},
+				"item": {
+					"rotation": [-28.07555, 11.0311, 19.7339],
+					"position": [9, 22, -2]
+				},
+				"LeftArm": {
+					"rotation": [-121.27708, -60.58048, 100.54631]
+				},
+				"LeftLowerArm": {
+					"rotation": [0, 0, 80]
+				},
+				"hand2": {
+					"rotation": [3.05615, 0.61577, 63.92602]
+				},
+				"fingers3": {
+					"rotation": [0, 0, 40]
+				},
+				"thumb3": {
+					"rotation": [0, 47.5, 0],
+					"position": [-0.9, 0, -0.7]
+				},
+				"RightLeg": {
+					"rotation": [0, 7.5, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [0, 7.5, 0]
+				},
+				"LeftLeg": {
+					"rotation": [0, -7.5, 0]
+				},
+				"LeftLegBottom": {
+					"rotation": [0, -10, 0]
+				}
+			}
+		},
+		"animation.new_toy_bonnie.test_idle_4": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [2.5, 0, 5]
+				},
+				"RightArm": {
+					"rotation": [-260, 80, -150]
+				},
+				"RightLowerArm": {
+					"rotation": [-52.18757, -0.66253, -22.88586]
+				},
+				"item": {
+					"rotation": [-28.07555, 11.0311, 19.7339],
+					"position": [9, 22, -2],
+					"scale": 0
+				},
+				"LeftArm": {
+					"rotation": [-193.25659, -74.63442, 178.97191]
+				},
+				"LeftLowerArm": {
+					"rotation": [-180, 85, -182.5]
+				},
+				"hand2": {
+					"rotation": [1.37273, 2.79928, 11.44313]
+				},
+				"fingers3": {
+					"rotation": [0, 0, 15]
+				},
+				"thumb3": {
+					"rotation": [0, 15, 0],
+					"position": [-0.4, 0, -0.7]
+				},
+				"RightLeg": {
+					"rotation": [0, 7.5, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [0, 7.5, 0]
+				},
+				"LeftLeg": {
+					"rotation": [0, -7.5, 0]
+				},
+				"LeftLegBottom": {
+					"rotation": [0, -10, 0]
+				},
+				"bone2": {
+					"position": [0, 0.2, 0]
+				},
+				"bone3": {
+					"position": [0, 0.2, 0]
+				}
+			}
+		},
+		"animation.new_toy_bonnie.test_idle_2": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [5, 0, -2.5]
+				},
+				"Head": {
+					"rotation": [0, 0, 5]
+				},
+				"bone": {
+					"position": [0, -0.4, 0]
+				},
+				"RightArm": {
+					"rotation": [0, 0, 22.5]
+				},
+				"RightLowerArm": {
+					"rotation": [-1.10693, 12.45167, -15.12076]
+				},
+				"hand": {
+					"rotation": [0, 0, -12.5]
+				},
+				"thumb": {
+					"rotation": [0, -30, 20],
+					"position": [0.3, 0, 0]
+				},
+				"item": {
+					"scale": 0
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -17.5]
+				},
+				"LeftLowerArm": {
+					"rotation": [-0.44067, -9.99038, 2.53852]
+				},
+				"hand2": {
+					"rotation": [0, -12.5, 0]
+				},
+				"thumb3": {
+					"rotation": [0, 25, -25]
+				},
+				"RightLeg": {
+					"rotation": [0, 5, 0]
+				},
+				"LeftLeg": {
+					"rotation": [5.019, -4.98093, -0.43688]
+				},
+				"LeftLegBottom": {
+					"rotation": [-2.50954, -4.99523, 0.21865]
+				},
+				"LeftFoot": {
+					"rotation": [-2.5, 0, 0]
+				},
+				"bone2": {
+					"position": [0, 0.4, 0]
+				},
+				"bone3": {
+					"position": [0, 0.4, 0]
+				}
+			}
+		},
+		"animation.new_toy_bonnie.test_idle_3": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [0, 15, 0]
+				},
+				"Head": {
+					"rotation": [-7.5, 0, 0]
+				},
+				"RightArm": {
+					"rotation": [-162.40824, 19.92011, -94.99618]
+				},
+				"RightLowerArm": {
+					"rotation": [0, 0, -15]
+				},
+				"hand": {
+					"rotation": [0, 0, -17.5]
+				},
+				"item": {
+					"scale": 0
+				},
+				"LeftArm": {
+					"rotation": [-180.87038, -4.92385, 100.03742]
+				},
+				"LeftLowerArm": {
+					"rotation": [0, 0, 17.5]
+				},
+				"hand2": {
+					"rotation": [0, 0, 12.5]
+				},
+				"RightLeg": {
+					"rotation": [-10, 30, 0]
+				},
+				"RightLowerLeg": {
+					"rotation": [10, 0, 0]
+				},
+				"LeftLeg": {
+					"rotation": [0, 0, -10]
+				},
+				"LeftLegBottom": {
+					"rotation": [0, 0, 5]
+				},
+				"LeftFoot": {
+					"rotation": [0, -10, 5]
+				}
+			}
+		}
+	}
+}

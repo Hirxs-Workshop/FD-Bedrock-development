@@ -12,16 +12,32 @@
 			},
 			"bones": [
 				{
+					"name": "bb_main2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 0, -1],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [30, 30], "uv_size": [2, 2]},
+								"east": {"uv": [30, 30], "uv_size": [2, 2]},
+								"south": {"uv": [30, 30], "uv_size": [2, 2]},
+								"west": {"uv": [30, 30], "uv_size": [2, 2]},
+								"up": {"uv": [32, 32], "uv_size": [-2, -2]},
+								"down": {"uv": [32, 32], "uv_size": [-2, -2]}
+							}
+						}
+					]
+				},
+				{
 					"name": "bb_main",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
 							"origin": [-15, -1, 7],
 							"size": [30, 17, 0],
-							"pivot": [0, 7.5, 7],
-							"rotation": [0, 180, 0],
 							"uv": {
-								"north": {"uv": [1, 0], "uv_size": [30, 17]}
+								"north": {"uv": [31, 0], "uv_size": [-30, 17]}
 							}
 						},
 						{

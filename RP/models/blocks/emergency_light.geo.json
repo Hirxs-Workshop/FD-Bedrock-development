@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.freddy_plushy",
+				"identifier": "geometry.emergency_light",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -16,7 +16,7 @@
 					"pivot": [0, 0, 0]
 				},
 				{
-					"name": "bone",
+					"name": "up_0",
 					"parent": "freddy_plush",
 					"pivot": [0, 0, 0],
 					"cubes": [

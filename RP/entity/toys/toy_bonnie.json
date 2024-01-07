@@ -8,17 +8,17 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/toys/toy_bonnie",
-				"blue": "textures/entity/toys/shadow_bonnie"
+				"default": "textures/entity/fnaf2/toy_bonnie",
+				"blue": "textures/entity/fnaf2/shadow_toy_bonnie"
 			},
 			"spawn_egg": {
 				"texture": "toy_bonnie_icon"
 			},
 			"animations": {
-				"default_pose": "animation.bonnie.pose1",
-				"no_pose": "animation.bonnie.dinning_area_pose1",
-				"solemn_pose": "animation.bonnie.backstage_pose1",
-				"athena_pose": "animation.bonnie.facereveal",
+				"default_pose": "animation.new_toy_bonnie.test_idle_1",
+				"no_pose": "animation.new_toy_bonnie.test_idle_2",
+				"solemn_pose": "animation.new_toy_bonnie.test_idle_3",
+				"athena_pose": "animation.new_toy_bonnie.test_idle_4",
 				"brandish_pose": "animation.bonnie.west_hall_pose1",
 				"honor_pose": "animation.bonnie.west_hall_pose2",
 				"entertain_pose": "animation.bonnie.door_pose",
@@ -43,7 +43,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.toy_bonnie"
+				"default": "geometry.new_toy_bonnie"
 			},
 			"render_controllers": [
 				"controller.render.fredbear"

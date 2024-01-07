@@ -5,143 +5,59 @@
 			"loop": true,
 			"bones": {
 				"freddy": {
-					"rotation": [
-						17.5,
-						0,
-						0
-					],
-					"position": [
-						0,
-						-15,
-						-3
-					]
+					"rotation": [17.5, 0, 0],
+					"position": [0, -15, -3]
 				},
 				"body": {
-					"rotation": [
-						-37.5,
-						0,
-						0
-					]
+					"rotation": [-37.5, 0, 0]
 				},
 				"head2": {
-					"rotation": [
-						11.74769,
-						-6.27967,
-						13.64973
-					]
+					"rotation": [11.74769, -6.27967, 13.64973]
 				},
 				"left_arm_custom2": {
-					"rotation": [
-						0,
-						0,
-						-12.5
-					]
+					"rotation": [0, 0, -12.5]
 				},
 				"rightArm2": {
-					"rotation": [
-						-22.19157,
-						3.81024,
-						19.25249
-					]
+					"rotation": [-22.19157, 3.81024, 19.25249]
 				},
 				"right_arm_custom2": {
-					"rotation": [
-						69.98246,
-						2.34914,
-						9.14447
-					],
-					"position": [
-						0,
-						-1,
-						1
-					]
+					"rotation": [69.98246, 2.34914, 9.14447],
+					"position": [0, -1, 1]
 				},
 				"right_forearm_custom_b3": {
-					"rotation": [
-						-36.26198,
-						11.55798,
-						-21.69601
-					]
+					"rotation": [-36.26198, 11.55798, -21.69601]
 				},
 				"bone": {
-					"rotation": [
-						-26.56505,
-						-37.76124,
-						39.23152
-					]
+					"rotation": [-26.56505, -37.76124, 39.23152]
 				},
 				"rightLeg": {
-					"rotation": [
-						-122.5,
-						0,
-						0
-					],
-					"position": [
-						0,
-						4,
-						0
-					]
+					"rotation": [-122.5, 0, 0],
+					"position": [0, 4, 0]
 				},
 				"bone7": {
-					"rotation": [
-						0,
-						0,
-						22.5
-					]
+					"rotation": [0, 0, 22.5]
 				},
 				"bone3": {
-					"rotation": [
-						67.5,
-						0,
-						0
-					]
+					"rotation": [67.5, 0, 0]
 				},
 				"bone6": {
-					"rotation": [
-						35,
-						0,
-						0
-					]
+					"rotation": [35, 0, 0]
 				},
 				"leftLeg": {
-					"rotation": [
-						-125,
-						0,
-						0
-					],
-					"position": [
-						0,
-						4,
-						0
-					]
+					"rotation": [-125, 0, 0],
+					"position": [0, 4, 0]
 				},
 				"left_leg_custom_b2": {
-					"rotation": [
-						0,
-						0,
-						-12.5
-					]
+					"rotation": [0, 0, -12.5]
 				},
 				"bone8": {
-					"rotation": [
-						7.32417,
-						1.61888,
-						-12.39638
-					]
+					"rotation": [7.32417, 1.61888, -12.39638]
 				},
 				"bone4": {
-					"rotation": [
-						54.06134,
-						12.2403,
-						-8.73739
-					]
+					"rotation": [54.06134, 12.2403, -8.73739]
 				},
 				"bone5": {
-					"rotation": [
-						42.25489,
-						-5.05904,
-						5.54401
-					]
+					"rotation": [42.25489, -5.05904, 5.54401]
 				}
 			}
 		},
@@ -149,37 +65,83 @@
 			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [
-						22.5,
-						0,
-						0
-					]
+					"rotation": [22.5, 0, 0]
 				},
 				"head2": {
-					"rotation": [
-						25,
-						0,
-						0
-					]
+					"rotation": [25, 0, 0]
 				},
 				"left_arm_custom2": {
-					"rotation": [
-						22.5,
-						0,
-						0
-					]
+					"rotation": [22.5, 0, 0]
 				},
 				"right_arm_custom2": {
-					"rotation": [
-						-22.5,
-						0,
-						0
-					]
+					"rotation": [-22.5, 0, 0]
 				}
 			}
 		},
 		"animation.withered_bonnie.idle3": {
 			"loop": true
+		},
+		"animation.withered_bonnie.idle": {
+			"loop": true,
+			"bones": {
+				"feddy": {
+					"rotation": [-15, 0, 0],
+					"position": [0, -12, 0]
+				},
+				"head": {
+					"rotation": [37.5, 0, 0],
+					"position": [0, -1, -6.6]
+				},
+				"earL": {
+					"rotation": [32.5, 0, 0]
+				},
+				"topearL": {
+					"rotation": [37.5, 0, 0]
+				},
+				"earR": {
+					"rotation": [43.34411, -11.31335, 16.60179]
+				},
+				"topearR": {
+					"rotation": [40, 0, 0]
+				},
+				"bodysuit": {
+					"rotation": [10, 0, 0]
+				},
+				"bowtie": {
+					"position": [0, -1, 0]
+				},
+				"armL": {
+					"rotation": [8.91403, 7.52076, 21.26765],
+					"position": [0, 0, -3]
+				},
+				"upper": {
+					"rotation": [7.5, 0, 0]
+				},
+				"lower": {
+					"rotation": [-34.5003, 12.12907, -10.61665]
+				},
+				"legL": {
+					"rotation": [-110, 0, 0]
+				},
+				"lower3": {
+					"rotation": [77.5, 0, 0]
+				},
+				"foot": {
+					"rotation": [47.5, 0, 0]
+				},
+				"legR": {
+					"rotation": [-77.07362, -14.63639, -3.31914]
+				},
+				"lower4": {
+					"rotation": [2.5, 0, 0]
+				},
+				"foot2": {
+					"rotation": [12.5, -30, 0]
+				},
+				"bone": {
+					"position": [0, 0, -1.9]
+				}
+			}
 		}
 	}
 }

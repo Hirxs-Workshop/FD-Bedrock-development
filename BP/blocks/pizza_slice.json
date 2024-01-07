@@ -24,7 +24,7 @@
 			"minecraft:loot": "loot_tables/pizza_slice.json",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "pizza_slice",
+					"texture": "new_pepperoni_pizza",
 					"render_method": "alpha_test"
 				}
 			},
