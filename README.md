@@ -40,7 +40,7 @@ _____________________________________
 <details>
   <summary>📚 - FD Bedrock - Description</summary>
 
-![Image](https://hirxs-web.weebly.com/uploads/1/4/3/7/143758318/bedrocksda_orig.png)
+![Image](https://hirxs-website.net/wp-content/uploads/2023/11/image-31-1.png)
 ## FNaF's Decorations for Bedrock edition
 
 #### An addon with which you can recreate the restaurant from the famous FNAF game but now in Minecraft Bedrock! This addon is currently still under development, so there are missing blocks such as those of FNAF 2,3,4, etc...
@@ -62,13 +62,11 @@ _____________________________________
 
 ![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
 ## ***Compatibility versions:***
-- 1.20.40 - Working on this support 🕛
-- 1.20.30 ✅
+- 1.20.50 🕛 (Working on this support)
+- 1.20.40 ✅ 
+- 1.20.30 ⚠️ (All blocks,items and entities works,but the cameras no)
 - 1.20.20 ⚠️ (All blocks,items and entities works,but the cameras no)
-- 1.20.10 ⚠️ (All blocks,items and entities works,but the cameras no)
-- 1.19.80 ⚠️ (All blocks,items and entities works,but the curtains and cameras no)
-- 1.19.70 ⚠️ (All blocks,items and entities works,cameras no)
-- 1.19.50-1.19 ❌
+- 1.20.10 ❌
 
 ![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
 ## ***Social Accounts:***
