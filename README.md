@@ -3,6 +3,39 @@
 > [!NOTE]
 > 🔧 This page is created so that you can see the development of FD and also be able to be aware of FD updates if the website is not working for you or something like that, you can also use FD for a personal project For you, if your project will be public, send a message to hyrxs commenting on this and see if he approves (you can also use this source to create a dlc for the addon)
 
+## ***Developers & Insiders/Testers***
+Creator
+- Hyrxs
+
+Coproyect manager
+- Hryu (Modeler & Animator) (EX)
+
+Helpers
+- Cheez (Models & Textures)
+- Jenny (Textures)
+- Murasaki (Modeler,suits code,textures)
+
+Insiders/Testers
+- doortame
+- Mura
+- YellowRabbit
+- Myst
+- Dargelixt Gamer
+- Claus
+- Springdom
+- Bh11us
+- croaked.
+- Elias
+- Kivi's
+- Potato_Fan
+- Thomas York
+- Xeno Neo
+- ZachDoesGames
+- Ghosty
+- ManSam
+- The FantasticBOB
+- PuppetMZ
+
 _____________________________________
 <details>
   <summary>📚 - FD Bedrock - Description</summary>
