@@ -21,7 +21,7 @@
 			"minecraft:destroy_time": 0.1,
 			"minecraft:block_light_filter": 0,
 			"minecraft:explosion_resistance": 0.1,
-			"minecraft:loot": "loot_tables/pizza_slice.json",
+			"minecraft:loot": "loot_tables/pizza_slice_loot.json",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "new_pepperoni_pizza",
@@ -88,9 +88,10 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"setblock ~ ~ ~ air 0 destroy",
-								"playsound break.big_dripleaf @a[r=3] ~~~ 1",
-								"particle fb:dot ~ ~ ~"
+								"particle fb:dot ~ ~ ~",
+								"loot spawn ~ ~0.5 ~ loot pizza_slice_loot",
+								"playsound random.pop2 @p ~~~",
+								"setblock ~ ~ ~ air"
 							]
 						}
 					}
@@ -108,9 +109,10 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"setblock ~ ~ ~ air 0 destroy",
-								"playsound break.big_dripleaf @a[r=3] ~~~ 1",
-								"particle fb:dot ~ ~ ~"
+								"particle fb:dot ~ ~ ~",
+								"loot spawn ~ ~0.5 ~ loot pizza_slice_loot",
+								"playsound random.pop2 @p ~~~",
+								"setblock ~ ~ ~ air"
 							]
 						}
 					}

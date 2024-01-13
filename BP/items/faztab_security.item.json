@@ -6,9 +6,6 @@
 			"category": "equipment"
 		},
 		"components": {
-			"minecraft:display_name": {
-				"value": "item.fb:faztab_security.name"
-			},
 			"minecraft:creative_category": {
 				"parent": "equipment"
 			},

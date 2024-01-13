@@ -124,6 +124,12 @@
 		"fb:pizza_slice": {
 			"textures": "textures/items/pizza"
 		},
+		"fb:pizza_slice_2": {
+			"textures": "textures/items/pizza_2"
+		},
+		"fd:cake_slice": {
+			"textures": "textures/items/cake_slice"
+		},
 		"soda": {
 			"textures": "textures/items/soda"
 		},
@@ -188,7 +194,7 @@
 			"textures": "textures/items/ex_door_icon"
 		},
 		"balloons": {
-			"textures": "textures/items/balloons"
+			"textures": "textures/items/balloons_1"
 		},
 		"bday": {
 			"textures": "textures/items/birthday_banner"

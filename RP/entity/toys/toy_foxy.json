@@ -8,26 +8,27 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/toys/toy_foxy"
+				"default": "textures/entity/fnaf2/toy_foxy",
+				"blue": "textures/entity/fnaf2/toy_foxy_hand"
 			},
 			"spawn_egg": {
 				"texture": "toy_foxy_icon"
 			},
 			"animations": {
-				"default_pose": "animation.toy_foxy.idle1",
-				"no_pose": "animation.toy_foxy.showtime",
-				"solemn_pose": "animation.toy_foxy.idle2",
-				"athena_pose": "animation.toy_foxy.idle3",
-				"brandish_pose": "animation.toy_foxy.idle1",
-				"honor_pose": "animation.toy_foxy.showtime",
-				"entertain_pose": "animation.toy_foxy.idle2",
-				"salute_pose": "animation.toy_foxy.idle3",
-				"riposte_pose": "animation.toy_foxy.idle1",
-				"zombie_pose": "animation.toy_foxy.showtime",
-				"cancan_a_pose": "animation.toy_foxy.idle2",
-				"cancan_b_pose": "animation.toy_foxy.idle3",
-				"hero_pose": "animation.toy_foxy.idle1",
-				"wiggle": "animation.armor_stand.wiggle",
+				"default_pose": "animation.new_toy_foxy.test_idle_1",
+				"no_pose": "animation.new_toy_foxy.test_idle_2",
+				"solemn_pose": "animation.new_toy_foxy.test_idle_3",
+				"athena_pose": "animation.new_toy_foxy.test_idle_4",
+				"brandish_pose": "animation.new_toy_foxy.idk",
+				"honor_pose": "animation.new_toy_foxy.test_idle_1",
+				"entertain_pose": "animation.new_toy_foxy.test_idle_2",
+				"salute_pose": "animation.new_toy_foxy.test_idle_3",
+				"riposte_pose": "animation.new_toy_foxy.test_idle_4",
+				"zombie_pose": "animation.new_toy_foxy.idk",
+				"cancan_a_pose": "animation.new_toy_foxy.test_idle_1",
+				"cancan_b_pose": "animation.new_toy_foxy.test_idle_2",
+				"hero_pose": "animation.new_toy_foxy.test_idle_3",
+				"wiggle": "animation.new_toy_foxy.test_idle_4",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -42,10 +43,10 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.toy_foxy"
+				"default": "geometry.new_toy_foxy"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.fredbear"
 			],
 			"enable_attachables": true
 		}

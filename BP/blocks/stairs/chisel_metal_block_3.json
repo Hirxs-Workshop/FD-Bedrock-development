@@ -1,3 +1,4 @@
+//code from Nature's Journey (unreleased addon made by me)
 {
 	"format_version": "1.20.10",
 	"minecraft:block": {
@@ -32,69 +33,6 @@
 					]
 				}
 			}
-		},
-		"components": {
-			"minecraft:light_dampening": 0,
-			"minecraft:map_color": "#52221D",
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
-			},
-			"minecraft:flammable": true,
-			"minecraft:geometry": {
-				"identifier": "geometry.maple_stairs",
-				"bone_visibility": {
-					"normaln": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom')) || !query.block_property('nj:execute_place')",
-					"upsiden": "query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
-					"normals": "query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom') && query.block_property('nj:execute_place')",
-					"upsides": "query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
-					"normalw": "query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom') && query.block_property('nj:execute_place')",
-					"upsidew": "query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
-					"normale": "query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom') && query.block_property('nj:execute_place')",
-					"upsidee": "query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
-					"inner_right0": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) && query.block_property('nj:execute_place')",
-					"inner_left0": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) && query.block_property('nj:execute_place')",
-					"inner_right1": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_right') && query.block_property('nj:execute_place')",
-					"inner_left1": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_left') && query.block_property('nj:execute_place')",
-					"outer_right0": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_right') && query.block_property('nj:execute_place')",
-					"outer_left0": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_left') && query.block_property('nj:execute_place')",
-					"outer_right1": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) && query.block_property('nj:execute_place')",
-					"outer_left1": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) && query.block_property('nj:execute_place')",
-					"inner_right0u": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) && query.block_property('nj:execute_place')",
-					"inner_left0u": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) && query.block_property('nj:execute_place')",
-					"inner_right1u": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_right') && query.block_property('nj:execute_place')",
-					"inner_left1u": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_left') && query.block_property('nj:execute_place')",
-					"outer_right0u": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_right') && query.block_property('nj:execute_place')",
-					"outer_left0u": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_left') && query.block_property('nj:execute_place')",
-					"outer_right1u": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) && query.block_property('nj:execute_place')",
-					"outer_left1u": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) && query.block_property('nj:execute_place')"
-				}
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "chisel_metal_block_3",
-					"render_method": "alpha_test"
-				}
-			},
-			"minecraft:on_player_placing": {
-				"event": "rendering"
-			},
-			"minecraft:on_placed": {
-				"event": "confirm",
-				"target": "self"
-			},
-			"minecraft:queued_ticking": {
-				"looping": true,
-				"interval_range": [
-					0,
-					0
-				],
-				"on_tick": {
-					"event": "confirm",
-					"target": "self"
-				}
-			},
-			"tag:stairs": {},
-			"tag:wood": {}
 		},
 		"permutations": [
 			{
@@ -164,6 +102,69 @@
 				}
 			}
 		],
+		"components": {
+			"minecraft:light_dampening": 0,
+			"minecraft:map_color": "#52221D",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:flammable": true,
+			"minecraft:geometry": {
+				"identifier": "geometry.maple_stairs",
+				"bone_visibility": {
+					"normaln": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom')) || !query.block_property('nj:execute_place')",
+					"upsiden": "query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
+					"normals": "query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom') && query.block_property('nj:execute_place')",
+					"upsides": "query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
+					"normalw": "query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom') && query.block_property('nj:execute_place')",
+					"upsidew": "query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
+					"normale": "query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'bottom') && query.block_property('nj:execute_place')",
+					"upsidee": "query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('nj:stairs_shape_ex') == 'straight' && query.block_property('minecraft:vertical_half')== 'top') && query.block_property('nj:execute_place')",
+					"inner_right0": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) && query.block_property('nj:execute_place')",
+					"inner_left0": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) && query.block_property('nj:execute_place')",
+					"inner_right1": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_right') && query.block_property('nj:execute_place')",
+					"inner_left1": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'inner_left') && query.block_property('nj:execute_place')",
+					"outer_right0": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_right') && query.block_property('nj:execute_place')",
+					"outer_left0": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_left') && query.block_property('nj:execute_place')",
+					"outer_right1": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) && query.block_property('nj:execute_place')",
+					"outer_left1": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'bottom' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) && query.block_property('nj:execute_place')",
+					"inner_right0u": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) && query.block_property('nj:execute_place')",
+					"inner_left0u": "(query.block_property('minecraft:cardinal_direction') == 'north' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_left')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_right')) && query.block_property('nj:execute_place')",
+					"inner_right1u": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_right') && query.block_property('nj:execute_place')",
+					"inner_left1u": "(query.block_property('minecraft:cardinal_direction') == 'south' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'inner_left') && query.block_property('nj:execute_place')",
+					"outer_right0u": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'west') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_right') && query.block_property('nj:execute_place')",
+					"outer_left0u": "(query.block_property('minecraft:cardinal_direction') == 'north' || query.block_property('minecraft:cardinal_direction') == 'east') && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_left') && query.block_property('nj:execute_place')",
+					"outer_right1u": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) || (query.block_property('minecraft:cardinal_direction') == 'west' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) && query.block_property('nj:execute_place')",
+					"outer_left1u": "(query.block_property('minecraft:cardinal_direction') == 'south' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_left')) || (query.block_property('minecraft:cardinal_direction') == 'east' && (query.block_property('minecraft:vertical_half')== 'top' && query.block_property('nj:stairs_shape_ex') == 'outer_right')) && query.block_property('nj:execute_place')"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "chisel_metal_block_3",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "rendering"
+			},
+			"minecraft:on_placed": {
+				"event": "confirm",
+				"target": "self"
+			},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					0,
+					0
+				],
+				"on_tick": {
+					"event": "confirm",
+					"target": "self"
+				}
+			},
+			"tag:stairs": {},
+			"tag:wood": {}
+		},
 		"events": {
 			"rendering": {
 				"set_block_property": {

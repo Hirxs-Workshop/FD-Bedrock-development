@@ -105,6 +105,17 @@
 			"minecraft:display_name": "fb:balloons_up",
 			"minecraft:map_color": "#ffffff",
 			"minecraft:destroy_time": 4,
+			"minecraft:ticking": {
+				"range": [
+					0,
+					0
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "destroy",
+					"target": "self"
+				}
+			},
 			"minecraft:explosion_resistance": 4,
 			"minecraft:block_light_absorption": 0,
 			"minecraft:breathability": "air",
@@ -176,7 +187,7 @@
 					"block_type": "minecraft:air",
 					"block_offset": [
 						0,
-						-2,
+						0,
 						0
 					]
 				},

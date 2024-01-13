@@ -28,6 +28,10 @@
 					"render_method": "alpha_test"
 				}
 			},
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			},
 			"minecraft:geometry": "geometry.party_cake",
 			"minecraft:aim_collision": {
 				"origin": [

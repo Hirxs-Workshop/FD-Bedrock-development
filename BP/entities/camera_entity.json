@@ -5,80 +5,22 @@
       "identifier": "fb:camera_entity_testing",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false,
-      "animations": {
-        "fbrider": "controller.animation.fbrider",
-        "tpcamera": "controller.animation.tpcamera"
-      },
-      "scripts": {
-        "animate": [
-          "fbrider",
-          "tpcamera"
-        ]
-      }
+      "is_experimental": false
     },
     "component_groups": {
-      "despawn": {
-        "minecraft:instant_despawn": {}
-      },
-      "fb:new_hitbox": {
+      "fd:new_hitbox": {
         "minecraft:collision_box": {
-          "width": 0,
-          "height": 0
+          "width": 1,
+          "height": 1
         }
       },
-      "fb:rideable": {
-        "minecraft:rideable": {
-          "seat_count": 1,
-          "interact_text": "action.interact.mount",
-          "family_types": [
-            "player"
-          ],
-          "seats": {
-            "position": [
-              0.0,
-              0.3,
-              0.0
-            ]
-          }
-        }
+      "fd:rideable": {
       },
-      "fb:despawn": {
+      "fd:despawn": {
         "minecraft:despawn": {},
         "minecraft:instant_despawn": {}
       },
-      "fb:spawn": {
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "hurt_item": 0,
-              "interact_text": "fb_remove:door",
-              "on_interact": {
-                "event": "fb:remove_door",
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "has_equipment",
-                      "subject": "other",
-                      "domain": "hand",
-                      "operator": "==",
-                      "value": "fb:remover_tool"
-                    }
-                  ]
-                },
-                "target": "self"
-              },
-              "play_sounds": "nothing",
-              "swing": true,
-              "use_item": true
-            },
-            {
-              "on_interact": {
-                "event": "fb:interact_camera"
-              }
-            }
-          ]
-        },
+      "fd:spawn": {
         "minecraft:collision_box": {
           "width": 1,
           "height": 1
@@ -109,76 +51,45 @@
       }
     },
     "events": {
-      "fb:despawn": {
+      "fd:despawn": {
         "run_command": {
           "command": [
-            "setblock ~ ~ ~ air"
+            "setblock ~ ~ ~ air",
+            "structure load camera_placer_loot ~ ~ ~"
           ]
         },
         "add": {
-          "component_groups": [
-            "fb:despawn"
-          ]
+          "component_groups": ["fd:despawn"]
         }
       },
-      "fb:despawn2": {
+      "fd:despawn2": {
         "add": {
-          "component_groups": [
-            "fb:despawn"
-          ]
+          "component_groups": ["fd:despawn"]
         }
       },
       "minecraft:entity_spawned": {
         "add": {
-          "component_groups": [
-            "fb:spawn"
-          ]
+          "component_groups": ["fd:spawn"]
         }
       },
-      "fb:interact_camera": {
-        "run_command": {
-          "command": [
-            "tag @p[r=3] add new_form_execute"
-          ]
-        }
-      },
-      "fb:remove_door": {
-        "add": {
-          "component_groups": [
-            "despawn"
-          ]
-        },
-        "run_command": {
-          "command": [
-            "playsound random.orb @p",
-            "setblock ~ ~ ~ air"
-          ]
-        }
-      },
-      "fb:remove_interact": {
+      "fd:remove_interact": {
         "remove": {
-          "component_groups": [
-            "fb:spawn"
-          ]
+          "component_groups": ["fd:spawn"]
         },
         "add": {
           "component_groups": [
-            "fb:new_hitbox"
+            "fd:new_hitbox"
           ]
         }
       },
-      "ride_fb": {
+      "ride_fd": {
         "add": {
-          "component_groups": [
-            "fb:rideable"
-          ]
+          "component_groups": ["fd:rideable"]
         }
       },
-      "no_ride_fb": {
+      "no_ride_fd": {
         "remove": {
-          "component_groups": [
-            "fb:rideable"
-          ]
+          "component_groups": ["fd:rideable"]
         }
       }
     }

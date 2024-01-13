@@ -7,7 +7,7 @@
 		"components": {
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "balloons3",
+					"texture": "new_balloons_string",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false,
 					"face_dimming": false

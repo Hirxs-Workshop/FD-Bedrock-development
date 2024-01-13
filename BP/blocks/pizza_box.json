@@ -16,7 +16,9 @@
 					1,
 					2,
 					3,
-					4
+					4,
+					5,
+					6
 				]
 			}
 		},
@@ -190,6 +192,24 @@
 					}
 				]
 			},
+			"fb:var_6": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_6",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_6",
+							"target": "self"
+						}
+					}
+				]
+			},
 			"fb:box_1": {
 				"sequence": [
 					{
@@ -306,6 +326,32 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
+								"playsound random.pop @a[r=5] ~~~ 5"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"give @s fb:pizza_slice_item 1"
+							]
+						}
+					}
+				]
+			},
+			"fb:box_6": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 6
+						}
+					},
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
 								"playsound random.pop @a[r=5] ~~~ 5",
 								"setblock ~~~ air 0 destroy"
 							]
@@ -410,6 +456,18 @@
 						"event": "fb:var_5"
 					},
 					"minecraft:geometry": "geometry.pepperoni_pizza_box_5",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 5",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "fb:var_6"
+					},
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_6",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}

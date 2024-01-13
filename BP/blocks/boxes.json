@@ -63,11 +63,12 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "box1",
+							"texture": "new_boxes",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
-					}
+					},
+					"minecraft:geometry": "geometry.the_new_box"
 				}
 			},
 			{
@@ -75,11 +76,12 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "box2",
+							"texture": "new_boxes",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
-					}
+					},
+					"minecraft:geometry": "geometry.box_1"
 				}
 			},
 			{
@@ -87,23 +89,22 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "box3",
+							"texture": "new_boxes",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
-					}
+					},
+					"minecraft:geometry": "geometry.box_2"
 				}
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
 			"minecraft:display_name": "fb:boxes",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
 			},
-			"minecraft:map_color": "#ffffff",
+			"minecraft:map_color": "#B8A268",
 			"minecraft:destroy_time": 4,
 			"minecraft:explosion_resistance": 4,
 			"minecraft:block_light_absorption": 0,
@@ -112,7 +113,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.box",
+			"minecraft:geometry": "geometry.the_new_box",
 			"minecraft:aim_collision": {
 				"origin": [
 					-6,

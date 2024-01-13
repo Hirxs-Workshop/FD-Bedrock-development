@@ -1,7 +1,7 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "FNAF's Decorations - v4 [Pre release #2 - (BETA#1)]",
+		"name": "(BETA #2) FNAF's Decorations - v4 [Pre release #2]",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
@@ -11,7 +11,7 @@
 		"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
 		"version": [
 			4,
-			10,
+			20,
 			0
 		]
 	},
@@ -21,7 +21,7 @@
 			"uuid": "e91a6659-4bc8-4006-83db-94e045b526da",
 			"version": [
 				4,
-				10,
+				20,
 				0
 			]
 		},
@@ -32,7 +32,7 @@
 			"entry": "scripts/test_maincamerasys.js",
 			"version": [
 				4,
-				10,
+				20,
 				0
 			]
 		}
@@ -57,7 +57,7 @@
 			"uuid": "b257d765-f49d-4e40-a043-5eb2463a9033",
 			"version": [
 				4,
-				10,
+				20,
 				0
 			]
 		}

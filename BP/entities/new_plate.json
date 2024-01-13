@@ -1,0 +1,2747 @@
+//bridge-file-version: #564
+{
+    "format_version": "1.16.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "farmersdelight:cutting_board_entity",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "farmersdelight:kill": {
+                "minecraft:transformation": {
+                    "drop_equipment": true,
+                    "into": "farmersdelight:cutting_board_entity",
+                    "delay": {
+                        "value": 0.1
+                    }
+                }
+            },
+            "farmerdelight:despawn": {
+                "minecraft:transformation": {
+                    "drop_equipment": true,
+                    "into": "farmersdelight:nothing",
+                    "delay": {
+                        "value": 0
+                    }
+                }
+            },
+            "farmersdelight:variant0": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "farmersdelight:variant1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.7,
+                "height": 0.1
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "item"
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0
+            },
+            "minecraft:scale": {
+                "value": 0.9286
+            },
+            "minecraft:persistent": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": false
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false,
+                        "on_damage": {
+                            "event": "farmersdelight:death"
+                        },
+                        "on_damage_sound_event": "dig.wood"
+                    }
+                ]
+            },
+            "minecraft:fire_immune": true,
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "give_item": true,
+                        "take_item": true
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "farmersdelight:diamond_knife"
+                            },
+                            "event": "farmersdelight:knife_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "farmersdelight:flint_knife"
+                            },
+                            "event": "farmersdelight:knife_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "farmersdelight:golden_knife"
+                            },
+                            "event": "farmersdelight:knife_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "farmersdelight:iron_knife"
+                            },
+                            "event": "farmersdelight:knife_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "farmersdelight:netherite_knife"
+                            },
+                            "event": "farmersdelight:knife_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:diamond_axe"
+                            },
+                            "event": "farmersdelight:axe_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:golden_axe"
+                            },
+                            "event": "farmersdelight:axe_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:iron_axe"
+                            },
+                            "event": "farmersdelight:axe_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:netherite_axe"
+                            },
+                            "event": "farmersdelight:axe_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:stone_axe"
+                            },
+                            "event": "farmersdelight:axe_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:wooden_axe"
+                            },
+                            "event": "farmersdelight:axe_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:shears"
+                            },
+                            "event": "farmersdelight:shears_transform"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:diamond_pickaxe"
+                            },
+                            "event": "farmersdelight:pickaxe_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:golden_pickaxe"
+                            },
+                            "event": "farmersdelight:pickaxe_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:iron_pickaxe"
+                            },
+                            "event": "farmersdelight:pickaxe_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:netherite_pickaxe"
+                            },
+                            "event": "farmersdelight:pickaxe_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:stone_pickaxe"
+                            },
+                            "event": "farmersdelight:pickaxe_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:wooden_pickaxe"
+                            },
+                            "event": "farmersdelight:pickaxe_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:diamond_shovel"
+                            },
+                            "event": "farmersdelight:shovel_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:golden_shovel"
+                            },
+                            "event": "farmersdelight:shovel_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:iron_shovel"
+                            },
+                            "event": "farmersdelight:shovel_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:netherite_shovel"
+                            },
+                            "event": "farmersdelight:shovel_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:stone_shovel"
+                            },
+                            "event": "farmersdelight:shovel_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "has_equipment",
+                                "subject": "other",
+                                "domain": "any",
+                                "operator": "equals",
+                                "value": "minecraft:wooden_shovel"
+                            },
+                            "event": "farmersdelight:shovel_transform",
+                            "target": "self"
+                        },
+                        "hurt_item": 1
+                    }
+                ]
+            },
+            "minecraft:inventory": {
+                "inventory_size": 4,
+                "private": true
+            },
+            "minecraft:health": {
+                "value": 1
+            },
+            "minecraft:block_sensor": {
+                "sensor_radius": 0.5,
+                "on_break": [
+                    {
+                        "block_list": [
+                            "farmersdelight:cutting_board"
+                        ],
+                        "on_block_broken": "farmersdelight:kill_entity"
+                    }
+                ]
+            },
+            "minecraft:on_death": {
+                "event": "farmersdelight:death"
+            }
+        },
+        "events": {
+            "farmersdelight:kill_entity": {
+                "add": {
+                    "component_groups": [
+                        "farmerdelight:despawn"
+                    ]
+                }
+            },
+            "farmersdelight:knife_transform": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "weight": 0.2,
+                                "sequence": [
+                                    {
+                                        "filters": {
+                                            "test": "has_equipment",
+                                            "subject": "self",
+                                            "domain": "any",
+                                            "operator": "equals",
+                                            "value": "crabbersdelight:clam"
+                                        },
+                                        "add": {
+                                            "component_groups": [
+                                                "farmersdelight:kill"
+                                            ]
+                                        },
+                                        "run_command": {
+                                            "command": [
+                                                "replaceitem entity @s slot.weapon.mainhand 0 crabbersdelight:raw_clam_meat",
+                                                "replaceitem entity @s slot.weapon.mainhand 0 crabbersdelight:pearl",
+                                                "playsound knife_cuts @a[r=6]"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "weight": 0.8,
+                                "sequence": [
+                                    {
+                                        "filters": {
+                                            "test": "has_equipment",
+                                            "subject": "self",
+                                            "domain": "any",
+                                            "operator": "equals",
+                                            "value": "crabbersdelight:clam"
+                                        },
+                                        "add": {
+                                            "component_groups": [
+                                                "farmersdelight:kill"
+                                            ]
+                                        },
+                                        "run_command": {
+                                            "command": [
+                                                "replaceitem entity @s slot.weapon.mainhand 0 crabbersdelight:raw_clam_meat",
+                                                "playsound knife_cuts @a[r=6]"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wheat_dough"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:raw_pasta",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:pumpkin"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:pumpkin_slice 4",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:beef"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:minced_beef 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:cabbage"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cabbage_leaf 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:chicken"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:chicken_cuts 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:cooked_chicken"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cooked_chicken_cuts 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:porkchop"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:bacon 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:cod"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cod_slice 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:cooked_cod"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cooked_cod_slice 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:salmon"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:salmon_slice 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:cooked_salmon"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cooked_salmon_slice 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:mutton"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:mutton_chops 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:cake"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cake_slice 7",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:kelp_roll"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:kelp_roll_slice 3",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:rice_panicle"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:straw",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_rice"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:straw",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:rice",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:brown_mushroom_colony"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:brown_mushroom 5",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:8"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:light_gray_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:3"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:light_gray_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:ham"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:porkchop 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:2"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:magenta_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:5"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:orange_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:melon_block"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:melon_slice 9",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_potatoes"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:potato",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:purple_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:smoked_ham"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:cooked_porkchop 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:ink_sac"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:black_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:10"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:white_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:6"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:light_gray_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_beetroots"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:beetroot_seeds",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:red_dye",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_onions"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:onion",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:magenta_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:red_mushroom_colony"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:red_mushroom 5",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:0"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:red_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wither_rose"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:black_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:1"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:light_blue_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:yellow_flower:0"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:yellow_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:7"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:pink_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_cabbages"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:cabbage_seeds",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:yellow_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:9"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:blue_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_carrots"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:carrot",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:light_gray_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:wild_tomatoes"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:tomato_seeds",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tomato",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:red_flower:4"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:red_dye 2",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:sweet_berry_cheesecake"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:sweet_berry_cheesecake_slice 4",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:apple_pie"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:apple_pie_slice 4",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "farmersdelight:chocolate_pie"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 farmersdelight:chocolate_pie_slice 4",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:tropical_fish"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 crabbersdelight:tropical_fish_slice 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "crabbersdelight:cooked_tropical_fish"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 crabbersdelight:cooked_tropical_fish_slice 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:bone_meal",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "crabbersdelight:cooked_crab"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 crabbersdelight:crab_legs 4",
+                                "playsound knife_cuts @a[r=6]"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "farmersdelight:axe_transform": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:dark_oak_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_dark_oak_log",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:birch_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_birch_log",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:spruce_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_spruce_log",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:dark_oak_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 5",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:crimson_hyphae"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_crimson_hyphae",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:mangrove_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_mangrove_log",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:dark_oak_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 5",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:spruce_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 1",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 0",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:spruce_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 1",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:mangorve_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:mangrove_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:warped_stem"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_warped_stem",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:warped_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:warped_planks",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:mangrove_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:mangrove_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:birch_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 2",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:warped_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:warped_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:oak_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_oak_log",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:acacia_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_acacia_log",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:jungle_log"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_jungle_log",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:birch_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 2",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:acacia_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 4",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:crimson_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:crimson_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:acacia_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 4",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:crimson_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:crimson_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:crimson_stem"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_crimson_stem",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:jungle_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 3",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:crimson_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:crimson_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:warped_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:warped_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:birch_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 2",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:oak_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 0",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:acacia_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 4",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:stripped_warped_hyphae"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_stripped_warped_hyphae",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:jungle_sign"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 3",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:mangrove_trapdoor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:mangrove_planks",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:oak_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 0",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:jungle_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 3",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:spruce_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 1",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:dark_oak_door"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:planks 1 5",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wood:1"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:wood 1 9",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:mangrove_wood"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_mangrove_wood",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wood:2"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:wood 1 10",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wood:4"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:wood 1 12",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wood:5"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:wood 1 13",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wood:0"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:wood 1 8",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:wood:3"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:wood 1 11",
+                                "replaceitem entity @s slot.weapon.offhand 0 farmersdelight:tree_bark",
+                                "playsound use.wood @a[r=6]"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "farmersdelight:shears_transform": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:leather_boots"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:leather",
+                                "playsound mob.sheep.shear @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:leather_chestplate"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:leather",
+                                "playsound mob.sheep.shear @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:leather_helmet"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:leather",
+                                "playsound mob.sheep.shear @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:leather_leggings"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:leather",
+                                "playsound mob.sheep.shear @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:leather_horse_armor"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:leather 2",
+                                "playsound mob.sheep.shear @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:saddle"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:leather 2",
+                                "replaceitem entity @s slot.weapon.offhand 0 minecraft:iron_nugget 2",
+                                "playsound mob.sheep.shear @a[r=6]"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "farmersdelight:pickaxe_transform": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:nether_brick"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:netherbrick 4",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:stone"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:cobblestone",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:quartz_block"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:quartz 4",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:brick_block"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:brick 4",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:deepslate"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:cobbled_deepslate",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:amethyst_block"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:amethyst_shard 4",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "farmersdelight:shovel_transform": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "weight": 0.2,
+                                "sequence": [
+                                    {
+                                        "filters": {
+                                            "test": "has_equipment",
+                                            "subject": "self",
+                                            "domain": "any",
+                                            "operator": "equals",
+                                            "value": "minecraft:gravel"
+                                        },
+                                        "add": {
+                                            "component_groups": [
+                                                "farmersdelight:kill"
+                                            ]
+                                        },
+                                        "run_command": {
+                                            "command": [
+                                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:gravel",
+                                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:flint",
+                                                "playsound dig.gravel @a[r=6]"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "weight": 0.8,
+                                "sequence": [
+                                    {
+                                        "filters": {
+                                            "test": "has_equipment",
+                                            "subject": "self",
+                                            "domain": "any",
+                                            "operator": "equals",
+                                            "value": "minecraft:gravel"
+                                        },
+                                        "add": {
+                                            "component_groups": [
+                                                "farmersdelight:kill"
+                                            ]
+                                        },
+                                        "run_command": {
+                                            "command": [
+                                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:gravel",
+                                                "playsound dig.gravel @a[r=6]"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "filters": {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "any",
+                            "operator": "equals",
+                            "value": "minecraft:clay"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "farmersdelight:kill"
+                            ]
+                        },
+                        "run_command": {
+                            "command": [
+                                "replaceitem entity @s slot.weapon.mainhand 0 minecraft:clay_ball 4",
+                                "playsound use.stone @a[r=6]"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "farmersdelight:block": {
+                "add": {
+                    "component_groups": [
+                        "farmersdelight:variant1"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "farmersdelight:variant0"
+                    ]
+                }
+            },
+            "farmersdelight:item": {
+                "add": {
+                    "component_groups": [
+                        "farmersdelight:variant0"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "farmersdelight:variant1"
+                    ]
+                }
+            },
+            "sound": {
+                "run_command": {
+                    "command": [
+                        "playsound dig.wood @a[r=5]"
+                    ]
+                }
+            },
+            "farmersdelight:death": {
+                "add": {
+                    "component_groups": [
+                        "farmersdelight:kill"
+                    ]
+                }
+            }
+        }
+    }
+}
