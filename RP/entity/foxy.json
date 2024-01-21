@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "fb:foxy",
+			"identifier": "fb:foxy_statue",
 			"min_engine_version": "1.8.0",
 			"materials": {
 				"default": "enderman"
@@ -23,15 +23,15 @@
 				"solemn_pose": "animation.zorra.geo.kazotskykick",
 				"athena_pose": "animation.zorra.geo.PoseC1",
 				"brandish_pose": "animation.zorra.geo.PoseC2",
-				"honor_pose": "animation.zorra.geo.CAM1Cphase1",
-				"entertain_pose": "animation.zorra.geo.CAM1Aphase2",
-				"salute_pose": "animation.zorra.geo.kazotskykick",
-				"riposte_pose": "animation.zorra.geo.PoseC1",
-				"zombie_pose": "animation.zorra.geo.PoseC2",
-				"cancan_a_pose": "animation.zorra.geo.CAM1Cphase1",
-				"cancan_b_pose": "animation.zorra.geo.CAM1Aphase2",
-				"hero_pose": "animation.zorra.geo.kazotskykick",
-				"wiggle": "animation.zorra.geo.PoseC1",
+				"honor_pose": "animation.zorra.geo.showtime",
+				"entertain_pose": "animation.zorra.geo.CAM1Cphase1",
+				"salute_pose": "animation.zorra.geo.CAM1Aphase2",
+				"riposte_pose": "animation.zorra.geo.kazotskykick",
+				"zombie_pose": "animation.zorra.geo.PoseC1",
+				"cancan_a_pose": "animation.zorra.geo.showtime",
+				"cancan_b_pose": "animation.zorra.geo.CAM1Cphase1",
+				"hero_pose": "animation.zorra.geo.CAM1Aphase2",
+				"wiggle": "animation.zorra.geo.kazotskykick",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},

@@ -1,0 +1,385 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:testers_plush",
+			"properties": {
+				"fb:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "tester_plush_base",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:ticking": {
+						"looping": true,
+						"on_tick": {
+							"event": "changer_icon"
+						},
+						"range": [
+							0.1,
+							0.1
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_1",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_2",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_3",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_4",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_5",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_6",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 7",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_7",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 8",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_8",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 9",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_9",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 10",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_10",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 11",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_11",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 12",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_12",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 13",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_13",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 14",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_14",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 15",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "insider_plush_15",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "commands",
+				"group": "commands"
+			},
+			"minecraft:map_color": "#EBF0AC",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:on_interact": {
+				"event": "plushy_sound",
+				"target": "self"
+			},
+			"minecraft:geometry": "geometry.creators_2",
+			"minecraft:aim_collision": {
+				"origin": [
+					-4,
+					0,
+					-1
+				],
+				"size": [
+					8,
+					13,
+					5
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-4,
+					0,
+					-1
+				],
+				"size": [
+					8,
+					13,
+					5
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			}
+		},
+		"events": {
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "q.cardinal_facing_2d"
+						}
+					}
+				]
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==15?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			},
+			"changer_icon": {
+				"run_command": {
+					"command": [
+						"particle fb:changer_2",
+						"particle fb:changertool",
+						"title @a[r=2] actionbar §3[INFO] §bYou need to crouch to be able to change the variant"
+					]
+				}
+			},
+			"plushy_sound": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								"gamerule sendcommandfeedback false",
+								"playsound fb:freddy_noze @a[r=5] ~~~ 5"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

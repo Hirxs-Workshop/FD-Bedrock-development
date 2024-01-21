@@ -12,10 +12,22 @@
 					0,
 					1
 				],
-				"fd:north": [false, true],
-				"fd:south": [false, true],
-				"fd:west": [false, true],
-				"fd:east": [false, true]
+				"fd:north": [
+					false,
+					true
+				],
+				"fd:south": [
+					false,
+					true
+				],
+				"fd:west": [
+					false,
+					true
+				],
+				"fd:east": [
+					false,
+					true
+				]
 			}
 		},
 		"components": {
@@ -68,14 +80,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							4,
+							16,
+							4
 						]
 					},
 					"minecraft:selection_box": {
@@ -97,14 +109,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							4,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -126,14 +138,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							4,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -155,14 +167,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							4
 						]
 					},
 					"minecraft:selection_box": {
@@ -184,14 +196,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							4
 						]
 					},
 					"minecraft:selection_box": {
@@ -213,14 +225,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							4,
+							16,
+							16
 						]
 					},
 					"minecraft:selection_box": {
@@ -242,14 +254,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							16,
+							16,
+							4
 						]
 					},
 					"minecraft:selection_box": {
@@ -271,14 +283,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -300,14 +312,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -329,14 +341,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -358,14 +370,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -387,14 +399,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-2,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							16
 						]
 					},
 					"minecraft:selection_box": {
@@ -416,14 +428,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							10,
+							16,
+							16
 						]
 					},
 					"minecraft:selection_box": {
@@ -445,14 +457,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-8
 						],
 						"size": [
-							0,
-							0,
-							0
+							16,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {
@@ -474,14 +486,14 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
+							-8,
 							0,
-							0,
-							0
+							-2
 						],
 						"size": [
-							0,
-							0,
-							0
+							16,
+							16,
+							10
 						]
 					},
 					"minecraft:selection_box": {

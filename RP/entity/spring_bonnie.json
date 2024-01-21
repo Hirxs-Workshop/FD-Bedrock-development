@@ -11,7 +11,8 @@
 				"default": "textures/entity/fnaf1/springbonnie"
 			},
 			"spawn_egg": {
-				"texture": "spring_bonnie_icon"
+				"base_color": "#DEBB64",
+				"overlay_color": "#AE8532"
 			},
 			"animations": {
 				"default_pose": "animation.new_bonnie_bunny.stage",

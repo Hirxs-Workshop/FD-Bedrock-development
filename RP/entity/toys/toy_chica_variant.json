@@ -11,7 +11,8 @@
 				"default": "textures/entity/toys/alt_toy_chica"
 			},
 			"spawn_egg": {
-				"texture": "toy_chica_alt_icon"
+				"base_color": "#53C7FF",
+				"overlay_color": "#E5F6FF"
 			},
 			"animations": {
 				"default_pose": "animation.toy_chica.idle",

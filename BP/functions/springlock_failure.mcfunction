@@ -91,3 +91,9 @@ execute @e[scores={springlock=6068}] ~~~ damage @s 5 freezing
 execute @e[scores={springlock=6169}] ~~~ damage @s 5 freezing
 execute @e[scores={springlock=6270}] ~~~ damage @s 5 freezing
 execute @e[scores={springlock=6470}] ~~~ kill @s
+
+title @s actionbar §4WARNING: §cSpringlock enabled
+title @s times 3 3 3
+title @s actionbar §cWARNING: §4Springlock enabled
+
+execute @e[hasitem=[{item=fb:springlock_suit_failure_d,location=slot.armor.chest},{item=fb:springlock_suit_legs_d,location=slot.armor.legs}]] ~~~ function animation_springlock_legs_chest

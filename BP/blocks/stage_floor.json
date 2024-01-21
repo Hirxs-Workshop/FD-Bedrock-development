@@ -8,7 +8,8 @@
 					0,
 					1,
 					2,
-					3
+					3,
+					4
 				]
 			}
 		},
@@ -52,6 +53,17 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "new_stage_variant",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stage_floor_star",
 							"render_method": "opaque"
 						}
 					}
@@ -102,7 +114,7 @@
 		"events": {
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

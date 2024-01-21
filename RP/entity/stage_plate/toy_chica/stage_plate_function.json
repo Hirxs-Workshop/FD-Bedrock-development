@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:stage_plate_chica_chicken",
+			"materials": {
+				"default": "entity_alphablend"
+			},
+			"textures": {
+                "default": "textures/items/placeholder"
+			},
+			"geometry": {
+				"default": "geometry.none"
+			},
+			"render_controllers": [
+				"controller.render.fnaf"
+			],
+			"spawn_egg": {
+				"texture": "null"
+			}
+		}
+	}
+}

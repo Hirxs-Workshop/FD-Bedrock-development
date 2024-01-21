@@ -65,7 +65,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"minecraft:geometry": "geometry.f3_freddy_head",
-							"texture": "f3freddy",
+							"texture": "freddy_fnaf3",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -78,7 +78,7 @@
 					"minecraft:geometry": "geometry.f3_bonnie_head",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "f3bonnie",
+							"texture": "bonnie_fnaf3",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -91,7 +91,7 @@
 					"minecraft:geometry": "geometry.f3_chica_head",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "f3chica",
+							"texture": "chica_fnaf3",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -104,7 +104,7 @@
 					"minecraft:geometry": "geometry.f3_foxy_head",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "f3foxy",
+							"texture": "foxy_fnaf3",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -113,8 +113,6 @@
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
 			"minecraft:display_name": "fb:fnaf3_animatronic_heads",
 			"minecraft:creative_category": {
 				"category": "construction",

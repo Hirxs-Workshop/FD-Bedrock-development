@@ -1,7 +1,8 @@
 {
 	"values": [
 		"load_check",
-		"greet",
-		"flashlight"
+		"flashlight",
+		"springlocks-unstable",
+		"stage_plates_test"
 	]
 }

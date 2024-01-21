@@ -68,7 +68,7 @@
 							"ambient_occlusion": false
 						}
 					},
-					"minecraft:geometry": "geometry.the_new_box"
+					"minecraft:geometry": "geometry.new_box"
 				}
 			},
 			{
@@ -113,29 +113,29 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.the_new_box",
+			"minecraft:geometry": "geometry.new_box",
 			"minecraft:aim_collision": {
 				"origin": [
-					-6,
+					-8,
 					0,
-					-7
+					-8
 				],
 				"size": [
-					12,
-					11,
-					14
+					16,
+					16,
+					16
 				]
 			},
 			"minecraft:entity_collision": {
 				"origin": [
-					-6,
+					-8,
 					0,
-					-7
+					-8
 				],
 				"size": [
-					12,
-					11,
-					14
+					16,
+					16,
+					16
 				]
 			},
 			"minecraft:on_player_placing": {

@@ -12,23 +12,24 @@
 				"blue": "textures/entity/fnaf2/toy_chica_night_mode"
 			},
 			"spawn_egg": {
-				"texture": "toy_chica_icon"
+				"base_color": "#FFD934",
+				"overlay_color": "#FF8219"
 			},
 			"animations": {
 				"default_pose": "animation.new_toy_chica.geo.test_pose_1",
 				"no_pose": "animation.new_toy_chica.geo.test_pose_2",
 				"solemn_pose": "animation.new_toy_chica.geo.test_pose_3",
 				"athena_pose": "animation.new_toy_chica.geo.idk",
-				"brandish_pose": "animation.toy_chica.showtime",
-				"honor_pose": "animation.toy_chica.attack",
-				"entertain_pose": "animation.toy_chica.idle",
-				"salute_pose": "animation.toy_chica.showtime",
-				"riposte_pose": "animation.toy_chica.attack",
-				"zombie_pose": "animation.toy_chica.idle",
-				"cancan_a_pose": "animation.toy_chica.showtime",
-				"cancan_b_pose": "animation.toy_chica.attack",
-				"hero_pose": "animation.toy_chica.idle",
-				"wiggle": "animation.armor_stand.wiggle",
+				"brandish_pose": "animation.new_toy_chica.geo.test_pose_4",
+				"honor_pose": "animation.new_toy_chica.geo.test_pose_5",
+				"entertain_pose": "animation.new_toy_chica.geo.test_pose_6",
+				"salute_pose": "animation.new_toy_chica.geo.showtime",
+				"riposte_pose": "animation.new_toy_chica.geo.idle",
+				"zombie_pose": "animation.new_toy_chica.geo.test_pose_1",
+				"cancan_a_pose": "animation.new_toy_chica.geo.test_pose_2",
+				"cancan_b_pose": "animation.new_toy_chica.geo.test_pose_3",
+				"hero_pose": "animation.new_toy_chica.geo.test_pose_4",
+				"wiggle": "animation.new_toy_chica.geo.test_pose_5",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},

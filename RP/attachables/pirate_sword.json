@@ -2,8 +2,10 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "cplus:pirate_sword",
-			"render_controllers": ["controller.render.item_default"],
+			"identifier": "fd:pirate_sword",
+			"render_controllers": [
+				"controller.render.item_default"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"

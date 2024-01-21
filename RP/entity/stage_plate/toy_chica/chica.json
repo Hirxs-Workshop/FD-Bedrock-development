@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:chica_chicken",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf1/chica",
+				"blue": "textures/entity/fnaf1/chica"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"fb_freddy_fazbear_base": "animation.chik.geo.idle",
+				"fb_freddy_fazbear_walk": "animation.chik.geo.walk",
+				"fb_freddy_fazbear_start": "animation.chik.geo.idle",
+				"fb_freddy_fazbear_attack": "animation.chik.geo.attack",
+				"base": "controller.animation.fb_freddy_fazbear.base",
+				"walk": "controller.animation.fb_freddy_fazbear.walk",
+				"attack": "controller.animation.fb_freddy_fazbear.attack",
+				"function": "controller.animation.fb_freddy_fazbear.function"
+			},
+			"scripts": {
+				"animate": [
+					"controller.pose",
+					"controller.wiggling",
+					"base",
+					"walk",
+					"attack",
+					"function"
+				],
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 10.0);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.chik.geo_2"
+			},
+			"render_controllers": [
+				"controller.render.freddy"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#DCBA0F",
+				"overlay_color": "#1E1D1B"
+			}
+		}
+	}
+}

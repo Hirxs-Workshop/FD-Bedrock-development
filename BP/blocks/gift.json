@@ -1,150 +1,35 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:gift",
-			"properties": {
-				"p:facing": [
-					0,
-					1,
-					2,
-					3
-				],
-				"p:changer": [
-					0,
-					1,
-					2,
-					3,
-					4
-				]
-			}
-		},
-		"permutations": [
-			{
-				"condition": "q.block_property('p:facing') == 0",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
 					]
 				}
 			},
-			{
-				"condition": "q.block_property('p:facing') == 1",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						270,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 0",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_gifts_1",
-							"render_method": "alpha_test",
-							"geometry": "trash_1",
-							"ambient_occlusion": false
-						}
+			"states": {
+				"fd:rotation": {
+					"values": {
+						"min": 0,
+						"max": 15
 					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 1",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_gifts_2",
-							"render_method": "alpha_test",
-							"geometry": "trash_2",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_gifts_3",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_gifts_4",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_gifts_5",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
+				},
+				"p:changer": {
+					"values": {
+						"min": 0,
+						"max": 4
 					}
 				}
 			}
-		],
+		},
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
-			"minecraft:display_name": "fb:gift",
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
-			},
-			"minecraft:map_color": "#ffffff",
-			"minecraft:destroy_time": 4,
-			"minecraft:explosion_resistance": 4,
-			"minecraft:block_light_absorption": 0,
-			"minecraft:breathability": "air",
-			"minecraft:flammable": {
-				"flame_odds": 30,
-				"burn_odds": 30
-			},
-			"minecraft:geometry": "geometry.gift",
-			"minecraft:aim_collision": {
+			"minecraft:collision_box": {
 				"origin": [
 					-7,
 					0,
@@ -156,7 +41,7 @@
 					13
 				]
 			},
-			"minecraft:entity_collision": {
+			"minecraft:selection_box": {
 				"origin": [
 					-7,
 					0,
@@ -166,21 +51,48 @@
 					13,
 					13,
 					13
+				]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.gift",
+				"bone_visibility": {
+					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation'), 4)",
+					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 1, 4)",
+					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 2, 4)",
+					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fd:rotation') - 3, 4)",
+					"side": "q.block_state('minecraft:block_face') != 'up'"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_gifts_1",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up",
+							"side"
+						]
+					}
 				]
 			},
 			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
+				"condition": "q.block_face == 1",
+				"event": "fd:set_rotation"
 			}
 		},
 		"events": {
-			"e:set.facing": {
-				"set_block_property": {
-					"p:facing": "q.cardinal_facing_2d-2"
+			"fd:set_rotation": {
+				"set_block_state": {
+					"fd:rotation": "t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != math.abs(q.head_y_rotation(0))); t.block_rotation = math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation;"
 				}
 			},
 			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
+				"set_block_state": {
+					"p:changer": "q.block_state('p:changer')==4?0:q.block_state('p:changer')+1"
 				},
 				"run_command": {
 					"command": [
@@ -189,6 +101,128 @@
 					]
 				}
 			}
-		}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('fd:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fd:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fd:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') != 'up'",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_5",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		]
 	}
 }

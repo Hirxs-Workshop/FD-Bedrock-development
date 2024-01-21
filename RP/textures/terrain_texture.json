@@ -2240,6 +2240,126 @@
 		},
 		"new_balloons_string": {
 			"textures": "textures/items/balloon_string"
+		},
+		"stage_floor_star": {
+			"textures": "textures/blocks/stage_floor_star"
+		},
+		"silver_stage_spotlight_red": {
+			"textures": "textures/blocks/silver_stage_spotlight_red"
+		},
+		"silver_stage_spotlight_blue": {
+			"textures": "textures/blocks/silver_stage_spotlight_blue"
+		},
+		"silver_stage_spotlight_green": {
+			"textures": "textures/blocks/silver_stage_spotlight_green"
+		},
+		"silver_stage_spotlight_pink": {
+			"textures": "textures/blocks/silver_stage_spotlight_pink"
+		},
+		"silver_stage_spotlight_yellow": {
+			"textures": "textures/blocks/silver_stage_spotlight_yellow"
+		},
+		"single_curtain_purple_1": {
+			"textures": "textures/blocks/curtain/single_curtain_purple_1"
+		},
+		"single_curtain_purple_2": {
+			"textures": "textures/blocks/curtain/single_curtain_purple_2"
+		},
+		"single_curtain_red_1": {
+			"textures": "textures/blocks/curtain/single_curtain_red_1"
+		},
+		"single_curtain_red_2": {
+			"textures": "textures/blocks/curtain/single_curtain_red_2"
+		},
+		"new_foxy_head": {
+			"textures": "textures/blocks/heads/foxy"
+		},
+		"foxy_fnaf3": {
+			"textures": "textures/blocks/heads/foxy_fnaf3"
+		},
+		"freddy_fnaf3": {
+			"textures": "textures/blocks/heads/freddy_fnaf3"
+		},
+		"bonnie_fnaf3": {
+			"textures": "textures/blocks/heads/bonnie_fnaf3"
+		},
+		"chica_fnaf3": {
+			"textures": "textures/blocks/heads/chica_fnaf3"
+		},
+		"insider_plush_1": {
+			"textures": "textures/blocks/plush/testers/1"
+		},
+		"insider_plush_2": {
+			"textures": "textures/blocks/plush/testers/2"
+		},
+		"insider_plush_3": {
+			"textures": "textures/blocks/plush/testers/3"
+		},
+		"insider_plush_4": {
+			"textures": "textures/blocks/plush/testers/4"
+		},
+		"insider_plush_5": {
+			"textures": "textures/blocks/plush/testers/5"
+		},
+		"insider_plush_6": {
+			"textures": "textures/blocks/plush/testers/6"
+		},
+		"insider_plush_7": {
+			"textures": "textures/blocks/plush/testers/7"
+		},
+		"insider_plush_8": {
+			"textures": "textures/blocks/plush/testers/8"
+		},
+		"insider_plush_9": {
+			"textures": "textures/blocks/plush/testers/9"
+		},
+		"insider_plush_10": {
+			"textures": "textures/blocks/plush/testers/10"
+		},
+		"insider_plush_11": {
+			"textures": "textures/blocks/plush/testers/11"
+		},
+		"insider_plush_12": {
+			"textures": "textures/blocks/plush/testers/12"
+		},
+		"insider_plush_13": {
+			"textures": "textures/blocks/plush/testers/13"
+		},
+		"insider_plush_14": {
+			"textures": "textures/blocks/plush/testers/14"
+		},
+		"insider_plush_15": {
+			"textures": "textures/blocks/plush/testers/15"
+		},
+		"supporters_plush_1": {
+			"textures": "textures/blocks/plush/supporters/1"
+		},
+		"supporters_plush_2": {
+			"textures": "textures/blocks/plush/supporters/2"
+		},
+		"supporters_plush_3": {
+			"textures": "textures/blocks/plush/supporters/3"
+		},
+		"supporters_plush_4": {
+			"textures": "textures/blocks/plush/supporters/4"
+		},
+		"supporters_plush_5": {
+			"textures": "textures/blocks/plush/supporters/5"
+		},
+		"supporters_plush_base": {
+			"textures": "textures/blocks/plush/supporter"
+		},
+		"tester_plush_base": {
+			"textures": "textures/blocks/plush/tester"
+		},
+		"fnaf_2_wall_middle_confetti": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_middle_confetti"
+		},
+		"arcade_base": {
+			"textures": "textures/blocks/arcades/base"
+		},
+		"stage_plate_foxy": {
+			"textures": "textures/blocks/stage_plate_foxy"
 		}
 	}
 }

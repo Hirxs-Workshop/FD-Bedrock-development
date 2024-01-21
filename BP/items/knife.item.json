@@ -2,12 +2,15 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "cplus:knife"
+			"identifier": "fd:knife"
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": {
-				"texture": "flashlight"
+				"texture": "fd_knife"
+			},
+			"minecraft:display_name": {
+				"value": "Knife"
 			},
 			"minecraft:allow_off_hand": true,
 			"minecraft:on_use": {
@@ -25,8 +28,9 @@
 					{
 						"run_command": {
 							"command": [
-								"replaceitem entity @s slot.armor.chest 1 fb:springlock_suit_failure",
-								"/replaceitem entity @s slot.weapon.mainhand 1 cplus:knife"
+								"replaceitem entity @s[type=player,hasitem={location=slot.armor.chest,item=fb:springlock_suit_chest_d,quantity=1}] slot.armor.chest 1 fb:springlock_suit_failure_d",
+								"/replaceitem entity @s slot.weapon.mainhand 1 fd:knife",
+								"/scoreboard players reset @s springlock"
 							],
 							"target": "holder"
 						},
@@ -40,8 +44,9 @@
 					{
 						"run_command": {
 							"command": [
-								"replaceitem entity @s slot.armor.chest 1 fb:springlock_suit_failure",
-								"/replaceitem entity @s slot.weapon.mainhand 1 cplus:knife"
+								"replaceitem entity @s[type=player,hasitem={location=slot.armor.chest,item=fb:springlock_suit_chest_d,quantity=1}] slot.armor.chest 1 fb:springlock_suit_failure_d",
+								"/replaceitem entity @s slot.weapon.mainhand 1 fd:knife",
+								"/scoreboard players reset @s springlock"
 							],
 							"target": "holder"
 						},

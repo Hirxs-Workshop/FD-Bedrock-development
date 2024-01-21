@@ -7,7 +7,7 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "red_door_item"
+				"texture": "office_movie_door"
 			},
 			"minecraft:block_placer": {
 				"block": "fb:movie_backstage_door"

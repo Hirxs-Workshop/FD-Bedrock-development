@@ -3,11 +3,11 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:springlock_suit_head_d",
-			"category": "Equipment"
+			"category": "equipment"
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "w_bonnie"
+				"texture": "spring_bonnie_head_dirty"
 			},
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.head"
@@ -80,7 +80,7 @@
 				"protection": 7
 			},
 			"minecraft:display_name": {
-				"value": "fb_springlock_suit_head_d"
+				"value": "Springlocks Head (damaged)"
 			}
 		}
 	}

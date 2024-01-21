@@ -14,8 +14,7 @@
 					0,
 					1,
 					2,
-					3,
-					4
+					3
 				]
 			}
 		},
@@ -105,20 +104,7 @@
 					"minecraft:geometry": "geometry.foxy_head",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "foxy",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:geometry": "geometry.endo_head",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "endo",
+							"texture": "new_foxy_head",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -127,8 +113,6 @@
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
 			"minecraft:display_name": "fb:animatronic_heads",
 			"minecraft:creative_category": {
 				"category": "construction",

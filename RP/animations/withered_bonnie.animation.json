@@ -1,92 +1,12 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.withered_bonnie.idle1": {
-			"loop": true,
-			"bones": {
-				"freddy": {
-					"rotation": [17.5, 0, 0],
-					"position": [0, -15, -3]
-				},
-				"body": {
-					"rotation": [-37.5, 0, 0]
-				},
-				"head2": {
-					"rotation": [11.74769, -6.27967, 13.64973]
-				},
-				"left_arm_custom2": {
-					"rotation": [0, 0, -12.5]
-				},
-				"rightArm2": {
-					"rotation": [-22.19157, 3.81024, 19.25249]
-				},
-				"right_arm_custom2": {
-					"rotation": [69.98246, 2.34914, 9.14447],
-					"position": [0, -1, 1]
-				},
-				"right_forearm_custom_b3": {
-					"rotation": [-36.26198, 11.55798, -21.69601]
-				},
-				"bone": {
-					"rotation": [-26.56505, -37.76124, 39.23152]
-				},
-				"rightLeg": {
-					"rotation": [-122.5, 0, 0],
-					"position": [0, 4, 0]
-				},
-				"bone7": {
-					"rotation": [0, 0, 22.5]
-				},
-				"bone3": {
-					"rotation": [67.5, 0, 0]
-				},
-				"bone6": {
-					"rotation": [35, 0, 0]
-				},
-				"leftLeg": {
-					"rotation": [-125, 0, 0],
-					"position": [0, 4, 0]
-				},
-				"left_leg_custom_b2": {
-					"rotation": [0, 0, -12.5]
-				},
-				"bone8": {
-					"rotation": [7.32417, 1.61888, -12.39638]
-				},
-				"bone4": {
-					"rotation": [54.06134, 12.2403, -8.73739]
-				},
-				"bone5": {
-					"rotation": [42.25489, -5.05904, 5.54401]
-				}
-			}
-		},
-		"animation.withered_bonnie.idle2": {
-			"loop": true,
-			"bones": {
-				"body": {
-					"rotation": [22.5, 0, 0]
-				},
-				"head2": {
-					"rotation": [25, 0, 0]
-				},
-				"left_arm_custom2": {
-					"rotation": [22.5, 0, 0]
-				},
-				"right_arm_custom2": {
-					"rotation": [-22.5, 0, 0]
-				}
-			}
-		},
-		"animation.withered_bonnie.idle3": {
-			"loop": true
-		},
 		"animation.withered_bonnie.idle": {
 			"loop": true,
 			"bones": {
 				"feddy": {
 					"rotation": [-15, 0, 0],
-					"position": [0, -12, 0]
+					"position": [0, -12, -2]
 				},
 				"head": {
 					"rotation": [37.5, 0, 0],
@@ -104,11 +24,22 @@
 				"topearR": {
 					"rotation": [40, 0, 0]
 				},
+				"neck": {
+					"rotation": [10, 0, 0],
+					"position": [0, 0, 0]
+				},
 				"bodysuit": {
 					"rotation": [10, 0, 0]
 				},
 				"bowtie": {
 					"position": [0, -1, 0]
+				},
+				"endobody": {
+					"rotation": [7.5, 0, 0]
+				},
+				"bone": {
+					"rotation": [7.5, 0, 0],
+					"position": [-0.5, 0, 0.3]
 				},
 				"armL": {
 					"rotation": [8.91403, 7.52076, 21.26765],
@@ -118,16 +49,16 @@
 					"rotation": [7.5, 0, 0]
 				},
 				"lower": {
-					"rotation": [-34.5003, 12.12907, -10.61665]
+					"rotation": [-9.5003, 12.12907, -10.61665]
 				},
 				"legL": {
 					"rotation": [-110, 0, 0]
 				},
 				"lower3": {
-					"rotation": [77.5, 0, 0]
+					"rotation": [60, 0, 0]
 				},
 				"foot": {
-					"rotation": [47.5, 0, 0]
+					"rotation": [65, 0, 0]
 				},
 				"legR": {
 					"rotation": [-77.07362, -14.63639, -3.31914]
@@ -137,9 +68,119 @@
 				},
 				"foot2": {
 					"rotation": [12.5, -30, 0]
+				}
+			}
+		},
+		"animation.new_withered_bonnie.idle3": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [10, -7.5, -5]
+				},
+				"head": {
+					"rotation": [0.03742, 4.92385, 5.87038],
+					"position": [0, 0, -2]
+				},
+				"earL": {
+					"rotation": [14.27839, 21.43449, -23.00825]
+				},
+				"topearL": {
+					"rotation": [95, 0, 0]
+				},
+				"earR": {
+					"rotation": [6.66067, -3.45533, 27.29887]
+				},
+				"topearR": {
+					"rotation": [55, 0, 0]
+				},
+				"feddybod": {
+					"rotation": [0, 0, 0]
 				},
 				"bone": {
-					"position": [0, 0, -1.9]
+					"position": [-0.2, 0, 0]
+				},
+				"armL": {
+					"rotation": [-79.30448, -24.52964, 97.44576]
+				},
+				"lower": {
+					"rotation": [0, 0, 37.5]
+				},
+				"hand": {
+					"rotation": [3.32304, 19.29525, 30.87075]
+				},
+				"legL": {
+					"rotation": [0, 7.5, 0]
+				},
+				"lower3": {
+					"rotation": [0, 0, 2.5]
+				},
+				"foot": {
+					"rotation": [0, 0, -2.5]
+				},
+				"legR": {
+					"rotation": [6.18296, -29.89005, -4.68211]
+				},
+				"lower4": {
+					"rotation": [0, 0, -2.5]
+				},
+				"foot2": {
+					"rotation": [-2.5, 0, 5]
+				}
+			}
+		},
+		"animation.new_withered_bonnie.idle2": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [0, 0, -5]
+				},
+				"head": {
+					"rotation": [0, 0, 5]
+				},
+				"earL": {
+					"rotation": [15, 0, 0]
+				},
+				"topearL": {
+					"rotation": [95, 0, 0]
+				},
+				"earR": {
+					"rotation": [7.5, 0, 0]
+				},
+				"topearR": {
+					"rotation": [60, 0, 0]
+				},
+				"feddybod": {
+					"rotation": [0, 0, 0]
+				},
+				"bone": {
+					"position": [-0.2, 0, 0]
+				},
+				"armL": {
+					"rotation": [0, 0, 10]
+				},
+				"lower": {
+					"rotation": [0, 0, 12.5]
+				},
+				"hand": {
+					"rotation": [0, 20, 0]
+				},
+				"legL": {
+					"rotation": [0, 7.5, 0]
+				},
+				"lower3": {
+					"rotation": [0, 0, 2.5]
+				},
+				"foot": {
+					"rotation": [0, 0, -2.5]
+				},
+				"legR": {
+					"rotation": [0.44067, -9.99038, -2.53852]
+				},
+				"lower4": {
+					"rotation": [0, 0, -2.5]
+				},
+				"foot2": {
+					"rotation": [0, 0, 5]
 				}
 			}
 		}

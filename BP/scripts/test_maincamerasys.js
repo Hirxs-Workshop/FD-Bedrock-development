@@ -2,7 +2,6 @@ import { world, system } from "@minecraft/server";
 import { ActionFormData, ModalFormData, MessageFormData } from "@minecraft/server-ui";
 import { utilities } from "./utilsfb";
 import "./blocks/advanced_wall_test";
-import "./blocks/poster_1";
 
 world.beforeEvents.itemUse.subscribe((data) => {
     var player = data.source;
@@ -80,6 +79,7 @@ world.beforeEvents.itemUse.subscribe((data) => {
                 system.run(async () => {
                     var form = new ActionFormData();
                     system.run(async () => {
+                        player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 air`)
                         await player.runCommandAsync(`tp @s @e[type=fb:camera_entity_testing,tag="executing: ${player.nameTag}"]`);
                         await player.runCommandAsync(`event entity @e[type=fb:camera_entity_testing,tag="executing: ${player.nameTag}"] fb:despawn2`);
                         player.removeTag('fb_tablet_camera');
@@ -95,11 +95,14 @@ world.beforeEvents.itemUse.subscribe((data) => {
     }
 });
 
-
 system.runInterval(async => {
     for (const player of world.getPlayers()) {
+
         if (player.hasTag("fb_tablet_camera")) {
-            player.addEffect('invisibility', 3 * 3)
+            player.addEffect('invisibility', 3 * 3 * true)
+            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
+            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
+            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
             player.playAnimation('animation.player.camera', { blendOutTime: 0.1 })
         }
 
@@ -107,7 +110,7 @@ system.runInterval(async => {
         //entities
 
         if (player.hasTag("new_form_execute")) {
-            player.runCommandAsync(`camera @s clear`);
+            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 air`)
             player.removeTag("new_form_execute");
             var form = new ModalFormData()
             form.title("§fFaztab - Camera setup")

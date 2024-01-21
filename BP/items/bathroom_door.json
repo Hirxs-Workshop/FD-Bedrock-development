@@ -7,7 +7,7 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "red_door_item"
+				"texture": "bathroom_door"
 			},
 			"minecraft:block_placer": {
 				"block": "fb:movie_bathroom_door"

@@ -3,11 +3,11 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:springlock_suit_chest",
-			"category": "Equipment"
+			"category": "equipment"
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "w_bonnie"
+				"texture": "spring_bonnie_chest"
 			},
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.chestplate"
@@ -80,7 +80,7 @@
 				"protection": 7
 			},
 			"minecraft:display_name": {
-				"value": "fb_springlock_suit_chest"
+				"value": "Springlocks Chestplate"
 			}
 		}
 	}

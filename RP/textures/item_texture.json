@@ -331,8 +331,35 @@
 		"fnaf4_drawer_1": {
 			"textures": "textures/items/ffnaf4_drawers"
 		},
-		"fnaf4_drawer_2": {
-			"textures": "textures/items/dffnaf4_drawers"
+		"fd_pirate_sword": {
+			"textures": "textures/items/pirate_sword"
+		},
+		"fd_knife": {
+			"textures": "textures/items/knife"
+		},
+		"spring_bonnie_chest_dirty": {
+			"textures": "textures/items/spring_bonnie_chest_dirty"
+		},
+		"spring_bonnie_chest": {
+			"textures": "textures/items/spring_bonnie_chest"
+		},
+		"spring_bonnie_legs_dirty": {
+			"textures": "textures/items/spring_bonnie_legs_dirty"
+		},
+		"spring_bonnie_legs": {
+			"textures": "textures/items/spring_bonnie_legs"
+		},
+		"spring_bonnie_head_dirty": {
+			"textures": "textures/items/spring_bonnie_head_dirty"
+		},
+		"spring_bonnie_head": {
+			"textures": "textures/items/spring_bonnie_head"
+		},
+		"bathroom_door": {
+			"textures": "textures/items/bathroom_door"
+		},
+		"office_movie_door": {
+			"textures": "textures/items/office_movie_door"
 		}
 	},
 	"texture_name": "atlas.items"

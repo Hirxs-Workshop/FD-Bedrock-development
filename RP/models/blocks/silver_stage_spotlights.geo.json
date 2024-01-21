@@ -1,0 +1,61 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.silver_stage_spotlights",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, 6, -4],
+							"size": [6, 6, 8],
+							"pivot": [0, 9, 0],
+							"rotation": [25, 0, 0],
+							"uv": {
+								"north": {"uv": [6, 0], "uv_size": [6, 6]},
+								"east": {"uv": [0, 10], "uv_size": [8, 6]},
+								"south": {"uv": [10, 8], "uv_size": [6, 6]},
+								"west": {"uv": [0, 10], "uv_size": [8, 6]},
+								"up": {"uv": [6, 8], "uv_size": [-6, -8]},
+								"down": {"uv": [6, 8], "uv_size": [-6, -8]}
+							}
+						},
+						{
+							"origin": [-4, 8, -2],
+							"size": [1, 8, 4],
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [1, 8]},
+								"east": {"uv": [12, 0], "uv_size": [4, 8]},
+								"south": {"uv": [8, 8], "uv_size": [1, 8]},
+								"west": {"uv": [12, 0], "uv_size": [4, 8]},
+								"up": {"uv": [10, 12], "uv_size": [-1, -4]},
+								"down": {"uv": [10, 12], "uv_size": [-1, -4]}
+							}
+						},
+						{
+							"origin": [3, 8, -2],
+							"size": [1, 8, 4],
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [1, 8]},
+								"east": {"uv": [12, 0], "uv_size": [4, 8]},
+								"south": {"uv": [8, 8], "uv_size": [1, 8]},
+								"west": {"uv": [12, 0], "uv_size": [4, 8]},
+								"up": {"uv": [10, 12], "uv_size": [-1, -4]},
+								"down": {"uv": [10, 12], "uv_size": [-1, -4]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
