@@ -31,7 +31,7 @@
 						"run_command": {
 							"target": "self",
 							"command": [
-								"setblock ~ ~ ~ fb:pirate_cove_curtains_block"
+								"setblock ~ ~ ~ fb:purple_pirate_cove_curtains"
 							]
 						}
 					}

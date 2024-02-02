@@ -12,7 +12,7 @@
 			},
 			"bones": [
 				{
-					"name": "toy_bonnie",
+					"name": "toy_chica",
 					"pivot": [-0.2, -2, 0],
 					"cubes": [
 						{"origin": [-4.5, 15, -2], "size": [9, 2, 6], "inflate": 0.2, "uv": [29, 0]}
@@ -20,7 +20,7 @@
 				},
 				{
 					"name": "Body",
-					"parent": "toy_bonnie",
+					"parent": "toy_chica",
 					"pivot": [0, 18.5, 1],
 					"cubes": [
 						{"origin": [-5.4, 25, 0], "size": [2, 2, 2], "uv": [75, 73]},
@@ -286,8 +286,8 @@
 				},
 				{
 					"name": "RightLeg",
-					"parent": "toy_bonnie",
-					"pivot": [-2.7, 13, 1],
+					"parent": "toy_chica",
+					"pivot": [-2.7, 14, 1],
 					"cubes": [
 						{"origin": [-5.2, 9, -1.5], "size": [5, 6, 5], "uv": [39, 44]},
 						{"origin": [-5.2, 9, -1.5], "size": [5, 6, 5], "inflate": 0.1, "uv": [39, 44]},
@@ -297,7 +297,7 @@
 				{
 					"name": "RightLowerLeg",
 					"parent": "RightLeg",
-					"pivot": [-2.7, 6, 1],
+					"pivot": [-2.7, 8, 1],
 					"cubes": [
 						{"origin": [-4.7, 3.5, -1], "size": [4, 5, 4], "inflate": 0.2, "uv": [32, 55]},
 						{"origin": [-4.7, 3.5, -1], "size": [4, 5, 4], "uv": [32, 55]},
@@ -315,7 +315,7 @@
 				},
 				{
 					"name": "LeftLeg",
-					"parent": "toy_bonnie",
+					"parent": "toy_chica",
 					"pivot": [2.8, 14, 1],
 					"cubes": [
 						{"origin": [1.7, 8, 0.5], "size": [2, 8, 2], "uv": [42, 70]},
@@ -336,7 +336,7 @@
 				{
 					"name": "LeftFoot",
 					"parent": "LeftLegBottom",
-					"pivot": [2.7, 2.5, 1.5],
+					"pivot": [2.7, 1.5, 1.5],
 					"cubes": [
 						{"origin": [0.2, 0, -3.5], "size": [5, 2, 2], "uv": [69, 13]},
 						{"origin": [0.2, 0, -1.5], "size": [5, 3, 5], "uv": [38, 25]}

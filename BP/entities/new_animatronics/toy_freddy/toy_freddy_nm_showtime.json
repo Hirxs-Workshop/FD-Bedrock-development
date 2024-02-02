@@ -1,0 +1,332 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:showtime_toy_freddy_nm",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"showtime",
+					"bridge_execute_commands"
+				]
+			},
+			"animations": {
+				"showtime": "controller.animation.fb_animatronics.showtime",
+				"bridge_execute_commands": "controller.animation.bridge_bonnie.execute_commands"
+			}
+		},
+		"component_groups": {
+			"minecraft:item_controllable": {
+				"control_items": [
+					"fb:rotate"
+				]
+			},
+			"fb:toy_freddy_nm_normal": {
+				"minecraft:transformation": {
+					"into": "fb:toy_freddy_nm"
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"work": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:movement": {
+					"value": 0.0
+				}
+			},
+			"stop_work": {
+				"minecraft:mark_variant": {
+					"value": 2
+				},
+				"minecraft:movement": {
+					"value": 0.0
+				}
+			},
+			"bridge:execute_command_id_1": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"bridge:execute_no_command": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"bridge:execute_command_id_2": {
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			},
+			"bridge:execute_command_id_3": {
+				"minecraft:skin_id": {
+					"value": 3
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"armor_stand",
+					"inanimate",
+					"mob"
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"hurt_item": 2,
+						"interact_text": "fb.toy_freddy_nm.nose",
+						"on_interact": {
+							"event": "nose",
+							"target": "self",
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"operator": "!=",
+										"value": "fb:remover_tool"
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"operator": "!=",
+										"value": "fb:rotate"
+									}
+								]
+							}
+						}
+					},
+					{
+						"hurt_item": 1,
+						"interact_text": "action.interact.remove_tool",
+						"on_interact": {
+							"event": "fb:remove_tool",
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"operator": "==",
+										"value": "fb:remover_tool"
+									}
+								]
+							},
+							"target": "self"
+						},
+						"use_item": false
+					},
+					{
+						"hurt_item": 0,
+						"on_interact": {
+							"event": "rotate",
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"operator": "==",
+										"value": "fb:rotate"
+									}
+								]
+							}
+						},
+						"use_item": false,
+						"interact_text": "action.interact.rotate"
+					}
+				]
+			},
+			"minecraft:scheduler": {
+				"min_delay_secs": 0,
+				"max_delay_secs": 10,
+				"scheduled_events": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "hourly_clock_time",
+									"operator": ">=",
+									"value": 12000
+								},
+								{
+									"test": "hourly_clock_time",
+									"operator": "<",
+									"value": 24000
+								}
+							]
+						},
+						"event": "fb:working"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "hourly_clock_time",
+									"operator": ">=",
+									"value": 0
+								},
+								{
+									"test": "hourly_clock_time",
+									"operator": "<",
+									"value": 8000
+								}
+							]
+						},
+						"event": "fb:stop_working"
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 2.0
+			},
+			"minecraft:nameable": {},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:health": {
+				"value": 30,
+				"max": 30
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 2
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/empty.json"
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"nose": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.fb_toy_freddy_nm.nose",
+						"effect @s slowness 1 2 true"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"stop_work"
+					]
+				}
+			},
+			"fb:working": {
+				"run_command": {
+					"command": [],
+					"target": "self"
+				},
+				"add": {
+					"component_groups": [
+						"work"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"stop_work"
+					]
+				}
+			},
+			"fb:stop_working": {
+				"run_command": {
+					"command": [],
+					"target": "self"
+				},
+				"add": {
+					"component_groups": [
+						"stop_work"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"work"
+					]
+				}
+			},
+			"fb:toy_freddy_nm_normal": {
+				"add": {
+					"component_groups": [
+						"fb:toy_freddy_nm_normal"
+					]
+				}
+			},
+			"fb:rotate": {
+				"run_command": {
+					"command": [
+						"tp @s ~ ~ ~ ~45 ~",
+						"particle fb:rotate ~ ~1 ~",
+						"playsound dig.sand @a[r=5] ~ ~ ~"
+					],
+					"target": "self"
+				}
+			},
+			"fb:remove_tool": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				},
+				"run_command": {
+					"command": []
+				}
+			},
+			"rotate": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_command_id_2"
+					]
+				}
+			},
+			"bridge:remove_command_id_1": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_1"
+					]
+				}
+			},
+			"bridge:remove_command_id_2": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_2"
+					]
+				}
+			},
+			"bridge:remove_command_id_3": {
+				"add": {
+					"component_groups": [
+						"bridge:execute_no_command"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bridge:execute_command_id_3"
+					]
+				}
+			}
+		}
+	}
+}

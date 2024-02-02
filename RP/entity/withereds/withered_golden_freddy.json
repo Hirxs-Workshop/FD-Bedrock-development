@@ -8,22 +8,22 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/withered/withered_golden_freddy"
+				"default": "textures/entity/fnaf2/withered_golden_freddy"
 			},
 			"animations": {
-				"default_pose": "animation.goldenfreddy.sit",
-				"no_pose": "animation.goldenfreddy.sit",
-				"solemn_pose": "animation.goldenfreddy.sit",
-				"athena_pose": "animation.goldenfreddy.sit",
-				"brandish_pose": "animation.goldenfreddy.sit",
-				"honor_pose": "animation.goldenfreddy.sit",
-				"entertain_pose": "animation.goldenfreddy.sit",
-				"salute_pose": "animation.goldenfreddy.sit",
-				"riposte_pose": "animation.goldenfreddy.sit",
-				"zombie_pose": "animation.goldenfreddy.sit",
-				"cancan_a_pose": "animation.goldenfreddy.sit",
-				"cancan_b_pose": "animation.goldenfreddy.sit",
-				"hero_pose": "animation.goldenfreddy.sit",
+				"default_pose": "animation.new_withered_golden_freddy.idle",
+				"no_pose": "animation.new_withered_golden_freddy.idle",
+				"solemn_pose": "animation.new_withered_golden_freddy.idle",
+				"athena_pose": "animation.new_withered_golden_freddy.idle",
+				"brandish_pose": "animation.new_withered_golden_freddy.idle",
+				"honor_pose": "animation.new_withered_golden_freddy.idle",
+				"entertain_pose": "animation.new_withered_golden_freddy.idle",
+				"salute_pose": "animation.new_withered_golden_freddy.idle",
+				"riposte_pose": "animation.new_withered_golden_freddy.idle",
+				"zombie_pose": "animation.new_withered_golden_freddy.idle",
+				"cancan_a_pose": "animation.new_withered_golden_freddy.idle",
+				"cancan_b_pose": "animation.new_withered_golden_freddy.idle",
+				"hero_pose": "animation.new_withered_golden_freddy.idle",
 				"wiggle": "animation.withered_freddy.idle3",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
@@ -39,14 +39,15 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.withered_golden_freddy"
+				"default": "geometry.new_withered_golden_freddy"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "w_gfreddy"
+				"base_color": "#6F6A13",
+				"overlay_color": "#B2951F"
 			}
 		}
 	}

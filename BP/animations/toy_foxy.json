@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fb_toy_foxy.vent_sound": {
+			"animation_length": 0.34
+		},
+		"animation.new_toy_foxy.geo.attack": {
+			"timeline": {
+				"0": [
+					"/execute as @s at @s run tp @e [type =fb:jumpscare1 ]~~2~ facing ^^^1",
+					"/execute as @e [type =fb:jumpscare1]at @e [type =fb:jumpscare1 ]run tp @p ^^0.2^1.2 facing ^^^"
+				]
+			},
+			"animation_length": 0.1,
+			"loop": true
+		},
+		"animation.fb_toy_foxy.jumpscare_ventilation": {
+			"timeline": {
+				"0": [
+					"/execute as @s at @s run tp @e [type =fb:jumpscare1 ]~~-1~ facing ^^^1",
+					"/execute as @e [type =fb:jumpscare1]at @e [type =fb:jumpscare1 ]run tp @p ^^-0.2^1 facing ^^4^"
+				]
+			},
+			"animation_length": 0.1,
+			"loop": true
+		},
+		"animation.fb_toy_foxy.jumpscare_crouch": {
+			"timeline": {
+				"0": [
+					"/execute as @s at @s run tp @e [type =fb:jumpscare1 ]~~1~ facing ^^^2.6",
+					"/execute as @e [type =fb:jumpscare1]at @e [type =fb:jumpscare1 ]run tp @p ^^-0.3^1.6 facing ^^^"
+				]
+			},
+			"animation_length": 0.1,
+			"loop": true
+		}
+	}
+}

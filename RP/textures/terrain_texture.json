@@ -1342,6 +1342,9 @@
 		"iwfm_3": {
 			"textures": "textures/blocks/fnaf_movie/interior_wall_3"
 		},
+		"iwfm_4": {
+			"textures": "textures/blocks/fnaf_movie/interior_wall_4"
+		},
 		"iwfm_down": {
 			"textures": "textures/blocks/fnaf_movie/interior_wall_down"
 		},
@@ -2331,6 +2334,12 @@
 		"insider_plush_15": {
 			"textures": "textures/blocks/plush/testers/15"
 		},
+		"insider_plush_16": {
+			"textures": "textures/blocks/plush/testers/16"
+		},
+		"insider_plush_17": {
+			"textures": "textures/blocks/plush/testers/17"
+		},
 		"supporters_plush_1": {
 			"textures": "textures/blocks/plush/supporters/1"
 		},
@@ -2360,6 +2369,30 @@
 		},
 		"stage_plate_foxy": {
 			"textures": "textures/blocks/stage_plate_foxy"
+		},
+		"stage_plate_toy_bonnie": {
+			"textures": "textures/blocks/stage_plate_toy_bonnie"
+		},
+		"stage_plate_toy_chica": {
+			"textures": "textures/blocks/stage_plate_toy_chica"
+		},
+		"stage_plate_toy_foxy": {
+			"textures": "textures/blocks/stage_plate_toy_foxy"
+		},
+		"stage_plate_toy_freddy": {
+			"textures": "textures/blocks/stage_plate_toy_freddy"
+		},
+		"scrap_platform_withered_bonnie": {
+			"textures": "textures/blocks/scrap_platform_w_bonnie"
+		},
+		"scrap_platform_withered_chica": {
+			"textures": "textures/blocks/scrap_platform_w_chica"
+		},
+		"scrap_platform_withered_foxy": {
+			"textures": "textures/blocks/scrap_platform_w_foxy"
+		},
+		"scrap_platform_withered_freddy": {
+			"textures": "textures/blocks/scrap_platform_w_freddy"
 		}
 	}
 }

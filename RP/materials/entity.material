@@ -1,13 +1,18 @@
 {
   "materials": {
     "version": "1.0.0",
-    "custom_animated:entity": {
+    "custom_animated:entity_emissive_alpha": {
       "+defines": [
         "BLEND",
         "ALPHA_TEST"
       ],
       "+states": [
         "Blending"
+      ]
+    },
+    "carousel_test:entity_emissive_alpha": {
+      "+defines": [
+        "USE_UV_ANIM"
       ]
     }
   }

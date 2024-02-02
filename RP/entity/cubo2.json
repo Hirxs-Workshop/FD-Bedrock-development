@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "zkot:cubo2",
+			"materials": {
+				"default": "npc"
+			},
+			"textures": {
+				"default": "textures/entity/poppy_playtime/chapter1/cubo"
+			},
+			"geometry": {
+				"default": "geometry.cubo"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

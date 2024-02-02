@@ -38,26 +38,26 @@
 			"minecraft:geometry": "geometry.stage_plate",
 			"minecraft:entity_collision": {
 				"origin": [
+					-8,
 					0,
-					0,
-					0
+					-8
 				],
 				"size": [
-					0,
-					0,
-					0
+					16,
+					1,
+					16
 				]
 			},
 			"minecraft:pick_collision": {
 				"origin": [
+					-8,
 					0,
-					0,
-					0
+					-8
 				],
 				"size": [
-					0,
-					0,
-					0
+					16,
+					1,
+					16
 				]
 			},
 			"minecraft:creative_category": {

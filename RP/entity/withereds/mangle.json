@@ -3,50 +3,47 @@
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "fb:mangle",
-			"min_engine_version": "1.8.0",
 			"materials": {
-				"default": "enderman"
+				"default": "spider"
 			},
 			"textures": {
-				"default": "textures/entity/withered/mangle"
+				"default": "textures/entity/fnaf2/mangle",
+				"blue": "textures/entity/fnaf2/mangle"
 			},
 			"animations": {
-				"default_pose": "animation.mangle.idle1",
-				"no_pose": "animation.mangle.idle2",
-				"solemn_pose": "animation.mangle.idle3",
-				"athena_pose": "animation.mangle.idle4",
-				"brandish_pose": "animation.mangle.idle1",
-				"honor_pose": "animation.mangle.idle2",
-				"entertain_pose": "animation.mangle.idle3",
-				"salute_pose": "animation.mangle.idle4",
-				"riposte_pose": "animation.mangle.idle1",
-				"zombie_pose": "animation.mangle.idle2",
-				"cancan_a_pose": "animation.mangle.idle3",
-				"cancan_b_pose": "animation.mangle.idle4",
-				"hero_pose": "animation.mangle.idle3",
-				"wiggle": "animation.mangle.idle4",
-				"controller.pose": "controller.animation.armor_stand.pose",
-				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+				"look_at_target": "animation.common.look_at_target",
+				"fb_mangle_base": "animation.new_mangle.base_idle",
+				"fb_mangle_walk": "animation.new_mangle.walk",
+				"fb_mangle_start": "animation.new_mangle.base_idle",
+				"fb_climb_mangle": "animation.new_mangle.walk2",
+				"fb_mangle_attack": "animation.new_toy_foxy.attack",
+				"resting": "animation.new_mangle.ceiling",
+				"base": "controller.animation.fb_mangle.base",
+				"walk": "controller.animation.fb_mangle.walk",
+				"attack": "controller.animation.fb_mangle.attack",
+				"function": "controller.animation.fb_mangle.function"
 			},
 			"scripts": {
-				"initialize": [
-					"variable.armor_stand.pose_index = 0;",
-					"variable.armor_stand.hurt_time = 0;"
-				],
 				"animate": [
-					"controller.pose",
-					"controller.wiggling"
+					"base",
+					"walk",
+					"attack",
+					"function"
+				],
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 10.0);"
 				]
 			},
 			"geometry": {
-				"default": "geometry.mangle"
+				"default": "geometry.new_mangle"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.freddy"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "mangle"
+				"base_color": "#F6F0EC",
+				"overlay_color": "#937E83"
 			}
 		}
 	}

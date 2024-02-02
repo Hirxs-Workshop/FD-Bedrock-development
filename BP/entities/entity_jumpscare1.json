@@ -1,0 +1,102 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:jumpscare3",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_water": true
+			},
+			"minecraft:health": {
+				"value": 9999,
+				"max": 9999
+			},
+			"minecraft:scale": {
+				"value": 0
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"avoid_sun": false,
+				"avoid_water": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:annotation.open_door": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"fb_jumpscare1",
+					"undead",
+					"mob",
+					"inanimate"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:leashable": {
+				"soft_distance": 0,
+				"hard_distance": 2,
+				"max_distance": 128,
+				"can_be_stolen": false
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"hurt_item": 0,
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							}
+						},
+						"use_item": false,
+						"swing": true
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"remover_jumpsace": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"events": {
+			"remover_jumpsace3": {
+				"add": {
+					"component_groups": [
+						"remover_jumpscare1"
+					]
+				}
+			}
+		}
+	}
+}

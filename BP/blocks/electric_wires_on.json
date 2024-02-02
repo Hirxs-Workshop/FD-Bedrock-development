@@ -1,9 +1,9 @@
 {
-	"format_version": "1.19.60",
+	"format_version": "1.20.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:electric_wires_on",
-			"properties": {
+			"states": {
 				"fb:south": [
 					0,
 					1
@@ -54,49 +54,49 @@
 				"sequence": [
 					{
 						"condition": "q.block_neighbor_has_any_tag(0,0,-1,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:north": 1
 						}
 					},
 					{
 						"condition": "!q.block_neighbor_has_any_tag(0,0,-1,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:north": 0
 						}
 					},
 					{
 						"condition": "q.block_neighbor_has_any_tag(0,0,1,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:south": 1
 						}
 					},
 					{
 						"condition": "!q.block_neighbor_has_any_tag(0,0,1,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:south": 0
 						}
 					},
 					{
 						"condition": "q.block_neighbor_has_any_tag(1,0,0,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:east": 1
 						}
 					},
 					{
 						"condition": "!q.block_neighbor_has_any_tag(1,0,0,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:east": 0
 						}
 					},
 					{
 						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:west": 1
 						}
 					},
 					{
 						"condition": "!q.block_neighbor_has_any_tag(-1,0,0,'wires')",
-						"set_block_property": {
+						"set_block_state": {
 							"fb:west": 0
 						}
 					}
@@ -121,7 +121,7 @@
 				"looping": true,
 				"on_tick": {
 					"event": "fb:wires",
-					"condition": "query.block_property('fb:place')==0||query.block_property('fb:place')==1"
+					"condition": "query.block_state('fb:place')==0||query.block_state('fb:place')==1"
 				},
 				"interval_range": [
 					0,
@@ -164,7 +164,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('fb:north') == 1",
+				"condition": "query.block_state('fb:north') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -178,7 +178,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:south') == 1",
+				"condition": "query.block_state('fb:south') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -192,7 +192,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:east') == 1",
+				"condition": "query.block_state('fb:east') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -206,7 +206,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:west') == 1",
+				"condition": "query.block_state('fb:west') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -220,7 +220,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:north') == 1 && query.block_property('fb:south') == 1",
+				"condition": "query.block_state('fb:north') == 1 && query.block_state('fb:south') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -234,7 +234,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:west') == 1 && query.block_property('fb:east') == 1",
+				"condition": "query.block_state('fb:west') == 1 && query.block_state('fb:east') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -248,7 +248,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:north') == 1 && query.block_property('fb:east') == 1",
+				"condition": "query.block_state('fb:north') == 1 && query.block_state('fb:east') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -262,7 +262,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:north') == 1 && query.block_property('fb:west') == 1",
+				"condition": "query.block_state('fb:north') == 1 && query.block_state('fb:west') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -276,7 +276,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:west') == 1",
+				"condition": "query.block_state('fb:south') == 1 && query.block_state('fb:west') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -290,7 +290,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:east') == 1",
+				"condition": "query.block_state('fb:south') == 1 && query.block_state('fb:east') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -304,7 +304,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:east') == 1 && query.block_property('fb:west') == 1",
+				"condition": "query.block_state('fb:south') == 1 && query.block_state('fb:east') == 1 && query.block_state('fb:west') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -318,7 +318,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:east') == 1 && query.block_property('fb:north') == 1",
+				"condition": "query.block_state('fb:south') == 1 && query.block_state('fb:east') == 1 && query.block_state('fb:north') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -332,7 +332,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:south') == 1 && query.block_property('fb:west') == 1 && query.block_property('fb:north') == 1",
+				"condition": "query.block_state('fb:south') == 1 && query.block_state('fb:west') == 1 && query.block_state('fb:north') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -346,7 +346,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:east') == 1 && query.block_property('fb:west') == 1 && query.block_property('fb:north') == 1",
+				"condition": "query.block_state('fb:east') == 1 && query.block_state('fb:west') == 1 && query.block_state('fb:north') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",
@@ -360,7 +360,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('fb:east') == 1 && query.block_property('fb:west') == 1 && query.block_property('fb:north') == 1 && query.block_property('fb:south') == 1",
+				"condition": "query.block_state('fb:east') == 1 && query.block_state('fb:west') == 1 && query.block_state('fb:north') == 1 && query.block_state('fb:south') == 1",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.floor_wires_on",

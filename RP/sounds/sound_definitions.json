@@ -188,6 +188,12 @@
 			"sounds": [
 				"sounds/jumpscare"
 			]
+		},
+		"fb:jumpscare_fnaf2": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/jumpscare_fnaf2"
+			]
 		}
 	}
 }

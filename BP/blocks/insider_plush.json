@@ -152,8 +152,8 @@
 		],
 		"components": {
 			"minecraft:creative_category": {
-				"category": "commands",
-				"group": "commands"
+				"category": "construction",
+				"group": "construction"
 			},
 			"minecraft:map_color": "#EBF0AC",
 			"minecraft:destroy_time": 4,

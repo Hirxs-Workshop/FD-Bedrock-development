@@ -23,7 +23,7 @@ tile.fb:white_roof.name=White ceiling block  
 tile.fb:gray_roof.name=Grey ceiling block  
 tile.fb:roof.name=Black ceiling block  
 tile.fb:tv_1.name=Hall monitors  
-tile.fb:paper_1.name=Wall papers  
+tile.fb:paper_1.name=Wall papers  
 tile.fb:stars.name=Hanging Stars  
 tile.fb:wall_down_4.name=FNAF1 Wall (Down)  
 tile.fb:wall_down_block_5.name=FNAF 1 Wall (Down +Light Black)   ##celling
@@ -75,7 +75,7 @@ tile.fb:poster_1.name=Poster (Celebrate)  
 tile.fb:poster_2.name=Poster (Let's Party)  
 tile.fb:poster_3.name=Poster (Freddy,Chica & Bonnie)  
 tile.fb:shelf.name=Backstage shelf  
-tile.fb:floor_papers.name=Floor props (Papers)   
+tile.fb:floor_papers.name=Floor props (Papers)    
 tile.fb:floor_5.name=Pizzeria floor (Red & Black Tiles) & 
 tile.fb:spotlight.name=Stage spotlight  
 tile.fb:stage_sun.name=Stage sun   
@@ -251,6 +251,7 @@ tile.fb:fnaf3_dirty_wall_2.name=FNAF3 Dirty Wall (Middle 2)  
 tile.fb:fnaf3_dirty_wall_tiles.name=FNAF3 Dirty Wall (Tiles)  
 tile.fb:fnaf3_dirty_wall_up.name=FNAF3 Dirty Wall (Up)  
 tile.fb:ifm_wall_3.name=FNAF Movie Interior wall (Middle 2)  
+tile.fb:ifm_wall_4.name=FNAF Movie Interior wall (Tiles 2)  
 tile.fb:ifm_wall_2.name=FNAF Movie Interior wall (Tiles)  
 tile.fb:ifm_wall_1.name=FNAF Movie Interior wall (Middle 1)  
 tile.fb:fnaf3_dirty_wall_down.name=FNAF3 Dirty Wall (Down)  
@@ -323,7 +324,7 @@ entity.fb:chica.name=Chica
 item.spawn_egg.entity.fb:bonnie.name= Bonnie Bunny 
 entity.fb:bonnie.name=Bonnie
 item.spawn_egg.entity.fb:bonno.name= Bonno  
-entity.fb:bonno.name=Bonno
+entity.fb:bonno.name=Bonno 
 item.spawn_egg.entity.fb:spring_bonnie.name= Spring Bonnie 
 entity.fb:spring_bonnie.name=Spring Bonnie
 item.spawn_egg.entity.fb:foxy_statue.name= Foxy the Pirate 
@@ -346,18 +347,27 @@ item.spawn_egg.entity.fb:cyrus.name= Cyrus  
 entity.fb:cyrus.name=Cyrus 
 item.spawn_egg.entity.fb:puppet.name= Puppet 
 entity.fb:puppet.name=Puppet
-item.spawn_egg.entity.fb:withered_chica.name=Withered Chica  
-entity.fb:withered_chica.name=Withere Chica 
-item.spawn_egg.entity.fb:withered_freddy.name=Withered Freddy  
-entity.fb:withered_freddy.name=Withered Freddy 
-item.spawn_egg.entity.fb:withered_bonnie.name=Withered Bonnie  
-entity.fb:withered_bonnie.name=Withered Bonnie 
-item.spawn_egg.entity.fb:withered_foxy.name=Withered Foxy  
-entity.fb:withered_foxy.name=Withered Foxy 
+item.spawn_egg.entity.fb:withered_chica.name= Withered Chica  
+entity.fb:withered_chica.name= Withere Chica 
+item.spawn_egg.entity.fb:withered_freddy.name= Withered Freddy  
+entity.fb:withered_freddy.name= Withered Freddy 
+item.spawn_egg.entity.fb:withered_bonnie.name= Withered Bonnie  
+entity.fb:withered_bonnie.name= Withered Bonnie 
+item.spawn_egg.entity.fb:withered_foxy.name= Withered Foxy  
+entity.fb:withered_foxy.name= Withered Foxy 
 item.spawn_egg.entity.fb:trimer.name=Trimer   
 entity.fb:trimer.name=Trimer 
-item.spawn_egg.entity.fb:mangle.name=Mangle  
-entity.fb:mangle.name=Mangle 
+
+
+
+
+item.spawn_egg.entity.fb:mangle.name= Mangle  
+entity.fb:mangle.name=Mangle
+item.spawn_egg.entity.fb:mangle_s.name= Mangle  
+entity.fb:mangle_s.name=Mangle 
+
+
+
 item.spawn_egg.entity.fb:endo02.name= Endo 02  
 entity.fb:endo02.name= Endo 02  
 item.spawn_egg.entity.fb:toy_foxy.name= Toy Foxy  
@@ -374,8 +384,6 @@ item.spawn_egg.entity.fb:withered_golden_freddy.name= Withered Golden Freddy 
 entity.fb:withered_golden_freddy.name=Withered Golden Freddy 
 item.spawn_egg.entity.fb:vintage_freddy.name= Vintage Freddy   
 entity.fb:vintage_freddy.name=Vintage Freddy 
-item.spawn_egg.entity.fb:shadow_freddy.name= Shadow freddy   
-entity.fb:shadow_freddy.name=Shadow Freddy 
 item.spawn_egg.entity.fb:jj.name= JJ   
 entity.fb:jj.name=JJ 
 item.spawn_egg.entity.fb:bb.name= BB (Balloon Boy)   
@@ -472,11 +480,20 @@ pack.description=Have you ever wanted to replicate a restaurant from FNAF but in
 
 ## FD PR#1
 tile.fb:stage_curtain_red_block.name=Stage Curtain Red Block  &  
+
 tile.fb:stage_plate_bonnie.name=Stage Plate Bonnie Bunny 
 tile.fb:stage_plate_freddy.name=Stage Plate Freddy Fazbear 
 tile.fb:stage_plate_foxy.name=Stage Plate Foxy the fox 
 tile.fb:stage_plate_chica_chicken.name=Stage Plate Chica Chicken 
-tile.fb:stage_plate_chica.name=Stage Plate Chica Chicken 
+tile.fb:stage_plate_toy_bonnie_nm.name=Stage Plate Toy Bonnie 
+tile.fb:stage_plate_toy_freddy_nm.name=Stage Plate Toy Freddy 
+tile.fb:stage_plate_toy_foxy_nm.name=Stage Plate Toy Foxy 
+tile.fb:stage_plate_toy_chica_nm.name=Stage Plate Toy Chica 
+tile.fb:stage_plate_withered_bonnie_nm.name=Scrap Platform Withered Bonnie 
+tile.fb:stage_plate_withered_freddy_nm.name=Scrap Platform Withered Freddy 
+tile.fb:stage_plate_withered_foxy_nm.name=Scrap Platform Withered Foxy 
+tile.fb:stage_plate_withered_chica_nm.name=Scrap Platform Withered Chica 
+
 tile.fb:ceiling_large_light.name=Ceiling Large Light , &  
 tile.fb:large_ceiling_wires.name=Large Ceiling Wires , &  
 tile.fb:large_hanging_wires.name=Large Hanging Wires , &  
@@ -511,7 +528,7 @@ tile.fb:fnaf4_house_wall_lower.name=FNaF4 Wall (Lower + blue lines) 
 tile.fb:fnaf4_house_wallpapers_upper.name=FNaF4 Wall (Upper + orange patterns) 
 tile.fb:fnaf4_house_wall_upper.name=FNaF4 Wall (Upper + white patterns) 
 tile.fb:fnaf4_house_roof.name=FNaF4 Ceiling house (White)  
-tile.fb:fnaf4_house_floor.name=FNaF4 House Floor 
+tile.fb:fnaf4_house_floor.name=FNaF4 House Floor  
 
 ## FD PR#2
 tile.fb:pizzeria_bricks_slab.name=Pizzeria Bricks Slab 
@@ -568,11 +585,27 @@ item.spawn_egg.entity.fb:bonnie_bunny.name= Bonnie Bunny
 item.spawn_egg.entity.fb:chica_chicken.name= Chica Chicken
 item.spawn_egg.entity.fb:freddy_fazbear.name= Freddy Fazbear
 item.spawn_egg.entity.fb:foxy.name= Foxy The Fox
+item.spawn_egg.entity.fb:toy_bonnie_nm.name= Toy Bonnie
+item.spawn_egg.entity.fb:toy_chica_nm.name= Toy Chica
+item.spawn_egg.entity.fb:toy_freddy_nm.name= Toy Freddy
+item.spawn_egg.entity.fb:toy_foxy_nm.name= Toy Foxy
+item.spawn_egg.entity.fb:withered_bonnie_nm.name= Withered Bonnie
+item.spawn_egg.entity.fb:withered_chica_nm.name= Withered Chica
+item.spawn_egg.entity.fb:withered_freddy_nm.name= Withered Freddy
+item.spawn_egg.entity.fb:withered_foxy_nm.name= Withered Foxy
 
 item.spawn_egg.entity.fb:showtime_bonnie_bunny.name= Bonnie Bunny 
 item.spawn_egg.entity.fb:showtime_chica_chicken.name= Chica Chicken 
 item.spawn_egg.entity.fb:showtime_freddy_fazbear.name= Freddy Fazbear 
 item.spawn_egg.entity.fb:showtime_foxy.name= Foxy The Fox 
+item.spawn_egg.entity.fb:showtime_toy_bonnie_nm.name= Toy Bonnie 
+item.spawn_egg.entity.fb:showtime_toy_chica_nm.name= Toy Chica 
+item.spawn_egg.entity.fb:showtime_toy_freddy_nm.name= Toy Freddy 
+item.spawn_egg.entity.fb:showtime_toy_foxy_nm.name= Toy Foxy 
+item.spawn_egg.entity.fb:showtime_withered_bonnie_nm.name= Withered Bonnie 
+item.spawn_egg.entity.fb:showtime_withered_chica_nm.name= Withered Chica 
+item.spawn_egg.entity.fb:showtime_withered_freddy_nm.name= Withered Freddy 
+item.spawn_egg.entity.fb:showtime_withered_foxy_nm.name= Withered Foxy 
 
 item.spawn_egg.entity.fb:ghost_child.name=Ghost Child
 
@@ -584,6 +617,9 @@ item.fb:security_guard_chestplate=Security Guard - Chestplate
 item.fb:security_guard_leggings=Security Guard - Leggings
 item.fb_springlock_suit_legs=Spring Bonnie Suit Leggings
 item.fb:security_guard_boots=Security Guard - Boots
+
+item.spawn_egg.entity.fb:carousel.name=Carousel
+entity.fb:carousel.name=Carousel
 
 ## fnaf 1 
 ## fnaf 2 

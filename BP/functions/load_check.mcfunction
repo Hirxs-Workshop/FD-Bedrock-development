@@ -1,2 +1,2 @@
-execute @a[c=1] ~ ~ ~ function hello_world
-execute @a[c=1] ~ ~ ~ function fnafblocks
+execute as @a[c=1] positioned ~~~ run function hello_world
+execute as @a[c=1] positioned ~~~ run function fnafblocks

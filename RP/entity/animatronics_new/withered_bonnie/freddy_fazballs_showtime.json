@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "fb:showtime_withered_bonnie_nm",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "default": "textures/entity/fnaf2/witheredbonnie"
+      },
+      "geometry": {
+        "default": "geometry.new_withered_bonnie"
+      },
+      "animations": {
+        "showtime": "animation.withered_bonnie.idle",
+        "showtime_off": "animation.withered_bonnie.idle",
+        "showtime_ex": "controller.animation.fb_animatronics.showtime"
+      },
+      "scripts": {
+        "animate": [
+          "showtime_ex"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.nothing"
+      ],
+      "spawn_egg": {
+        "base_color": "#382e5e",
+        "overlay_color": "#736baa"
+      }
+    }
+  }
+}

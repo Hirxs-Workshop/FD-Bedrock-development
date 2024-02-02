@@ -92,7 +92,7 @@
                     "command": [
                         "effect @e[type=fb:bonnie_bunny,r=4] slowness 5 20 true",
                         "event entity @e[type=fb:bonnie_bunny,r=6] fb:bonnie_bunny_showtime",
-                        "execute @e[type=fb:stage_plate_bonnie_bunny] ~ ~ ~ tp @e[type=fb:showtime_bonnie_bunny,r=6] ~ ~ ~ facing ^ ^ ^1"
+                        "execute as @e[type=fb:stage_plate_bonnie_bunny] positioned ~~~ run tp @e[type=fb:showtime_bonnie_bunny,r=6] ~ ~ ~ facing ^ ^ ^1"
                     ]
                 },
                 "add": {

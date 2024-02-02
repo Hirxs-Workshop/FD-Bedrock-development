@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:toy_freddy_nm",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf2/toy_freddy",
+				"blue": "textures/entity/fnaf2/toy_freddy_nightmode"
+			},
+			"scripts": {
+				"animate": [
+					"looking",
+					"fb_toy_freddy_general"
+				]
+			},
+			"animations": {
+				"looking_at": "animation.common.look_at_target",
+				"looking": "controller.animation.fb_toy_freddy.looking_at",
+				"fb_toy_freddy_moving": "animation.new_toy_bonnie.walk",
+				"fb_toy_freddy_crouch_test": "animation.new_fd_vent.geo.vent1",
+				"fb_toy_freddy_vent_moving": "animation.new_fd_vent.geo.chest_down_walk",
+				"fb_toy_freddy_vent_general": "animation.new_fd_vent.geo.chest_down_idle",
+				"fb_toy_freddy_jumpscare": "animation.new_fd_vent.geo.attack_vent",
+				"fb_toy_freddy_jumpscare_normal": "animation.new_fd_vent.geo.attack",
+				"fb_toy_freddy_general": "controller.animation.fb_toy_freddy.general",
+				"fb_toy_freddy_crouch_test_moving": "animation.new_fd_vent.geo.vent3",
+				"fb_toy_freddy_crouch_test_jumpscare": "animation.new_fd_vent.geo.attack_vent"
+			},
+			"geometry": {
+				"default": "geometry.new_toy_freddy"
+			},
+			"render_controllers": [
+				"controller.render.freddy"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#C3521E",
+				"overlay_color": "#1E1D1B"
+			}
+		}
+	}
+}

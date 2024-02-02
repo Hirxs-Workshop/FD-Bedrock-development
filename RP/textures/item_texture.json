@@ -13,9 +13,6 @@
 		"fredbear_icon": {
 			"textures": "textures/items/fredbear_icon"
 		},
-		"fredbear_blood_icon": {
-			"textures": "textures/items/fredbear_blood_icon"
-		},
 		"springtrap_icon": {
 			"textures": "textures/items/springtrap_icon"
 		},
@@ -360,6 +357,9 @@
 		},
 		"office_movie_door": {
 			"textures": "textures/items/office_movie_door"
+		},
+		"carousel": {
+			"textures": "textures/items/carousel"
 		}
 	},
 	"texture_name": "atlas.items"

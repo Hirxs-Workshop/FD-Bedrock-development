@@ -92,7 +92,7 @@
                     "command": [
                         "effect @e[type=fb:freddy_fazbear,r=4] slowness 5 20 true",
                         "event entity @e[type=fb:freddy_fazbear,r=6] fb:freddy_showtime",
-                        "execute @e[type=fb:stage_plate_freddy] ~ ~ ~ tp @e[type=fb:showtime_freddy_fazbear,r=6] ~ ~ ~ facing ^ ^ ^1"
+                        "execute as @e[type=fb:stage_plate_freddy] positioned ~~~ run tp @e[type=fb:showtime_freddy_fazbear,r=6] ~ ~ ~ facing ^ ^ ^1"
                     ]
                 },
                 "add": {

@@ -8,23 +8,24 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/fnaf2/witheredbonnie"
+				"default": "textures/entity/fnaf2/witheredbonnie",
+				"blue": "textures/entity/fnaf2/witheredbonnie"
 			},
 			"animations": {
 				"default_pose": "animation.withered_bonnie.idle",
-				"no_pose": "animation.withered_bonnie.idle",
-				"solemn_pose": "animation.withered_bonnie.idle",
+				"no_pose": "animation.new_withered_bonnie.idle2",
+				"solemn_pose": "animation.new_withered_bonnie.idle3",
 				"athena_pose": "animation.withered_bonnie.idle",
-				"brandish_pose": "animation.withered_bonnie.idle",
-				"honor_pose": "animation.withered_bonnie.idle",
+				"brandish_pose": "animation.new_withered_bonnie.idle2",
+				"honor_pose": "animation.new_withered_bonnie.idle3",
 				"entertain_pose": "animation.withered_bonnie.idle",
-				"salute_pose": "animation.withered_bonnie.idle",
-				"riposte_pose": "animation.withered_bonnie.idle",
+				"salute_pose": "animation.new_withered_bonnie.idle2",
+				"riposte_pose": "animation.new_withered_bonnie.idle3",
 				"zombie_pose": "animation.withered_bonnie.idle",
-				"cancan_a_pose": "animation.withered_bonnie.idle",
-				"cancan_b_pose": "animation.withered_bonnie.idle",
+				"cancan_a_pose": "animation.new_withered_bonnie.idle2",
+				"cancan_b_pose": "animation.new_withered_bonnie.idle3",
 				"hero_pose": "animation.withered_bonnie.idle",
-				"wiggle": "animation.withered_bonnie.idle",
+				"wiggle": "animation.new_withered_bonnie.idle2",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -42,12 +43,12 @@
 				"default": "geometry.new_withered_bonnie"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.fredbear"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#493587",
-				"overlay_color": "#1D1330"
+				"base_color": "#382e5e",
+				"overlay_color": "#736baa"
 			}
 		}
 	}

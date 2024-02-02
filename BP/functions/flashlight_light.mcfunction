@@ -1,9 +1,8 @@
-execute @s ~~1~ detect ^^^ air -1 summon fb:light ^^^
-execute @s ~~1~ detect ^^^1 air -1 summon fb:light ^^^1
-execute @s ~~1~ detect ^^^2 air -1 summon fb:light ^^^2
-execute @s ~~1~ detect ^^^3 air -1 summon fb:light ^^^3
-execute @s ~~1~ detect ^^^4 air -1 summon fb:light ^^^4
-execute @s ~~1~ detect ^^^5 air -1 summon fb:light ^^^5
-execute @s ~~1~ detect ^^^6 air -1 summon fb:light ^^^6
-execute @s ~~1~ detect ^^^7 air -1 summon fb:light ^^^7
-execute @s ~~1~ detect ^^^8 air -1 summon fb:light ^^^8
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^ air [] run summon fb:light ^^^
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^1 air [] run summon fb:light ^^^1
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^2 air [] run summon fb:light ^^^2
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^3 air [] run summon fb:light ^^^3
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^4 air [] run summon fb:light ^^^4
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^5 air [] run summon fb:light ^^^5
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^6 air [] run summon fb:light ^^^6
+execute as @a[hasitem={item=fb:flashlight,location=slot.weapon.mainhand}] positioned ~~1~ if block ^^^7 air [] run summon fb:light ^^^7

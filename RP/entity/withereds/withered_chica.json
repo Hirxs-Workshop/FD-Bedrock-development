@@ -8,23 +8,24 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/withered/withered_chica"
+				"default": "textures/entity/fnaf2/withered_chica",
+				"blue": "textures/entity/fnaf2/withered_chica"
 			},
 			"animations": {
-				"default_pose": "animation.withered_chica.idle1",
-				"no_pose": "animation.withered_chica.idle2",
-				"solemn_pose": "animation.withered_chica.idle3",
-				"athena_pose": "animation.withered_chica.idle1",
-				"brandish_pose": "animation.withered_chica.idle2",
-				"honor_pose": "animation.withered_chica.idle3",
-				"entertain_pose": "animation.withered_chica.idle1",
-				"salute_pose": "animation.withered_chica.idle2",
-				"riposte_pose": "animation.withered_chica.idle3",
-				"zombie_pose": "animation.withered_chica.idle1",
-				"cancan_a_pose": "animation.withered_chica.idle2",
-				"cancan_b_pose": "animation.withered_chica.idle1",
-				"hero_pose": "animation.withered_chica.idle2",
-				"wiggle": "animation.withered_chica.idle3",
+				"default_pose": "animation.new_withered_chica.idle_test_1",
+				"no_pose": "animation.new_withered_chica.idle_test_2",
+				"solemn_pose": "animation.new_withered_chica.idle_test_3",
+				"athena_pose": "animation.new_withered_chica.idle_test_4",
+				"brandish_pose": "animation.new_withered_chica.idle_test_5",
+				"honor_pose": "animation.new_withered_chica.idle_test_1",
+				"entertain_pose": "animation.new_withered_chica.idle_test_2",
+				"salute_pose": "animation.new_withered_chica.idle_test_3",
+				"riposte_pose": "animation.new_withered_chica.idle_test_4",
+				"zombie_pose": "animation.new_withered_chica.idle_test_5",
+				"cancan_a_pose": "animation.new_withered_chica.idle_test_1",
+				"cancan_b_pose": "animation.new_withered_chica.idle_test_2",
+				"hero_pose": "animation.new_withered_chica.idle_test_3",
+				"wiggle": "animation.new_withered_chica.idle_test_4",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -39,15 +40,15 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.withered_chica"
+				"default": "geometry.new_withered_chica"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.fredbear"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#877D35",
-				"overlay_color": "#302613"
+				"base_color": "#6f5713",
+				"overlay_color": "#B28B1F"
 			}
 		}
 	}

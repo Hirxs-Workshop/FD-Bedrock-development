@@ -1,0 +1,79 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:jumpscare1",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:nameable": {},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_water": true
+			},
+			"minecraft:health": {
+				"value": 9999,
+				"max": 9999
+			},
+			"minecraft:collision_box": {
+				"width": 0.14,
+				"height": 0.14
+			},
+			"minecraft:scale": {
+				"value": 0.4
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"avoid_sun": false,
+				"avoid_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:annotation.open_door": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"fb_jumpscare1",
+					"undead",
+					"mob",
+					"inanimate"
+				]
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"remover_jumpscare1": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"events": {
+			"remover_jumpscare1": {
+				"add": {
+					"component_groups": [
+						"remover_jumpscare1"
+					]
+				}
+			}
+		}
+	}
+}

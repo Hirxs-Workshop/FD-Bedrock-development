@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:withered_freddy_nm",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf2/withered_freddy",
+				"blue": "textures/entity/fnaf2/withered_freddy"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"fb_withered_freddy_nm_base": "animation.new_freddy_fazbear.base",
+				"fb_withered_freddy_nm_walk": "animation.feddy.geo.walk",
+				"fb_withered_freddy_nm_start": "animation.new_withered_freddy.idle",
+				"fb_withered_freddy_nm_attack": "animation.feddy.geo.w_attack",
+				"base": "controller.animation.fb_withered_freddy_nm.base",
+				"walk": "controller.animation.fb_withered_freddy_nm.walk",
+				"attack": "controller.animation.fb_withered_freddy_nm.attack",
+				"function": "controller.animation.fb_withered_freddy_nm.function"
+			},
+			"scripts": {
+				"animate": [
+					"controller.pose",
+					"controller.wiggling",
+					"base",
+					"walk",
+					"attack",
+					"function"
+				],
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 10.0);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.new_withered_freddy"
+			},
+			"render_controllers": [
+				"controller.render.freddy"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#41230b",
+				"overlay_color": "#1E1D1B"
+			}
+		}
+	}
+}

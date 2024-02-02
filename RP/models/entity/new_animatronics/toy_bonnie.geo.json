@@ -6,13 +6,13 @@
 				"identifier": "geometry.new_toy_bonnie",
 				"texture_width": 128,
 				"texture_height": 128,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 4.5,
 				"visible_bounds_offset": [0, 1.75, 0]
 			},
 			"bones": [
 				{
-					"name": "toy_bonnie",
+					"name": "toy_chica",
 					"pivot": [-0.2, 0, 0],
 					"cubes": [
 						{"origin": [-4.5, 17, -2], "size": [9, 3, 6], "uv": [29, 0]},
@@ -21,7 +21,7 @@
 				},
 				{
 					"name": "Body",
-					"parent": "toy_bonnie",
+					"parent": "toy_chica",
 					"pivot": [0, 19.5, 1],
 					"cubes": [
 						{"origin": [-5.4, 26, 0], "size": [2, 2, 2], "uv": [75, 73]},
@@ -294,7 +294,7 @@
 				},
 				{
 					"name": "RightLeg",
-					"parent": "toy_bonnie",
+					"parent": "toy_chica",
 					"pivot": [-2.7, 16, 1],
 					"cubes": [
 						{"origin": [-5.2, 11, -1.5], "size": [5, 6, 5], "uv": [39, 44]},
@@ -321,7 +321,7 @@
 				},
 				{
 					"name": "LeftLeg",
-					"parent": "toy_bonnie",
+					"parent": "toy_chica",
 					"pivot": [2.8, 16, 1],
 					"cubes": [
 						{"origin": [1.7, 10, 0.5], "size": [2, 8, 2], "uv": [42, 70]},

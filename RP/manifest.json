@@ -1,17 +1,17 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "[PR#2 - Phase 1 BugFix] FNAF's Decorations - v4",
-		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?\n\n§l§6Developers:§r§f Hirx's,JennyF,Cheez & Murasaki\n§l§eSpecial Thanks:§r§f HyruArt\n\n§l§8Insiders/Testers:§r§f Xeno Neo ,ButterM|BM ,Bh11us ,croaked ,doortame ,Elias ,Potato_Fan ,Thomas York ,YellowRabit ,Darkgui ,Springdom ,ZachDoesGames ,The FantasticBOB ,Dargelixt Gamer ,ManSam & Claus\n\n§l§8Supporters:§r§f Stilla ,Big Randy ,Sonic gamer tv ,MikeTheCasualGuy ,Andro_AGENT ,BaconCousinsPartyGG ,v7tor & danger bonnie \n\n----------------------------------------------------------------------------\n§l§8Community Server: §r§fhttps://discord.gg/hirxs\n\n§8§lSupport (Bugs & Suggestions): §r§fhttps://hirxs-website.net/community-forums",
+		"name": "[PR#2 - Phase 2 Bug Fix] FNAF's Decorations - v4",
+		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
-			19,
-			40
+			20,
+			10
 		],
 		"uuid": "b257d765-f49d-4e40-a043-5eb2463a9033",
 		"version": [
 			4,
-			50,
+			95,
 			0
 		]
 	},
@@ -21,7 +21,7 @@
 			"uuid": "e14f36eb-f25e-4df3-a809-07297e5235ff",
 			"version": [
 				4,
-				50,
+				95,
 				0
 			]
 		}
@@ -31,9 +31,73 @@
 			"uuid": "60693a42-6a26-4ce4-a008-a0f0c65c01a2",
 			"version": [
 				4,
-				50,
+				95,
 				0
 			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.7.10"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	},
+	"settings": [
+		{
+			"type": "label",
+			"text": "§l§6Developers:"
+		},
+		{
+			"type": "label",
+			"text": "§r§f- Hirx's\n- JennyF\n- Cheez\n- Murasaki"
+		},
+		{
+			"type": "label",
+			"text": "§l§eSpecial Thanks:"
+		},
+		{
+			"type": "label",
+			"text": "§r§f HyruArt"
+		},
+		{
+			"type": "label",
+			"text": "§l§8Insiders/Testers:"
+		},
+		{
+			"type": "label",
+			"text": "§r§f- Xeno Neo\n- ButterM|BM\n- Bh11us\n- croaked\n- doortame\n- Elias\n- Potato_Fan\n- Thomas York\n- YellowRabit\n- Darkgui\n- Springdom\n- ZachDoesGames\n- The FantasticBOB\n- Dargelixt Gamer\n- ManSam\n- Claus"
+		},
+		{
+			"type": "label",
+			"text": "§l§8Supporters:"
+		},
+		{
+			"type": "label",
+			"text": "§r§f- Stilla\n- Big Randy\n- Sonic gamer tv\n- MikeTheCasualGuy\n- Andro_AGENT\n- BaconCousinsPartyGG\n- v7tor\n- danger bonnie"
+		},
+		{
+			"type": "label",
+			"text": "-------------------------------------------------------"
+		},
+		{
+			"type": "label",
+			"text": "§l§8Community Server:"
+		},
+		{
+			"type": "label",
+			"text": "§r§f- https://discord.gg/hirxs"
+		},
+		{
+			"type": "label",
+			"text": "§8§lSupport (Bugs & Suggestions):"
+		},
+		{
+			"type": "label",
+			"text": "§r§f- https://hirxs-website.net/community-forums"
 		}
 	]
 }

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:carousel",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "carousel_test"
+			},
+			"textures": {
+				"default": "textures/entity/carousel"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.carousel"
+			},
+			"render_controllers": [
+				"controller.render.carousel"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "carousel"
+			}
+		}
+	}
+}

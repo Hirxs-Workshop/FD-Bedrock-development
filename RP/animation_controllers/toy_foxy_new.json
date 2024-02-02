@@ -1,0 +1,166 @@
+{
+	"format_version": "1.17.30",
+	"animation_controllers": {
+		"controller.animation.fb_toy_foxy.looking_at": {
+			"states": {
+				"default": {
+					"animations": [
+						"looking_at"
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_foxy.general": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"crouch": "query.variant == 1"
+						},
+						{
+							"ventilation": "query.variant == 2"
+						},
+						{
+							"jumpscare_normal": "query.is_sheared"
+						}
+					],
+					"animations": [
+						{
+							"fb_toy_foxy_general": "variable.is_idling"
+						},
+						{
+							"fb_toy_foxy_moving": "variable.move_speed"
+						}
+					],
+					"variables": {
+						"move_speed": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.0": 0,
+								"0.25": 1
+							}
+						},
+						"is_idling": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.25": 0,
+								"0.0": 1
+							}
+						}
+					}
+				},
+				"ventilation": {
+					"blend_transition": 0.5,
+					"transitions": [
+						{
+							"crouch": "query.variant == 1"
+						},
+						{
+							"default": "query.variant == 0"
+						},
+						{
+							"jumpscare_vent": "query.is_stunned"
+						}
+					],
+					"animations": [
+						{
+							"fb_toy_foxy_vent_general": "variable.is_idling"
+						},
+						{
+							"fb_toy_foxy_vent_moving": "variable.move_speed"
+						}
+					],
+					"variables": {
+						"move_speed": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.0": 0,
+								"0.12": 1
+							}
+						},
+						"is_idling": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.12": 0,
+								"0.0": 1
+							}
+						}
+					}
+				},
+				"crouch": {
+					"blend_transition": 0.5,
+					"transitions": [
+						{
+							"default": "query.variant == 0"
+						},
+						{
+							"ventilation": "query.variant == 2"
+						},
+						{
+							"jumpscare_crouch": "query.is_stackable"
+						}
+					],
+					"variables": {
+						"move_speed": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.0": 0,
+								"0.1": 1
+							}
+						},
+						"is_idling": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.1": 0,
+								"0.0": 1
+							}
+						}
+					},
+					"animations": [
+						{
+							"fb_toy_foxy_crouch_test_moving": "variable.move_speed"
+						},
+						{
+							"fb_toy_foxy_crouch_test": "variable.is_idling"
+						}
+					]
+				},
+				"jumpscare_normal": {
+					"transitions": [
+						{
+							"default": "!query.is_sheared"
+						}
+					],
+					"animations": [
+						"fb_toy_foxy_jumpscare_normal"
+					],
+					"blend_transition": 0.2
+				},
+				"jumpscare_vent": {
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"ventilation": "!query.is_stunned"
+						}
+					],
+					"animations": [
+						"fb_toy_foxy_jumpscare"
+					]
+				},
+				"jumpscare_crouch": {
+					"blend_transition": 0.1,
+					"transitions": [
+						{
+							"crouch": "!query.is_stackable"
+						}
+					],
+					"animations": [
+						"fb_toy_foxy_crouch_test_jumpscare"
+					]
+				}
+			}
+		}
+	}
+}

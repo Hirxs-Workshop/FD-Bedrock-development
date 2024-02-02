@@ -1,0 +1,234 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fb_toy_freddy_vent_sound": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"ventstep": "query.ground_speed && query.variant == 2"
+						}
+					]
+				},
+				"ventstep": {
+					"animations": [
+						"fb_vent_sound"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"on_entry": [
+						"/playsound fb_toy_freddy_step_vent @a[r=12]"
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_freddy_chase": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"chase": "query.has_target"
+						},
+						{
+							"stop_chase": "!query.has_target"
+						}
+					]
+				},
+				"chase": {
+					"transitions": [
+						{
+							"default": "!query.has_target"
+						}
+					],
+					"on_entry": [
+						"/playsound fb_toy_freddy_chase @a",
+						"@s fb_toy_freddy_agressive"
+					]
+				},
+				"stop_chase": {
+					"transitions": [
+						{
+							"default": "query.has_target"
+						}
+					],
+					"on_entry": [
+						"/stopsound @a fb_toy_freddy_chase",
+						"@s fb_toy_freddy_friendly",
+						"@s minecraft:fb_toy_freddy_damage20"
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_freddy_execute": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"execute": "1"
+						}
+					]
+				},
+				"execute": {
+					"transitions": [
+						{
+							"default": "1"
+						}
+					],
+					"on_entry": [
+						"/execute as @s if block ~ ~2 ~ air if block ~ ~1 ~ air run event entity @s minecraft:fb_toy_freddy_normal",
+						"/execute as @s unless block ~ ~2 ~ air if block ~ ~1 ~ air run event entity @s minecraft:fb_toy_freddy_crouch",
+						"/execute as @s unless block ~ ~1 ~ air run event entity @s minecraft:fb_toy_freddy_ventilation"
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_freddy_jumpscare_normal": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jumpscare": "query.is_sheared"
+						}
+					]
+				},
+				"jumpscare": {
+					"transitions": [
+						{
+							"default": "!query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/stopsound @a fb_toy_freddy_chase",
+						"/playsound fb:jumpscare_fnaf2 @p",
+						"/effect @p instant_health 99999 255 true"
+					],
+					"animations": [
+						"fb_toy_freddy_jumpscare_normal"
+					],
+					"on_exit": [
+						"/camera @p fade time 0.1 0.1 0.1 color 000 000 000",
+						"/camerashake add @p 0.3 1",
+						"/kill @p",
+						"/event entity @e remover_cubo"
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_freddy_normal": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"crouch": "query.variant == 1"
+						},
+						{
+							"ventilation": "query.variant == 2"
+						}
+					],
+					"on_entry": [
+						"@s normal"
+					]
+				},
+				"crouch": {
+					"on_entry": [
+						"@s crouch"
+					],
+					"transitions": [
+						{
+							"default": "query.variant == 0"
+						},
+						{
+							"ventilation": "query.variant == 2"
+						}
+					]
+				},
+				"ventilation": {
+					"on_entry": [
+						"@s ventilation"
+					],
+					"transitions": [
+						{
+							"default": "query.variant == 0"
+						},
+						{
+							"crouch": "query.variant == 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_freddy_jumpscare_vent": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jumpscare": "query.is_stunned"
+						}
+					]
+				},
+				"jumpscare": {
+					"transitions": [
+						{
+							"default": "!query.is_stunned"
+						}
+					],
+					"on_entry": [
+						"/stopsound @a fb_toy_freddy_chase",
+						"/playsound fb:jumpscare_fnaf2 @p",
+						"/effect @p instant_health 99999 255 true"
+					],
+					"animations": [
+						"fb_toy_freddy_jumpscare_vent"
+					],
+					"on_exit": [
+						"/camera @p fade time 0.1 0.1 0.1 color 000 000 000",
+						"/camerashake add @p 0.3 1",
+						"/kill @p",
+						"/event entity @e remover_cubo"
+					]
+				}
+			}
+		},
+		"controller.animation.fb_toy_freddy_jumpscare_crouch": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jumpscare": "query.is_stackable"
+						}
+					]
+				},
+				"jumpscare": {
+					"transitions": [
+						{
+							"default": "!query.is_stackable"
+						}
+					],
+					"on_entry": [
+						"/stopsound @a fb_toy_freddy_chase",
+						"/playsound fb:jumpscare_fnaf2 @p",
+						"/effect @p instant_health 99999 255 true"
+					],
+					"animations": [
+						"fb_toy_freddy_jumpscare_crouch"
+					],
+					"on_exit": [
+						"/camera @p fade time 0.1 0.1 0.1 color 000 000 000",
+						"/camerashake add @p 0.3 1",
+						"/kill @p",
+						"/event entity @e remover_cubo"
+					]
+				}
+			}
+		}
+	}
+}

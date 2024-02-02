@@ -1,0 +1,186 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "fb:stage_plate_withered_foxy_nm",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "hurt_item": 0,
+                        "interact_text": "action.interact.remover_tool",
+                        "on_interact": {
+                            "event": "fb:remove",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "operator": "==",
+                                        "value": "fb:remover_tool"
+                                    }
+                                ]
+                            },
+                            "target": "self"
+                        },
+                        "use_item": false
+                    },
+                    {
+                        "hurt_item": 10,
+                        "interact_text": "fb:rotate",
+                        "on_interact": {
+                            "event": "fb:rotate",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "operator": "==",
+                                        "value": "fb:rotate"
+                                    }
+                                ]
+                            },
+                            "target": "self"
+                        },
+                        "use_item": false
+                    }
+                ]
+            },
+            "minecraft:scheduler": {
+                "min_delay_secs": 0,
+                "max_delay_secs": 10,
+                "scheduled_events": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "hourly_clock_time",
+                                    "operator": ">=",
+                                    "value": 13000
+                                },
+                                {
+                                    "test": "hourly_clock_time",
+                                    "operator": "<",
+                                    "value": 24000
+                                }
+                            ]
+                        },
+                        "event": "fb:night_execute"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "hourly_clock_time",
+                                    "operator": ">=",
+                                    "value": 0
+                                },
+                                {
+                                    "test": "hourly_clock_time",
+                                    "operator": "<",
+                                    "value": 8000
+                                }
+                            ]
+                        },
+                        "event": "fb:day_execute"
+                    }
+                ]
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1,
+                "min": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:fire_immune": true,
+            "minecraft:collision_box": {
+                "width": 0.8,
+                "height": 0.3
+            },
+            "minecraft:nameable": {
+                "always_show": false,
+                "allow_name_tag_renaming": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            }
+        },
+        "events": {
+            "despawn": {
+                "run_command": {
+                    "command": [
+                        "setblock ~~~ air"
+                    ],
+                    "target": "self"
+                },
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                }
+            },
+            "fb:day_execute": {
+                "run_command": {
+                    "command": [
+                        "summon fb:stage_plate_mark_withered_foxy_nm2 ~ ~ ~"
+                    ],
+                    "target": "self"
+                }
+            },
+            "fb:night_execute": {
+                "run_command": {
+                    "command": [
+                        "summon fb:stage_plate_mark_withered_foxy_nm3 ~ ~ ~"
+                    ],
+                    "target": "self"
+                }
+            },
+            "fb:rotate": {
+                "run_command": {
+                    "command": [
+                        "tp @s ~ ~ ~ ~45 ~",
+                        "particle fb:rotate ~ ~1 ~",
+                        "playsound dig.sand @a[r=5] ~ ~ ~"
+                    ],
+                    "target": "self"
+                }
+            },
+            "fb:remove": {
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                },
+                "run_command": {
+                    "command": [
+                        "setblock ~~~ air",
+                        "event entity @e[type=fb:stage_plate_withered_foxy_nm] despawn",
+                        "event entity @e[type=fb:stage_plate_mark_withered_foxy_nm1] despawn",
+                        "event entity @e[type=fb:stage_plate_mark_withered_foxy_nm2] despawn",
+                        "event entity @e[type=fb:stage_plate_mark_withered_foxy_nm3] despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

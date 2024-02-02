@@ -92,7 +92,7 @@
                     "command": [
                         "effect @e[type=fb:chica_chicken,r=4] slowness 5 20 true",
                         "event entity @e[type=fb:chica_chicken,r=6] fb:chica_chicken_showtime",
-                        "execute @e[type=fb:stage_plate_chica_chicken] ~ ~ ~ tp @e[type=fb:showtime_chica_chicken,r=6] ~ ~ ~ facing ^ ^ ^1"
+                        "execute as @e[type=fb:stage_plate_chica_chicken] positioned ~~~ run tp @e[type=fb:showtime_chica_chicken,r=6] ~ ~ ~ facing ^ ^ ^1"
                     ]
                 },
                 "add": {

@@ -1,53 +1,163 @@
-{
-	"format_version": "1.13.0",
+	{
+	"format_version": "1.8.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "fb:mangle",
-			"runtime_identifier": "minecraft:armor_stand",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false
-		},
-		"components": {
-			"minecraft:type_family": {
-				"family": [
-					"armor_stand",
-					"inanimate",
-					"mob"
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"fb_mangle_function_entity_controller",
+					"fb_bmangle_attack_entity_controller",
+					"fb_mangle_ded_entity_controller",
+					"fb_mangle_function2_entity_controller"
 				]
+			},
+			"animations": {
+				"fb_mangle_function_entity": "animation.fb_mangle.function.entity",
+				"fb_mangle_function_entity_controller": "controller.animation.fb_mangle.function.entity",
+				"fb_mangle_attack_entity_controller": "controller.animation.fb_mangle.attack.entity",
+				"fb_mangle_ded_entity_controller": "controller.animation.fb_mangle.ded.entity",
+				"fb_mangle_function2_entity_controller": "controller.animation.fb_mangle.function2.entity"
+			}
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:navigation.climb": {
+				"can_path_over_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:can_climb": {},
+			"minecraft:health": {
+				"value": 200,
+				"max": 200
 			},
 			"minecraft:collision_box": {
 				"width": 0.5,
-				"height": 1.975
+				"height": 2
 			},
-			"minecraft:health": {
-				"value": 6,
-				"max": 6
+			"minecraft:attack": {
+				"damage": 35
 			},
-			"minecraft:hurt_on_condition": {
-				"damage_conditions": [
-					{
-						"filters": {
-							"test": "in_lava",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"cause": "lava",
-						"damage_per_tick": 4
-					}
-				]
+			"minecraft:movement": {
+				"value": 0.13
 			},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/armor_stand_acacia.json"
+			"minecraft:hunter_mode": {
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_break_doors": true,
+					"can_walk": true,
+					"avoid_sun": true
+				}
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"target_dist": 3.0,
+				"speed_multiplier": 2.5,
+				"track_target": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 1,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 5,
+				"look_distance": 50
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
 			},
 			"minecraft:nameable": {},
-			"minecraft:persistent": {},
-			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": true
-			}
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:fire_immune": false,
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 1000
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "irongolem"
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "evocation_illager"
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "vindicator"
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "witch"
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "villager"
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "pillager"
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "wandering_trader"
+						},
+						"max_dist": 100
+					}
+				],
+				"must_see": false
+			},
+			"minecraft:physics": {}
 		},
 		"events": {}
 	}

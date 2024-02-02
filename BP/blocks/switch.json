@@ -96,9 +96,9 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"fill ~-8 ~-2 ~8 ~8 ~5 ~-8 fb:light_off 0 replace fb:light_on",
-								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:lightbulb_down 0 replace fb:lightbulb_on",
-								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:roof_light_off 0 replace fb:roof_light_on",
+								"fill ~-8 ~-2 ~8 ~8 ~5 ~-8 fb:light_off [] replace fb:light_on",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:lightbulb_down [] replace fb:lightbulb_on",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:roof_light_off [] replace fb:roof_light_on",
 								"playsound random.click @a[r=5] ~~~ 10 1.5"
 							]
 						}
@@ -117,9 +117,9 @@
 							"target": "self",
 							"command": [
 								"gamerule sendcommandfeedback false",
-								"fill ~-8 ~-2 ~8 ~8 ~5 ~-8 fb:light_on 0 replace fb:light_off",
-								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:lightbulb_on 0 replace fb:lightbulb_down",
-								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:roof_light_on 0 replace fb:roof_light_off",
+								"fill ~-8 ~-2 ~8 ~8 ~5 ~-8 fb:light_on [] replace fb:light_off",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:lightbulb_on [] replace fb:lightbulb_down",
+								"fill ~-4 ~-2 ~4 ~4 ~5 ~-4 fb:roof_light_on [] replace fb:roof_light_off",
 								"playsound random.click @a[r=5] ~~~ 10 1.5"
 							]
 						}

@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:toy_chica_nm",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf2/toy_chica",
+				"toy_chica_agressive": "textures/entity/fnaf2/toy_chica_night_mode"
+			},
+			"geometry": {
+				"default": "geometry.new_toy_chica"
+			},
+			"render_controllers": [
+				"controller.render.fb_toy_chica"
+			],
+			"spawn_egg": {
+				"base_color": "#FFD934",
+				"overlay_color": "#FF8219"
+			},
+			"scripts": {
+				"animate": [
+					"looking",
+					"fb_toy_chica_general"
+				]
+			},
+			"animations": {
+				"looking_at": "animation.common.look_at_target",
+				"looking": "controller.animation.fb_toy_chica.looking_at",
+				"fb_toy_chica_moving": "animation.new_toy_chica.walk",
+				"fb_toy_chica_crouch_test": "animation.new_toy_chica.geo.vent1",
+				"fb_toy_chica_vent_moving": "animation.new_toy_chica.geo.vent4",
+				"fb_toy_chica_vent_general": "animation.new_toy_chica.geo.vent4_idle",
+				"fb_toy_chica_jumpscare": "animation.new_toy_chica.geo.attack_vent",
+				"fb_toy_chica_jumpscare_normal": "animation.new_toy_chica.geo.attack",
+				"fb_toy_chica_general": "controller.animation.fb_toy_chica.general",
+				"fb_toy_chica_crouch_test_moving": "animation.new_toy_chica.geo.vent3",
+				"fb_toy_chica_crouch_test_jumpscare": "animation.new_toy_chica.geo.attack_vent"
+			}
+		}
+	}
+}

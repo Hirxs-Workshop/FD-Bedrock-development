@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:stage_plate_mark_withered_freddy_nm2",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/empty"
+			},
+			"geometry": {
+				"default": "geometry.empty"
+			},
+			"animations": {
+				"fd_mark": "animation.withered_freddy_nm"
+			},
+			"scripts": {
+				"animate": [
+					"fd_mark"
+				]
+			},
+			"render_controllers": [
+				"controller.render.nothing"
+			],
+			"spawn_egg": {
+				"texture": "placeholder"
+			}
+		}
+	}
+}
