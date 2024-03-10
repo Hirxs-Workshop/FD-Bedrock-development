@@ -63,210 +63,6 @@
 				}
 			}
 		},
-		"animation.fredbear.geo.CAM1Astare": {
-			"loop": true,
-			"bones": {
-				"jaw": {
-					"rotation": [0, 0, 0]
-				},
-				"armL": {
-					"rotation": [0, 0, 22.5]
-				},
-				"lower": {
-					"rotation": [-90, 0, 0]
-				},
-				"fingers": {
-					"rotation": [0, 0, -30]
-				},
-				"fingers2": {
-					"rotation": [0, 0, -37.5]
-				},
-				"thumb": {
-					"rotation": [-54.2529, -7.2172, 93.46733],
-					"position": [1.89572, 0.53635, 0.96492]
-				},
-				"armR": {
-					"rotation": [0, 0, -22.5]
-				},
-				"lower2": {
-					"rotation": [-90, 0, 0]
-				},
-				"fingers3": {
-					"rotation": [0, 0, 30]
-				},
-				"fingers4": {
-					"rotation": [0, 0, 37.5]
-				},
-				"thumb3": {
-					"rotation": [40, 0, 0],
-					"position": [-0.10598, 0.07919, 0.6265]
-				},
-				"thumb4": {
-					"rotation": [55, 0, 0]
-				},
-				"foot": {
-					"rotation": [0, 10, 0]
-				},
-				"foot2": {
-					"rotation": [0, -10, 0]
-				},
-				"head": {
-					"rotation": [0, 70, 0]
-				},
-				"masktop": {
-					"position": [0, 0, 0]
-				}
-			}
-		},
-		"animation.fredbear.geo.CAM4B": {
-			"loop": true,
-			"bones": {
-				"fredbear": {
-					"rotation": [0, -17.5, 0]
-				},
-				"head": {
-					"rotation": [-22.5, 0, 0],
-					"position": [0, 0, 2]
-				},
-				"jaw": {
-					"rotation": [0, 0, 0]
-				},
-				"armL": {
-					"rotation": [10, 0, 12.5]
-				},
-				"lower": {
-					"rotation": [-31.80857, -26.48829, 7.6734]
-				},
-				"armR": {
-					"rotation": [10, 0, -12.5]
-				},
-				"lower2": {
-					"rotation": [-31.80857, 26.48829, -7.6734]
-				},
-				"foot": {
-					"rotation": [0, 10, 0]
-				},
-				"foot2": {
-					"rotation": [0, -10, 0]
-				},
-				"fingers": {
-					"rotation": [0, 0, -30]
-				},
-				"thumb": {
-					"rotation": [-54.2529, -7.2172, 93.46733],
-					"position": [1.89572, 0.53635, 0.96492]
-				},
-				"thumb3": {
-					"rotation": [40, 0, 0],
-					"position": [-0.10598, 0.07919, 0.6265]
-				},
-				"masktop": {
-					"position": [0, 1, 0]
-				},
-				"item": {
-					"scale": 0
-				}
-			}
-		},
-		"animation.fredbear.geo.CAM7": {
-			"loop": true,
-			"bones": {
-				"upperpart": {
-					"rotation": [7.56397, 7.43547, 0.98448]
-				},
-				"head": {
-					"rotation": [-7.5, 52.5, 0],
-					"position": [0, 0, -2]
-				},
-				"jaw": {
-					"rotation": [0, 0, 0]
-				},
-				"armL": {
-					"rotation": [15, 0, 17.5]
-				},
-				"lower": {
-					"rotation": [-30, 0, 0]
-				},
-				"armR": {
-					"rotation": [15, 0, -17.5]
-				},
-				"lower2": {
-					"rotation": [-30, 0, 0]
-				},
-				"fingers": {
-					"rotation": [0, 0, -30]
-				},
-				"thumb": {
-					"rotation": [-54.2529, -7.2172, 93.46733],
-					"position": [1.89572, 0.53635, 0.96492]
-				},
-				"thumb3": {
-					"rotation": [40, 0, 0],
-					"position": [-0.10598, 0.07919, 0.6265]
-				},
-				"masktop": {
-					"position": [0, 1, 0]
-				},
-				"item": {
-					"scale": 0
-				}
-			}
-		},
-		"animation.fredbear.geo.idle": {
-			"loop": true,
-			"bones": {
-				"jaw": {
-					"rotation": [0, 0, 0]
-				},
-				"armL": {
-					"rotation": [0, 0, 22.5]
-				},
-				"lower": {
-					"rotation": [0, 0, -17.5]
-				},
-				"fingers": {
-					"rotation": [0, 0, -30]
-				},
-				"fingers2": {
-					"rotation": [0, 0, -37.5]
-				},
-				"thumb": {
-					"rotation": [26.26708, -6.69915, 2.61507],
-					"position": [-0.10428, -0.06365, 0.26492]
-				},
-				"armR": {
-					"rotation": [0, 0, -22.5]
-				},
-				"lower2": {
-					"rotation": [0, 0, 20]
-				},
-				"fingers3": {
-					"rotation": [0, 0, 30]
-				},
-				"fingers4": {
-					"rotation": [0, 0, 37.5]
-				},
-				"thumb3": {
-					"rotation": [40, 0, 0],
-					"position": [-0.10598, 0.07919, 0.6265]
-				},
-				"thumb4": {
-					"rotation": [55, 0, 0]
-				},
-				"foot": {
-					"rotation": [0, 10, 0]
-				},
-				"foot2": {
-					"rotation": [0, -10, 0]
-				},
-				"head": {
-					"rotation": [0, 0, 0]
-				},
-				"item": {
-					"scale": 0
-				}
-			}
-		},
 		"animation.fredbear.geo.attack": {
 			"animation_length": 4.875,
 			"bones": {
@@ -630,6 +426,308 @@
 				"thumb3": {
 					"rotation": [40, 0, 0],
 					"position": [-0.10598, 0.07919, 0.6265]
+				},
+				"item": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.fredbear.geo.CAM1A2": {
+			"loop": true,
+			"animation_length": 100,
+			"bones": {
+				"jaw": {
+					"rotation": [0, 0, 0]
+				},
+				"armL": {
+					"rotation": [-51.1917, 14.63937, -15.14386]
+				},
+				"lower": {
+					"rotation": [-90, 0, 0]
+				},
+				"fingers": {
+					"rotation": [0, 0, -5]
+				},
+				"fingers2": {
+					"rotation": [0, 0, -37.5]
+				},
+				"thumb": {
+					"rotation": [-56.33414, 14.66435, 62.75626],
+					"position": [1.89572, 0.53635, 0.96492]
+				},
+				"armR": {
+					"rotation": [0, 0, -22.5]
+				},
+				"lower2": {
+					"rotation": [-90, 0, 0]
+				},
+				"fingers3": {
+					"rotation": [0, 0, 30]
+				},
+				"fingers4": {
+					"rotation": [0, 0, 37.5]
+				},
+				"thumb3": {
+					"rotation": [40, 0, 0],
+					"position": [-0.10598, 0.07919, 0.6265]
+				},
+				"thumb4": {
+					"rotation": [55, 0, 0]
+				},
+				"foot": {
+					"rotation": [0, 10, 0]
+				},
+				"foot2": {
+					"rotation": [0, -10, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0]
+				},
+				"hand": {
+					"rotation": [15, 0, 0]
+				},
+				"item": {
+					"rotation": [0, -360, -180],
+					"position": [3, 5, 0]
+				},
+				"masktop": {
+					"position": {
+						"0.0": [0, 3.5, 0],
+						"18.625": [0, 3.5, 0],
+						"18.6667": [0, 0.5, 0],
+						"99.9583": [0, 0.5, 0]
+					}
+				},
+				"bone2": {
+					"rotation": [90, 0, 0],
+					"position": [-0.5, 23, 9],
+					"scale": [0.9, 0.9, 1]
+				},
+				"bone7": {
+					"rotation": [0, -90, 0],
+					"position": [0, 0, 1],
+					"scale": [0.8, 1, 0.8]
+				},
+				"bone3": {
+					"rotation": [-80, 0, 0]
+				},
+				"bone4": {
+					"rotation": [-87.5, 0, 0]
+				},
+				"bone6": {
+					"rotation": [-90, 0, 0]
+				},
+				"bone5": {
+					"rotation": [-77.5, 0, 0]
+				},
+				"bone8": {
+					"position": {
+						"0.0": [0, -3, 0],
+						"18.625": [0, -3.25, 0],
+						"18.6667": [0, -1.12, 0],
+						"18.7083": [0, -1, 0]
+					}
+				}
+			}
+		},
+		"animation.fredbear.geo.CAM1Astare": {
+			"loop": true,
+			"bones": {
+				"jaw": {
+					"rotation": [0, 0, 0]
+				},
+				"armL": {
+					"rotation": [0, 0, 22.5]
+				},
+				"lower": {
+					"rotation": [-90, 0, 0]
+				},
+				"fingers": {
+					"rotation": [0, 0, -30]
+				},
+				"fingers2": {
+					"rotation": [0, 0, -37.5]
+				},
+				"thumb": {
+					"rotation": [-54.2529, -7.2172, 93.46733],
+					"position": [1.89572, 0.53635, 0.96492]
+				},
+				"armR": {
+					"rotation": [0, 0, -22.5]
+				},
+				"lower2": {
+					"rotation": [-90, 0, 0]
+				},
+				"fingers3": {
+					"rotation": [0, 0, 30]
+				},
+				"fingers4": {
+					"rotation": [0, 0, 37.5]
+				},
+				"thumb3": {
+					"rotation": [40, 0, 0],
+					"position": [-0.10598, 0.07919, 0.6265]
+				},
+				"thumb4": {
+					"rotation": [55, 0, 0]
+				},
+				"foot": {
+					"rotation": [0, 10, 0]
+				},
+				"foot2": {
+					"rotation": [0, -10, 0]
+				},
+				"head": {
+					"rotation": [0, 70, 0]
+				},
+				"masktop": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.fredbear.geo.CAM4B": {
+			"loop": true,
+			"bones": {
+				"fredbear": {
+					"rotation": [0, -17.5, 0]
+				},
+				"head": {
+					"rotation": [-22.5, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"jaw": {
+					"rotation": [0, 0, 0]
+				},
+				"armL": {
+					"rotation": [10, 0, 12.5]
+				},
+				"lower": {
+					"rotation": [-31.80857, -26.48829, 7.6734]
+				},
+				"armR": {
+					"rotation": [10, 0, -12.5]
+				},
+				"lower2": {
+					"rotation": [-31.80857, 26.48829, -7.6734]
+				},
+				"foot": {
+					"rotation": [0, 10, 0]
+				},
+				"foot2": {
+					"rotation": [0, -10, 0]
+				},
+				"fingers": {
+					"rotation": [0, 0, -30]
+				},
+				"thumb": {
+					"rotation": [-54.2529, -7.2172, 93.46733],
+					"position": [1.89572, 0.53635, 0.96492]
+				},
+				"thumb3": {
+					"rotation": [40, 0, 0],
+					"position": [-0.10598, 0.07919, 0.6265]
+				},
+				"masktop": {
+					"position": [0, 1, 0]
+				},
+				"item": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.fredbear.geo.CAM7": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [7.56397, 7.43547, 0.98448]
+				},
+				"head": {
+					"rotation": [-7.5, 52.5, 0],
+					"position": [0, 0, -2]
+				},
+				"jaw": {
+					"rotation": [0, 0, 0]
+				},
+				"armL": {
+					"rotation": [15, 0, 17.5]
+				},
+				"lower": {
+					"rotation": [-30, 0, 0]
+				},
+				"armR": {
+					"rotation": [15, 0, -17.5]
+				},
+				"lower2": {
+					"rotation": [-30, 0, 0]
+				},
+				"fingers": {
+					"rotation": [0, 0, -30]
+				},
+				"thumb": {
+					"rotation": [-54.2529, -7.2172, 93.46733],
+					"position": [1.89572, 0.53635, 0.96492]
+				},
+				"thumb3": {
+					"rotation": [40, 0, 0],
+					"position": [-0.10598, 0.07919, 0.6265]
+				},
+				"masktop": {
+					"position": [0, 1, 0]
+				},
+				"item": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.fredbear.geo.idle": {
+			"loop": true,
+			"bones": {
+				"jaw": {
+					"rotation": [0, 0, 0]
+				},
+				"armL": {
+					"rotation": [0, 0, 22.5]
+				},
+				"lower": {
+					"rotation": [0, 0, -17.5]
+				},
+				"fingers": {
+					"rotation": [0, 0, -30]
+				},
+				"fingers2": {
+					"rotation": [0, 0, -37.5]
+				},
+				"thumb": {
+					"rotation": [26.26708, -6.69915, 2.61507],
+					"position": [-0.10428, -0.06365, 0.26492]
+				},
+				"armR": {
+					"rotation": [0, 0, -22.5]
+				},
+				"lower2": {
+					"rotation": [0, 0, 20]
+				},
+				"fingers3": {
+					"rotation": [0, 0, 30]
+				},
+				"fingers4": {
+					"rotation": [0, 0, 37.5]
+				},
+				"thumb3": {
+					"rotation": [40, 0, 0],
+					"position": [-0.10598, 0.07919, 0.6265]
+				},
+				"thumb4": {
+					"rotation": [55, 0, 0]
+				},
+				"foot": {
+					"rotation": [0, 10, 0]
+				},
+				"foot2": {
+					"rotation": [0, -10, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 0]
 				},
 				"item": {
 					"scale": 0

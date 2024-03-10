@@ -8,11 +8,11 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/fnaf1/fredbear",
-				"blue": "textures/entity/fnaf1/vars/classic_fredbear"
+				"default": "textures/entity/fnaf1/classic_fredbear_22",
+				"blue": "textures/entity/fnaf1/classic_fredbear_2"
 			},
 			"animations": {
-				"default_pose": "animation.fredbear.geo.stage",
+				"default_pose": "animation.fredbear.geo.CAM1A2",
 				"no_pose": "animation.fredbear.geo.CAM1A",
 				"solemn_pose": "animation.fredbear.geo.CAM1Astare",
 				"athena_pose": "animation.fredbear.geo.CAM4B",

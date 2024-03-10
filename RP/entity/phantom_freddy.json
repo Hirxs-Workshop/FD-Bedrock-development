@@ -8,13 +8,13 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/phantom_freddy"
+				"default": "textures/entity/fnaf3/phantom_freddy"
 			},
 			"spawn_egg": {
 				"texture": "phantom_freddy_icon"
 			},
 			"animations": {
-				"default_pose": "animation.phantom_freddy.idle1",
+				"default_pose": "animation.new_phantom_freddy.idle",
 				"no_pose": "animation.phantom_freddy.idle2",
 				"solemn_pose": "animation.phantom_freddy.seat",
 				"athena_pose": "animation.phantom_freddy.idle1",
@@ -42,7 +42,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.phantom_freddy"
+				"default": "geometry.new_phantom_freddy"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

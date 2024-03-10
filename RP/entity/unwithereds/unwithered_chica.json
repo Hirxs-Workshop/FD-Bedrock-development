@@ -1,4 +1,4 @@
-{
+	{
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
@@ -14,7 +14,7 @@
 				"texture": "w_chica"
 			},
 			"animations": {
-				"default_pose": "animation.old_chica.off",
+				"default_pose": "",
 				"no_pose": "animation.old_chica.showtime",
 				"solemn_pose": "animation.old_chica.showtime2",
 				"athena_pose": "animation.old_chica.attack",

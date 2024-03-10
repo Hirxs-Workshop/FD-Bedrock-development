@@ -1,0 +1,49 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wearable_party_hat",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "Head",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{
+							"origin": [-6, 33, 1],
+							"size": [12, 14, 0],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [-6, 33, 1],
+							"size": [12, 14, 0],
+							"pivot": [0, 41, 1],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {"uv": [0, 16], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [-4.5, 24, -3.1],
+							"size": [9, 9, 9],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [10, 10]},
+								"west": {"uv": [10, 0], "uv_size": [-10, 10]},
+								"up": {"uv": [26, 26], "uv_size": [-10, -10]},
+								"down": {"uv": [26, 16], "uv_size": [-10, 10]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

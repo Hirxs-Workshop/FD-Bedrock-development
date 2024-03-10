@@ -14,7 +14,7 @@
 				"texture": "itp"
 			},
 			"animations": {
-				"default_pose": "animation.bonnie.death",
+				"default_pose": "animation.itp_spring_bonnie.new_idle_1",
 				"no_pose": "animation.bonnie.off",
 				"solemn_pose": "animation.bonnie.showtime",
 				"athena_pose": "animation.bonnie.showtime2",
@@ -42,7 +42,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.itp_springbonnie"
+				"default": "geometry.new_itp_spring_bonnie"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

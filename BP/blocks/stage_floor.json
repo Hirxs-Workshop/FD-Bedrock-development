@@ -9,7 +9,8 @@
 					1,
 					2,
 					3,
-					4
+					4,
+					5
 				]
 			}
 		},
@@ -68,10 +69,20 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "redwood_stage",
+							"render_method": "opaque"
+						}
+					}
+				}
 			}
 		],
 		"components": {
-			"minecraft:display_name": "fb:stage_floor",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
@@ -114,7 +125,7 @@
 		"events": {
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==5?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

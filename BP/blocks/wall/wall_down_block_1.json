@@ -1,67 +1,16 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.40",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:wall_down_block_1",
-			"properties": {
-				"p:facing": [
-					0,
-					1,
-					2,
-					3
-				]
-			}
+			"menu_category": {
+				"group": "construction",
+				"category": "construction"
+			},
+			"identifier": "fb:wall_down_block_1"
 		},
-		"permutations": [
-			{
-				"condition": "q.block_property('p:facing') == 0",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 1",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			}
-		],
+		"permutations": [],
 		"components": {
 			"tag:wall": {},
-			"minecraft:display_name": "fb:wall_down_block_1",
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
-			},
-			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
 				"up": {
 					"texture": "fnaf1_wall_black_texture",
@@ -88,16 +37,23 @@
 					"render_method": "opaque"
 				}
 			},
-			"minecraft:map_color": "#ffffff",
-			"minecraft:destroy_time": 4,
-			"minecraft:explosion_resistance": 4,
-			"minecraft:block_light_absorption": 15,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2.0
+			},
+			"minecraft:light_dampening": 15,
 			"minecraft:breathability": "air",
 			"minecraft:flammable": {
-				"flame_odds": 30,
-				"burn_odds": 30
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
 			},
-			"minecraft:aim_collision": {
+			"minecraft:geometry": {
+				"identifier": "geometry.solid_block_2",
+				"culling": "test:demo"
+			},
+			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
@@ -109,7 +65,7 @@
 					16
 				]
 			},
-			"minecraft:entity_collision": {
+			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
@@ -120,17 +76,8 @@
 					16,
 					16
 				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
 			}
 		},
-		"events": {
-			"e:set.facing": {
-				"set_block_property": {
-					"p:facing": "q.cardinal_facing_2d-2"
-				}
-			}
-		}
+		"events": {}
 	}
 }

@@ -164,7 +164,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

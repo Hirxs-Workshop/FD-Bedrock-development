@@ -360,6 +360,9 @@
 		},
 		"carousel": {
 			"textures": "textures/items/carousel"
+		},
+		"security_manual": {
+			"textures": "textures/items/security_manual"
 		}
 	},
 	"texture_name": "atlas.items"

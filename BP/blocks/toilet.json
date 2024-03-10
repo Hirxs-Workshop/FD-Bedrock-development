@@ -5,19 +5,26 @@
 			"identifier": "fb:toilet",
 			"category": "Nature",
 			"properties": {
-				"block:rotation": [
+				"fb:block_rotation": [
 					1,
 					2,
 					3,
 					4,
 					5
+				],
+				"fb:box": [
+					0,
+					1,
+					2
 				]
 			}
 		},
 		"components": {
+			"tag:wood": {},
+			"tag:planks": {},
 			"minecraft:destroy_time": 0.3,
 			"minecraft:friction": 0.7,
-			"minecraft:map_color": "#FFFFFF",
+			"minecraft:map_color": "#C25128",
 			"minecraft:explosion_resistance": 1,
 			"minecraft:flammable": {
 				"flame_odds": 1,
@@ -31,7 +38,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "toilet",
+					"texture": "new_toilet",
 					"render_method": "alpha_test"
 				}
 			},
@@ -43,9 +50,11 @@
 				"event": "step:off",
 				"target": "self"
 			},
+			"minecraft:on_player_placing": {
+				"event": "fb:block_placed"
+			},
 			"minecraft:on_placed": {
-				"event": "sit",
-				"target": "self"
+				"event": "fb:destroy"
 			},
 			"minecraft:random_ticking": {
 				"on_tick": {
@@ -68,10 +77,10 @@
 					"target": "self"
 				}
 			},
-			"minecraft:geometry": "geometry.toilet",
-			"minecraft:on_player_placing": {
-				"event": "size:block"
+			"minecraft:on_interact": {
+				"event": "rider"
 			},
+			"minecraft:geometry": "geometry.toilet",
 			"minecraft:entity_collision": {
 				"origin": [
 					-8,
@@ -99,19 +108,101 @@
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.construction"
-			},
-			"minecraft:loot": "loot_tables/fnafblocks",
-			"minecraft:on_interact": {
-				"event": "rider"
 			}
 		},
 		"events": {
-			"remove:block": {},
-			"size:block": {
-				"set_block_property": {
-					"block:rotation": "query.cardinal_facing_2d"
-				}
+			"fb:destroy": {
+				"sequence": [
+					{
+						"run_command": {
+							"target": "self",
+							"command": [
+								""
+							]
+						}
+					}
+				]
 			},
+			"fb:block_placed": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:block_rotation": "q.cardinal_facing_2d"
+						}
+					},
+					{
+						"set_block_property": {
+							"fb:box": 0
+						}
+					}
+				]
+			},
+			"fb:var_1": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_2",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "rider",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"fb:var_2": {
+				"sequence": [
+					{
+						"condition": "q.is_sneaking",
+						"trigger": {
+							"event": "fb:box_1",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "!q.is_sneaking",
+						"trigger": {
+							"event": "rider",
+							"target": "self"
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"summon fb:sit ~ ~ ~",
+								"execute @e[type=fb:sit,c=1,r=2] ~~~ tp @s ~~~ facing @p"
+							]
+						},
+						"trigger": {
+							"event": "set_rider"
+						}
+					}
+				]
+			},
+			"fb:box_1": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 0
+						}
+					}
+				]
+			},
+			"fb:box_2": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"fb:box": 1
+						}
+					}
+				]
+			},
+			"remove:block": {},
 			"step:on": {},
 			"step:off": {},
 			"on_tick": {},
@@ -123,7 +214,7 @@
 						"run_command": {
 							"command": [
 								"summon fb:sit ~ ~ ~",
-								"execute @e[type=fb:sit,c=1,r=2] ~~~ tp @s ~~~ facing @p"
+								"/execute as @e[type=fb:sit,c=1,r=2] positioned ~~~ run tp @s ~~~ facing @p"
 							]
 						},
 						"trigger": {
@@ -143,7 +234,17 @@
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('block:rotation') == 2",
+				"condition": "q.block_property('fb:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fb:block_rotation') == 3",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -153,17 +254,17 @@
 				}
 			},
 			{
-				"condition": "query.block_property('block:rotation') == 3",
+				"condition": "q.block_property('fb:block_rotation') == 4",
 				"components": {
 					"minecraft:rotation": [
 						0,
-						-180,
+						-90,
 						0
 					]
 				}
 			},
 			{
-				"condition": "query.block_property('block:rotation') == 4",
+				"condition": "q.block_property('fb:block_rotation') == 5",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -173,13 +274,39 @@
 				}
 			},
 			{
-				"condition": "query.block_property('block:rotation') == 5",
+				"condition": "q.block_property('fb:box') == 0",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						-90,
-						0
-					]
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_toilet",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "fb:var_1"
+					},
+					"minecraft:geometry": "geometry.toilet",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fb:box') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_toilet",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "fb:var_2"
+					},
+					"minecraft:geometry": "geometry.toilet_open",
+					"minecraft:on_player_destroyed": {
+						"event": "fb:destroy"
+					}
 				}
 			}
 		]

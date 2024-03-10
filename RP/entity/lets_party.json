@@ -8,10 +8,10 @@
 				"default": "armor_stand"
 			},
 			"textures": {
-				"default": "textures/entity/lets_play"
+				"default": "textures/entity/lets_party_banner"
 			},
 			"geometry": {
-				"default": "geometry.birthday_banner"
+				"default": "geometry.party_banner_new"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

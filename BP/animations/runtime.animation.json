@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.npc.runtime": {
+      "loop": true,
+      "animation_length": 0.05,
+      "timeline": {
+        "0.0": [
+          "/effect @s invisibility 9999 255 true",
+          "/tp @s ~~~"
+        ]
+      }
+    }
+  }
+}

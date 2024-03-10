@@ -190,26 +190,26 @@
 					"minecraft:geometry": "geometry.light_2",
 					"minecraft:aim_collision": {
 						"origin": [
-							-6,
-							13,
-							-6
+							-5.5,
+							0,
+							-5.5
 						],
 						"size": [
-							12,
-							4,
-							12
+							11,
+							16,
+							11
 						]
 					},
 					"minecraft:entity_collision": {
 						"origin": [
-							-6,
-							13,
-							-6
+							-5.5,
+							0,
+							-5.5
 						],
 						"size": [
-							12,
-							4,
-							12
+							11,
+							16,
+							11
 						]
 					},
 					"minecraft:rotation": [
@@ -239,18 +239,21 @@
 			{
 				"condition": "q.block_property('p:is_lit')",
 				"components": {
-					"minecraft:block_light_emission": 0.7,
+					"minecraft:block_light_emission": 0.9,
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "fb_light_2",
-							"render_method": "blend",
+							"render_method": "alpha_test",
 							"face_dimming": false,
 							"ambient_occlusion": false
 						},
-						"base": {
+						"metal": {
 							"texture": "fb_light_2",
 							"render_method": "alpha_test"
 						}
+					},
+					"minecraft:on_placed": {
+						"event": "system:spawn_entity"
 					}
 				}
 			}
@@ -278,6 +281,11 @@
 			}
 		},
 		"events": {
+			"system:spawn_entity": {
+				"run_command": {
+					"command": "summon fd:lamp_light_ray ~~~"
+				}
+			},
 			"e:set.facing": {
 				"set_block_property": {
 					"p:facing": "q.block_face"

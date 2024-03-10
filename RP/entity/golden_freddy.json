@@ -5,29 +5,27 @@
 			"identifier": "fb:golden_freddy",
 			"min_engine_version": "1.8.0",
 			"materials": {
-				"default": "armor_stand"
+				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/blocks/shelf/golden_freddy"
-			},
-			"spawn_egg": {
-				"texture": "golden_freddy_icon"
+				"default": "textures/entity/fnaf1/golden_freddy",
+				"blue": "textures/entity/fnaf1/golden_freddy_black"
 			},
 			"animations": {
-				"default_pose": "animation.goldenfreddy.sit",
-				"no_pose": "animation.goldenfreddy.sit",
-				"solemn_pose": "animation.goldenfreddy.sit",
-				"athena_pose": "animation.goldenfreddy.sit",
-				"brandish_pose": "animation.goldenfreddy.sit",
-				"honor_pose": "animation.goldenfreddy.sit",
-				"entertain_pose": "animation.goldenfreddy.sit",
-				"salute_pose": "animation.goldenfreddy.sit",
-				"riposte_pose": "animation.goldenfreddy.sit",
-				"zombie_pose": "animation.goldenfreddy.sit",
-				"cancan_a_pose": "animation.goldenfreddy.sit",
-				"cancan_b_pose": "animation.goldenfreddy.sit",
-				"hero_pose": "animation.goldenfreddy.sit",
-				"wiggle": "animation.armor_stand.wiggle",
+				"default_pose": "animation.goldfeddy.geo.sit",
+				"no_pose": "animation.goldfeddy.geo.sit",
+				"solemn_pose": "animation.goldfeddy.geo.sit",
+				"athena_pose": "animation.goldfeddy.geo.sit",
+				"brandish_pose": "animation.goldfeddy.geo.sit",
+				"honor_pose": "animation.goldfeddy.geo.sit",
+				"entertain_pose": "animation.goldfeddy.geo.sit",
+				"salute_pose": "animation.goldfeddy.geo.sit",
+				"riposte_pose": "animation.goldfeddy.geo.sit",
+				"zombie_pose": "animation.goldfeddy.geo.sit",
+				"cancan_a_pose": "animation.goldfeddy.geo.sit",
+				"cancan_b_pose": "animation.goldfeddy.geo.sit",
+				"hero_pose": "animation.goldfeddy.geo.sit",
+				"wiggle": "animation.goldfeddy.geo.sit",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -42,12 +40,16 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.golden_freddy"
+				"default": "geometry.new_golden_feddy.geo"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.fredbear"
 			],
-			"enable_attachables": true
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#BFB832",
+				"overlay_color": "#888C0C"
+			}
 		}
 	}
 }

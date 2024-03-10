@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.light_emit": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.entity_beam_additive"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"light_color_multiplier": 0.5,
+			"ignore_lighting": false
+		}
+	}
+}

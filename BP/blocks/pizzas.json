@@ -16,7 +16,13 @@
 					2,
 					3,
 					4,
-					5
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11
 				]
 			}
 		},
@@ -96,6 +102,78 @@
 				"components": {
 					"minecraft:geometry": "geometry.new_pizza_6"
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 7",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 8",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_3",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 9",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_4",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 10",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_5",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 11",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_6",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
 			}
 		],
 		"components": {
@@ -155,7 +233,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==5?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==11?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

@@ -13,7 +13,8 @@
 				"p:changer": [
 					0,
 					1,
-					2
+					2,
+					3
 				]
 			}
 		},
@@ -93,6 +94,18 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fnaf2_confetti",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
 			}
 		],
 		"components": {
@@ -146,7 +159,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

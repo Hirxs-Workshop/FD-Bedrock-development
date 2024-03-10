@@ -350,6 +350,54 @@
 					"rotation": [0, -20, 0]
 				}
 			}
+		},
+		"animation.new_phantom_freddy.idle": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [7.49294, 0.32621, -2.47864]
+				},
+				"armL": {
+					"rotation": [0, -17.5, 17.5]
+				},
+				"lower2": {
+					"rotation": [-540, 87.5, -525]
+				},
+				"hand": {
+					"rotation": [-32.5, 0, 0]
+				},
+				"armL2": {
+					"rotation": [-28.06681, 11.06861, -70.84485]
+				},
+				"lower5": {
+					"rotation": [-70.76848, -37.76124, -26.56505]
+				},
+				"hand2": {
+					"rotation": [0, -35, 0]
+				},
+				"thumb2": {
+					"rotation": [0, 47.5, 0]
+				},
+				"head": {
+					"rotation": [0, 0, 17.5],
+					"position": [0, 0, -1]
+				},
+				"jaw": {
+					"rotation": [12.5, 0, 0]
+				},
+				"jaw3": {
+					"rotation": [7.44081, 0.54094, -12.48848]
+				},
+				"legL": {
+					"rotation": [0, 17.5, 0]
+				},
+				"legR": {
+					"rotation": [-15.08022, -14.97839, 0.33769]
+				},
+				"lower7": {
+					"rotation": [15.41123, -9.34419, -2.44726]
+				}
+			}
 		}
 	}
 }

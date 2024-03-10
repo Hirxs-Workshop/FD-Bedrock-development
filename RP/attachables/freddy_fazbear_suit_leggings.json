@@ -11,7 +11,7 @@
 				"default": "textures/entity/suit/freddy"
 			},
 			"geometry": {
-				"default": "geometry.freddy_fazbear_suit_leggings"
+				"default": "geometry.freddy_fazbear_leggings_suit"
 			},
 			"scripts": {
 				"parent_setup": "variable.leg_layer_visible = 0.0;"

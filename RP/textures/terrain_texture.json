@@ -934,13 +934,13 @@
 			"textures": "textures/blocks/pirate_cove_sign_2"
 		},
 		"wp0": {
-			"textures": "textures/blocks/wall_puppet/0"
+			"textures": "textures/blocks/paperpals/0"
 		},
 		"wp1": {
-			"textures": "textures/blocks/wall_puppet/1"
+			"textures": "textures/blocks/paperpals/1"
 		},
 		"wp2": {
-			"textures": "textures/blocks/wall_puppet/2"
+			"textures": "textures/blocks/paperpals/2"
 		},
 		"hirxs_plush": {
 			"textures": "textures/blocks/plush/1"
@@ -1758,6 +1758,15 @@
 		"large_hanging_stars_4": {
 			"textures": "textures/blocks/hanging_stars/4"
 		},
+		"large_hanging_stars_5": {
+			"textures": "textures/blocks/hanging_stars/5"
+		},
+		"large_hanging_stars_6": {
+			"textures": "textures/blocks/hanging_stars/6"
+		},
+		"large_hanging_stars_7": {
+			"textures": "textures/blocks/hanging_stars/7"
+		},
 		"showtime_button": {
 			"textures": "textures/blocks/showtime_button"
 		},
@@ -1766,6 +1775,9 @@
 		},
 		"ffd_poster_2": {
 			"textures": "textures/blocks/ffd/poster2"
+		},
+		"ffd_poster_3": {
+			"textures": "textures/blocks/ffd/poster3"
 			// FFD Walls
 		},
 		"new_interior_ffd_wall_middle": {
@@ -1892,6 +1904,12 @@
 		"fnaf2_wall_texture": {
 			"textures": "textures/blocks/fnaf2/fnaf_2_wall_middle"
 		},
+		"fnaf2_wall_texture_confetti": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_middle_confetti"
+		},
+		"fnaf_2_wall_up_2_confetti": {
+			"textures": "textures/blocks/fnaf2/fnaf_2_wall_up_2_confetti"
+		},
 		"fnaf2_wall_hw": {
 			"textures": "textures/blocks/help-wanted/hw_wall_f2_1"
 		},
@@ -1927,6 +1945,9 @@
 			"textures": "textures/blocks/hanging_papercuts/3"
 		},
 		// New walls fnaf1
+		"wall_tiles_red_top": {
+			"textures": "textures/blocks/wall_top_2/wall_tiles_red_top"
+		},
 		"fnaf1_wall_bottom": {
 			"textures": "textures/blocks/new_walls/gray texture"
 		},
@@ -2139,8 +2160,17 @@
 		"chicas_magic_rainbow_5": {
 			"textures": "textures/blocks/just_mouth_chicas_magic_rainbow"
 		},
+		"celebrate_fun_sign_new": {
+			"textures": "textures/blocks/celebrate_fun_sign"
+		},
+		"celebrate_fun_sign_2_new": {
+			"textures": "textures/blocks/celebrate_fun_sign_2"
+		},
 		"celebrate_fun_sign": {
 			"textures": "textures/blocks/celebrate_fun_sign"
+		},
+		"celebrate_fun_sign_2": {
+			"textures": "textures/blocks/celebrate_fun_sign_2"
 		},
 		"red_neon_light": {
 			"textures": "textures/blocks/red_neon_light"
@@ -2393,6 +2423,42 @@
 		},
 		"scrap_platform_withered_freddy": {
 			"textures": "textures/blocks/scrap_platform_w_freddy"
+		},
+		"new_toilet": {
+			"textures": "textures/blocks/toilet"
+		},
+		"new_toilet_2": {
+			"textures": "textures/blocks/toilet_2"
+		},
+		"redwood_stage": {
+			"textures": "textures/blocks/redwood_stage"
+		},
+		"interior_ffd_wall_up_confetti_1": {
+			"textures": "textures/blocks/ffd/interior_ffd_wall_up_confetti_1"
+		},
+		"interior_ffd_wall_up_confetti_2": {
+			"textures": "textures/blocks/ffd/interior_ffd_wall_up_confetti_2"
+		},
+		"interior_ffd_wall_up_confetti_3": {
+			"textures": "textures/blocks/ffd/interior_ffd_wall_up_confetti_3"
+		},
+		"interior_ffd_wall_middle_confetti_1": {
+			"textures": "textures/blocks/ffd/interior_ffd_wall_middle_confetti_1"
+		},
+		"interior_ffd_wall_middle_confetti_2": {
+			"textures": "textures/blocks/ffd/interior_ffd_wall_middle_confetti_2"
+		},
+		"interior_ffd_wall_middle_confetti_3": {
+			"textures": "textures/blocks/ffd/interior_ffd_wall_middle_confetti_3"
+		},
+		"ffd_table": {
+			"textures": "textures/blocks/ffd/ffd_table"
+		},
+		"paperballs": {
+			"textures": "textures/blocks/paperballs"
+		},
+		"fnaf2_confetti": {
+			"textures": "textures/blocks/fnaf2/confetti"
 		}
 	}
 }

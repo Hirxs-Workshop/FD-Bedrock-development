@@ -11,7 +11,7 @@
 				"default": "textures/entity/unwithered/unwithered_freddy"
 			},
 			"animations": {
-				"default_pose": "animation.freddy.off",
+				"default_pose": "",
 				"no_pose": "animation.freddy.showtime",
 				"solemn_pose": "animation.freddy.showtime2",
 				"athena_pose": "animation.freddy.attack",

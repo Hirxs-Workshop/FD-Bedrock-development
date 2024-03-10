@@ -61,7 +61,7 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
-					"minecraft:geometry": "geometry.wall_puppet",
+					"minecraft:geometry": "geometry.new_wall_puppet",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "wp0",
@@ -74,7 +74,7 @@
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.wall_puppet_2",
+					"minecraft:geometry": "geometry.new_wall_puppet_2",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "wp1",
@@ -87,7 +87,7 @@
 			{
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
-					"minecraft:geometry": "geometry.wall_puppet_3",
+					"minecraft:geometry": "geometry.new_wall_puppet_3",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "wp2",
@@ -99,7 +99,6 @@
 			}
 		],
 		"components": {
-			"minecraft:display_name": "fb:wall_puppet",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
@@ -113,7 +112,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.wall_puppet",
+			"minecraft:geometry": "geometry.new_wall_puppet",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,

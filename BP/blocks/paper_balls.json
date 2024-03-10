@@ -13,7 +13,8 @@
 				"p:changer": [
 					0,
 					1,
-					2
+					2,
+					3
 				]
 			}
 		},
@@ -61,10 +62,10 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
-					"minecraft:geometry": "geometry.trash_1",
+					"minecraft:geometry": "geometry.new_paperballs_1",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "pb3",
+							"texture": "paperballs",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -74,10 +75,10 @@
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.trash_2",
+					"minecraft:geometry": "geometry.new_paperballs_2",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "pb3",
+							"texture": "paperballs",
 							"render_method": "alpha_test",
 							"geometry": "trash_2",
 							"ambient_occlusion": false
@@ -88,10 +89,24 @@
 			{
 				"condition": "q.block_property('p:changer') == 2",
 				"components": {
-					"minecraft:geometry": "geometry.trash_3",
+					"minecraft:geometry": "geometry.new_paperballs_3",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "pb3",
+							"texture": "paperballs",
+							"render_method": "alpha_test",
+							"geometry": "trash_3",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.new_paperballs_4",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "paperballs",
 							"render_method": "alpha_test",
 							"geometry": "trash_3",
 							"ambient_occlusion": false
@@ -154,7 +169,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==2?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

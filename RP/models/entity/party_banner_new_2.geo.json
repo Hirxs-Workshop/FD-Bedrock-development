@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.party_banner_new_2",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-30, -1, 0], "size": [60, 17, 0], "uv": [0, 0]},
+						{"origin": [-30, -1, -1], "size": [60, 17, 0], "uv": [0, 17]}
+					]
+				}
+			]
+		}
+	]
+}

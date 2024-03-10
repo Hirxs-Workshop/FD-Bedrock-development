@@ -1,27 +1,59 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.40",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:wall_grey_block_1",
-			"is_experimental": false,
-			"properties": {
-				"bridge:block_rotation": [
-					2,
-					3,
-					4,
-					5
-				]
-			}
+			"menu_category": {
+				"group": "construction",
+				"category": "construction"
+			},
+			"identifier": "fb:wall_grey_block_1"
 		},
+		"permutations": [],
 		"components": {
-			"minecraft:geometry": "geometry.solid_block_2",
+			"tag:wall": {},
 			"minecraft:material_instances": {
-				"*": {
+				"up": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"north": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"west": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"south": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"east": {
 					"texture": "fnaf1_wall_side",
 					"render_method": "opaque"
 				}
 			},
-			"minecraft:pick_collision": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2.0
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.solid_block_2",
+				"culling": "test:demo"
+			},
+			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
@@ -33,7 +65,7 @@
 					16
 				]
 			},
-			"minecraft:entity_collision": {
+			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
@@ -44,65 +76,8 @@
 					16,
 					16
 				]
-			},
-			"minecraft:block_light_absorption": 15,
-			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
-			},
-			"minecraft:creative_category": {
-				"group": "construction",
-				"category": "construction"
-			},
-			"tag:wall": {}
+			}
 		},
-		"permutations": [
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			}
-		],
-		"events": {
-			"bridge:update_rotation": {
-				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
-				}
-			}
-		}
+		"events": {}
 	}
 }

@@ -895,6 +895,14 @@
 					"position": [0, -3, 0]
 				}
 			}
+		},
+		"animation.humanoid.pizza_plate_hand": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [-17.5, 0, 0]
+				}
+			}
 		}
 	}
 }

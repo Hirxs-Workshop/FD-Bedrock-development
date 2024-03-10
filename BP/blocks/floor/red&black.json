@@ -1,83 +1,78 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.40",
 	"minecraft:block": {
 		"description": {
+			"menu_category": {
+				"group": "construction",
+				"category": "construction"
+			},
 			"identifier": "fb:floor_5",
-			"properties": {
-				"p:facing": [
-					0,
-					1,
-					2,
-					3
-				],
+			"states": {
 				"p:changer": [
 					0,
-					1,
-					2
+					1
 				]
 			}
 		},
 		"permutations": [
 			{
-				"condition": "q.block_property('p:facing') == 0",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 1",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
+						"up": {
 							"texture": "red1",
-							"render_method": "opaque",
-							"ambient_occlusion": true
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "red1",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "red1",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "red1",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "red1",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "red1",
+							"render_method": "opaque"
 						}
 					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
+						"up": {
 							"texture": "red2",
-							"render_method": "opaque",
-							"ambient_occlusion": true
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "red2",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "red2",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "red2",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "red2",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "red2",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -85,21 +80,23 @@
 		],
 		"components": {
 			"tag:wall": {},
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
 			},
-			"minecraft:map_color": "#981313",
-			"minecraft:destroy_time": 4,
-			"minecraft:explosion_resistance": 4,
-			"minecraft:block_light_absorption": 15,
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2.0
+			},
+			"minecraft:light_dampening": 15,
 			"minecraft:breathability": "air",
 			"minecraft:flammable": {
-				"flame_odds": 30,
-				"burn_odds": 30
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.solid_block_2",
-			"minecraft:aim_collision": {
+			"minecraft:geometry": {
+				"identifier": "geometry.solid_block_2",
+				"culling": "test:demo"
+			},
+			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
@@ -111,7 +108,7 @@
 					16
 				]
 			},
-			"minecraft:entity_collision": {
+			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
@@ -122,20 +119,12 @@
 					16,
 					16
 				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
 			}
 		},
 		"events": {
-			"e:set.facing": {
-				"set_block_property": {
-					"p:facing": "q.cardinal_facing_2d-2"
-				}
-			},
 			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
+				"set_block_state": {
+					"p:changer": "q.block_state('p:changer')==1?0:q.block_state('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

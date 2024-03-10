@@ -9,12 +9,32 @@ const pots = {
 
 // The state value and sound associated with each plant
 const plants = {
-  "minecraft:purple_dye": {
-    value: "dandelion",
+  "fb:wall_block_2": {
+    value: "wall_tiles_red",
     sound: "block.lantern.break",
   },
-  "minecraft:black_dye": {
-    value: "cactus",
+  "fb:wall_block_1": {
+    value: "wall_tiles_black",
+    sound: "block.lantern.break",
+  },
+  "fb:wall_middle_purple": {
+    value: "wall_tiles_purple",
+    sound: "block.lantern.break",
+  },
+  "fb:wall_block_3": {
+    value: "wall",
+    sound: "block.lantern.break",
+  },
+  "fb:wall_top_block_2": {
+    value: "wall_tiles_red_top",
+    sound: "block.lantern.break",
+  },
+  "fb:wall_down_block_3": {
+    value: "wall_tiles",
+    sound: "block.lantern.break",
+  },
+  "fb:wall_down_block_1": {
+    value: "wall_down_block_black",
     sound: "block.lantern.break",
   },
 };

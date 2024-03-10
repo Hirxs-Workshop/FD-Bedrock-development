@@ -9,6 +9,10 @@
 					1,
 					2,
 					3
+				],
+				"p:changer": [
+					0,
+					1
 				]
 			}
 		},
@@ -52,18 +56,35 @@
 						0
 					]
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.celebrate_fun_sign",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "celebrate_fun_sign",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.celebrate_fun_sign_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "celebrate_fun_sign_2",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
 			}
 		],
 		"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "celebrate_fun_sign",
-					"render_method": "alpha_test",
-					"ambient_occlusion": false,
-					"face_dimming": false
-				}
-			},
-			"minecraft:display_name": "fd:celebrate_fun_sign",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
@@ -110,6 +131,17 @@
 			"e:set.facing": {
 				"set_block_property": {
 					"p:facing": "q.cardinal_facing_2d-2"
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
 				}
 			}
 		}

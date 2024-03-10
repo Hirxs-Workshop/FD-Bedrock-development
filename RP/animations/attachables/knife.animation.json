@@ -5,8 +5,8 @@
 			"loop": true,
 			"bones": {
 				"root_item": {
-					"rotation": [66, 60, -60],
-					"position": [3, 23, 4]
+					"rotation": [168.5, 60, -60],
+					"position": [-6, 27, 4]
 				}
 			}
 		},
@@ -14,8 +14,20 @@
 			"loop": true,
 			"bones": {
 				"root_item": {
-					"rotation": [90, 0, 0],
-					"position": [0.5, 22.5, -0.5]
+					"rotation": [102.5, 0, 0],
+					"position": [5.5, 22.5, -0.5]
+				}
+			}
+		},
+		"animation.knife.third_person_hold2": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [102.5, 0, 0],
+					"position": [5.5, 22.5, -0.5]
+				},
+				"leftArm": {
+					"rotation": [-17.5, 0, 0]
 				}
 			}
 		}

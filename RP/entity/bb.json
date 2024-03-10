@@ -8,7 +8,7 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/balloon_boy"
+				"default": "textures/entity/fnaf2/balloon_boy"
 			},
 			"animations": {
 				"default_pose": "animation.balloon_boy.pose1",

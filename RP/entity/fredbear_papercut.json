@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:fredbear_papercut",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/blocks/ffd/fredbear_cardboard"
+			},
+			"geometry": {
+				"default": "geometry.fredbear_papercut"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "bday"
+			}
+		}
+	}
+}

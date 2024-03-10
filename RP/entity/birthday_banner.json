@@ -11,7 +11,7 @@
 				"default": "textures/entity/birthday_banner"
 			},
 			"geometry": {
-				"default": "geometry.birthday_banner"
+				"default": "geometry.party_banner_new"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

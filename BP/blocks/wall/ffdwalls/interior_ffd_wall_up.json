@@ -12,7 +12,10 @@
 				],
 				"p:changer": [
 					0,
-					1
+					1,
+					2,
+					3,
+					4
 				]
 			}
 		},
@@ -120,6 +123,134 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "new_interior_ffd_wall_up_dirty",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "new_interior_ffd_wall_up_dirty",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "new_interior_ffd_wall_up_dirty",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "new_interior_ffd_wall_up_dirty",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "interior_ffd_wall_up_confetti_1",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "interior_ffd_wall_up_confetti_1",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "interior_ffd_wall_up_confetti_1",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "interior_ffd_wall_up_confetti_1",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "interior_ffd_wall_up_confetti_2",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "interior_ffd_wall_up_confetti_2",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "interior_ffd_wall_up_confetti_2",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "interior_ffd_wall_up_confetti_2",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "interior_ffd_wall_up_confetti_3",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "interior_ffd_wall_up_confetti_3",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "interior_ffd_wall_up_confetti_3",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "interior_ffd_wall_up_confetti_3",
+							"render_method": "opaque"
+						}
+					}
+				}
 			}
 		],
 		"components": {
@@ -175,7 +306,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

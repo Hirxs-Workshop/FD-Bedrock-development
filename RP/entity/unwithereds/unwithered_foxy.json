@@ -1,4 +1,4 @@
-{
+	{
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
@@ -14,7 +14,7 @@
 				"texture": "w_foxy"
 			},
 			"animations": {
-				"default_pose": "animation.foxy.off",
+				"default_pose": "",
 				"no_pose": "animation.foxy.showtime",
 				"solemn_pose": "animation.foxy.showtime2",
 				"athena_pose": "animation.foxy.attack",

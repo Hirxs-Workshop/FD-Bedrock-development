@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.kid.third_person": {
+			"loop": true,
+			"animation_length": 0.875,
+			"bones": {
+				"zkot_b_tommy_gun": {
+					"rotation": [90, 180, -180],
+					"position": [0, 0, 2]
+				},
+				"rightArm": {
+					"rotation": [-180, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-180, 0, 0]
+				},
+				"bendy_and_the_ink_machine": {
+					"rotation": [0, 0, 90],
+					"position": [5, -5, 0]
+				},
+				"bone2": {
+					"rotation": [-55, 0, 0],
+					"position": [0, -5, -2]
+				},
+				"bone7": {
+					"scale": "1 + math.cos(q.anim_time * 2000) * 0.05"
+				},
+				"bone3": {
+					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * 30", 0, 0],
+					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
+				},
+				"bone4": {
+					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * -30", 0, 0],
+					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
+				},
+				"bone6": {
+					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * 30", 0, 0],
+					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
+				},
+				"bone5": {
+					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * -30", 0, 0],
+					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
+				}
+			}
+		},
+		"animation.kid.first_person": {
+			"loop": true,
+			"bones": {
+				"zkot_b_tommy_gun": {
+					"rotation": [-269.28138, -240.4628, 143.2028],
+					"position": [2, -11, 7]
+				},
+				"bone2": {
+					"rotation": [-100, 0, 0],
+					"position": [0, 0, 6]
+				}
+			}
+		},
+		"animation.kid.first_person_reloading": {
+			"loop": true,
+			"animation_length": 2.25,
+			"bones": {
+				"zkot_b_tommy_gun": {
+					"rotation": {
+						"0.0": [-269.28138, -240.4628, 143.2028],
+						"0.875": [-286.9966, -240.73467, 146.67087],
+						"1.75": [-269.28138, -240.4628, 143.2028]
+					},
+					"position": {
+						"0.0": [2, -4, 4],
+						"1.75": [2, -4, 4],
+						"2.25": [2, -4, 4]
+					}
+				}
+			}
+		},
+		"animation.kid.first_person_shoot": {
+			"loop": true,
+			"animation_length": 0.16667,
+			"bones": {
+				"zkot_b_tommy_gun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -1, 0],
+						"0.1667": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

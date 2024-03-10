@@ -3,7 +3,7 @@
 	"format_version": "1.20.10",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:chisel_metal_block_3_stair",
+			"identifier": "fd:chisel_metal_block_3_stair",
 			"menu_category": {
 				"category": "construction",
 				"group": "itemGroup.name.stairs"
@@ -19,6 +19,12 @@
 				"nj:execute_place": [
 					false,
 					true
+				],
+				"p:changer": [
+					0,
+					1,
+					2,
+					3
 				]
 			},
 			"traits": {
@@ -100,11 +106,55 @@
 				"components": {
 					"tag:maple_stairs_east": {}
 				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chisel_metal_block",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chisel_metal_block_2",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chisel_metal_block_3",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chisel_metal_block_4",
+							"render_method": "opaque"
+						}
+					}
+				}
 			}
 		],
 		"components": {
 			"minecraft:light_dampening": 0,
-			"minecraft:map_color": "#52221D",
+			"minecraft:map_color": "#EDE6DA",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -140,8 +190,8 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "chisel_metal_block_3",
-					"render_method": "alpha_test"
+					"texture": "chisel_metal_block",
+					"render_method": "opaque"
 				}
 			},
 			"minecraft:on_player_placing": {
@@ -169,6 +219,17 @@
 			"rendering": {
 				"set_block_property": {
 					"nj:execute_place": true
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_state": {
+					"p:changer": "q.block_state('p:changer')==3?0:q.block_state('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
 				}
 			},
 			"confirm": {

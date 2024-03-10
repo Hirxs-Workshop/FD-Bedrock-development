@@ -6,7 +6,7 @@
 				"identifier": "geometry.advanced_wall",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
@@ -24,13 +24,13 @@
 							"origin": [-8, 0, -8],
 							"size": [16, 16, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "dirt"}
+								"north": {"uv": [0, 0], "uv_size": [16, 16]}
 							}
 						}
 					]
 				},
 				{
-					"name": "dandelion_0",
+					"name": "wall_tiles_red_0",
 					"parent": "pot_0",
 					"pivot": [0, 0, 0],
 					"cubes": [
@@ -38,13 +38,13 @@
 							"origin": [-8, 0, -8],
 							"size": [16, 16, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "dandelion"}
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red"}
 							}
 						}
 					]
 				},
 				{
-					"name": "cactus_0",
+					"name": "wall_tiles_purple_0",
 					"parent": "pot_0",
 					"pivot": [0, 0, 0],
 					"cubes": [
@@ -52,7 +52,77 @@
 							"origin": [-8, 0, -8],
 							"size": [16, 16, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "cactus_side"}
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_purple"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_black_0",
+					"parent": "pot_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_black"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_0",
+					"parent": "pot_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_red_top_0",
+					"parent": "pot_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red_top"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_0",
+					"parent": "pot_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_down_block_black_0",
+					"parent": "pot_0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_down_block_black"}
 							}
 						}
 					]
@@ -60,42 +130,111 @@
 				{
 					"name": "pot_1",
 					"parent": "double_flower_pot",
-					"pivot": [-8, 0, 0],
-					"rotation": [0, 180, 0],
+					"pivot": [0, 0, -8],
 					"cubes": [
 						{
 							"origin": [-8, 0, -8],
 							"size": [0, 16, 16],
 							"uv": {
-								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "dirt"}
+								"east": {"uv": [0, 0], "uv_size": [16, 16]}
 							}
 						}
 					]
 				},
 				{
-					"name": "dandelion_1",
+					"name": "wall_tiles_red_1",
 					"parent": "pot_1",
-					"pivot": [-16, 0, 0],
+					"pivot": [0, 0, 0],
 					"cubes": [
 						{
 							"origin": [-8, 0, -8],
 							"size": [0, 16, 16],
 							"uv": {
-								"east": {"uv": [16, 0], "uv_size": [-16, 16], "material_instance": "dandelion"}
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red"}
 							}
 						}
 					]
 				},
 				{
-					"name": "cactus_1",
+					"name": "wall_tiles_purple_1",
 					"parent": "pot_1",
-					"pivot": [-16, 0, 0],
+					"pivot": [0, 0, 0],
 					"cubes": [
 						{
 							"origin": [-8, 0, -8],
 							"size": [0, 16, 16],
 							"uv": {
-								"east": {"uv": [16, 0], "uv_size": [-16, 16], "material_instance": "cactus_side"}
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_purple"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_black_1",
+					"parent": "pot_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_black"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_1",
+					"parent": "pot_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_red_top_1",
+					"parent": "pot_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red_top"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_1",
+					"parent": "pot_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_down_block_black_1",
+					"parent": "pot_1",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_down_block_black"}
 							}
 						}
 					]
@@ -103,19 +242,19 @@
 				{
 					"name": "pot_2",
 					"parent": "double_flower_pot",
-					"pivot": [0, 0, 8],
+					"pivot": [0, 0, -8],
 					"cubes": [
 						{
 							"origin": [-8, 0, 8],
 							"size": [16, 16, 0],
 							"uv": {
-								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "dirt"}
+								"south": {"uv": [0, 0], "uv_size": [16, 16]}
 							}
 						}
 					]
 				},
 				{
-					"name": "dandelion_2",
+					"name": "wall_tiles_red_2",
 					"parent": "pot_2",
 					"pivot": [0, 0, 0],
 					"cubes": [
@@ -123,13 +262,13 @@
 							"origin": [-8, 0, 8],
 							"size": [16, 16, 0],
 							"uv": {
-								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "dandelion"}
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red"}
 							}
 						}
 					]
 				},
 				{
-					"name": "cactus_2",
+					"name": "wall_tiles_purple_2",
 					"parent": "pot_2",
 					"pivot": [0, 0, 0],
 					"cubes": [
@@ -137,7 +276,77 @@
 							"origin": [-8, 0, 8],
 							"size": [16, 16, 0],
 							"uv": {
-								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "cactus_side"}
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_purple"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_black_2",
+					"parent": "pot_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, 8],
+							"size": [16, 16, 0],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_black"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_2",
+					"parent": "pot_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, 8],
+							"size": [16, 16, 0],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_red_top_2",
+					"parent": "pot_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, 8],
+							"size": [16, 16, 0],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red_top"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_2",
+					"parent": "pot_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, 8],
+							"size": [16, 16, 0],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_down_block_black_2",
+					"parent": "pot_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, 8],
+							"size": [16, 16, 0],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_down_block_black"}
 							}
 						}
 					]
@@ -145,19 +354,19 @@
 				{
 					"name": "pot_3",
 					"parent": "double_flower_pot",
-					"pivot": [0, 0, 8],
+					"pivot": [0, 0, -8],
 					"cubes": [
 						{
 							"origin": [8, 0, -8],
 							"size": [0, 16, 16],
 							"uv": {
-								"east": {"uv": [16, 0], "uv_size": [-16, 16], "material_instance": "dirt"}
+								"west": {"uv": [0, 0], "uv_size": [16, 16]}
 							}
 						}
 					]
 				},
 				{
-					"name": "dandelion_3",
+					"name": "wall_tiles_red_3",
 					"parent": "pot_3",
 					"pivot": [0, 0, 0],
 					"cubes": [
@@ -165,13 +374,13 @@
 							"origin": [8, 0, -8],
 							"size": [0, 16, 16],
 							"uv": {
-								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "dandelion"}
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red"}
 							}
 						}
 					]
 				},
 				{
-					"name": "cactus_3",
+					"name": "wall_tiles_purple_3",
 					"parent": "pot_3",
 					"pivot": [0, 0, 0],
 					"cubes": [
@@ -179,7 +388,77 @@
 							"origin": [8, 0, -8],
 							"size": [0, 16, 16],
 							"uv": {
-								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "cactus_side"}
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_purple"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_black_3",
+					"parent": "pot_3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_black"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_3",
+					"parent": "pot_3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_red_top_3",
+					"parent": "pot_3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles_red_top"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_3",
+					"parent": "pot_3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_tiles"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_down_block_black_3",
+					"parent": "pot_3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [8, 0, -8],
+							"size": [0, 16, 16],
+							"uv": {
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "wall_down_block_black"}
 							}
 						}
 					]

@@ -14,7 +14,7 @@
 				"texture": "w_bonnie"
 			},
 			"animations": {
-				"default_pose": "animation.bonnie.off",
+				"default_pose": "",
 				"no_pose": "animation.bonnie.showtime",
 				"solemn_pose": "animation.bonnie.showtime2",
 				"athena_pose": "animation.bonnie.attack",
