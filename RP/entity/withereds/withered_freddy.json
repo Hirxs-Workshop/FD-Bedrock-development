@@ -9,7 +9,8 @@
 			},
 			"textures": {
 				"default": "textures/entity/fnaf2/withered_freddy",
-				"blue": "textures/entity/fnaf2/shadow_freddy"
+				"blue": "textures/entity/fnaf2/shadow_freddy",
+				"red": "textures/entity/fnaf2/vars/withered_freddy"
 			},
 			"animations": {
 				"default_pose": "animation.new_withered_freddy.idle_test_1",
@@ -43,7 +44,7 @@
 				"default": "geometry.new_withered_freddy"
 			},
 			"render_controllers": [
-				"controller.render.fredbear"
+				"controller.render.three_variants"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {

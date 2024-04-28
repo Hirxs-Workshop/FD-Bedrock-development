@@ -81,7 +81,7 @@
 				]
 			},
 			"minecraft:on_player_placing": {
-				"condition": "q.block_face == 1",
+				"condition": "q.block_face==1",
 				"event": "fd:set_rotation"
 			}
 		},
@@ -122,7 +122,7 @@
 						}
 					},
 					{
-						"condition": "q.block_state('p:var') == 1",
+						"condition": "q.block_state('p:var')==1",
 						"run_command": {
 							"target": "self",
 							"command": [

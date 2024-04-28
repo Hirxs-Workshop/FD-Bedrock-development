@@ -12,20 +12,20 @@
 				"blue": "textures/entity/fredbears/fredbear_bloody"
 			},
 			"animations": {
-				"default_pose": "animation.fredbear_nightmare.door_pose",
-				"no_pose": "animation.trimer.east_hall_pose1",
-				"solemn_pose": "animation.trimer.east_hall_pose2",
-				"athena_pose": "animation.trimer.gameover",
-				"brandish_pose": "animation.trimer.dinning_area_pose1",
-				"honor_pose": "animation.trimer.stage_1",
-				"entertain_pose": "animation.trimer.stage_2",
-				"salute_pose": "animation.trimer.stage_3",
-				"riposte_pose": "animation.trimer.pose",
-				"zombie_pose": "animation.trimer.showtime",
-				"cancan_a_pose": "animation.trimer.east_hall_pose1",
-				"cancan_b_pose": "animation.trimer.gameover",
-				"hero_pose": "animation.trimer.dinning_area_pose1",
-				"wiggle": "animation.trimer.stage_1",
+				"default_pose": "animation.Nightmare_fredbear.idle_3",
+				"no_pose": "animation.Nightmare_fredbear.idle_4",
+				"solemn_pose": "animation.Nightmare_fredbear.idle_5",
+				"athena_pose": "animation.Nightmare_fredbear.idle_1",
+				"brandish_pose": "animation.Nightmare_fredbear.idle_2",
+				"honor_pose": "animation.Nightmare_fredbear.idle_3",
+				"entertain_pose": "animation.Nightmare_fredbear.idle_4",
+				"salute_pose": "animation.Nightmare_fredbear.idle_5",
+				"riposte_pose": "animation.Nightmare_fredbear.idle_1",
+				"zombie_pose": "animation.Nightmare_fredbear.idle_2",
+				"cancan_a_pose": "animation.Nightmare_fredbear.idle_3",
+				"cancan_b_pose": "animation.Nightmare_fredbear.idle_4",
+				"hero_pose": "animation.Nightmare_fredbear.idle_5",
+				"wiggle": "animation.Nightmare_fredbear.idle_1",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -47,7 +47,8 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "fredbear_icon"
+				"base_color": "#895B00",
+				"overlay_color": "#A68D2C"
 			}
 		}
 	}

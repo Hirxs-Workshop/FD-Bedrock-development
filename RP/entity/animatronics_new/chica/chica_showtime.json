@@ -1,34 +1,33 @@
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "fb:showtime_chica_chicken",
-      "materials": {
-        "default": "enderman"
-      },
-      "textures": {
-        "default": "textures/entity/fnaf1/chica"
-      },
-      "geometry": {
-        "default": "geometry.chik.geo"
-      },
-      "animations": {
-        "showtime": "animation.chik.geo.stage",
-        "showtime_off": "animation.chik.geo.CAM1A",
-        "showtime_ex": "controller.animation.fb_animatronics.showtime"
-      },
-      "scripts": {
-        "animate": [
-          "showtime_ex"
-        ]
-      },
-      "render_controllers": [
-        "controller.render.nothing"
-      ],
-      "spawn_egg": {
-        "base_color": "#DCBA0F",
-        "overlay_color": "#846E04"
-      }
-    }
-  }
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:showtime_chica_chicken",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf1/chica"
+			},
+			"geometry": {
+				"default": "geometry.chik.geo"
+			},
+			"animations": {
+				"showtime": "animation.chik.geo.stage",
+				"showtime_off": "animation.chik.geo.CAM1A",
+				"showtime_ex": "controller.animation.fb_animatronics.showtime"
+			},
+			"scripts": {
+				"animate": [
+					"showtime_ex"
+				]
+			},
+			"render_controllers": [
+				"controller.render.nothing"
+			],
+			"spawn_egg": {
+				"texture": "chica_icon_showtime"
+			}
+		}
+	}
 }

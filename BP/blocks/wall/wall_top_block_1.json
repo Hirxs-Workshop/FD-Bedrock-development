@@ -53,27 +53,27 @@
 					"minecraft:material_instances": {
 						"up": {
 							"texture": "wt2",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"down": {
 							"texture": "wt2",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"north": {
 							"texture": "wt2",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"west": {
 							"texture": "wt2",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"south": {
 							"texture": "wt2",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"east": {
 							"texture": "wt2",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						}
 					}
 				}
@@ -84,27 +84,27 @@
 					"minecraft:material_instances": {
 						"up": {
 							"texture": "wt3",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"down": {
 							"texture": "wt3",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"north": {
 							"texture": "wt3",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"west": {
 							"texture": "wt3",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"south": {
 							"texture": "wt3",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						},
 						"east": {
 							"texture": "wt3",
-							"render_method": "opaque"
+							"render_method": "alpha_test"
 						}
 					}
 				}
@@ -116,7 +116,7 @@
 				"seconds_to_destroy": 2
 			},
 			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 2.0
+				"explosion_resistance": 2
 			},
 			"minecraft:light_dampening": 15,
 			"minecraft:breathability": "air",
@@ -125,8 +125,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.wall_blocks",
-				"culling": "test:demo"
+				"identifier": "geometry.wall_blocks"
 			},
 			"minecraft:collision_box": {
 				"origin": [

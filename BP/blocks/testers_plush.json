@@ -365,10 +365,10 @@
 			"phase2": {
 				"run_command": {
 					"command": [
-						"/fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=2] replace fd:testers_plush [\"fb:block_rotation\"=2,\"p:changer\"=15]",
-						"/fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=3] replace fd:testers_plush [\"fb:block_rotation\"=3,\"p:changer\"=15]",
-						"/fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=4] replace fd:testers_plush [\"fb:block_rotation\"=4,\"p:changer\"=15]",
-						"/fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=5] replace fd:testers_plush [\"fb:block_rotation\"=5,\"p:changer\"=15]"
+						"fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=2] replace fd:testers_plush [\"fb:block_rotation\"=2,\"p:changer\"=15]",
+						"fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=3] replace fd:testers_plush [\"fb:block_rotation\"=3,\"p:changer\"=15]",
+						"fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=4] replace fd:testers_plush [\"fb:block_rotation\"=4,\"p:changer\"=15]",
+						"fill ~~~ ~~~ fd:testers_plush2 [\"fb:block_rotation\"=5] replace fd:testers_plush [\"fb:block_rotation\"=5,\"p:changer\"=15]"
 					]
 				}
 			},

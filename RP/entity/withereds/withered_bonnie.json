@@ -9,7 +9,8 @@
 			},
 			"textures": {
 				"default": "textures/entity/fnaf2/witheredbonnie",
-				"blue": "textures/entity/fnaf2/witheredbonnie"
+				"blue": "textures/entity/fnaf2/witheredbonnie",
+				"red": "textures/entity/fnaf2/vars/witheredbonnie"
 			},
 			"animations": {
 				"default_pose": "animation.withered_bonnie.idle",
@@ -43,7 +44,7 @@
 				"default": "geometry.new_withered_bonnie"
 			},
 			"render_controllers": [
-				"controller.render.fredbear"
+				"controller.render.three_variants"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {

@@ -12,19 +12,19 @@
 			},
 			"animations": {
 				"default_pose": "animation.balloon_boy.pose1",
-				"no_pose": "animation.balloon_boy.pose2",
-				"solemn_pose": "animation.balloon_boy.showtime",
-				"athena_pose": "animation.balloon_boy.pose1",
-				"brandish_pose": "animation.balloon_boy.pose2",
-				"honor_pose": "animation.balloon_boy.showtime",
-				"entertain_pose": "animation.balloon_boy.pose1",
-				"salute_pose": "animation.balloon_boy.pose2",
-				"riposte_pose": "animation.balloon_boy.showtime",
-				"zombie_pose": "animation.balloon_boy.pose1",
-				"cancan_a_pose": "animation.balloon_boy.pose2",
-				"cancan_b_pose": "animation.balloon_boy.showtime",
+				"no_pose": "animation.balloon_boy.idle2",
+				"solemn_pose": "animation.balloon_boy.idle3",
+				"athena_pose": "animation.balloon_boy.idle4",
+				"brandish_pose": "animation.balloon_boy.pose1",
+				"honor_pose": "animation.balloon_boy.idle2",
+				"entertain_pose": "animation.balloon_boy.idle3",
+				"salute_pose": "animation.balloon_boy.idle4",
+				"riposte_pose": "animation.balloon_boy.pose1",
+				"zombie_pose": "animation.balloon_boy.idle2",
+				"cancan_a_pose": "animation.balloon_boy.idle3",
+				"cancan_b_pose": "animation.balloon_boy.idle4",
 				"hero_pose": "animation.balloon_boy.pose1",
-				"wiggle": "animation.armor_stand.wiggle",
+				"wiggle": "animation.balloon_boy.idle2",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -46,7 +46,8 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "bb"
+				"base_color": "#4C77E3",
+				"overlay_color": "#E66060"
 			}
 		}
 	}

@@ -28,6 +28,9 @@
 		"foxy_icon": {
 			"textures": "textures/items/foxy_icon"
 		},
+		"fb_chisel": {
+			"textures": "textures/items/chisel"
+		},
 		"golden_freddy_icon": {
 			"textures": "textures/items/golden_freddy_icon"
 		},
@@ -363,6 +366,82 @@
 		},
 		"security_manual": {
 			"textures": "textures/items/security_manual"
+		},
+		"pizza_on_plate": {
+			"textures": "textures/items/pizza_on_plate"
+		},
+		"foxy_mask": {
+			"textures": "textures/items/foxy_mask"
+		},
+		"party_hat_1": {
+			"textures": "textures/items/party_hats/party_hat_1"
+		},
+		"party_hat_2": {
+			"textures": "textures/items/party_hats/party_hat_2"
+		},
+		"party_hat_3": {
+			"textures": "textures/items/party_hats/party_hat_3"
+		},
+		"party_hat_4": {
+			"textures": "textures/items/party_hats/party_hat_4"
+		},
+		"party_hat_5": {
+			"textures": "textures/items/party_hats/party_hat_5"
+		},
+		"party_hat_6": {
+			"textures": "textures/items/party_hats/party_hat_6"
+		},
+		"party_hat_7": {
+			"textures": "textures/items/party_hats/party_hat_7"
+		},
+		"party_hat_8": {
+			"textures": "textures/items/party_hats/party_hat_8"
+		},
+		///// FNAF1 Icons v2
+		"freddy_icon_normal": {
+			"textures": "textures/items/fnaf1/freddy"
+		},
+		"freddy_icon_showtime": {
+			"textures": "textures/items/fnaf1/freddy_showtime"
+		},
+		"freddy_icon_soul": {
+			"textures": "textures/items/fnaf1/freddy_soul"
+		},
+		"bonnie_icon_normal": {
+			"textures": "textures/items/fnaf1/bonnie"
+		},
+		"bonnie_icon_showtime": {
+			"textures": "textures/items/fnaf1/bonnie_showtime"
+		},
+		"bonnie_icon_soul": {
+			"textures": "textures/items/fnaf1/bonnie_soul"
+		},
+		"chica_icon_normal": {
+			"textures": "textures/items/fnaf1/chica"
+		},
+		"chica_icon_showtime": {
+			"textures": "textures/items/fnaf1/chica_showtime"
+		},
+		"chica_icon_soul": {
+			"textures": "textures/items/fnaf1/chica_soul"
+		},
+		"foxy_icon_normal": {
+			"textures": "textures/items/fnaf1/foxy"
+		},
+		"foxy_icon_showtime": {
+			"textures": "textures/items/fnaf1/foxy_showtime"
+		},
+		"foxy_icon_soul": {
+			"textures": "textures/items/fnaf1/foxy_soul"
+		},
+		"golden_freddy_icon_normal": {
+			"textures": "textures/items/fnaf1/golden_freddy"
+		},
+		"golden_freddy_icon_soul": {
+			"textures": "textures/items/fnaf1/golden_freddy_soul"
+		},
+		"fredbear_cardboard_icon": {
+			"textures": "textures/items/fredbear_cardboard_icon"
 		}
 	},
 	"texture_name": "atlas.items"

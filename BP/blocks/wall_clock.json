@@ -118,7 +118,9 @@
 			},
 			"tick_sound": {
 				"run_command": {
-					"command": "/playsound fb.clock_ticking @a[r=10]"
+					"command": [
+						"playsound fb.clock_ticking @a[r=10]"
+					]
 				}
 			}
 		}

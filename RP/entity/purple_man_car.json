@@ -1,47 +1,47 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "fb:purple_guy_car",
-      "materials": {
-        "default": "enderman"
-      },
-      "textures": {
-        "default": "textures/vehicles/purple_car",
-        "blue": "textures/vehicles/red_car",
-        "red": "textures/vehicles/blue_car",
-        "purple": "textures/vehicles/green_car",
-        "var1": "textures/vehicles/yellow_car",
-        "var2": "textures/vehicles/purple_car_2"
-      },
-      "geometry": {
-        "default": "geometry.purple_guy_vehicle"
-      },
-      "animations": {
-        "spinudtilt": "animation.purple_guy_vehicle.spinudtilt",
-        "turnstilt": "animation.purple_guy_vehicle.turnstilt",
-        "hurt": "animation.purple_guy_vehicle.hurt"
-      },
-      "particle_effects": {
-        "smoke": "fb:vehicle_smoke"
-      },
-      "animation_controllers": [
-        {
-          "general": "controller.animation.fb.general"
-        },
-        {
-          "smoke": "controller.animation.fb.smoke"
-        },
-        {
-          "hurt": "controller.animation.fb.hurt"
-        }
-      ],
-      "render_controllers": [
-        "controller.render.purple_car"
-      ],
-      "spawn_egg": {
-        "texture": "purple_guy_vehicle_item"
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:purple_guy_car",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/vehicles/purple_car",
+				"blue": "textures/vehicles/red_car",
+				"red": "textures/vehicles/blue_car",
+				"purple": "textures/vehicles/green_car",
+				"var1": "textures/vehicles/yellow_car",
+				"var2": "textures/vehicles/purple_car_2"
+			},
+			"geometry": {
+				"default": "geometry.purple_guy_vehicle"
+			},
+			"animations": {
+				"spinudtilt": "animation.purple_guy_vehicle.spinudtilt",
+				"turnstilt": "animation.purple_guy_vehicle.turnstilt",
+				"hurt": "animation.purple_guy_vehicle.hurt"
+			},
+			"particle_effects": {
+				"smoke": "fb:vehicle_smoke"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.fb.general"
+				},
+				{
+					"smoke": "controller.animation.fb.smoke"
+				},
+				{
+					"hurt": "controller.animation.fb.hurt"
+				}
+			],
+			"render_controllers": [
+				"controller.render.purple_car"
+			],
+			"spawn_egg": {
+				"texture": "purple_guy_vehicle_item"
+			}
+		}
+	}
 }

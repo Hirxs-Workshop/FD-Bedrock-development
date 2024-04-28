@@ -1,23 +1,26 @@
 {
-  "format_version": "1.17",
-  "minecraft:npc_dialogue": {
-    "scenes": [
-      {
-        "scene_tag": "gui_welcome_screen",
-        "npc_name": "origins.custom_dialogue",
-        "text": "origin.welcome_screen",
-        "buttons": [
-          {
-            "name": "start",
-            "commands": [
-              "/scoreboard players set @initiator guib 1",
-              "/execute as @initiator run function reset",
-              "/tag @initiator add welcome_ui"
-            ]
-          }
-        ],
-        "on_open_commands": [ "/execute as @initiator at @s run playsound random.levelup @s ~~~ 1 0.5", "/scoreboard players set @initiator guib 1" ]
-      }
-    ]
-  }
+	"format_version": "1.17",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "gui_welcome_screen",
+				"npc_name": "origins.custom_dialogue",
+				"text": "origin.welcome_screen",
+				"buttons": [
+					{
+						"name": "start",
+						"commands": [
+							"/scoreboard players set @initiator guib 1",
+							"/execute as @initiator run function reset",
+							"/tag @initiator add welcome_ui"
+						]
+					}
+				],
+				"on_open_commands": [
+					"/execute as @initiator at @s run playsound random.levelup @s ~~~ 1 0.5",
+					"/scoreboard players set @initiator guib 1"
+				]
+			}
+		]
+	}
 }

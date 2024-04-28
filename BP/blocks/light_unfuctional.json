@@ -338,13 +338,13 @@
 			{
 				"condition": "q.block_property('fb:box') == 1",
 				"components": {
-			"minecraft:block_light_emission": 0,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "light_off",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:block_light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "light_off",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -364,13 +364,13 @@
 			{
 				"condition": "q.block_property('fb:box') == 2",
 				"components": {
-			"minecraft:block_light_emission": 1,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "light_on",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:block_light_emission": 1,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "light_on",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -390,13 +390,13 @@
 			{
 				"condition": "q.block_property('fb:box') == 3",
 				"components": {
-			"minecraft:block_light_emission": 0,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "light_off",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:block_light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "light_off",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -416,13 +416,13 @@
 			{
 				"condition": "q.block_property('fb:box') == 4",
 				"components": {
-			"minecraft:block_light_emission": 1,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "light_on",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:block_light_emission": 1,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "light_on",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -442,13 +442,13 @@
 			{
 				"condition": "q.block_property('fb:box') == 5",
 				"components": {
-			"minecraft:block_light_emission": 1,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "light_on",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:block_light_emission": 1,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "light_on",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -468,13 +468,13 @@
 			{
 				"condition": "q.block_property('fb:box') == 6",
 				"components": {
-			"minecraft:block_light_emission": 0,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "light_off",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:block_light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "light_off",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [

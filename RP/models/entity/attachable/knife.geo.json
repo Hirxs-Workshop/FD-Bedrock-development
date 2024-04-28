@@ -8,16 +8,55 @@
 				"texture_height": 32,
 				"visible_bounds_width": 2,
 				"visible_bounds_height": 2.5,
-				"visible_bounds_offset": [0, 0.75, 0]
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
 			},
 			"bones": [
 				{
 					"name": "root_item",
-					"pivot": [0, 0, 0],
+					"pivot": [
+						0,
+						0,
+						0
+					],
 					"binding": "q.item_slot_to_bone_name(c.item_slot)",
 					"cubes": [
-						{"origin": [-0.5, -1, -1], "size": [1, 4, 2], "uv": [17, 17], "mirror": true},
-						{"origin": [0, 0, -2], "size": [0, 16, 4], "uv": [16, -4]}
+						{
+							"origin": [
+								-0.5,
+								-1,
+								-1
+							],
+							"size": [
+								1,
+								4,
+								2
+							],
+							"uv": [
+								17,
+								17
+							],
+							"mirror": true
+						},
+						{
+							"origin": [
+								0,
+								0,
+								-2
+							],
+							"size": [
+								0,
+								16,
+								4
+							],
+							"uv": [
+								16,
+								-4
+							]
+						}
 					]
 				}
 			]

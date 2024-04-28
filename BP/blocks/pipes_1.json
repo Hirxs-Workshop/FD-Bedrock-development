@@ -76,7 +76,7 @@
 					"minecraft:geometry": "geometry.pipe_1_one_s",
 					"minecraft:random_ticking": {
 						"on_tick": {
-							"event": "water_particles", //custom
+							"event": "water_particles",
 							"range": [
 								5,
 								10

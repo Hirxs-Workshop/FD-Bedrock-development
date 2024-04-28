@@ -1,295 +1,295 @@
 {
-  "format_version": "1.19.40",
-  "minecraft:block": {
-    "description": {
-      "identifier": "ex:pizzeria_door_top",
-      "menu_category": {
-        "category": "none"
-      },
-      "properties": {
-        "ex:is_open": [
-          false,
-          true
-        ],
-        "ex:direction": [
-          0,
-          1,
-          2,
-          3
-        ]
-      }
-    },
-    "components": {
-      "minecraft:material_instances": {
-        "*": {
-          "texture": "pizzeria_door_top",
-          "render_method": "blend",
-          "face_dimming": false,
-          "ambient_occlusion": false
-        }
-      },
-      "minecraft:part_visibility": {
-        "conditions": {
-          "closed": "query.block_property('ex:is_open') == false",
-          "open": "query.block_property('ex:is_open') == true"
-        }
-      },
-      "minecraft:placement_filter": {
-        "conditions": [
-          {
-            "allowed_faces": [
-              "up"
-            ],
-            "block_filter": [
-              {
-                "tags": "query.any_tag('ex_pizzeria_door')"
-              }
-            ]
-          }
-        ]
-      },
-      "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 0.5
-      },
-      "minecraft:on_player_destroyed": {
-        "event": "ex:reset_bottom"
-      },
-      "minecraft:geometry": "geometry.pizzeria_door_top",
-      "minecraft:loot": "loot_tables/blocks/pizzeria_door.json",
-      "minecraft:map_color": "#52221D",
-      "minecraft:light_dampening": 0,
-      "tag:ex_pizzeria_door": {},
-      "tag:door": {},
-      "tag:wood": {}
-    },
-    "permutations": [
-      {
-        "condition": "query.block_property('ex:direction') == 0",
-        "components": {
-          "minecraft:rotation": [
-            0,
-            180,
-            0
-          ]
-        }
-      },
-      {
-        "condition": "query.block_property('ex:direction') == 1",
-        "components": {
-          "minecraft:rotation": [
-            0,
-            0,
-            0
-          ]
-        }
-      },
-      {
-        "condition": "query.block_property('ex:direction') == 2",
-        "components": {
-          "minecraft:rotation": [
-            0,
-            270,
-            0
-          ]
-        }
-      },
-      {
-        "condition": "query.block_property('ex:direction') == 3",
-        "components": {
-          "minecraft:rotation": [
-            0,
-            90,
-            0
-          ]
-        }
-      },
-      {
-        "condition": "query.block_property('ex:is_open') == 0",
-        "components": {
-          "minecraft:on_interact": {
-            "event": "ex:open_door"
-          },
-          "minecraft:collision_box": {
-            "origin": [
-              -8,
-              0,
-              -8
-            ],
-            "size": [
-              16,
-              16,
-              3
-            ]
-          },
-          "minecraft:selection_box": {
-            "origin": [
-              -8,
-              0,
-              -8
-            ],
-            "size": [
-              16,
-              16,
-              3
-            ]
-          },
-          "tag:ex:closed_pizzeria_door": {}
-        }
-      },
-      {
-        "condition": "query.block_property('ex:is_open') == 1",
-        "components": {
-          "minecraft:on_interact": {
-            "event": "ex:close_door"
-          },
-          "minecraft:collision_box": {
-            "origin": [
-              -8,
-              0,
-              -8
-            ],
-            "size": [
-              3,
-              16,
-              16
-            ]
-          },
-          "minecraft:selection_box": {
-            "origin": [
-              -8,
-              0,
-              -8
-            ],
-            "size": [
-              3,
-              16,
-              16
-            ]
-          },
-          "tag:ex:open_pizzeria_door": {}
-        }
-      }
-    ],
-    "events": {
-      "ex:set_lower_block": {
-        "sequence": [
-          {
-            "condition": "query.block_property('ex:direction')==0&&query.block_property('ex:is_open')==false",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":0, \"ex:is_open\":false, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==1&&query.block_property('ex:is_open')==false",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":1, \"ex:is_open\":false, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==2&&query.block_property('ex:is_open')==false",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":2, \"ex:is_open\":false, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==3&&query.block_property('ex:is_open')==false",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":3, \"ex:is_open\":false, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==0&&query.block_property('ex:is_open')==true",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":0, \"ex:is_open\":true, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==1&&query.block_property('ex:is_open')==true",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":1, \"ex:is_open\":true, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==2&&query.block_property('ex:is_open')==true",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":2, \"ex:is_open\":true, \"ex:top_refresh\":true]"
-              ]
-            }
-          },
-          {
-            "condition": "query.block_property('ex:direction')==3&&query.block_property('ex:is_open')==true",
-            "run_command": {
-              "command": [
-                "setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":3, \"ex:is_open\":true, \"ex:top_refresh\":true]"
-              ]
-            }
-          }
-        ]
-      },
-      "ex:close_door": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": [
-                "playsound close.wooden_door @a ~ ~ ~"
-              ]
-            }
-          },
-          {
-            "set_block_property": {
-              "ex:is_open": 0
-            }
-          },
-          {
-            "trigger": {
-              "event": "ex:set_lower_block",
-              "target": "self"
-            }
-          }
-        ]
-      },
-      "ex:open_door": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": [
-                "playsound open.wooden_door @a ~ ~ ~"
-              ]
-            }
-          },
-          {
-            "set_block_property": {
-              "ex:is_open": 1
-            }
-          },
-          {
-            "trigger": {
-              "event": "ex:set_lower_block",
-              "target": "self"
-            }
-          }
-        ]
-      },
-      "ex:destroy": {
-        "run_command": {
-          "command": [
-            "fill ~~~ ~~-1~ air 0 destroy"
-          ]
-        }
-      }
-    }
-  }
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ex:pizzeria_door_top",
+			"menu_category": {
+				"category": "none"
+			},
+			"properties": {
+				"ex:is_open": [
+					false,
+					true
+				],
+				"ex:direction": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pizzeria_door_top",
+					"render_method": "blend",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:part_visibility": {
+				"conditions": {
+					"closed": "query.block_property('ex:is_open') == false",
+					"open": "query.block_property('ex:is_open') == true"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							{
+								"tags": "query.any_tag('ex_pizzeria_door')"
+							}
+						]
+					}
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "ex:reset_bottom"
+			},
+			"minecraft:geometry": "geometry.pizzeria_door_top",
+			"minecraft:loot": "loot_tables/blocks/pizzeria_door.json",
+			"minecraft:map_color": "#52221D",
+			"minecraft:light_dampening": 0,
+			"tag:ex_pizzeria_door": {},
+			"tag:door": {},
+			"tag:wood": {}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('ex:direction') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ex:direction') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ex:direction') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ex:direction') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ex:is_open') == 0",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "ex:open_door"
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					},
+					"tag:ex:closed_pizzeria_door": {}
+				}
+			},
+			{
+				"condition": "query.block_property('ex:is_open') == 1",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "ex:close_door"
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"tag:ex:open_pizzeria_door": {}
+				}
+			}
+		],
+		"events": {
+			"ex:set_lower_block": {
+				"sequence": [
+					{
+						"condition": "query.block_property('ex:direction')==0&&query.block_property('ex:is_open')==false",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":0, \"ex:is_open\":false, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==1&&query.block_property('ex:is_open')==false",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":1, \"ex:is_open\":false, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==2&&query.block_property('ex:is_open')==false",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":2, \"ex:is_open\":false, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==3&&query.block_property('ex:is_open')==false",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":3, \"ex:is_open\":false, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==0&&query.block_property('ex:is_open')==true",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":0, \"ex:is_open\":true, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==1&&query.block_property('ex:is_open')==true",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":1, \"ex:is_open\":true, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==2&&query.block_property('ex:is_open')==true",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":2, \"ex:is_open\":true, \"ex:top_refresh\":true]"
+							]
+						}
+					},
+					{
+						"condition": "query.block_property('ex:direction')==3&&query.block_property('ex:is_open')==true",
+						"run_command": {
+							"command": [
+								"setblock ~~-1~ ex:pizzeria_door_bottom [\"ex:direction\":3, \"ex:is_open\":true, \"ex:top_refresh\":true]"
+							]
+						}
+					}
+				]
+			},
+			"ex:close_door": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound close.wooden_door @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"set_block_property": {
+							"ex:is_open": 0
+						}
+					},
+					{
+						"trigger": {
+							"event": "ex:set_lower_block",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"ex:open_door": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"playsound open.wooden_door @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"set_block_property": {
+							"ex:is_open": 1
+						}
+					},
+					{
+						"trigger": {
+							"event": "ex:set_lower_block",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"ex:destroy": {
+				"run_command": {
+					"command": [
+						"fill ~~~ ~~-1~ air 0 destroy"
+					]
+				}
+			}
+		}
+	}
 }

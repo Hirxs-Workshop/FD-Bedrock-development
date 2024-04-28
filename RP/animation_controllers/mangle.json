@@ -1,113 +1,115 @@
-	{
-  "format_version": "1.10.0",
-  "animation_controllers": {
-    "controller.animation.fb_mangle.base": {
-      "states": {
-        "default": {
-          "animations": [
-            "look_at_target",
-            "fb_mangle_base",
-            "fb_mangle_start"
-          ],
-          "blend_transition": 0.3
-        }
-      }
-    },
-    "controller.animation.fb_mangle.walk": {
-      "states": {
-        "default": {
-          "animations": [
-            {
-              "fb_mangle_walk": "query.modified_move_speed *2"
-            }
-          ],
-          "transitions": [
-            {
-              "fb_climb_mangle": "query.is_wall_climbing"
-            }
-          ],
-          "blend_transition": 0.5
-        },
-        "fb_climb_mangle": {
-          "animations": [
-            "fb_climb_mangle"
-          ],
-          "transitions": [
-            {
-              "default": "!query.is_wall_climbing"
-            }
-          ],
-          "blend_transition": 0.5
-        },
-				"resting" : {
-					"animations" : [ "resting" ],
-					"transitions" : [
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fb_mangle.base": {
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target",
+						"fb_mangle_base",
+						"fb_mangle_start"
+					],
+					"blend_transition": 0.3
+				}
+			}
+		},
+		"controller.animation.fb_mangle.walk": {
+			"states": {
+				"default": {
+					"animations": [
 						{
-							"fb_climb_mangle" : "!query.is_resting"
+							"fb_mangle_walk": "query.modified_move_speed*2"
+						}
+					],
+					"transitions": [
+						{
+							"fb_climb_mangle": "query.is_wall_climbing"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"fb_climb_mangle": {
+					"animations": [
+						"fb_climb_mangle"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_wall_climbing"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"resting": {
+					"animations": [
+						"resting"
+					],
+					"transitions": [
+						{
+							"fb_climb_mangle": "!query.is_resting"
 						}
 					]
 				}
-      }
-    },
-    "controller.animation.fb_mangle.attack": {
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "attack": "variable.attack>0"
-            }
-          ],
-          "blend_transition": 0.2
-        },
-        "attack": {
-          "animations": [
-            "fb_mangle_attack"
-          ],
-          "transitions": [
-            {
-              "default": "query.all_animations_finished"
-            }
-          ],
-          "blend_transition": 0.2
-        }
-      }
-    },
-    "controller.animation.fb_mangle.function": {
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "function": "q.relative_block_has_any_tag(0,3,0,'grass','wood','pumpkin', 'plant','metal', 'stone', 'diamond_pick_diggable', 'gold_pick_diggable','iron_pick_diggable', 'dirt', 'sand','gravel', 'grass', 'snow')"
-            },
-            {
-              "function2": "q.relative_block_has_any_tag(0,2,0,'grass','wood','pumpkin', 'plant','metal', 'stone', 'diamond_pick_diggable', 'gold_pick_diggable','iron_pick_diggable', 'dirt', 'sand','gravel', 'grass', 'snow')"
-            }
-          ],
-          "blend_transition": 0.3
-        },
-        "function": {
-          "transitions": [
-            {
-              "default": "!q.relative_block_has_any_tag(0,3,0,'grass','wood','pumpkin', 'plant','metal', 'stone', 'diamond_pick_diggable', 'gold_pick_diggable','iron_pick_diggable', 'dirt', 'sand','gravel', 'grass', 'snow')"
-            }
-          ],
-          "animations": [
-            "function"
-          ],
-          "blend_transition": 0.3
-        },
-        "function2": {
-          "transitions": [
-            {
-              "default": "!q.relative_block_has_any_tag(0,2,0,'grass','wood','pumpkin', 'plant','metal', 'stone', 'diamond_pick_diggable', 'gold_pick_diggable','iron_pick_diggable', 'dirt', 'sand','gravel', 'grass', 'snow')"
-            }
-          ],
-          "animations": [
-            "function2"
-          ],
-          "blend_transition": 0.3
-        }
-      }
-    }
-  }
+			}
+		},
+		"controller.animation.fb_mangle.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "variable.attack>0"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack": {
+					"animations": [
+						"fb_mangle_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.fb_mangle.function": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function": "q.relative_block_has_any_tag(0,3,0,'grass','wood','pumpkin','plant','metal','stone','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass','snow')"
+						},
+						{
+							"function2": "q.relative_block_has_any_tag(0,2,0,'grass','wood','pumpkin','plant','metal','stone','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass','snow')"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"function": {
+					"transitions": [
+						{
+							"default": "!q.relative_block_has_any_tag(0,3,0,'grass','wood','pumpkin','plant','metal','stone','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass','snow')"
+						}
+					],
+					"animations": [
+						"function"
+					],
+					"blend_transition": 0.3
+				},
+				"function2": {
+					"transitions": [
+						{
+							"default": "!q.relative_block_has_any_tag(0,2,0,'grass','wood','pumpkin','plant','metal','stone','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass','snow')"
+						}
+					],
+					"animations": [
+						"function2"
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
 }

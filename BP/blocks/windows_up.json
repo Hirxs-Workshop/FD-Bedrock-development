@@ -23,7 +23,7 @@
 				"*": {
 					"texture": "window_corner",
 					"render_method": "blend"
-				} 
+				}
 			},
 			"minecraft:pick_collision": {
 				"origin": [

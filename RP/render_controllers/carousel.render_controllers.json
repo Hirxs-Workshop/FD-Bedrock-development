@@ -2,23 +2,23 @@
 	"format_version": "1.8.0",
 	"render_controllers": {
 		"controller.render.carousel": {
-			"geometry": "Geometry.default",
+			"geometry": "geometry.default",
 			"materials": [
 				{
-					"*": "Material.default"
+					"*": "material.default"
 				}
 			],
 			"textures": [
-				"Texture.default"
+				"texture.default"
 			],
 			"uv_anim": {
 				"offset": [
-					0.0,
-					"math.mod(math.floor(query.life_time * 0.7),2) / 2"
+					0,
+					"math.mod(math.floor(query.life_time*0.7),2)/2"
 				],
 				"scale": [
-					1.0,
-					"1 / 2"
+					1,
+					"0.5"
 				]
 			}
 		}

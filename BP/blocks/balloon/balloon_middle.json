@@ -12,9 +12,7 @@
 				],
 				"p:changer": [
 					0,
-					1,
-					2,
-					3
+					1
 				]
 			}
 		},
@@ -64,7 +62,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_balloons_1",
+							"texture": "enhanced_balloons_1",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false,
 							"face_dimming": false
@@ -77,34 +75,9 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_balloons_2",
+							"texture": "enhanced_balloons_2",
 							"render_method": "alpha_test",
-							"ambient_occlusion": false,
-							"face_dimming": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_balloons_3",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false,
-							"face_dimming": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "new_balloons_4",
-							"render_method": "alpha_test",
+							"geometry": "trash_2",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
@@ -176,7 +149,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

@@ -12,19 +12,19 @@
 			},
 			"animations": {
 				"default_pose": "animation.kagaroo.idle_test",
-				"no_pose": "animation.freddy.showtime",
-				"solemn_pose": "animation.freddy.showtime2",
-				"athena_pose": "animation.freddy.attack",
-				"brandish_pose": "animation.freddy.off",
-				"honor_pose": "animation.freddy.showtime",
-				"entertain_pose": "animation.freddy.showtime2",
-				"salute_pose": "animation.freddy.attack",
-				"riposte_pose": "animation.freddy.off",
-				"zombie_pose": "animation.freddy.showtime",
-				"cancan_a_pose": "animation.freddy.showtime2",
-				"cancan_b_pose": "animation.freddy.attack",
-				"hero_pose": "animation.freddy.off",
-				"wiggle": "animation.armor_stand.wiggle",
+				"no_pose": "animation.kagaroo.idle_test2",
+				"solemn_pose": "animation.new_toy_foxy.test_idle_3",
+				"athena_pose": "animation.new_toy_foxy.test_idle_4",
+				"brandish_pose": "animation.new_toy_foxy.idk",
+				"honor_pose": "animation.new_toy_foxy.showtime",
+				"entertain_pose": "animation.kagaroo.idle_test",
+				"salute_pose": "animation.kagaroo.idle_test2",
+				"riposte_pose": "animation.new_toy_foxy.test_idle_1",
+				"zombie_pose": "animation.new_toy_foxy.test_idle_2",
+				"cancan_a_pose": "animation.new_toy_foxy.test_idle_3",
+				"cancan_b_pose": "animation.new_toy_foxy.test_idle_4",
+				"hero_pose": "animation.kagaroo.idle_test",
+				"wiggle": "animation.kagaroo.idle_test2",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -46,7 +46,8 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "cyrus"
+				"base_color": "#ABF4EC",
+				"overlay_color": "#F091B2"
 			}
 		}
 	}

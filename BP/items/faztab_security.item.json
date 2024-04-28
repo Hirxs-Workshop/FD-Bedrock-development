@@ -12,6 +12,9 @@
 			"minecraft:icon": {
 				"texture": "faztab"
 			},
+			"minecraft:display_name": {
+				"value": "item.fb:faztab_security.name"
+			},
 			"minecraft:hand_equipped": true,
 			"minecraft:stacked_by_data": false,
 			"minecraft:max_stack_size": 1

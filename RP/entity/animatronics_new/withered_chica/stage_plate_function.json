@@ -1,4 +1,4 @@
-	{
+{
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
@@ -7,7 +7,7 @@
 				"default": "entity_alphablend"
 			},
 			"textures": {
-                "default": "textures/items/placeholder"
+				"default": "textures/items/placeholder"
 			},
 			"geometry": {
 				"default": "geometry.none"

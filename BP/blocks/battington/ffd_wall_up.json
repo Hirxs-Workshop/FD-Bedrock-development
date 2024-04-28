@@ -96,68 +96,6 @@
 						}
 					}
 				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"up": {
-							"texture": "b_upper_3",
-							"render_method": "opaque"
-						},
-						"down": {
-							"texture": "b_upper_3",
-							"render_method": "opaque"
-						},
-						"north": {
-							"texture": "b_upper_3",
-							"render_method": "opaque"
-						},
-						"west": {
-							"texture": "b_upper_3",
-							"render_method": "opaque"
-						},
-						"south": {
-							"texture": "b_upper_3",
-							"render_method": "opaque"
-						},
-						"east": {
-							"texture": "b_upper_3",
-							"render_method": "opaque"
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"up": {
-							"texture": "b_lower_3",
-							"render_method": "opaque"
-						},
-						"down": {
-							"texture": "b_lower_3",
-							"render_method": "opaque"
-						},
-						"north": {
-							"texture": "b_lower_4",
-							"render_method": "opaque"
-						},
-						"west": {
-							"texture": "b_lower_4",
-							"render_method": "opaque"
-						},
-						"south": {
-							"texture": "b_lower_4",
-							"render_method": "opaque"
-						},
-						"east": {
-							"texture": "b_lower_4",
-							"render_method": "opaque"
-						}
-					}
-				}
 			}
 		],
 		"components": {
@@ -166,17 +104,15 @@
 				"seconds_to_destroy": 2
 			},
 			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 2.0
+				"explosion_resistance": 2
 			},
-			"minecraft:light_dampening": 0,
-			"minecraft:breathability": "air",
+			"minecraft:light_dampening": 15,
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.solid_block_2",
-				"culling": "test:demo"
+				"identifier": "geometry.solid_block_2"
 			},
 			"minecraft:collision_box": {
 				"origin": [

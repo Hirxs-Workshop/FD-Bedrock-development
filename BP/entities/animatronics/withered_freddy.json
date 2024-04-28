@@ -165,6 +165,81 @@
 										}
 									]
 								},
+								"event": "fb:color_red"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:red": {
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
 								"event": "fb:color_default"
 							},
 							"use_item": false,
@@ -255,7 +330,8 @@
 				},
 				"remove": {
 					"component_groups": [
-						"color:blue"
+						"color:blue",
+						"color:red"
 					]
 				}
 			},
@@ -267,7 +343,21 @@
 				},
 				"remove": {
 					"component_groups": [
-						"color:default"
+						"color:default",
+						"color:red"
+					]
+				}
+			},
+			"fb:color_red": {
+				"add": {
+					"component_groups": [
+						"color:red"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue"
 					]
 				}
 			},

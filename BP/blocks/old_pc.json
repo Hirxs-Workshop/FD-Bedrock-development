@@ -352,12 +352,12 @@
 			{
 				"condition": "q.block_property('fb:box') == 2",
 				"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "old_pc_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "old_pc_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -377,12 +377,12 @@
 			{
 				"condition": "q.block_property('fb:box') == 3",
 				"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "old_pc_3",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "old_pc_3",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -402,12 +402,12 @@
 			{
 				"condition": "q.block_property('fb:box') == 4",
 				"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "old_pc_4",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "old_pc_4",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -427,12 +427,12 @@
 			{
 				"condition": "q.block_property('fb:box') == 5",
 				"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "old_pc_5",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "old_pc_5",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [

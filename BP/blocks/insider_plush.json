@@ -16,7 +16,8 @@
 					2,
 					3,
 					4,
-					5
+					5,
+					6
 				]
 			}
 		},
@@ -148,6 +149,19 @@
 						}
 					}
 				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.creators_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "supporters_plush_6",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
 			}
 		],
 		"components": {
@@ -209,7 +223,7 @@
 			},
 			"e:cycle_changer": {
 				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==5?0:q.block_property('p:changer')+1"
+					"p:changer": "q.block_property('p:changer')==6?0:q.block_property('p:changer')+1"
 				},
 				"run_command": {
 					"command": [

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:withered_foxy_nm",
+			"materials": {
+				"default": "spider"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf2/withered_foxy",
+				"blue": "textures/entity/fnaf2/withered_foxy"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"fb_withered_foxy_nm_base": "animation.new_freddy_fazbear.base",
+				"fb_withered_foxy_nm_walk": "animation.zorra.geo.running",
+				"fb_withered_foxy_nm_start": "animation.new_withered_foxy.idle",
+				"fb_withered_foxy_nm_attack": "animation.zorra.geo.attack2",
+				"fb_withered_foxy_nm_jump": "animation.new_withered_foxy.jump",
+				"fb_withered_foxy_nm_jump_preparation": "animation.new_withered_foxy.jump_preparation",
+				"base": "controller.animation.fb_withered_foxy_nm.base",
+				"walk": "controller.animation.fb_withered_foxy_nm.walk",
+				"attack": "controller.animation.fb_withered_foxy_nm.attack",
+				"function": "controller.animation.fb_withered_foxy_nm.function",
+				"jump": "controller.animation.fb_withered_foxy_nm.function"
+			},
+			"scripts": {
+				"animate": [
+					"base",
+					"walk",
+					"attack",
+					"jump",
+					"function"
+				],
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 10.0);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.new_withered_foxy"
+			},
+			"render_controllers": [
+				"controller.render.freddy"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#301313",
+				"overlay_color": "#1E1D1B"
+			}
+		}
+	}
+}

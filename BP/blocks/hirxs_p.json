@@ -33,7 +33,7 @@
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:geometry": "geometry.creators",
+			"minecraft:geometry": "geometry.hirxs",
 			"minecraft:aim_collision": {
 				"origin": [
 					-4,
@@ -220,7 +220,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_1"
 					},
-					"minecraft:geometry": "geometry.creators",
+					"minecraft:geometry": "geometry.hirxs",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -232,7 +232,7 @@
 					"minecraft:on_interact": {
 						"event": "fb:var_2"
 					},
-					"minecraft:geometry": "geometry.creators",
+					"minecraft:geometry": "geometry.hirxs",
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}

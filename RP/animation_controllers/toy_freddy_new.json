@@ -17,10 +17,10 @@
 					"blend_transition": 0.2,
 					"transitions": [
 						{
-							"crouch": "query.variant == 1"
+							"crouch": "query.variant==1"
 						},
 						{
-							"ventilation": "query.variant == 2"
+							"ventilation": "query.variant==2"
 						},
 						{
 							"jumpscare_normal": "query.is_sheared"
@@ -55,10 +55,10 @@
 					"blend_transition": 0.5,
 					"transitions": [
 						{
-							"crouch": "query.variant == 1"
+							"crouch": "query.variant==1"
 						},
 						{
-							"default": "query.variant == 0"
+							"default": "query.variant==0"
 						},
 						{
 							"jumpscare_vent": "query.is_stunned"
@@ -93,10 +93,10 @@
 					"blend_transition": 0.5,
 					"transitions": [
 						{
-							"default": "query.variant == 0"
+							"default": "query.variant==0"
 						},
 						{
-							"ventilation": "query.variant == 2"
+							"ventilation": "query.variant==2"
 						},
 						{
 							"jumpscare_crouch": "query.is_stackable"

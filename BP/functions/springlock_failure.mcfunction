@@ -18,21 +18,15 @@ execute as @e[scores={springlock=1400}] run effect @s slowness 100 3
 execute as @e[scores={springlock=1510}] run damage @s 5 freezing
 execute as @e[scores={springlock=1610}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=1715}] run particle fb:blood_effect ~ ~1 ~
-
 execute as @e[scores={springlock=1820}] run damage @s 5 freezing
 execute as @e[scores={springlock=1920}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=2025}] run particle fb:blood_effect ~ ~1 ~
-
-
 execute as @e[scores={springlock=2230}] run damage @s 5 freezing
 execute as @e[scores={springlock=2230}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=2255}] run particle fb:blood_effect ~ ~1 ~
-
-
 execute as @e[scores={springlock=2740}] run damage @s 5 freezing
 execute as @e[scores={springlock=2740}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=2745}] run particle fb:blood_effect ~ ~1 ~
-
 execute as @e[scores={springlock=3050}] run damage @s 5 freezing
 execute as @e[scores={springlock=3050}] run effect @s slowness 100 5
 execute as @e[scores={springlock=3050}] run particle fb:blood_effect ~ ~1 ~
@@ -47,7 +41,6 @@ execute as @e[scores={springlock=3866}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=3967}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=4068}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=4169}] run particle fb:blood_effect ~ ~1 ~
-
 execute as @e[scores={springlock=3050}] run damage @s 2 freezing
 execute as @e[scores={springlock=3155}] run damage @s 2 freezing
 execute as @e[scores={springlock=3260}] run damage @s 2 freezing
@@ -60,9 +53,7 @@ execute as @e[scores={springlock=3866}] run damage @s 2 freezing
 execute as @e[scores={springlock=3967}] run damage @s 2 freezing
 execute as @e[scores={springlock=4068}] run damage @s 2 freezing
 execute as @e[scores={springlock=4169}] run damage @s 2 freezing
-
 execute as @e[scores={springlock=5049}] run effect @s blindness 100 1
-
 execute as @e[scores={springlock=5050}] run damage @s 5 freezing
 execute as @e[scores={springlock=5155}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=5260}] run particle fb:blood_effect ~ ~1 ~
@@ -76,7 +67,6 @@ execute as @e[scores={springlock=5967}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=6068}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=6169}] run particle fb:blood_effect ~ ~1 ~
 execute as @e[scores={springlock=6270}] run particle fb:blood_effect ~ ~1 ~
-
 execute as @e[scores={springlock=5050}] run damage @s 5 freezing
 execute as @e[scores={springlock=5155}] run damage @s 5 freezing
 execute as @e[scores={springlock=5260}] run damage @s 5 freezing
@@ -91,9 +81,7 @@ execute as @e[scores={springlock=6068}] run damage @s 5 freezing
 execute as @e[scores={springlock=6169}] run damage @s 5 freezing
 execute as @e[scores={springlock=6270}] run damage @s 5 freezing
 execute as @e[scores={springlock=6470}] run kill @s
-
 title @s actionbar §4WARNING: §cSpringlock enabled
 title @s times 3 3 3
 title @s actionbar §cWARNING: §4Springlock enabled
-
 execute as @e[hasitem=[{item=fb:springlock_suit_failure_d,location=slot.armor.chest},{item=fb:springlock_suit_legs_d,location=slot.armor.legs}]] run function animation_springlock_legs_chest

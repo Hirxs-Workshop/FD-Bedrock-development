@@ -67,7 +67,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "locker1",
-							"render_method": "opaque",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -79,7 +79,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "locker2",
-							"render_method": "opaque",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -91,7 +91,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "locker3",
-							"render_method": "opaque",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -103,7 +103,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "locker4",
-							"render_method": "opaque",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -115,7 +115,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "locker5",
-							"render_method": "opaque",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -127,7 +127,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "locker6",
-							"render_method": "opaque",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -135,8 +135,6 @@
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
 			"minecraft:display_name": "fb:locker",
 			"minecraft:creative_category": {
 				"category": "construction",

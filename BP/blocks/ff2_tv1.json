@@ -12,11 +12,7 @@
 				],
 				"p:changer": [
 					0,
-					1,
-					2,
-					3,
-					4,
-					5
+					1
 				]
 			}
 		},
@@ -64,10 +60,10 @@
 			{
 				"condition": "q.block_property('p:changer') == 0",
 				"components": {
-					"minecraft:geometry": "geometry.ff2_tv_1",
+					"minecraft:geometry": "geometry.monitor_stack_1",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "ff2tvs",
+							"texture": "fnaf2_stack_1",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -77,62 +73,10 @@
 			{
 				"condition": "q.block_property('p:changer') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.ff2_tv_2",
+					"minecraft:geometry": "geometry.monitor_stack_2",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "ff2tvs",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:geometry": "geometry.ff2_tv_3",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2tvs",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:geometry": "geometry.ff2_tv_4",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2tvs",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:geometry": "geometry.ff2_tv_5",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2tvs",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 5",
-				"components": {
-					"minecraft:geometry": "geometry.ff2_tv_6",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "ff2tvs",
+							"texture": "fnaf2_stack_2",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
@@ -141,9 +85,6 @@
 			}
 		],
 		"components": {
-			"tag:rustic": {},
-			"tag:vase": {},
-			"minecraft:display_name": "fb:ff2_tvs",
 			"minecraft:creative_category": {
 				"category": "construction",
 				"group": "itemGroup.name.Construction"
@@ -157,7 +98,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.ff2_tv_1",
+			"minecraft:geometry": "geometry.monitor_stack_1",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,

@@ -49,9 +49,6 @@
 		"bridge_wall_grey_block_1": {
 			"textures": "textures/blocks/blocks (3)"
 		},
-		"bridge_wall_top_block_1": {
-			"textures": "textures/blocks/wall_block4"
-		},
 		"bridge_wall_deco_1": {
 			"textures": "textures/blocks/wall_block5"
 		},
@@ -208,15 +205,6 @@
 		"w5": {
 			"textures": "textures/blocks/windows/w5"
 		},
-		"t1": {
-			"textures": "textures/blocks/trash/1"
-		},
-		"t2": {
-			"textures": "textures/blocks/trash/2"
-		},
-		"t3": {
-			"textures": "textures/blocks/trash/3"
-		},
 		"p0": {
 			"textures": "textures/blocks/party/party_hat_1"
 		},
@@ -331,33 +319,6 @@
 		"wallff2": {
 			"textures": "textures/blocks/fnaf2/fnaf2_door_left"
 		},
-		"balloons1": {
-			"textures": "textures/blocks/balloons/ba1"
-		},
-		"balloons2": {
-			"textures": "textures/blocks/balloons/ba2"
-		},
-		"balloons3": {
-			"textures": "textures/blocks/balloons/ba3"
-		},
-		"balloons4": {
-			"textures": "textures/blocks/balloons/n/ba4"
-		},
-		"balloons5": {
-			"textures": "textures/blocks/balloons/n/ba5"
-		},
-		"pizza1": {
-			"textures": "textures/blocks/pizzas/pizza1"
-		},
-		"pizza2": {
-			"textures": "textures/blocks/pizzas/pizza2"
-		},
-		"pizza3": {
-			"textures": "textures/blocks/pizzas/pizza3"
-		},
-		"pizza4": {
-			"textures": "textures/blocks/pizzas/pizza4"
-		},
 		"plate1": {
 			"textures": "textures/blocks/plate/plate1"
 		},
@@ -450,15 +411,6 @@
 		},
 		"doorb3": {
 			"textures": "textures/blocks/button/2"
-		},
-		"box1": {
-			"textures": "textures/blocks/box/0"
-		},
-		"box2": {
-			"textures": "textures/blocks/box/1"
-		},
-		"box3": {
-			"textures": "textures/blocks/box/2"
 		},
 		"wt1": {
 			"textures": "textures/blocks/wall_top/1"
@@ -794,12 +746,6 @@
 		},
 		"pizza_slice": {
 			"textures": "textures/blocks/Pizzatexture"
-		},
-		"pizza_box": {
-			"textures": "textures/blocks/pizzas/pizza_box"
-		},
-		"soda": {
-			"textures": "textures/blocks/trash/3"
 		},
 		"chica": {
 			"textures": "textures/blocks/heads/chica"
@@ -1150,29 +1096,11 @@
 		"pirate_cove_curtain": {
 			"textures": "textures/blocks/foxy_room_block"
 		},
-		"pirate_cove_curtain_2": {
-			"textures": "textures/blocks/curtains/0"
-		},
-		"pirate_cove_curtain_3": {
-			"textures": "textures/blocks/curtains/4"
-		},
 		"pirate_cove2_curtain": {
 			"textures": "textures/blocks/pirate_cove/red"
 		},
-		"pirate_cove2_curtain_2": {
-			"textures": "textures/blocks/curtains/red_0"
-		},
-		"pirate_cove2_curtain_3": {
-			"textures": "textures/blocks/curtains/red_4"
-		},
 		"pirate_cove3_curtain": {
 			"textures": "textures/blocks/pirate_cove/blue"
-		},
-		"pirate_cove3_curtain_2": {
-			"textures": "textures/blocks/curtains/blue_0"
-		},
-		"pirate_cove3_curtain_3": {
-			"textures": "textures/blocks/curtains/blue_4"
 		},
 		"roof_light": {
 			"textures": "textures/blocks/roof_light"
@@ -1945,20 +1873,26 @@
 			"textures": "textures/blocks/hanging_papercuts/3"
 		},
 		// New walls fnaf1
+		"fnaf1_stage_wall_up": {
+			"textures": "textures/blocks/new_walls/stage_wall_up"
+		},
+		"fnaf1_stage_wall_down": {
+			"textures": "textures/blocks/new_walls/stage_wall_down"
+		},
+		"fnaf1_stage_wall_1": {
+			"textures": "textures/blocks/new_walls/stage_wall_middle_3"
+		},
+		"fnaf1_stage_wall_2": {
+			"textures": "textures/blocks/new_walls/stage_2"
+		},
+		"fnaf1_wall_block10": {
+			"textures": "textures/blocks/new_walls/wall_block10"
+		},
 		"wall_tiles_red_top": {
 			"textures": "textures/blocks/wall_top_2/wall_tiles_red_top"
 		},
 		"fnaf1_wall_bottom": {
 			"textures": "textures/blocks/new_walls/gray texture"
-		},
-		"fnaf1_wall_upper_side_1": {
-			"textures": "textures/blocks/new_walls/1"
-		},
-		"fnaf1_wall_upper_side_2": {
-			"textures": "textures/blocks/new_walls/2"
-		},
-		"fnaf1_wall_upper_side_3": {
-			"textures": "textures/blocks/new_walls/3"
 		},
 		"fnaf1_wall_side": {
 			"textures": "textures/blocks/new_walls/gray_single"
@@ -1966,17 +1900,14 @@
 		"fnaf1_wall_stage_texture": {
 			"textures": "textures/blocks/new_walls/stage_2"
 		},
-		"fnaf1_wall_stage_side_black": {
-			"textures": "textures/blocks/new_walls/stage_wall"
-		},
-		"fnaf1_wall_stage_side_red": {
-			"textures": "textures/blocks/new_walls/stage_wall_middle_2"
-		},
 		"fnaf1_wall_stage_side_purple": {
 			"textures": "textures/blocks/new_walls/stage_wall_middle_3"
 		},
 		"fnaf1_wall_bottom_side": {
 			"textures": "textures/blocks/new_walls/wall_block1"
+		},
+		"fnaf1_wall_top_side": {
+			"textures": "textures/blocks/wall_top/1_texture"
 		},
 		"fnaf1_wall_middle_side": {
 			"textures": "textures/blocks/new_walls/wall_7"
@@ -2007,9 +1938,6 @@
 		},
 		"fnaf1_wall_black_texture": {
 			"textures": "textures/blocks/new_walls/black_texture"
-		},
-		"fnaf1_white_roof": {
-			"textures": "textures/blocks/new_walls/white_roof"
 		},
 		"red_curtain_block": {
 			"textures": "textures/blocks/curtain"
@@ -2385,6 +2313,9 @@
 		"supporters_plush_5": {
 			"textures": "textures/blocks/plush/supporters/5"
 		},
+		"supporters_plush_6": {
+			"textures": "textures/blocks/plush/supporters/6"
+		},
 		"supporters_plush_base": {
 			"textures": "textures/blocks/plush/supporter"
 		},
@@ -2459,6 +2390,81 @@
 		},
 		"fnaf2_confetti": {
 			"textures": "textures/blocks/fnaf2/confetti"
+		},
+		"enhanced_poster_off": {
+			"textures": "textures/blocks/enhanced_poster_off"
+		},
+		"enhanced_poster_on": {
+			"textures": "textures/blocks/enhanced_poster_on"
+		},
+		"battington_shelves": {
+			"textures": "textures/blocks/battington/shelves"
+		},
+		"fnaf2_stack_1": {
+			"textures": "textures/blocks/fnaf2/stack_1"
+		},
+		"fnaf2_stack_2": {
+			"textures": "textures/blocks/fnaf2/stack_2"
+		},
+		"metal_structure": {
+			"textures": "textures/blocks/metal_structure"
+		},
+		"cyan_box": {
+			"textures": "textures/blocks/cyan_box"
+		},
+		"bubblegum_machine": {
+			"textures": "textures/blocks/bubblegum_machine"
+		},
+		"soda_machine": {
+			"textures": "textures/blocks/Soda_3"
+		},
+		"another_block_test_1": {
+			"textures": "textures/blocks/another_block_test_1"
+		},
+		"prize_corner_counter": {
+			"textures": "textures/blocks/fnaf2/prize_corner_counter"
+		},
+		"prize_corner_shelf_1": {
+			"textures": "textures/blocks/fnaf2/shelf/0"
+		},
+		"prize_corner_shelf_2": {
+			"textures": "textures/blocks/fnaf2/shelf/1"
+		},
+		"stage_plate_fredbear": {
+			"textures": "textures/blocks/stage_plate_fredbear"
+		},
+		"stage_plate_springbonnie": {
+			"textures": "textures/blocks/stage_plate_springbonnie"
+		},
+		"enhanced_balloons_1": {
+			"textures": "textures/blocks/balloons"
+		},
+		"enhanced_balloons_2": {
+			"textures": "textures/blocks/balloons_2"
+		},
+		"dev_plush_chypdo": {
+			"textures": "textures/blocks/plush/5"
+		},
+		"dev_plush_cameraman": {
+			"textures": "textures/blocks/plush/6"
+		},
+		"dev_plush_guyy": {
+			"textures": "textures/blocks/plush/7"
+		},
+		"dev_plush_bob": {
+			"textures": "textures/blocks/plush/8"
+		},
+		"dev_plush_mrforbidden": {
+			"textures": "textures/blocks/plush/9"
+		},
+		"dev_plush_polar": {
+			"textures": "textures/blocks/plush/polar"
+		},
+		"dev_plush_kris": {
+			"textures": "textures/blocks/plush/10"
+		},
+		"dev_plush_butter": {
+			"textures": "textures/blocks/plush/11"
 		}
 	}
 }

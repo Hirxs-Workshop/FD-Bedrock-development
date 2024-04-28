@@ -1,0 +1,75 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "(HF) FNaF's Build & Decor | Rotting Dreams - Official Release v4.1",
+		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?\n\n§l§6Developers:§r§f Hirx's,JennyF,fantasticbob_mc,.cameraman27,chypdo,theforbiddenblock,abcbutter0609,polarfredrick,kristoffer1976,.cameraman27,Cheez & guiy_bonnie\n§l§eSpecial Thanks:§r§f HyruArt\n\n§l§8Insiders/Testers:§r§f Xeno Neo ,ButterM|BM ,Bh11us ,croaked ,doortame ,Elias ,Potato_Fan ,Thomas York ,YellowRabit ,Darkgui ,Springdom ,ZachDoesGames ,The FantasticBOB ,Dargelixt Gamer ,ManSam & Claus\n\n§l§8Supporters:§r§f Stilla ,Big Randy ,danger bonnie ,Sno110 ,InkHayden ,BaconCousinsPartyGG,DoorTame, Canal do lorajo 1.0, TheOfficialCloud, Swang_Idiot4039_GAMING ,v7tor & ZachDoesGames \n\n----------------------------------------------------------------------------\n§l§8Community Server: §r§fhttps://discord.gg/hirxs\n\n§8§lSupport (Bugs & Suggestions): §r§fhttps://hirxs-website.net/community-forums",
+		"min_engine_version": [
+			1,
+			20,
+			10
+		],
+		"uuid": "0976ac8b-f368-4ae1-93c8-2520f79a2137",
+		"version": [
+			4,
+			6,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e91a6659-4bc8-4006-83db-94e045b526da",
+			"version": [
+				4,
+				6,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "322cef0e-cca1-427a-91af-ca7bfa460eba",
+			"entry": "scripts/test_maincamerasys.js",
+			"version": [
+				4,
+				6,
+				0
+			]
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.10.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-gametest",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		},
+		{
+			"uuid": "3878e804-61de-46af-a31e-549e3c6d76f7",
+			"version": [
+				4,
+				6,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.7.15"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	}
+}

@@ -37,13 +37,13 @@
 						"items": [
 							"minecraft:iron_ingot"
 						],
-						"repair_amount": "query.max_durability * 0.25"
+						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
 							"fb:security_guard_boots"
 						],
-						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
 					}
 				]
 			}

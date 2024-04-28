@@ -1,803 +1,803 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "fb:toy_chica_nm",
-            "is_spawnable": true,
-            "is_summonable": true,
-            "is_experimental": false,
-            "scripts": {
-                "animate": [
-                    "fb_toy_chica_vent_sound",
-                    "fb_toy_chica_chase",
-                    "fb_toy_chica_execute",
-                    "fb_toy_chica_nm_jumpscare_normal",
-                    "fb_toy_chica_normal",
-                    "fb_toy_chica_nm_jumpscare_vent",
-                    "fb_toy_chica_nm_jumpscare_crouch"
-                ]
-            },
-            "animations": {
-                "fb_toy_chica_vent_sound": "controller.animation.fb_toy_chica_vent_sound",
-                "fb_vent_sound": "animation.fb_toy_chica.vent_sound",
-                "fb_toy_chica_nm_jumpscare_normal": "controller.animation.fb_toy_chica_jumpscare_normal",
-                "fb_toy_chica_execute": "controller.animation.fb_toy_chica_execute",
-                "fb_toy_chica_jumpscare_normal": "animation.fb_toy_chica.jumpscare_normal",
-                "fb_toy_chica_chase": "controller.animation.fb_toy_chica_chase",
-                "fb_toy_chica_nm_jumpscare_vent": "controller.animation.fb_toy_chica_jumpscare_vent",
-                "fb_toy_chica_jumpscare_vent": "animation.fb_toy_chica.jumpscare_ventilation",
-                "fb_toy_chica_nm_jumpscare_crouch": "controller.animation.fb_toy_chica_jumpscare_crouch",
-                "fb_toy_chica_normal": "controller.animation.fb_toy_chica_normal",
-                "fb_toy_chica_jumpscare_crouch": "animation.fb_toy_chica.jumpscare_crouch"
-            }
-        },
-        "component_groups": {
-            "fb:showtime_toy_chica_nm": {
-                "minecraft:transformation": {
-                    "into": "fb:showtime_toy_chica_nm"
-                }
-            },
-            "minecraft:toy_chica_nm_calm": {
-                "minecraft:on_target_acquired": {
-                    "event": "minecraft:become_angry",
-                    "target": "self"
-                }
-            },
-            "minecraft:toy_chica_nm_angry": {
-                "minecraft:angry": {
-                    "duration": 100,
-                    "calm_event": {
-                        "event": "minecraft:on_calm",
-                        "target": "self"
-                    }
-                }
-            },
-            "minecraft:roar": {
-                "minecraft:on_target_acquired": {},
-                "minecraft:behavior.summon_entity": {
-                    "priority": 0,
-                    "probability": 100.0,
-                    "summon_choices": [
-                        {
-                            "weight": 1,
-                            "cooldown_time": 50.0,
-                            "cast_duration": 1,
-                            "start_sound_event": "plop",
-                            "sequence": [
-                                {
-                                    "shape": "circle",
-                                    "target": "self",
-                                    "base_delay": 0.0,
-                                    "delay_per_summon": 0.0,
-                                    "num_entities_spawned": 0,
-                                    "entity_lifespan": 10.0,
-                                    "size": 10.0,
-                                    "sound_event": "plop"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            },
-            "fb_toy_chica_nm_agressive": {
-                "minecraft:skin_id": {
-                    "value": 1
-                }
-            },
-            "fb_toy_chica_nm_friendly": {
-                "minecraft:skin_id": {
-                    "value": 0
-                }
-            },
-            "ventilation": {
-                "minecraft:collision_box": {
-                    "height": 0.9,
-                    "width": 0.8
-                },
-                "minecraft:variant": {
-                    "value": 2
-                }
-            },
-            "crouch": {
-                "minecraft:collision_box": {
-                    "height": 0.9,
-                    "width": 0.8
-                },
-                "minecraft:custom_hit_test": {
-                    "hitboxes": [
-                        {
-                            "height": 2.75,
-                            "pivot": [
-                                0,
-                                1.32,
-                                0
-                            ],
-                            "width": 0.8
-                        }
-                    ]
-                },
-                "minecraft:variant": {
-                    "value": 1
-                }
-            },
-            "default": {
-                "minecraft:collision_box": {
-                    "height": 1.66,
-                    "width": 0.8
-                },
-                "minecraft:custom_hit_test": {
-                    "hitboxes": [
-                        {
-                            "height": 4.4,
-                            "pivot": [
-                                0,
-                                1.8,
-                                0
-                            ],
-                            "width": 0.8
-                        }
-                    ]
-                },
-                "minecraft:variant": {
-                    "value": 0
-                }
-            },
-            "fb_toy_chica_crouch": {
-                "minecraft:behavior.melee_attack": {
-                    "priority": 3,
-                    "speed_multiplier": 0.8,
-                    "track_target": true,
-                    "on_attack": {
-                        "event": "minecraft:fb_toy_chica_jumpscare_crouch",
-                        "target": "self",
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "is_family",
-                                    "subject": "target",
-                                    "operator": "equals",
-                                    "value": "player"
-                                },
-                                {
-                                    "test": "has_component",
-                                    "subject": "self",
-                                    "value": "minecraft:is_stackable",
-                                    "operator": "not"
-                                }
-                            ]
-                        }
-                    }
-                }
-            },
-            "fb_toy_chica_ventilation": {
-                "minecraft:behavior.melee_attack": {
-                    "priority": 3,
-                    "speed_multiplier": 1.8,
-                    "track_target": true,
-                    "on_attack": {
-                        "event": "minecraft:fb_toy_chica_jumpscare_ventilation",
-                        "target": "self",
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "is_family",
-                                    "subject": "target",
-                                    "operator": "equals",
-                                    "value": "player"
-                                },
-                                {
-                                    "test": "has_component",
-                                    "subject": "self",
-                                    "value": "minecraft:is_stunned",
-                                    "operator": "not"
-                                }
-                            ]
-                        }
-                    }
-                }
-            },
-            "fb_toy_chica_jumpscare_normal": {
-                "minecraft:timer": {
-                    "looping": false,
-                    "time": 1,
-                    "time_down_event": {
-                        "target": "self",
-                        "event": "minecraft:fb_toy_chica_jumpscare_stop"
-                    }
-                },
-                "minecraft:is_sheared": {},
-                "minecraft:spell_effects": {
-                    "add_effects": [
-                        {
-                            "effect": "slowness",
-                            "amplifier": 255,
-                            "duration": 1,
-                            "visible": false
-                        }
-                    ]
-                },
-                "minecraft:spawn_entity": {
-                    "entities": [
-                        {
-                            "min_wait_time": 0,
-                            "max_wait_time": 0,
-                            "single_use": true,
-                            "num_to_spawn": 1,
-                            "spawn_entity": "fb:jumpscare1"
-                        }
-                    ]
-                }
-            },
-            "fb_toy_chica_normal": {
-                "minecraft:behavior.melee_attack": {
-                    "priority": 3,
-                    "speed_multiplier": 1.3,
-                    "track_target": true,
-                    "on_attack": {
-                        "event": "minecraft:fb_toy_chica_jumpscare_normal",
-                        "target": "self",
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "is_family",
-                                    "subject": "target",
-                                    "operator": "equals",
-                                    "value": "player"
-                                },
-                                {
-                                    "test": "has_component",
-                                    "subject": "self",
-                                    "value": "minecraft:is_sheared",
-                                    "operator": "not"
-                                }
-                            ]
-                        }
-                    }
-                }
-            },
-            "fb_toy_chica_jumpscare_ventilation": {
-                "minecraft:timer": {
-                    "looping": false,
-                    "time": 1,
-                    "time_down_event": {
-                        "target": "self",
-                        "event": "minecraft:fb_toy_chica_jumpscare_stop"
-                    }
-                },
-                "minecraft:spell_effects": {
-                    "add_effects": [
-                        {
-                            "effect": "slowness",
-                            "amplifier": 255,
-                            "duration": 1,
-                            "visible": false
-                        }
-                    ]
-                },
-                "minecraft:spawn_entity": {
-                    "entities": [
-                        {
-                            "min_wait_time": 0,
-                            "max_wait_time": 0,
-                            "single_use": true,
-                            "num_to_spawn": 1,
-                            "spawn_entity": "fb:jumpscare1"
-                        }
-                    ]
-                },
-                "minecraft:is_stunned": {}
-            },
-            "fb_toy_chica_jumpscare_crouch": {
-                "minecraft:timer": {
-                    "looping": false,
-                    "time": 1,
-                    "time_down_event": {
-                        "target": "self",
-                        "event": "minecraft:fb_toy_chica_jumpscare_stop"
-                    }
-                },
-                "minecraft:spell_effects": {
-                    "add_effects": [
-                        {
-                            "effect": "slowness",
-                            "amplifier": 255,
-                            "duration": 1,
-                            "visible": false
-                        }
-                    ]
-                },
-                "minecraft:spawn_entity": {
-                    "entities": [
-                        {
-                            "min_wait_time": 0,
-                            "max_wait_time": 0,
-                            "single_use": true,
-                            "num_to_spawn": 1,
-                            "spawn_entity": "fb:jumpscare1"
-                        }
-                    ]
-                },
-                "minecraft:is_stackable": {}
-            },
-            "fb_toy_chica_calm": {},
-            "fb_toy_chica_damage0": {
-                "minecraft:attack": {
-                    "damage": 0
-                },
-                "minecraft:on_target_acquired": {
-                    "event": "minecraft:fb_toy_chica_damage20",
-                    "target": "self"
-                }
-            },
-            "fb_toy_chica_damage20": {
-                "minecraft:attack": {
-                    "damage": 20
-                },
-                "minecraft:on_target_acquired": {
-                    "event": "minecraft:fb_toy_chica_damage0",
-                    "target": "self",
-                    "filters": {
-                        "all_of": [
-                            {
-                                "test": "is_family",
-                                "subject": "target",
-                                "value": "player"
-                            }
-                        ]
-                    }
-                }
-            },
-            "minecraft:toy_chica_nm_function_adult": {
-                "minecraft:on_target_acquired": {
-                    "event": "minecraft:become_angry",
-                    "target": "self"
-                }
-            },
-            "minecraft:toy_chica_nm_function_angry": {
-                "minecraft:variant": {
-                    "value": 1
-                },
-                "minecraft:angry": {
-                    "duration": 20,
-                    "broadcastAnger": false,
-                    "broadcastRange": 2,
-                    "calm_event": {
-                        "event": "minecraft:on_calm",
-                        "target": "self"
-                    }
-                },
-                "minecraft:movement": {
-                    "value": 0.24
-                },
-                "minecraft:on_target_acquired": {}
-            },
-            "minecraft:toy_chica_nm_function_closed": {
-                "minecraft:variant": {
-                    "value": 0
-                }
-            },
-            "minecraft:toy_chica_nm_function_calm": {
-                "minecraft:variant": {
-                    "value": 0
-                },
-                "minecraft:is_sheared": {},
-                "minecraft:on_target_acquired": {
-                    "event": "minecraft:become_angry",
-                    "target": "self"
-                }
-            },
-            "fb:toy_chica_nm_function2": {
-                "minecraft:collision_box": {
-                    "width": 0.5,
-                    "height": 2
-                }
-            },
-            "fb:toy_chica_nm_no_function2": {
-                "minecraft:collision_box": {
-                    "width": 0.5,
-                    "height": 2
-                },
-                "minecraft:movement": {
-                    "value": 0.22
-                }
-            }
-        },
-        "components": {
-            "minecraft:physics": {
-                "has_gravity": true,
-                "has_collision": true
-            },
-            "minecraft:push_through": {
-                "value": -1
-            },
-            "minecraft:jump.static": {},
-            "minecraft:movement.basic": {},
-            "minecraft:navigation.generic": {
-                "can_pass_doors": true,
-                "can_walk": true,
-                "can_open_doors": true,
-                "can_jump": true,
-                "can_open_iron_doors": false,
-                "can_swim": true
-            },
-            "minecraft:nameable": {},
-            "minecraft:type_family": {
-                "family": [
-                    "monster"
-                ]
-            },
-            "minecraft:behavior.random_look_around": {
-                "priority": 15
-            },
-            "minecraft:pushable": {
-                "is_pushable": false,
-                "is_pushable_by_piston": true
-            },
-            "minecraft:annotation.open_door": {},
-            "minecraft:behavior.random_stroll": {
-                "priority": 15,
-                "speed_multiplier": 1.3
-            },
-            "minecraft:follow_range": {
-                "value": 100,
-                "max": 100
-            },
-            "minecraft:health": {
-                "value": 275,
-                "max": 275
-            },
-            "minecraft:knockback_resistance": {
-                "value": 1
-            },
-            "minecraft:can_climb": {},
-            "minecraft:behavior.open_door": {
-                "priority": 1,
-                "close_door_after": false
-            },
-            "minecraft:behavior.float": {
-                "priority": 1
-            },
-            "minecraft:behavior.hurt_by_target": {
-                "priority": 1
-            },
-            "minecraft:movement": {
-                "value": 0.2
-            },
-            "minecraft:damage_sensor": {
-                "triggers": [
-                    {
-                        "on_damage": {
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "test": "has_damage",
-                                        "value": "fatal"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
-            },
-            "minecraft:behavior.nearest_attackable_target": {
-                "priority": 2,
-                "within_radius": 512,
-                "reselect_targets": true,
-                "entity_types": [
-                    {
-                        "filters": {
-                            "any_of": [
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "player"
-                                },
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "snowgolem"
-                                },
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "irongolem"
-                                },
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "wandering_trader"
-                                }
-                            ]
-                        },
-                        "max_dist": 50
-                    },
-                    {
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "villager"
-                                },
-                                {
-                                    "test": "has_component",
-                                    "subject": "other",
-                                    "operator": "!=",
-                                    "value": "minecraft:is_baby"
-                                }
-                            ]
-                        },
-                        "max_dist": 50
-                    },
-                    {
-                        "filters": {
-                            "any_of": [
-                                {
-                                    "test": "is_family",
-                                    "subject": "other",
-                                    "value": "fb_stage_plate_mark_toy_chica_nm"
-                                }
-                            ]
-                        },
-                        "max_dist": 120,
-                        "must_see": false
-                    }
-                ],
-                "must_see": true,
-                "must_see_forget_duration": 17.0
-            },
-            "minecraft:is_hidden_when_invisible": {},
-            "minecraft:hurt_on_condition": {
-                "damage_conditions": [
-                    {
-                        "filters": {
-                            "test": "in_lava",
-                            "subject": "self",
-                            "operator": "==",
-                            "value": true
-                        },
-                        "cause": "lava",
-                        "damage_per_tick": 86
-                    }
-                ]
-            }
-        },
-        "events": {
-            "minecraft:entity_spawned": {
-                "add": {
-                    "component_groups": [
-                        "minecraft:toy_chica_nm_calm",
-                        "fb_toy_chica_damage20"
-                    ]
-                }
-            },
-            "minecraft:entity_transformed": {
-                "add": {
-                    "component_groups": [
-                        "minecraft:toy_chica_nm_calm",
-                        "fb_toy_chica_damage20"
-                    ]
-                }
-            },
-            "minecraft:become_angry": {
-                "remove": {
-                    "component_groups": [
-                        "minecraft:toy_chica_nm_calm"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "minecraft:toy_chica_nm_angry"
-                    ]
-                }
-            },
-            "minecraft:on_calm": {
-                "remove": {
-                    "component_groups": [
-                        "minecraft:toy_chica_nm_angry"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "minecraft:toy_chica_nm_calm"
-                    ]
-                }
-            },
-            "fb_toy_chica_friendly": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_nm_friendly"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_nm_agressive"
-                    ]
-                }
-            },
-            "fb_toy_chica_agressive": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_nm_agressive"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_nm_friendly"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_jumpscare_normal": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_jumpscare_normal"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_jumpscare_stop": {
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_jumpscare_normal",
-                        "fb_toy_chica_jumpscare_ventilation",
-                        "fb_toy_chica_jumpscare_crouch"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_normal": {
-                "remove": {
-                    "component_groups": [
-                        "ventilation",
-                        "crouch"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "default"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_crouch": {
-                "add": {
-                    "component_groups": [
-                        "crouch"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "ventilation",
-                        "default"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_ventilation": {
-                "add": {
-                    "component_groups": [
-                        "ventilation"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "crouch",
-                        "default"
-                    ]
-                }
-            },
-            "normal": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_normal"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_crouch",
-                        "fb_toy_chica_ventilation"
-                    ]
-                }
-            },
-            "crouch": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_crouch"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_normal",
-                        "fb_toy_chica_ventilation"
-                    ]
-                }
-            },
-            "ventilation": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_ventilation"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_normal",
-                        "fb_toy_chica_crouch"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_jumpscare_ventilation": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_jumpscare_ventilation"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_jumpscare_crouch": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_jumpscare_crouch"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_damage0": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_damage0"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_damage20"
-                    ]
-                }
-            },
-            "minecraft:fb_toy_chica_damage20": {
-                "add": {
-                    "component_groups": [
-                        "fb_toy_chica_damage20"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb_toy_chica_damage0"
-                    ]
-                }
-            },
-            "nose": {
-                "run_command": {
-                    "command": [
-                        "playanimation @s animation.fb_toy_chica_nm.nose",
-                        "effect @s slowness 1 2 true"
-                    ]
-                }
-            },
-            "fb:toy_chica_nm_showtime": {
-                "add": {
-                    "component_groups": [
-                        "fb:showtime_toy_chica_nm"
-                    ]
-                }
-            },
-            "fb:function2": {
-                "add": {
-                    "component_groups": [
-                        "fb:toy_chica_nm_function2"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fb:toy_chica_nm_no_function2"
-                    ]
-                }
-            },
-            "fb:no_function2": {
-                "remove": {
-                    "component_groups": [
-                        "fb:toy_chica_nm_function2"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "fb:toy_chica_nm_no_function2"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:toy_chica_nm",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"fb_toy_chica_vent_sound",
+					"fb_toy_chica_chase",
+					"fb_toy_chica_execute",
+					"fb_toy_chica_nm_jumpscare_normal",
+					"fb_toy_chica_normal",
+					"fb_toy_chica_nm_jumpscare_vent",
+					"fb_toy_chica_nm_jumpscare_crouch"
+				]
+			},
+			"animations": {
+				"fb_toy_chica_vent_sound": "controller.animation.fb_toy_chica_vent_sound",
+				"fb_vent_sound": "animation.fb_toy_chica.vent_sound",
+				"fb_toy_chica_nm_jumpscare_normal": "controller.animation.fb_toy_chica_jumpscare_normal",
+				"fb_toy_chica_execute": "controller.animation.fb_toy_chica_execute",
+				"fb_toy_chica_jumpscare_normal": "animation.fb_toy_chica.jumpscare_normal",
+				"fb_toy_chica_chase": "controller.animation.fb_toy_chica_chase",
+				"fb_toy_chica_nm_jumpscare_vent": "controller.animation.fb_toy_chica_jumpscare_vent",
+				"fb_toy_chica_jumpscare_vent": "animation.fb_toy_chica.jumpscare_ventilation",
+				"fb_toy_chica_nm_jumpscare_crouch": "controller.animation.fb_toy_chica_jumpscare_crouch",
+				"fb_toy_chica_normal": "controller.animation.fb_toy_chica_normal",
+				"fb_toy_chica_jumpscare_crouch": "animation.fb_toy_chica.jumpscare_crouch"
+			}
+		},
+		"component_groups": {
+			"fb:showtime_toy_chica_nm": {
+				"minecraft:transformation": {
+					"into": "fb:showtime_toy_chica_nm"
+				}
+			},
+			"minecraft:toy_chica_nm_calm": {
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"minecraft:toy_chica_nm_angry": {
+				"minecraft:angry": {
+					"duration": 100,
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:roar": {
+				"minecraft:on_target_acquired": {},
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"probability": 100,
+					"summon_choices": [
+						{
+							"weight": 1,
+							"cooldown_time": 50,
+							"cast_duration": 1,
+							"start_sound_event": "plop",
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 0,
+									"entity_lifespan": 10,
+									"size": 10,
+									"sound_event": "plop"
+								}
+							]
+						}
+					]
+				}
+			},
+			"fb_toy_chica_nm_agressive": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"fb_toy_chica_nm_friendly": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"ventilation": {
+				"minecraft:collision_box": {
+					"height": 0.9,
+					"width": 0.8
+				},
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"crouch": {
+				"minecraft:collision_box": {
+					"height": 0.9,
+					"width": 0.8
+				},
+				"minecraft:custom_hit_test": {
+					"hitboxes": [
+						{
+							"height": 2.75,
+							"pivot": [
+								0,
+								1.32,
+								0
+							],
+							"width": 0.8
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"default": {
+				"minecraft:collision_box": {
+					"height": 1.66,
+					"width": 0.8
+				},
+				"minecraft:custom_hit_test": {
+					"hitboxes": [
+						{
+							"height": 4.4,
+							"pivot": [
+								0,
+								1.8,
+								0
+							],
+							"width": 0.8
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"fb_toy_chica_crouch": {
+				"minecraft:behavior.melee_attack": {
+					"priority": 3,
+					"speed_multiplier": 0.8,
+					"track_target": true,
+					"on_attack": {
+						"event": "minecraft:fb_toy_chica_jumpscare_crouch",
+						"target": "self",
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "target",
+									"operator": "equals",
+									"value": "player"
+								},
+								{
+									"test": "has_component",
+									"subject": "self",
+									"value": "minecraft:is_stackable",
+									"operator": "not"
+								}
+							]
+						}
+					}
+				}
+			},
+			"fb_toy_chica_ventilation": {
+				"minecraft:behavior.melee_attack": {
+					"priority": 3,
+					"speed_multiplier": 1.8,
+					"track_target": true,
+					"on_attack": {
+						"event": "minecraft:fb_toy_chica_jumpscare_ventilation",
+						"target": "self",
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "target",
+									"operator": "equals",
+									"value": "player"
+								},
+								{
+									"test": "has_component",
+									"subject": "self",
+									"value": "minecraft:is_stunned",
+									"operator": "not"
+								}
+							]
+						}
+					}
+				}
+			},
+			"fb_toy_chica_jumpscare_normal": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"target": "self",
+						"event": "minecraft:fb_toy_chica_jumpscare_stop"
+					}
+				},
+				"minecraft:is_sheared": {},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "slowness",
+							"amplifier": 255,
+							"duration": 1,
+							"visible": false
+						}
+					]
+				},
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"single_use": true,
+							"num_to_spawn": 1,
+							"spawn_entity": "fb:jumpscare1"
+						}
+					]
+				}
+			},
+			"fb_toy_chica_normal": {
+				"minecraft:behavior.melee_attack": {
+					"priority": 3,
+					"speed_multiplier": 1.3,
+					"track_target": true,
+					"on_attack": {
+						"event": "minecraft:fb_toy_chica_jumpscare_normal",
+						"target": "self",
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "target",
+									"operator": "equals",
+									"value": "player"
+								},
+								{
+									"test": "has_component",
+									"subject": "self",
+									"value": "minecraft:is_sheared",
+									"operator": "not"
+								}
+							]
+						}
+					}
+				}
+			},
+			"fb_toy_chica_jumpscare_ventilation": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"target": "self",
+						"event": "minecraft:fb_toy_chica_jumpscare_stop"
+					}
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "slowness",
+							"amplifier": 255,
+							"duration": 1,
+							"visible": false
+						}
+					]
+				},
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"single_use": true,
+							"num_to_spawn": 1,
+							"spawn_entity": "fb:jumpscare1"
+						}
+					]
+				},
+				"minecraft:is_stunned": {}
+			},
+			"fb_toy_chica_jumpscare_crouch": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"target": "self",
+						"event": "minecraft:fb_toy_chica_jumpscare_stop"
+					}
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "slowness",
+							"amplifier": 255,
+							"duration": 1,
+							"visible": false
+						}
+					]
+				},
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"single_use": true,
+							"num_to_spawn": 1,
+							"spawn_entity": "fb:jumpscare1"
+						}
+					]
+				},
+				"minecraft:is_stackable": {}
+			},
+			"fb_toy_chica_calm": {},
+			"fb_toy_chica_damage0": {
+				"minecraft:attack": {
+					"damage": 0
+				},
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:fb_toy_chica_damage20",
+					"target": "self"
+				}
+			},
+			"fb_toy_chica_damage20": {
+				"minecraft:attack": {
+					"damage": 20
+				},
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:fb_toy_chica_damage0",
+					"target": "self",
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"subject": "target",
+								"value": "player"
+							}
+						]
+					}
+				}
+			},
+			"minecraft:toy_chica_nm_function_adult": {
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"minecraft:toy_chica_nm_function_angry": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:angry": {
+					"duration": 20,
+					"broadcastAnger": false,
+					"broadcastRange": 2,
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					}
+				},
+				"minecraft:movement": {
+					"value": 0.24
+				},
+				"minecraft:on_target_acquired": {}
+			},
+			"minecraft:toy_chica_nm_function_closed": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"minecraft:toy_chica_nm_function_calm": {
+				"minecraft:variant": {
+					"value": 0
+				},
+				"minecraft:is_sheared": {},
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"fb:toy_chica_nm_function2": {
+				"minecraft:collision_box": {
+					"width": 0.5,
+					"height": 2
+				}
+			},
+			"fb:toy_chica_nm_no_function2": {
+				"minecraft:collision_box": {
+					"width": 0.5,
+					"height": 2
+				},
+				"minecraft:movement": {
+					"value": 0.22
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:push_through": {
+				"value": -1
+			},
+			"minecraft:jump.static": {},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.generic": {
+				"can_pass_doors": true,
+				"can_walk": true,
+				"can_open_doors": true,
+				"can_jump": true,
+				"can_open_iron_doors": false,
+				"can_swim": true
+			},
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"monster"
+				]
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 15
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:annotation.open_door": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 15,
+				"speed_multiplier": 1.3
+			},
+			"minecraft:follow_range": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:health": {
+				"value": 275,
+				"max": 275
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.open_door": {
+				"priority": 1,
+				"close_door_after": false
+			},
+			"minecraft:behavior.float": {
+				"priority": 1
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_damage",
+										"value": "fatal"
+									}
+								]
+							}
+						}
+					}
+				]
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"within_radius": 512,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "wandering_trader"
+								}
+							]
+						},
+						"max_dist": 50
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "villager"
+								},
+								{
+									"test": "has_component",
+									"subject": "other",
+									"operator": "!=",
+									"value": "minecraft:is_baby"
+								}
+							]
+						},
+						"max_dist": 50
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "fb_stage_plate_mark_toy_chica_nm"
+								}
+							]
+						},
+						"max_dist": 120,
+						"must_see": false
+					}
+				],
+				"must_see": true,
+				"must_see_forget_duration": 17
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 86
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minecraft:toy_chica_nm_calm",
+						"fb_toy_chica_damage20"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"add": {
+					"component_groups": [
+						"minecraft:toy_chica_nm_calm",
+						"fb_toy_chica_damage20"
+					]
+				}
+			},
+			"minecraft:become_angry": {
+				"remove": {
+					"component_groups": [
+						"minecraft:toy_chica_nm_calm"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:toy_chica_nm_angry"
+					]
+				}
+			},
+			"minecraft:on_calm": {
+				"remove": {
+					"component_groups": [
+						"minecraft:toy_chica_nm_angry"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:toy_chica_nm_calm"
+					]
+				}
+			},
+			"fb_toy_chica_friendly": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_nm_friendly"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_nm_agressive"
+					]
+				}
+			},
+			"fb_toy_chica_agressive": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_nm_agressive"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_nm_friendly"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_jumpscare_normal": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_jumpscare_normal"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_jumpscare_stop": {
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_jumpscare_normal",
+						"fb_toy_chica_jumpscare_ventilation",
+						"fb_toy_chica_jumpscare_crouch"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_normal": {
+				"remove": {
+					"component_groups": [
+						"ventilation",
+						"crouch"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"default"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_crouch": {
+				"add": {
+					"component_groups": [
+						"crouch"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ventilation",
+						"default"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_ventilation": {
+				"add": {
+					"component_groups": [
+						"ventilation"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"crouch",
+						"default"
+					]
+				}
+			},
+			"normal": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_normal"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_crouch",
+						"fb_toy_chica_ventilation"
+					]
+				}
+			},
+			"crouch": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_crouch"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_normal",
+						"fb_toy_chica_ventilation"
+					]
+				}
+			},
+			"ventilation": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_ventilation"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_normal",
+						"fb_toy_chica_crouch"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_jumpscare_ventilation": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_jumpscare_ventilation"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_jumpscare_crouch": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_jumpscare_crouch"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_damage0": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_damage0"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_damage20"
+					]
+				}
+			},
+			"minecraft:fb_toy_chica_damage20": {
+				"add": {
+					"component_groups": [
+						"fb_toy_chica_damage20"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb_toy_chica_damage0"
+					]
+				}
+			},
+			"nose": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.fb_toy_chica_nm.nose",
+						"effect @s slowness 1 2 true"
+					]
+				}
+			},
+			"fb:toy_chica_nm_showtime": {
+				"add": {
+					"component_groups": [
+						"fb:showtime_toy_chica_nm"
+					]
+				}
+			},
+			"fb:function2": {
+				"add": {
+					"component_groups": [
+						"fb:toy_chica_nm_function2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fb:toy_chica_nm_no_function2"
+					]
+				}
+			},
+			"fb:no_function2": {
+				"remove": {
+					"component_groups": [
+						"fb:toy_chica_nm_function2"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"fb:toy_chica_nm_no_function2"
+					]
+				}
+			}
+		}
+	}
 }

@@ -54,25 +54,25 @@
 			"minecraft:entity_spawned": {
 				"run_command": {
 					"command": [
-						"/fill ~~~ ~~~ light_block[\"block_light_level\"=8] replace air []"
+						"fill ~~~ ~~~ light_block[\"block_light_level\"=8] replace air []"
 					]
 				}
 			},
 			"despawn_process": {
 				"run_command": {
 					"command": [
-						"/fill ~~~ ~~~ air [] replace light_block [\"block_light_level\"=8]",
-						"/execute as @s positioned ~~~ if block ~~~ air [] run event entity @s despawn"
-				]
-			}
-		},
-		"despawn": {
-			"add": {
-				"component_groups": [
-					"despawn"
-				]
+						"fill ~~~ ~~~ air [] replace light_block [\"block_light_level\"=8]",
+						"execute as @s positioned ~~~ if block ~~~ air [] run event entity @s despawn"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
 			}
 		}
 	}
-}
 }

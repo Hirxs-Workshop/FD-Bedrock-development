@@ -1,34 +1,33 @@
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "fb:showtime_bonnie_bunny",
-      "materials": {
-        "default": "enderman"
-      },
-      "textures": {
-        "default": "textures/entity/fnaf1/bonnie"
-      },
-      "geometry": {
-        "default": "geometry.new_bonnie_bunny"
-      },
-      "animations": {
-        "showtime": "animation.new_bonnie_bunny.stage",
-        "showtime_off": "animation.bonnie_bunny.geo.CAM1A",
-        "showtime_ex": "controller.animation.fb_animatronics.showtime"
-      },
-      "scripts": {
-        "animate": [
-          "showtime_ex"
-        ]
-      },
-      "render_controllers": [
-        "controller.render.nothing"
-      ],
-      "spawn_egg": {
-        "base_color": "#3B2278",
-        "overlay_color": "#9F94CB"
-      }
-    }
-  }
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:showtime_bonnie_bunny",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf1/bonnie"
+			},
+			"geometry": {
+				"default": "geometry.new_bonnie_bunny"
+			},
+			"animations": {
+				"showtime": "animation.new_bonnie_bunny.stage",
+				"showtime_off": "animation.bonnie_bunny.geo.CAM1A",
+				"showtime_ex": "controller.animation.fb_animatronics.showtime"
+			},
+			"scripts": {
+				"animate": [
+					"showtime_ex"
+				]
+			},
+			"render_controllers": [
+				"controller.render.nothing"
+			],
+			"spawn_egg": {
+				"texture": "bonnie_icon_showtime"
+			}
+		}
+	}
 }

@@ -1,0 +1,216 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.prize_corner_shelf_1",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [
+					0,
+					1,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root3",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "top3",
+					"parent": "root3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								14,
+								-5
+							],
+							"size": [
+								16,
+								2,
+								13
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										16,
+										2
+									]
+								},
+								"east": {
+									"uv": [
+										16,
+										4
+									],
+									"uv_size": [
+										13,
+										2
+									]
+								},
+								"south": {
+									"uv": [
+										16,
+										2
+									],
+									"uv_size": [
+										16,
+										2
+									]
+								},
+								"west": {
+									"uv": [
+										16,
+										4
+									],
+									"uv_size": [
+										13,
+										2
+									]
+								},
+								"up": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										13
+									]
+								},
+								"down": {
+									"uv": [
+										0,
+										13
+									],
+									"uv_size": [
+										16,
+										-13
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs3",
+					"parent": "root3",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "spindles3",
+					"parent": "root3",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body3",
+					"parent": "root3",
+					"pivot": [
+						0,
+						16,
+						5
+					],
+					"rotation": [
+						-17.5,
+						0,
+						0
+					],
+					"reset": true
+				},
+				{
+					"name": "head3",
+					"parent": "body3",
+					"pivot": [
+						0,
+						14,
+						3
+					]
+				},
+				{
+					"name": "head_male3",
+					"parent": "head3",
+					"pivot": [
+						0,
+						23,
+						3
+					]
+				},
+				{
+					"name": "freddy_lower_jaw3",
+					"parent": "head_male3",
+					"pivot": [
+						0,
+						23.3,
+						1.4
+					],
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				},
+				{
+					"name": "freddy_ear5",
+					"parent": "head_male3",
+					"pivot": [
+						-3.65,
+						25,
+						1.5
+					],
+					"rotation": [
+						-4.6653,
+						-16.88547,
+						78.19284
+					]
+				},
+				{
+					"name": "freddy_ear6",
+					"parent": "head_male3",
+					"pivot": [
+						3.65,
+						25.1,
+						1.5
+					],
+					"rotation": [
+						-5.28631,
+						19.54453,
+						-72.95515
+					]
+				},
+				{
+					"name": "body_sub_3",
+					"parent": "freddy_ear6",
+					"pivot": [
+						11.74967,
+						32.02623,
+						12.0557
+					]
+				}
+			]
+		}
+	]
+}

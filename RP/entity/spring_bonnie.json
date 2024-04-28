@@ -8,7 +8,11 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/fnaf1/springbonnie"
+				"default": "textures/entity/fnaf1/springbonnie",
+				"blue": "textures/entity/fnaf1/vars/tv_springbonnie",
+				"red": "textures/entity/fnaf1/vars/insane_bonnie_fn4",
+				"purple": "textures/entity/fnaf1/vars/SilverEyesYellowBonnie",
+				"orange": "textures/entity/fnaf1/vars/springbonnie"
 			},
 			"spawn_egg": {
 				"base_color": "#DEBB64",
@@ -22,7 +26,7 @@
 				"brandish_pose": "animation.new_bonnie_bunny.CAM2B",
 				"honor_pose": "animation.new_bonnie_bunny.CAM5",
 				"entertain_pose": "animation.new_bonnie_bunny.CAM3",
-				"salute_pose": "animation.new_bonnie_bunny.CAM2Btwitch",
+				"salute_pose": "animation.new_bonnie_bunny.CAM2B",
 				"riposte_pose": "animation.new_bonnie_bunny.leftdoor",
 				"zombie_pose": "animation.new_bonnie_bunny.stage",
 				"cancan_a_pose": "animation.bonnie_bunny.geo.CAM1A",
@@ -46,7 +50,7 @@
 				"default": "geometry.spring_bonnie"
 			},
 			"render_controllers": [
-				"controller.render.armor_stand"
+				"controller.render.four_variants"
 			],
 			"enable_attachables": true
 		}

@@ -1,16 +1,15 @@
-//bridge-file-version: #3
 {
 	"format_version": "1.8.0",
 	"render_controllers": {
 		"controller.render.bonnie": {
-			"geometry": "Geometry.default",
+			"geometry": "geometry.default",
 			"materials": [
 				{
-					"*": "Material.default"
+					"*": "material.default"
 				}
 			],
 			"textures": [
-				"Array.variants[query.variant]"
+				"array.variants[query.variant]"
 			],
 			"arrays": {
 				"textures": {

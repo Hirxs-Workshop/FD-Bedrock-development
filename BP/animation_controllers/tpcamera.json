@@ -7,7 +7,7 @@
 				"default": {
 					"transitions": [
 						{
-							"ride": "(1.0)"
+							"ride": "1"
 						}
 					],
 					"on_entry": [
@@ -17,7 +17,7 @@
 				"ride": {
 					"transitions": [
 						{
-							"default": "(1.0)"
+							"default": "1"
 						}
 					],
 					"on_entry": [

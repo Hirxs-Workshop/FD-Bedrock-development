@@ -1,44 +1,386 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.itp_spring_bonnie.new_idle_1": {
+		"animation.itp_spring_bonnie.new_idle_6": {
 			"loop": true,
 			"bones": {
 				"feddy": {
-					"position": [0, -12, 0]
+					"position": [
+						0,
+						-21,
+						0
+					]
 				},
 				"upperpart": {
-					"rotation": [7.5, 0, 0]
+					"rotation": [
+						7.5,
+						0,
+						0
+					]
 				},
 				"feddyHed3": {
-					"rotation": [20, 0, 0]
+					"rotation": [
+						20,
+						0,
+						0
+					]
 				},
 				"pupil5": {
-					"position": [0, 0.2, 0]
+					"position": [
+						0,
+						0.2,
+						0
+					]
 				},
 				"pupil6": {
-					"position": [0, 0.2, 0]
+					"position": [
+						0,
+						0.2,
+						0
+					]
 				},
 				"jaw3": {
-					"rotation": [-2.5, 0, 0]
+					"rotation": [
+						-2.5,
+						0,
+						0
+					]
 				},
 				"earL": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [
+						32.5,
+						0,
+						0
+					]
 				},
 				"topearL": {
-					"rotation": [30, 0, 0]
+					"rotation": [
+						30,
+						0,
+						0
+					]
 				},
 				"earR": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [
+						32.5,
+						0,
+						0
+					]
 				},
 				"topearR": {
-					"rotation": [42.5, 0, 0]
+					"rotation": [
+						42.5,
+						0,
+						0
+					]
 				},
 				"armL": {
-					"rotation": [-12.5, 0, 15]
+					"rotation": [
+						-11.12501,
+						-5.73576,
+						-11.94093
+					]
 				},
 				"armR": {
-					"rotation": [-12.45392, -1.08089, -19.88206]
+					"rotation": [
+						-11.12501,
+						5.73575,
+						11.94093
+					]
+				},
+				"belowpart": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.itp_spring_bonnie.new_idle_2": {
+			"loop": true,
+			"bones": {
+				"jaw3": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"armL": {
+					"rotation": [
+						-180,
+						0,
+						-310
+					]
+				},
+				"lower": {
+					"rotation": [
+						-180,
+						85,
+						-132.5
+					]
+				},
+				"armR": {
+					"rotation": [
+						-142.5,
+						87.5,
+						-7.5
+					]
+				},
+				"lower2": {
+					"rotation": [
+						-42.5,
+						0,
+						0
+					]
+				},
+				"legL": {
+					"rotation": [
+						0,
+						-12.5,
+						0
+					]
+				},
+				"legR": {
+					"rotation": [
+						-17.5,
+						27.5,
+						0
+					]
+				},
+				"lower4": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.itp_spring_bonnie.new_idle_3": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [
+						-1.10693,
+						12.45167,
+						-5.12076
+					]
+				},
+				"feddyHed3": {
+					"rotation": [
+						0,
+						-10,
+						15
+					]
+				},
+				"jaw3": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"armL": {
+					"rotation": [
+						0,
+						0,
+						-12.5
+					]
+				},
+				"lower": {
+					"rotation": [
+						0,
+						0,
+						7.5
+					]
+				},
+				"thumb": {
+					"rotation": [
+						0,
+						32.5,
+						0
+					]
+				},
+				"armR": {
+					"rotation": [
+						-117.5,
+						67.5,
+						0
+					]
+				},
+				"lower2": {
+					"rotation": [
+						-45,
+						0,
+						0
+					]
+				},
+				"legL": {
+					"rotation": [
+						0,
+						-7.5,
+						0
+					]
+				},
+				"legR": {
+					"rotation": [
+						0,
+						15,
+						0
+					]
+				}
+			}
+		},
+		"animation.itp_spring_bonnie.new_idle_4": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"feddyHed3": {
+					"rotation": [
+						12.5,
+						0,
+						0
+					]
+				},
+				"jaw3": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"armL": {
+					"rotation": [
+						-14.31574,
+						-5.0632,
+						-14.10761
+					]
+				},
+				"lower": {
+					"rotation": [
+						0,
+						0,
+						10
+					]
+				},
+				"armR": {
+					"rotation": [
+						-9.76758,
+						2.15393,
+						12.31594
+					]
+				},
+				"lower2": {
+					"rotation": [
+						-9.91615,
+						-1.29876,
+						-7.38733
+					]
+				},
+				"legL": {
+					"rotation": [
+						0,
+						-7.5,
+						0
+					]
+				},
+				"lower4": {
+					"rotation": [
+						0,
+						7.5,
+						0
+					]
+				}
+			}
+		},
+		"animation.itp_spring_bonnie.new_idle_5": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [
+						45,
+						0,
+						0
+					]
+				},
+				"feddyHed3": {
+					"rotation": [
+						-49.01916,
+						-11.43563,
+						-9.77243
+					],
+					"position": [
+						0,
+						2,
+						-5
+					]
+				},
+				"jaw3": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"armL": {
+					"rotation": [
+						-7.56186,
+						-8.56867,
+						-28.79902
+					]
+				},
+				"lower": {
+					"rotation": [
+						0,
+						-20,
+						27.5
+					]
+				},
+				"armR": {
+					"rotation": [
+						-125.66375,
+						48.01549,
+						-69.51885
+					]
+				},
+				"lower2": {
+					"rotation": [
+						-89.91615,
+						-1.29876,
+						-7.38733
+					]
+				},
+				"legL": {
+					"rotation": [
+						-37.5,
+						-7.5,
+						0
+					]
+				},
+				"lower4": {
+					"rotation": [
+						43.39868,
+						29.11624,
+						11.24833
+					]
+				},
+				"lower3": {
+					"rotation": [
+						32.5,
+						0,
+						0
+					]
+				},
+				"legR": {
+					"rotation": [
+						-36.54514,
+						9.06524,
+						12.0012
+					]
 				}
 			}
 		}

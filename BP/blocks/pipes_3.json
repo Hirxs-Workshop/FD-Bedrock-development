@@ -78,7 +78,7 @@
 			}
 		],
 		"components": {
-						"minecraft:material_instances": {
+			"minecraft:material_instances": {
 				"*": {
 					"texture": "pipes",
 					"render_method": "alpha_test"

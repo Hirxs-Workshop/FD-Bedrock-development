@@ -29,8 +29,8 @@
 						"run_command": {
 							"command": [
 								"replaceitem entity @s[type=player,hasitem={location=slot.armor.chest,item=fb:springlock_suit_chest_d,quantity=1}] slot.armor.chest 1 fb:springlock_suit_failure_d",
-								"/replaceitem entity @s slot.weapon.mainhand 1 fd:knife",
-								"/scoreboard players reset @s springlock"
+								"replaceitem entity @s slot.weapon.mainhand 1 fd:knife",
+								"scoreboard players reset @s springlock"
 							],
 							"target": "holder"
 						},
@@ -45,8 +45,8 @@
 						"run_command": {
 							"command": [
 								"replaceitem entity @s[type=player,hasitem={location=slot.armor.chest,item=fb:springlock_suit_chest_d,quantity=1}] slot.armor.chest 1 fb:springlock_suit_failure_d",
-								"/replaceitem entity @s slot.weapon.mainhand 1 fd:knife",
-								"/scoreboard players reset @s springlock"
+								"replaceitem entity @s slot.weapon.mainhand 1 fd:knife",
+								"scoreboard players reset @s springlock"
 							],
 							"target": "holder"
 						},

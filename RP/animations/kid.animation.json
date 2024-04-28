@@ -6,41 +6,93 @@
 			"animation_length": 0.875,
 			"bones": {
 				"zkot_b_tommy_gun": {
-					"rotation": [90, 180, -180],
-					"position": [0, 0, 2]
+					"rotation": [
+						90,
+						180,
+						-180
+					],
+					"position": [
+						0,
+						0,
+						2
+					]
 				},
 				"rightArm": {
-					"rotation": [-180, 0, 0],
-					"position": [0, 0, 0]
+					"rotation": [
+						-180,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						0
+					]
 				},
 				"leftArm": {
-					"rotation": [-180, 0, 0]
+					"rotation": [
+						-180,
+						0,
+						0
+					]
 				},
 				"bendy_and_the_ink_machine": {
-					"rotation": [0, 0, 90],
-					"position": [5, -5, 0]
+					"rotation": [
+						0,
+						0,
+						90
+					],
+					"position": [
+						5,
+						-5,
+						0
+					]
 				},
 				"bone2": {
-					"rotation": [-55, 0, 0],
-					"position": [0, -5, -2]
+					"rotation": [
+						-55,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-5,
+						-2
+					]
 				},
 				"bone7": {
 					"scale": "1 + math.cos(q.anim_time * 2000) * 0.05"
 				},
 				"bone3": {
-					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * 30", 0, 0],
+					"rotation": [
+						"1.6354+math.cos(q.anim_time*2000)*30",
+						0,
+						0
+					],
 					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
 				},
 				"bone4": {
-					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * -30", 0, 0],
+					"rotation": [
+						"1.6354+math.cos(q.anim_time*2000)*-30",
+						0,
+						0
+					],
 					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
 				},
 				"bone6": {
-					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * 30", 0, 0],
+					"rotation": [
+						"1.6354+math.cos(q.anim_time*2000)*30",
+						0,
+						0
+					],
 					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
 				},
 				"bone5": {
-					"rotation": ["1.6354 + math.cos(q.anim_time * 2000) * -30", 0, 0],
+					"rotation": [
+						"1.6354+math.cos(q.anim_time*2000)*-30",
+						0,
+						0
+					],
 					"scale": "1 + math.cos(q.anim_time * 2000) * 0.1"
 				}
 			}
@@ -49,12 +101,28 @@
 			"loop": true,
 			"bones": {
 				"zkot_b_tommy_gun": {
-					"rotation": [-269.28138, -240.4628, 143.2028],
-					"position": [2, -11, 7]
+					"rotation": [
+						-269.28138,
+						-240.4628,
+						143.2028
+					],
+					"position": [
+						2,
+						-11,
+						7
+					]
 				},
 				"bone2": {
-					"rotation": [-100, 0, 0],
-					"position": [0, 0, 6]
+					"rotation": [
+						-100,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						6
+					]
 				}
 			}
 		},
@@ -64,14 +132,38 @@
 			"bones": {
 				"zkot_b_tommy_gun": {
 					"rotation": {
-						"0.0": [-269.28138, -240.4628, 143.2028],
-						"0.875": [-286.9966, -240.73467, 146.67087],
-						"1.75": [-269.28138, -240.4628, 143.2028]
+						"0.0": [
+							-269.28138,
+							-240.4628,
+							143.2028
+						],
+						"0.875": [
+							-286.9966,
+							-240.73467,
+							146.67087
+						],
+						"1.75": [
+							-269.28138,
+							-240.4628,
+							143.2028
+						]
 					},
 					"position": {
-						"0.0": [2, -4, 4],
-						"1.75": [2, -4, 4],
-						"2.25": [2, -4, 4]
+						"0.0": [
+							2,
+							-4,
+							4
+						],
+						"1.75": [
+							2,
+							-4,
+							4
+						],
+						"2.25": [
+							2,
+							-4,
+							4
+						]
 					}
 				}
 			}
@@ -82,13 +174,33 @@
 			"bones": {
 				"zkot_b_tommy_gun": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.1667": [0, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1667": [
+							0,
+							0,
+							0
+						]
 					},
 					"position": {
-						"0.0": [0, 0, 0],
-						"0.0833": [0, -1, 0],
-						"0.1667": [0, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0833": [
+							0,
+							-1,
+							0
+						],
+						"0.1667": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			}

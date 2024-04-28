@@ -811,7 +811,7 @@
 						"run_command": {
 							"target": "other",
 							"command": [
-								"title @s actionbar §7The speaker is playing... §l§f[Follow Me]"
+								"title @s actionbar §7The speaker is playing... §l§f[Forgotten Notes]"
 							]
 						}
 					}
@@ -1084,12 +1084,12 @@
 					"minecraft:on_interact": {
 						"event": "fb:switch_1"
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1101,12 +1101,12 @@
 					"minecraft:on_interact": {
 						"event": "fb:switch_2"
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:ticking": {
 						"looping": true,
 						"range": [
@@ -1140,12 +1140,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1168,12 +1168,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1196,12 +1196,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1224,12 +1224,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1252,12 +1252,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1280,12 +1280,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1308,12 +1308,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1336,12 +1336,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1364,12 +1364,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1392,12 +1392,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1420,12 +1420,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}
@@ -1448,12 +1448,12 @@
 							"target": "block"
 						}
 					},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_speakers_2",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:on_player_destroyed": {
 						"event": "fb:destroy"
 					}

@@ -12,10 +12,22 @@
 					0,
 					1
 				],
-				"fd:north": [false, true],
-				"fd:south": [false, true],
-				"fd:west": [false, true],
-				"fd:east": [false, true],
+				"fd:north": [
+					false,
+					true
+				],
+				"fd:south": [
+					false,
+					true
+				],
+				"fd:west": [
+					false,
+					true
+				],
+				"fd:east": [
+					false,
+					true
+				],
 				"p:changer": [
 					0,
 					1,

@@ -9,7 +9,8 @@
 			},
 			"textures": {
 				"default": "textures/entity/fnaf2/toy_freddy",
-				"blue": "textures/entity/fnaf2/toy_freddy"
+				"blue": "textures/entity/fnaf2/toy_freddy",
+				"red": "textures/entity/fnaf2/vars/buff_toy_freddy"
 			},
 			"animations": {
 				"default_pose": "animation.toy_freddy.idle_test_1",
@@ -43,7 +44,7 @@
 				"default": "geometry.new_toy_freddy"
 			},
 			"render_controllers": [
-				"controller.render.fredbear"
+				"controller.render.three_variants"
 			],
 			"enable_attachables": false,
 			"spawn_egg": {

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "fb:showtime_foxy",
+			"identifier": "fb:showtime_possed_springbonnie",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -23,9 +23,9 @@
 					"fb:rotate"
 				]
 			},
-			"fb:foxy_normal": {
+			"fb:possed_springbonnie_normal": {
 				"minecraft:transformation": {
-					"into": "fb:foxy"
+					"into": "fb:possed_springbonnie"
 				}
 			},
 			"despawn": {
@@ -36,7 +36,7 @@
 					"value": 1
 				},
 				"minecraft:movement": {
-					"value": 0.0
+					"value": 0
 				}
 			},
 			"stop_work": {
@@ -44,7 +44,7 @@
 					"value": 2
 				},
 				"minecraft:movement": {
-					"value": 0.0
+					"value": 0
 				}
 			},
 			"bridge:execute_command_id_1": {
@@ -80,7 +80,7 @@
 				"interactions": [
 					{
 						"hurt_item": 2,
-						"interact_text": "fb.foxy.nose",
+						"interact_text": "fb.possed_springbonnie.nose",
 						"on_interact": {
 							"event": "nose",
 							"target": "self",
@@ -184,7 +184,7 @@
 				]
 			},
 			"minecraft:knockback_resistance": {
-				"value": 2.0
+				"value": 2
 			},
 			"minecraft:nameable": {},
 			"minecraft:breathable": {
@@ -213,7 +213,7 @@
 			"nose": {
 				"run_command": {
 					"command": [
-						"playanimation @s animation.fb_foxy.nose",
+						"playanimation @s animation.fb_possed_springbonnie.nose",
 						"effect @s slowness 1 2 true"
 					]
 				}
@@ -257,10 +257,10 @@
 					]
 				}
 			},
-			"fb:foxy_normal": {
+			"fb:possed_springbonnie_normal": {
 				"add": {
 					"component_groups": [
-						"fb:foxy_normal"
+						"fb:possed_springbonnie_normal"
 					]
 				}
 			},

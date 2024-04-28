@@ -69,8 +69,8 @@
 			"set_position_1": {
 				"run_command": {
 					"command": [
-						"/summon fb:stage_plate_foxy",
-						"/function freddy_text"
+						"summon fb:stage_plate_foxy",
+						"function freddy_text"
 					],
 					"target": "block"
 				}

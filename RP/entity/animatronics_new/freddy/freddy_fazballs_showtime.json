@@ -1,34 +1,33 @@
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "fb:showtime_freddy_fazbear",
-      "materials": {
-        "default": "enderman"
-      },
-      "textures": {
-        "default": "textures/entity/fnaf1/freddy"
-      },
-      "geometry": {
-        "default": "geometry.new_freddy_fazbear"
-      },
-      "animations": {
-        "showtime": "animation.feddy.geo.stage",
-        "showtime_off": "animation.feddy.geo.CAM1A",
-        "showtime_ex": "controller.animation.fb_animatronics.showtime"
-      },
-      "scripts": {
-        "animate": [
-          "showtime_ex"
-        ]
-      },
-      "render_controllers": [
-        "controller.render.nothing"
-      ],
-      "spawn_egg": {
-        "base_color": "#a64d00",
-        "overlay_color": "#e98835"
-      }
-    }
-  }
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:showtime_freddy_fazbear",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf1/freddy"
+			},
+			"geometry": {
+				"default": "geometry.new_freddy_fazbear"
+			},
+			"animations": {
+				"showtime": "animation.feddy.geo.stage",
+				"showtime_off": "animation.feddy.geo.CAM1A",
+				"showtime_ex": "controller.animation.fb_animatronics.showtime"
+			},
+			"scripts": {
+				"animate": [
+					"showtime_ex"
+				]
+			},
+			"render_controllers": [
+				"controller.render.nothing"
+			],
+			"spawn_egg": {
+				"texture": "freddy_icon_showtime"
+			}
+		}
+	}
 }

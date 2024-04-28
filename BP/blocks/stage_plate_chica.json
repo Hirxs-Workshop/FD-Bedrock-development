@@ -69,8 +69,8 @@
 			"set_position_1": {
 				"run_command": {
 					"command": [
-						"/summon fb:stage_plate_chica_chicken",
-						"/function chica_text"
+						"summon fb:stage_plate_chica_chicken",
+						"function chica_text"
 					],
 					"target": "block"
 				}

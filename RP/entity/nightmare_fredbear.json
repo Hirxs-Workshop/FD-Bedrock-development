@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:nightmare_fredbear",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf4/nightmare_fredbear"
+			},
+			"animations": {
+				"default_pose": "animation.Nightmare_fredbear.idle_1",
+				"no_pose": "animation.Nightmare_fredbear.idle_2",
+				"solemn_pose": "animation.Nightmare_fredbear.idle_3",
+				"athena_pose": "animation.Nightmare_fredbear.idle_4",
+				"brandish_pose": "animation.Nightmare_fredbear.idle_5",
+				"honor_pose": "animation.Nightmare_fredbear.idle_1",
+				"entertain_pose": "animation.Nightmare_fredbear.idle_2",
+				"salute_pose": "animation.Nightmare_fredbear.idle_3",
+				"riposte_pose": "animation.Nightmare_fredbear.idle_4",
+				"zombie_pose": "animation.Nightmare_fredbear.idle_5",
+				"cancan_a_pose": "animation.Nightmare_fredbear.idle_1",
+				"cancan_b_pose": "animation.Nightmare_fredbear.idle_2",
+				"hero_pose": "animation.Nightmare_fredbear.idle_3",
+				"wiggle": "animation.Nightmare_fredbear.idle_4",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.new_nightmare_fredbear"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"base_color": "#54340C",
+				"overlay_color": "#A37C19"
+			}
+		}
+	}
+}

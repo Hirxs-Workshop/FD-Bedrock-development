@@ -7,7 +7,7 @@
 				"default": {
 					"transitions": [
 						{
-							"ventstep": "query.ground_speed && query.variant == 2"
+							"ventstep": "query.ground_speed&&query.variant==2"
 						}
 					]
 				},
@@ -126,10 +126,10 @@
 				"default": {
 					"transitions": [
 						{
-							"crouch": "query.variant == 1"
+							"crouch": "query.variant==1"
 						},
 						{
-							"ventilation": "query.variant == 2"
+							"ventilation": "query.variant==2"
 						}
 					],
 					"on_entry": [
@@ -142,10 +142,10 @@
 					],
 					"transitions": [
 						{
-							"default": "query.variant == 0"
+							"default": "query.variant==0"
 						},
 						{
-							"ventilation": "query.variant == 2"
+							"ventilation": "query.variant==2"
 						}
 					]
 				},
@@ -155,10 +155,10 @@
 					],
 					"transitions": [
 						{
-							"default": "query.variant == 0"
+							"default": "query.variant==0"
 						},
 						{
-							"crouch": "query.variant == 1"
+							"crouch": "query.variant==1"
 						}
 					]
 				}

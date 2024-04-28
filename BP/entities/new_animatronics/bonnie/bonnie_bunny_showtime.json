@@ -36,7 +36,7 @@
 					"value": 1
 				},
 				"minecraft:movement": {
-					"value": 0.0
+					"value": 0
 				}
 			},
 			"stop_work": {
@@ -44,7 +44,7 @@
 					"value": 2
 				},
 				"minecraft:movement": {
-					"value": 0.0
+					"value": 0
 				}
 			},
 			"bridge:execute_command_id_1": {
@@ -184,7 +184,7 @@
 				]
 			},
 			"minecraft:knockback_resistance": {
-				"value": 2.0
+				"value": 2
 			},
 			"minecraft:nameable": {},
 			"minecraft:breathable": {

@@ -11,20 +11,20 @@
 				"default": "textures/entity/jr_cat"
 			},
 			"animations": {
-				"default_pose": "animation.freddy.off",
-				"no_pose": "animation.freddy.showtime",
-				"solemn_pose": "animation.freddy.showtime2",
-				"athena_pose": "animation.freddy.attack",
-				"brandish_pose": "animation.freddy.off",
-				"honor_pose": "animation.freddy.showtime",
-				"entertain_pose": "animation.freddy.showtime2",
-				"salute_pose": "animation.freddy.attack",
-				"riposte_pose": "animation.freddy.off",
-				"zombie_pose": "animation.freddy.showtime",
-				"cancan_a_pose": "animation.freddy.showtime2",
-				"cancan_b_pose": "animation.freddy.attack",
-				"hero_pose": "animation.freddy.off",
-				"wiggle": "animation.armor_stand.wiggle",
+				"default_pose": "",
+				"no_pose": "",
+				"solemn_pose": "",
+				"athena_pose": "",
+				"brandish_pose": "",
+				"honor_pose": "",
+				"entertain_pose": "",
+				"salute_pose": "",
+				"riposte_pose": "",
+				"zombie_pose": "",
+				"cancan_a_pose": "",
+				"cancan_b_pose": "",
+				"hero_pose": "",
+				"wiggle": "",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -39,14 +39,15 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.jr-cat"
+				"default": "geometry.new_jr_cat"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"texture": "jr_cat_icon"
+				"base_color": "#FFBF00",
+				"overlay_color": "#FFD580"
 			}
 		}
 	}

@@ -1,13 +1,5 @@
 
 class Utilities {
-  isVanilla(block) {
-    return block.typeId.startsWith("minecraft:");
-  }
-
-  isBedrock(block) {
-    return block.typeId == "minecraft:bedrock";
-  }
-
   getName(entity, nametag) {
     if (!entity) return;
 

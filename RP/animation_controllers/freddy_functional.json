@@ -9,7 +9,7 @@
 					],
 					"transitions": [
 						{
-							"default": "variable.attack_time <= 0.0 && query.all_animations_finished"
+							"default": "variable.attack_time<=0&&query.all_animations_finished"
 						}
 					],
 					"blend_transition": 0.3
@@ -17,16 +17,16 @@
 				"default": {
 					"animations": [
 						{
-							"idle": "query.modified_move_speed < 0.1"
+							"idle": "query.modified_move_speed<0.1"
 						},
 						{
-							"walk": "query.modified_move_speed > 0.1"
+							"walk": "query.modified_move_speed>0.1"
 						},
 						"look_at_target"
 					],
 					"transitions": [
 						{
-							"attack": "variable.attack_time > 0.0"
+							"attack": "variable.attack_time>0"
 						}
 					],
 					"blend_transition": 0.3

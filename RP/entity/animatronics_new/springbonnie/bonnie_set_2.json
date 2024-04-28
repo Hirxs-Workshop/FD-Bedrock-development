@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "fb:stage_plate_mark_bonnie_bunny1",
+			"identifier": "fb:stage_plate_mark_possed_springbonnie1",
 			"materials": {
 				"default": "entity_alphatest"
 			},

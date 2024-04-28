@@ -77,7 +77,7 @@
 				"flame_odds": 30,
 				"burn_odds": 30
 			},
-			"minecraft:geometry": "geometry.stage_floor_2",
+			"minecraft:geometry": "geometry.stage_floor",
 			"minecraft:aim_collision": {
 				"origin": [
 					-8,

@@ -3,36 +3,97 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:ff2_poster_2",
-			"is_experimental": false,
 			"properties": {
-				"bridge:block_rotation": [
+				"p:facing": [
+					0,
+					1,
 					2,
-					3,
-					4,
-					5
+					3
+				],
+				"p:changer": [
+					0,
+					1
 				]
 			}
 		},
-		"components": {
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						"allowed_faces": [
-							"side"
-						]
-					}
-				]
+		"permutations": [
+			{
+				"condition": "q.block_property('p:facing') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
 			},
-			"minecraft:geometry": "geometry.fnaf_2_poster_2",
+			{
+				"condition": "q.block_property('p:facing') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:facing') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.fnaf_2_poster_2"
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.fnaf_2_poster_22"
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.Construction"
+			},
+			"minecraft:map_color": "#738E25",
+			"minecraft:destroy_time": 4,
+			"minecraft:explosion_resistance": 4,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"flame_odds": 30,
+				"burn_odds": 30
+			},
+			"minecraft:geometry": "geometry.fnaf3_poster",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "fb_fnaf2c",
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:pick_collision": {
+			"minecraft:aim_collision": {
 				"origin": [
-					-7,
+					-8,
 					0,
 					6
 				],
@@ -44,7 +105,7 @@
 			},
 			"minecraft:entity_collision": {
 				"origin": [
-					-7,
+					-8,
 					0,
 					6
 				],
@@ -54,61 +115,25 @@
 					2
 				]
 			},
-			"minecraft:block_light_absorption": 0,
 			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
-			},
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "construction"
+				"event": "e:set.facing"
 			}
 		},
-		"permutations": [
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						270,
-						0
-					]
-				}
-			},
-			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
-				}
-			}
-		],
 		"events": {
-			"bridge:update_rotation": {
+			"e:set.facing": {
 				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
+					"p:facing": "q.cardinal_facing_2d-2"
+				}
+			},
+			"e:cycle_changer": {
+				"set_block_property": {
+					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
 				}
 			}
 		}

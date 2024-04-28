@@ -1,36 +1,36 @@
 {
-    "format_version": "1.10.0",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "fb:new_office_door",
-            "materials": {
-                "default": "npc"
-            },
-            "textures": {
-                "default": "textures/blocks/office_door_test"
-            },
-            "geometry": {
-                "default": "geometry.office_door_test"
-            },
-            "animations": {
-                "fb_closed_door_ex": "animation.door_close",
-                "fb_open_door_ex": "animation.door_open",
-                "fb_control_door_ex": "controller.animation.fb_control_door_ex"
-            },
-            "scripts": {
-                "animate": [
-                    "fb_control_door_ex"
-                ]
-            },
-            "sound_effects": {
-                "fb_door": "door.fnaf1"
-            },
-            "render_controllers": [
-                "controller.render.item"
-            ],
-            "spawn_egg": {
-                "texture": "test_icon"
-            }
-        }
-    }
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:new_office_door",
+			"materials": {
+				"default": "npc"
+			},
+			"textures": {
+				"default": "textures/blocks/office_door_test"
+			},
+			"geometry": {
+				"default": "geometry.office_door_test"
+			},
+			"animations": {
+				"fb_closed_door_ex": "animation.door_close",
+				"fb_open_door_ex": "animation.door_open",
+				"fb_control_door_ex": "controller.animation.fb_control_door_ex"
+			},
+			"scripts": {
+				"animate": [
+					"fb_control_door_ex"
+				]
+			},
+			"sound_effects": {
+				"fb_door": "door.fnaf1"
+			},
+			"render_controllers": [
+				"controller.render.item"
+			],
+			"spawn_egg": {
+				"texture": "test_icon"
+			}
+		}
+	}
 }

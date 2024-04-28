@@ -51,8 +51,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#3B2278",
-				"overlay_color": "#9F94CB"
+				"texture": "bonnie_icon_normal"
 			}
 		}
 	}

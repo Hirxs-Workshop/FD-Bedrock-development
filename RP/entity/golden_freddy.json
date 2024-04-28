@@ -47,8 +47,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#BFB832",
-				"overlay_color": "#888C0C"
+				"texture": "golden_freddy_icon_normal"
 			}
 		}
 	}

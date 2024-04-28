@@ -90,6 +90,306 @@
 										}
 									]
 								},
+								"event": "fb:color_blue"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:blue": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
+								"event": "fb:color_red"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:red": {
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
+								"event": "fb:color_purple"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:purple": {
+				"minecraft:variant": {
+					"value": 3
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
+								"event": "fb:color_orange"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:orange": {
+				"minecraft:variant": {
+					"value": 3
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
 								"event": "fb:color_default"
 							},
 							"use_item": false,
@@ -176,6 +476,74 @@
 				"add": {
 					"component_groups": [
 						"color:default"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:blue",
+						"color:red",
+						"color:purple",
+						"color:orange"
+					]
+				}
+			},
+			"fb:color_blue": {
+				"add": {
+					"component_groups": [
+						"color:blue"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:red",
+						"color:purple",
+						"color:orange"
+					]
+				}
+			},
+			"fb:color_red": {
+				"add": {
+					"component_groups": [
+						"color:red"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:purple",
+						"color:orange"
+					]
+				}
+			},
+			"fb:color_purple": {
+				"add": {
+					"component_groups": [
+						"color:purple"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:red",
+						"color:orange"
+					]
+				}
+			},
+			"fb:color_orange": {
+				"add": {
+					"component_groups": [
+						"color:orange"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:red",
+						"color:purple"
 					]
 				}
 			},

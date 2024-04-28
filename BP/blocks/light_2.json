@@ -227,13 +227,23 @@
 							"texture": "fb_light_2",
 							"render_method": "alpha_test"
 						}
+					},
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "system:reset"
+						}
 					}
 				}
 			},
 			{
 				"condition": "!q.block_property('p:is_lit')",
 				"components": {
-					"minecraft:block_light_emission": 0
+					"minecraft:block_light_emission": 0,
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "system:reset"
+						}
+					}
 				}
 			},
 			{
@@ -283,7 +293,16 @@
 		"events": {
 			"system:spawn_entity": {
 				"run_command": {
-					"command": "summon fd:lamp_light_ray ~~~"
+					"command": [
+						"summon fd:lamp_light_ray ~~~"
+					]
+				}
+			},
+			"system:reset": {
+				"run_command": {
+					"command": [
+						"event entity @e[r=2] despawn"
+					]
 				}
 			},
 			"e:set.facing": {

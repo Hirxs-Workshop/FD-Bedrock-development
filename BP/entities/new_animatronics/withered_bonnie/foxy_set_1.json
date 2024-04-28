@@ -1,108 +1,108 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "fb:stage_plate_mark_withered_bonnie_nm1",
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false
-        },
-        "component_groups": {
-            "minecraft:dead_": {
-                "minecraft:timer": {
-                    "looping": false,
-                    "randomInterval": false,
-                    "time": 40,
-                    "time_down_event": {
-                        "event": "despawn"
-                    }
-                }
-            },
-            "despawn": {
-                "minecraft:instant_despawn": {}
-            }
-        },
-        "components": {
-            "minecraft:entity_sensor": {
-                "sensor_range": 2,
-                "event_filters": [
-                    {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "fb_withered_bonnie_nm"
-                    }
-                ],
-                "maximum_count": -1,
-                "minimum_count": 1.5,
-                "require_all": false,
-                "event": "despawn"
-            },
-            "minecraft:type_family": {
-                "family": [
-                    "fb_stage_plate_mark_withered_bonnie_nm"
-                ]
-            },
-            "minecraft:health": {
-                "value": 1,
-                "max": 1,
-                "min": 1
-            },
-            "minecraft:damage_sensor": {
-                "triggers": {
-                    "cause": "all",
-                    "deals_damage": false
-                }
-            },
-            "minecraft:fire_immune": true,
-            "minecraft:loot": {
-                "table": "loot_tables/empty.json"
-            },
-            "minecraft:collision_box": {
-                "width": 0,
-                "height": 0
-            },
-            "minecraft:nameable": {
-                "always_show": false,
-                "allow_name_tag_renaming": true
-            },
-            "minecraft:pushable": {
-                "is_pushable": false,
-                "is_pushable_by_piston": false
-            },
-            "minecraft:physics": {}
-        },
-        "events": {
-            "minecraft:entity_spawned": {
-                "randomize": [
-                    {
-                        "add": {
-                            "component_groups": [
-                                "minecraft:dead_"
-                            ]
-                        },
-                        "run_command": {
-                            "command": [
-                                "event entity @e[type=fb:stage_plate_withered_bonnie_nm] despawn",
-                                "event entity @e[type=fb:stage_plate_mark_withered_bonnie_nm2] despawn",
-                                "event entity @e[type=fb:stage_plate_mark_withered_bonnie_nm3] despawn",
-                                "summon fb:stage_plate_withered_bonnie_nm ~ ~ ~"
-                            ],
-                            "target": "self"
-                        }
-                    }
-                ]
-            },
-            "despawn": {
-                "run_command": {
-                    "command": [],
-                    "target": "self"
-                },
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:stage_plate_mark_withered_bonnie_nm1",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:dead_": {
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 40,
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:entity_sensor": {
+				"sensor_range": 2,
+				"event_filters": [
+					{
+						"test": "is_family",
+						"subject": "other",
+						"value": "fb_withered_bonnie_nm"
+					}
+				],
+				"maximum_count": -1,
+				"minimum_count": 1.5,
+				"require_all": false,
+				"event": "despawn"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"fb_stage_plate_mark_withered_bonnie_nm"
+				]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1,
+				"min": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"add": {
+							"component_groups": [
+								"minecraft:dead_"
+							]
+						},
+						"run_command": {
+							"command": [
+								"event entity @e[type=fb:stage_plate_withered_bonnie_nm] despawn",
+								"event entity @e[type=fb:stage_plate_mark_withered_bonnie_nm2] despawn",
+								"event entity @e[type=fb:stage_plate_mark_withered_bonnie_nm3] despawn",
+								"summon fb:stage_plate_withered_bonnie_nm ~ ~ ~"
+							],
+							"target": "self"
+						}
+					}
+				]
+			},
+			"despawn": {
+				"run_command": {
+					"command": [],
+					"target": "self"
+				},
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
 }

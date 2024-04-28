@@ -17,29 +17,55 @@
 				"activation_expression": 1
 			},
 			"minecraft:emitter_shape_point": {
-				"offset": [0, 0.35, 2],
-				"direction": ["Math.random(-0.008, 0.008)", "Math.random(-0.008, 0.008)", "Math.random(-0.008, 0.008)"]
+				"offset": [
+					0,
+					0.35,
+					2
+				],
+				"direction": [
+					"math.random(-0.008,0.008)",
+					"math.random(-0.008,0.008)",
+					"math.random(-0.008,0.008)"
+				]
 			},
 			"minecraft:particle_lifetime_expression": {
-				"max_lifetime": "Math.Random(0.5, 0.5)"
+				"max_lifetime": "math.random(0.5,0.5)"
 			},
 			"minecraft:particle_initial_speed": 1,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [0, 0.25, 0],
+				"linear_acceleration": [
+					0,
+					0.25,
+					0
+				],
 				"linear_drag_coefficient": 0.5
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.5, 0.5],
+				"size": [
+					0.5,
+					0.5
+				],
 				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 1,
 					"texture_height": 12,
-					"uv": [0, "Math.floor(variable.particle_random_2 * 12)"],
-					"uv_size": [1, 1]
+					"uv": [
+						0,
+						"math.floor(variable.particle_random_2*12)"
+					],
+					"uv_size": [
+						1,
+						1
+					]
 				}
 			},
 			"minecraft:particle_appearance_tinting": {
-				"color": ["Math.sin(variable.particle_random_2*120) * 0.65 + 0.35", "Math.sin((variable.particle_random_2)*120) * 0.65 + 0.35", "Math.sin((variable.particle_random_2)*120) * 0.65 + 0.35", "Math.sin(variable.particle_random_2*180) + 0.35"]
+				"color": [
+					"Math.sin(variable.particle_random_2*120) * 0.65 + 0.35",
+					"Math.sin((variable.particle_random_2)*120) * 0.65 + 0.35",
+					"Math.sin((variable.particle_random_2)*120) * 0.65 + 0.35",
+					"Math.sin(variable.particle_random_2*180) + 0.35"
+				]
 			}
 		}
 	}

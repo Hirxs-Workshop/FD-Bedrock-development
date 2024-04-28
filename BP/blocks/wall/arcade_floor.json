@@ -62,7 +62,7 @@
 				"seconds_to_destroy": 2
 			},
 			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 2.0
+				"explosion_resistance": 2
 			},
 			"minecraft:light_dampening": 15,
 			"minecraft:breathability": "air",
@@ -71,8 +71,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.solid_block_2",
-				"culling": "test:demo"
+				"identifier": "geometry.solid_block_2"
 			},
 			"minecraft:collision_box": {
 				"origin": [

@@ -109,12 +109,12 @@
 			"fb:electric_fuction": {
 				"run_command": {
 					"command": [
-						"fill ~1 ~-1 ~-1 ~-1 ~ ~1 fb:electric_wires_on [] replace fb:electric_wires_off",
-						"fill ~1 ~-2 ~-1 ~-1 ~ ~1 fb:electric_block_on [] replace fb:electric_block_off",
-						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:light_on [] replace fb:light_off",
-						"fill ~1 ~ ~-1 ~-1 ~-3 ~1 fb:lightbulb_on [] replace fb:lightbulb_down",
-						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:vent_light_on [] replace fb:vent_light",
-						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:roof_light_on [] replace fb:roof_light_off",
+						"fill ~ ~2 ~ ~ ~ ~ fb:electric_wires_off [] replace fb:electric_wires_on",
+						"fill ~1 ~ ~-1 ~-1 ~ ~1 fb:electric_block_off [] replace fb:electric_block_on",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:light_off [] replace fb:light_on",
+						"fill ~1 ~ ~-1 ~-1 ~-3 ~1 fb:lightbulb_down [] replace fb:lightbulb_on",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:vent_light [] replace fb:vent_light_on",
+						"fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:roof_light_off [] replace fb:roof_light_on",
 						"function lights_on",
 						"function lights_wires_off"
 					]

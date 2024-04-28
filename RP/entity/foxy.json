@@ -14,8 +14,7 @@
 				"var2": "textures/entity/fnaf1/foxy_the_pirate"
 			},
 			"spawn_egg": {
-				"base_color": "#8d281f",
-				"overlay_color": "#ce7262"
+				"texture": "foxy_icon_normal"
 			},
 			"animations": {
 				"default_pose": "animation.zorra.geo.CAM1Cphase1",

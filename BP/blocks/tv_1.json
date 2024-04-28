@@ -80,12 +80,12 @@
 			{
 				"condition": "q.block_property('p:changer') == 3",
 				"components": {
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_monitors_blue",
-					"render_method": "alpha_test"
-				}
-			},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_monitors_blue",
+							"render_method": "alpha_test"
+						}
+					},
 					"minecraft:geometry": "geometry.new_monitors_3"
 				}
 			}

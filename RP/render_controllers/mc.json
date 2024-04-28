@@ -25,14 +25,14 @@
 					]
 				}
 			},
-			"geometry": "Geometry.default",
+			"geometry": "geometry.default",
 			"materials": [
 				{
-					"*": "Material.default"
+					"*": "material.default"
 				}
 			],
 			"textures": [
-				"Array.variants[query.variant]"
+				"array.variants[query.variant]"
 			],
 			"is_hurt_color": {},
 			"on_fire_color": {}

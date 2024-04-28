@@ -5,55 +5,266 @@
 			"loop": true,
 			"bones": {
 				"LeftArm": {
-					"rotation": [-25, 0, -27.5]
+					"rotation": [
+						-25,
+						0,
+						-27.5
+					]
 				},
 				"LeftLowerArm": {
-					"rotation": [-54.02393, 48.20277, 59.12537]
+					"rotation": [
+						-54.02393,
+						48.20277,
+						59.12537
+					]
 				},
 				"hand2": {
-					"rotation": [37.03902, 50.11358, 26.65818]
+					"rotation": [
+						37.03902,
+						50.11358,
+						26.65818
+					]
 				},
 				"fingers3": {
-					"rotation": [0, 0, 12.5]
+					"rotation": [
+						0,
+						0,
+						12.5
+					]
 				},
 				"thumb3": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [
+						32.5,
+						0,
+						0
+					]
 				},
 				"RightArm": {
-					"rotation": [32.5, 0, 30]
+					"rotation": [
+						32.5,
+						0,
+						30
+					]
 				},
 				"RightLowerArm": {
-					"rotation": [35.09541, 25.71543, -65.19002]
+					"rotation": [
+						35.09541,
+						25.71543,
+						-65.19002
+					]
 				},
 				"Head": {
-					"rotation": [20, 0, 0]
+					"rotation": [
+						20,
+						0,
+						0
+					]
 				},
 				"rightEar": {
-					"rotation": [0, 0, 20]
+					"rotation": [
+						0,
+						0,
+						20
+					]
 				},
 				"leftEar": {
-					"rotation": [0, 0, -20]
+					"rotation": [
+						0,
+						0,
+						-20
+					]
 				},
 				"bone": {
-					"rotation": [2.5, 0, 0]
+					"rotation": [
+						2.5,
+						0,
+						0
+					]
 				},
 				"RightLeg": {
-					"rotation": [9.96271, 0.86717, -4.92442]
+					"rotation": [
+						9.96271,
+						0.86717,
+						-4.92442
+					]
 				},
 				"RightFoot": {
-					"rotation": [-5.12076, 12.45167, -1.10693]
+					"rotation": [
+						-5.12076,
+						12.45167,
+						-1.10693
+					]
 				},
 				"LeftLeg": {
-					"rotation": [-9.96271, 0.86717, 4.92442]
+					"rotation": [
+						-9.96271,
+						0.86717,
+						4.92442
+					]
 				},
 				"LeftLegBottom": {
-					"rotation": [0, 0, -2.5]
+					"rotation": [
+						0,
+						0,
+						-2.5
+					]
 				},
 				"LeftFoot": {
-					"rotation": [17.5, 0, 0]
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
 				},
 				"bone3": {
-					"rotation": [0, 0, -20]
+					"rotation": [
+						0,
+						0,
+						-20
+					]
+				}
+			}
+		},
+		"animation.kagaroo.idle_test2": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [
+						-64.28216,
+						12.56997,
+						-19.63023
+					]
+				},
+				"LeftLowerArm": {
+					"rotation": [
+						-28.52829,
+						-5.16927,
+						26.87738
+					]
+				},
+				"hand2": {
+					"rotation": [
+						5.93631,
+						36.00175,
+						0.33125
+					]
+				},
+				"fingers3": {
+					"rotation": [
+						0,
+						-12.5,
+						-27.5
+					]
+				},
+				"thumb3": {
+					"rotation": [
+						36.33914,
+						24.94169,
+						17.23442
+					]
+				},
+				"RightArm": {
+					"rotation": [
+						10,
+						0,
+						30
+					]
+				},
+				"RightLowerArm": {
+					"rotation": [
+						-28.89386,
+						53.53486,
+						-51.43447
+					]
+				},
+				"Head": {
+					"rotation": [
+						-19.88205,
+						-15.81028,
+						8.63958
+					]
+				},
+				"rightEar": {
+					"rotation": [
+						22.5,
+						0,
+						20
+					]
+				},
+				"leftEar": {
+					"rotation": [
+						32.5,
+						0,
+						-20
+					]
+				},
+				"bone": {
+					"rotation": [
+						2.5,
+						0,
+						0
+					]
+				},
+				"RightLeg": {
+					"rotation": [
+						12.26758,
+						-2.15393,
+						12.31593
+					]
+				},
+				"RightFoot": {
+					"rotation": [
+						-5.12076,
+						12.45167,
+						-1.10693
+					]
+				},
+				"LeftLeg": {
+					"rotation": [
+						-17.33232,
+						-17.90639,
+						-2.30797
+					]
+				},
+				"LeftLegBottom": {
+					"rotation": [
+						5,
+						0,
+						-2.5
+					]
+				},
+				"LeftFoot": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				},
+				"bone3": {
+					"rotation": [
+						0,
+						0,
+						-20
+					]
+				},
+				"toy_chica": {
+					"position": [
+						-9,
+						0,
+						9
+					]
+				},
+				"Body": {
+					"rotation": [
+						9.85108,
+						-1.72794,
+						24.85108
+					],
+					"position": [
+						1,
+						1,
+						-1
+					]
 				}
 			}
 		}

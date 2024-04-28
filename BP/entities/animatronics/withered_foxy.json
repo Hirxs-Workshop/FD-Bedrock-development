@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "fb:withered_foxy",
-			"runtime_identifier": "armor_stand",
+			"runtime_identifier": "minecraft:armor_stand",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -145,6 +145,81 @@
 			"color:blue": {
 				"minecraft:variant": {
 					"value": 1
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:placeholder"
+										}
+									]
+								},
+								"event": "fb:color_default"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.color"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:rotate"
+										}
+									]
+								},
+								"event": "rotate"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.rotate"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "fb:changer_tool_item"
+										}
+									]
+								},
+								"event": "moving"
+							},
+							"use_item": false,
+							"interact_text": "action.interact.move"
+						}
+					]
+				}
+			},
+			"color:red": {
+				"minecraft:variant": {
+					"value": 2
 				},
 				"minecraft:interact": {
 					"interactions": [

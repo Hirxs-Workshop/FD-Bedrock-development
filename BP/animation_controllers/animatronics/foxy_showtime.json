@@ -1,26 +1,26 @@
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.fb_animatronics.showtime": {
-            "states": {
-                "default": {
-                    "transitions": [
-                        {
-                            "dead": "!query.is_alive"
-                        }
-                    ]
-                },
-                "dead": {
-                    "on_entry": [
-                        "@s minecraft:event_spawn_dead"
-                    ],
-                    "transitions": [
-                        {
-                            "default": "query.is_alive"
-                        }
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fb_animatronics.showtime": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"dead": "!query.is_alive"
+						}
+					]
+				},
+				"dead": {
+					"on_entry": [
+						"@s minecraft:event_spawn_dead"
+					],
+					"transitions": [
+						{
+							"default": "query.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
 }

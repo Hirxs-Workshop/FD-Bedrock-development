@@ -13,7 +13,7 @@
 					"face_dimming": false
 				}
 			},
-			"minecraft:geometry": "geometry.balloons_2",
+			"minecraft:geometry": "geometry.balloons",
 			"minecraft:block_light_absorption": 0,
 			"minecraft:block_light_emission": 0,
 			"minecraft:pick_collision": {

@@ -9,7 +9,9 @@
 			},
 			"textures": {
 				"default": "textures/entity/fnaf1/classic_fredbear_22",
-				"blue": "textures/entity/fnaf1/classic_fredbear_2"
+				"blue": "textures/entity/fnaf1/classic_fredbear_2",
+				"red": "textures/entity/fnaf1/vars/tv_fredbear",
+				"purple": "textures/entity/fnaf1/vars/SilverEyesFredbear_1"
 			},
 			"animations": {
 				"default_pose": "animation.fredbear.geo.CAM1A2",
@@ -43,7 +45,7 @@
 				"default": "geometry.the_new_fredbear"
 			},
 			"render_controllers": [
-				"controller.render.fredbear"
+				"controller.render.four_variants"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {

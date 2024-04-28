@@ -8,25 +8,103 @@
 				"texture_height": 64,
 				"visible_bounds_width": 5,
 				"visible_bounds_height": 4,
-				"visible_bounds_offset": [0, 0, 0]
+				"visible_bounds_offset": [
+					0,
+					0,
+					0
+				]
 			},
 			"bones": [
 				{
 					"name": "bb_main",
-					"pivot": [0, 0, 0],
+					"pivot": [
+						0,
+						0,
+						0
+					],
 					"cubes": [
 						{
-							"origin": [-11, -26.8724, -10.99617],
-							"size": [30, 34, 0],
-							"pivot": [0, 5.1276, -10.99617],
-							"rotation": [-90, -40, 90],
+							"origin": [
+								-11,
+								-26.8724,
+								-10.99617
+							],
+							"size": [
+								30,
+								34,
+								0
+							],
+							"pivot": [
+								0,
+								5.1276,
+								-10.99617
+							],
+							"rotation": [
+								-90,
+								-40,
+								90
+							],
 							"uv": {
-								"north": {"uv": [57, 0], "uv_size": [-30, 34]},
-								"east": {"uv": [0, 0], "uv_size": [0, 34]},
-								"south": {"uv": [27, 0], "uv_size": [30, 34]},
-								"west": {"uv": [0, 0], "uv_size": [0, 34]},
-								"up": {"uv": [0, 0], "uv_size": [30, 0]},
-								"down": {"uv": [0, 0], "uv_size": [30, 0]}
+								"north": {
+									"uv": [
+										57,
+										0
+									],
+									"uv_size": [
+										-30,
+										34
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										0,
+										34
+									]
+								},
+								"south": {
+									"uv": [
+										27,
+										0
+									],
+									"uv_size": [
+										30,
+										34
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										0,
+										34
+									]
+								},
+								"up": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										30,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										30,
+										0
+									]
+								}
 							}
 						}
 					]

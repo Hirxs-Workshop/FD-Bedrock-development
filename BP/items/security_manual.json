@@ -16,23 +16,9 @@
 				"duration": 5
 			},
 			"minecraft:display_name": {
-				"value": "Security Manual\n§9By Fazbear Entertainment"
-			},
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "execute_form_security"
-				}
+				"value": "Security Manual\n§9By Fazbear Entertainment\n(Decorative for now)"
 			}
 		},
-		"events": {
-			"execute_form_security": {
-				"run_command": {
-					"target": "holder",
-					"command": [
-						"scriptevent fd:security_manual"
-					]
-				}
-			}
-		}
+		"events": {}
 	}
 }

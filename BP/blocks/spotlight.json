@@ -13,18 +13,6 @@
 					5,
 					6
 				],
-				"p:changer": [
-					0,
-					1,
-					2,
-					3,
-					4,
-					5,
-					6,
-					7,
-					8,
-					9
-				],
 				"fb:head_rotation": [
 					"2700",
 					"2475",
@@ -50,8 +38,8 @@
 			"minecraft:block_light_emission": 1,
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "sp0",
-					"render_method": "blend"
+					"texture": "sp1",
+					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:creative_category": {
@@ -103,17 +91,6 @@
 						}
 					}
 				]
-			},
-			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==9?0:q.block_property('p:changer')+1"
-				},
-				"run_command": {
-					"command": [
-						"playsound block.lantern.break @p ~~~",
-						"particle foxes:texture ~~~"
-					]
-				}
 			}
 		},
 		"permutations": [
@@ -362,146 +339,6 @@
 				"condition": "q.block_property('fb:head_rotation') == '2925' && (q.block_property('fb:spotlight_side') == 0 || q.block_property('fb:spotlight_side') == 1 || q.block_property('fb:spotlight_side') == 6)",
 				"components": {
 					"minecraft:geometry": "geometry.bt_head_2925"
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 0",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp0",
-							"render_method": "alpha_test",
-							"geometry": "trash_1",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 1",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp1",
-							"render_method": "alpha_test",
-							"geometry": "trash_2",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp2",
-							"render_method": "alpha_test",
-							"geometry": "trash_2",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp3",
-							"render_method": "alpha_test",
-							"geometry": "trash_2",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp4",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 5",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp5",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 6",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp6",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 7",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp7",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 8",
-				"components": {
-					"minecraft:block_light_emission": 1,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp8",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 9",
-				"components": {
-					"minecraft:block_light_emission": 0,
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "sp9",
-							"render_method": "alpha_test",
-							"geometry": "trash_3",
-							"ambient_occlusion": false
-						}
-					}
 				}
 			}
 		]

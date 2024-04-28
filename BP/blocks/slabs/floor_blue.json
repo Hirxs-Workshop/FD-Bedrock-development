@@ -51,7 +51,9 @@
 					"fb:double": true
 				},
 				"run_command": {
-					"command": "playsound place.deepslate_bricks @a ~~~ 1 0.8"
+					"command": [
+						"playsound place.deepslate_bricks @a ~~~ 1 0.8"
+					]
 				},
 				"decrement_stack": {}
 			},
@@ -97,7 +99,7 @@
 					},
 					"minecraft:on_interact": {
 						"event": "fb:execute_two",
-						"condition": "q.block_face == 1.0 && q.is_item_name_any('slot.weapon.mainhand', 'fb:floor_3_slab')"
+						"condition": "q.block_face==1&&q.is_item_name_any('slot.weapon.mainhand','fb:floor_3_slab')"
 					}
 				}
 			},
@@ -130,7 +132,7 @@
 					},
 					"minecraft:on_interact": {
 						"event": "fb:execute_two",
-						"condition": "q.block_face == 0.0 && q.is_item_name_any('slot.weapon.mainhand', 'fb:slab')"
+						"condition": "q.block_face==0&&q.is_item_name_any('slot.weapon.mainhand','fb:slab')"
 					}
 				}
 			},

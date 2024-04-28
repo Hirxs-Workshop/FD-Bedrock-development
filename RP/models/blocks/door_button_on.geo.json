@@ -8,41 +8,193 @@
 				"texture_height": 64,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 3,
-				"visible_bounds_offset": [0, 0.5, 0]
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
 			},
 			"bones": [
 				{
 					"name": "bone2",
-					"pivot": [0, 0, 0],
-					"rotation": [-180, 0, 180]
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						-180,
+						0,
+						180
+					]
 				},
 				{
 					"name": "bone",
 					"parent": "bone2",
-					"pivot": [0, -8, 2.5],
+					"pivot": [
+						0,
+						-8,
+						2.5
+					],
 					"cubes": [
 						{
-							"origin": [-3.5, 0, 6],
-							"size": [7, 9, 2],
+							"origin": [
+								-3.5,
+								0,
+								6
+							],
+							"size": [
+								7,
+								9,
+								2
+							],
 							"uv": {
-								"north": {"uv": [1, 1], "uv_size": [7, 9], "material_instance": "button"},
-								"east": {"uv": [8, 23], "uv_size": [2, 9], "material_instance": "button"},
-								"south": {"uv": [1, 1], "uv_size": [7, 9], "material_instance": "button"},
-								"west": {"uv": [10, 23], "uv_size": [2, 9], "material_instance": "button"},
-								"up": {"uv": [29, 0], "uv_size": [7, 2], "material_instance": "button"},
-								"down": {"uv": [29, 2], "uv_size": [7, -2], "material_instance": "button"}
+								"north": {
+									"uv": [
+										1,
+										1
+									],
+									"uv_size": [
+										7,
+										9
+									],
+									"material_instance": "button"
+								},
+								"east": {
+									"uv": [
+										8,
+										23
+									],
+									"uv_size": [
+										2,
+										9
+									],
+									"material_instance": "button"
+								},
+								"south": {
+									"uv": [
+										1,
+										1
+									],
+									"uv_size": [
+										7,
+										9
+									],
+									"material_instance": "button"
+								},
+								"west": {
+									"uv": [
+										10,
+										23
+									],
+									"uv_size": [
+										2,
+										9
+									],
+									"material_instance": "button"
+								},
+								"up": {
+									"uv": [
+										29,
+										0
+									],
+									"uv_size": [
+										7,
+										2
+									],
+									"material_instance": "button"
+								},
+								"down": {
+									"uv": [
+										29,
+										2
+									],
+									"uv_size": [
+										7,
+										-2
+									],
+									"material_instance": "button"
+								}
 							}
 						},
 						{
-							"origin": [-3, 0.3, 5.7],
-							"size": [6, 2, 0],
+							"origin": [
+								-3,
+								0.3,
+								5.7
+							],
+							"size": [
+								6,
+								2,
+								0
+							],
 							"uv": {
-								"north": {"uv": [1, 26], "uv_size": [6, 2], "material_instance": "button"},
-								"east": {"uv": [46, 54], "uv_size": [15, 9], "material_instance": "button"},
-								"south": {"uv": [46, 54], "uv_size": [15, 9], "material_instance": "button"},
-								"west": {"uv": [46, 54], "uv_size": [15, 9], "material_instance": "button"},
-								"up": {"uv": [61, 63], "uv_size": [-15, -9], "material_instance": "button"},
-								"down": {"uv": [61, 63], "uv_size": [-15, -9], "material_instance": "button"}
+								"north": {
+									"uv": [
+										1,
+										26
+									],
+									"uv_size": [
+										6,
+										2
+									],
+									"material_instance": "button"
+								},
+								"east": {
+									"uv": [
+										46,
+										54
+									],
+									"uv_size": [
+										15,
+										9
+									],
+									"material_instance": "button"
+								},
+								"south": {
+									"uv": [
+										46,
+										54
+									],
+									"uv_size": [
+										15,
+										9
+									],
+									"material_instance": "button"
+								},
+								"west": {
+									"uv": [
+										46,
+										54
+									],
+									"uv_size": [
+										15,
+										9
+									],
+									"material_instance": "button"
+								},
+								"up": {
+									"uv": [
+										61,
+										63
+									],
+									"uv_size": [
+										-15,
+										-9
+									],
+									"material_instance": "button"
+								},
+								"down": {
+									"uv": [
+										61,
+										63
+									],
+									"uv_size": [
+										-15,
+										-9
+									],
+									"material_instance": "button"
+								}
 							}
 						}
 					]
@@ -50,18 +202,90 @@
 				{
 					"name": "bone3",
 					"parent": "bone",
-					"pivot": [0, 0, 0],
+					"pivot": [
+						0,
+						0,
+						0
+					],
 					"cubes": [
 						{
-							"origin": [-3, 2.4, 5.5],
-							"size": [6, 6, 1],
+							"origin": [
+								-3,
+								2.4,
+								5.5
+							],
+							"size": [
+								6,
+								6,
+								1
+							],
 							"uv": {
-								"north": {"uv": [44, 1], "uv_size": [6, 6], "material_instance": "1button"},
-								"east": {"uv": [43, 1], "uv_size": [1, 6], "material_instance": "1button"},
-								"south": {"uv": [44, 1], "uv_size": [6, 6], "material_instance": "1button"},
-								"west": {"uv": [50, 1], "uv_size": [1, 6], "material_instance": "1button"},
-								"up": {"uv": [44, 0], "uv_size": [6, 1], "material_instance": "1button"},
-								"down": {"uv": [44, 8], "uv_size": [6, -1], "material_instance": "1button"}
+								"north": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										6,
+										6
+									],
+									"material_instance": "1button"
+								},
+								"east": {
+									"uv": [
+										43,
+										1
+									],
+									"uv_size": [
+										1,
+										6
+									],
+									"material_instance": "1button"
+								},
+								"south": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										6,
+										6
+									],
+									"material_instance": "1button"
+								},
+								"west": {
+									"uv": [
+										50,
+										1
+									],
+									"uv_size": [
+										1,
+										6
+									],
+									"material_instance": "1button"
+								},
+								"up": {
+									"uv": [
+										44,
+										0
+									],
+									"uv_size": [
+										6,
+										1
+									],
+									"material_instance": "1button"
+								},
+								"down": {
+									"uv": [
+										44,
+										8
+									],
+									"uv_size": [
+										6,
+										-1
+									],
+									"material_instance": "1button"
+								}
 							}
 						}
 					]

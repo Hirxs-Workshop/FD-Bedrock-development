@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:stage_plate_withered_foxy_nm",
+			"materials": {
+				"default": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/items/placeholder"
+			},
+			"geometry": {
+				"default": "geometry.none"
+			},
+			"render_controllers": [
+				"controller.render.fnaf"
+			],
+			"spawn_egg": {
+				"texture": "null"
+			}
+		}
+	}
+}
