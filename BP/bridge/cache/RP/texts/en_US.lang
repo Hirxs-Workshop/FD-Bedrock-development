@@ -1,8 +1,0 @@
-{
-	"file_path": "C:\\Users\\chupi\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Your Doors RP\\texts\\en_US.lang",
-	"file_type": "client_lang",
-	"format_version": 0,
-	"file_uuid": "3f42bd1c_78f5_451a_b323_47f52d185411",
-	"file_version": 0,
-	"cache_content": "pack.name=Your Doors RP\npack.description=Your Doors Addon RP\ntile.yd:door_coll.name=Door coll\ntile.yd:glass_door.name=Glass door\ntile.yd:door_coll_open.name=Door coll open\ntile.yd:black_glass_block.name=Black glass door\ntile.yd:glass_door_double.name=Glass door double\ntile.yd:black_glass_block_double.name=Black glass door double\ntile.yd:black_iron_glass_door.name=Black iron glass door\ntile.yd:black_iron_glass_door_double.name=Black iron glass door double\ntile.yd:bunker_door.name=Bunker door\ntile.yd:factory_door.name=Factory door\ntile.yd:bar_door.name=Bar door\ntile.yd:shoji_door.name=Shoji door\ntile.yd:shoji_door_double.name=Shoji door double\ntile.yd:shoji_door_with_painting.name=Shoji door with painting\ntile.yd:shoji_door_with_painting_double.name=Shoji door with painting double\ntile.yd:factory_trapdoor.name=Factory trapdoor\nitem.yd:glass_trapdoor.name=Glass trapdoor\n\ntile.yd:glass_trapdoor.name=Glass trapdoor\ntile.yd:barn_door.name=Barn door\ntile.yd:wooden_door_0.name=Wooden door 0\ntile.yd:wooden_door_1.name=Wooden door 1"
-}

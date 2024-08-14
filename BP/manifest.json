@@ -1,7 +1,7 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "(HF) FNaF's Build & Decor | Rotting Dreams - Official Release v4.1",
+		"name": "1.21.20 - FB&D | Rotting Dreams - Official Release v4.4",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?\n\n§l§6Developers:§r§f Hirx's,JennyF,fantasticbob_mc,.cameraman27,chypdo,theforbiddenblock,abcbutter0609,polarfredrick,kristoffer1976,.cameraman27,Cheez & guiy_bonnie\n§l§eSpecial Thanks:§r§f HyruArt\n\n§l§8Insiders/Testers:§r§f Xeno Neo ,ButterM|BM ,Bh11us ,croaked ,doortame ,Elias ,Potato_Fan ,Thomas York ,YellowRabit ,Darkgui ,Springdom ,ZachDoesGames ,The FantasticBOB ,Dargelixt Gamer ,ManSam & Claus\n\n§l§8Supporters:§r§f Stilla ,Big Randy ,danger bonnie ,Sno110 ,InkHayden ,BaconCousinsPartyGG,DoorTame, Canal do lorajo 1.0, TheOfficialCloud, Swang_Idiot4039_GAMING ,v7tor & ZachDoesGames \n\n----------------------------------------------------------------------------\n§l§8Community Server: §r§fhttps://discord.gg/hirxs\n\n§8§lSupport (Bugs & Suggestions): §r§fhttps://hirxs-website.net/community-forums",
 		"min_engine_version": [
 			1,
@@ -12,7 +12,7 @@
 		"version": [
 			4,
 			6,
-			0
+			5
 		]
 	},
 	"modules": [
@@ -22,18 +22,18 @@
 			"version": [
 				4,
 				6,
-				0
+				5
 			]
 		},
 		{
 			"type": "script",
 			"language": "javascript",
 			"uuid": "322cef0e-cca1-427a-91af-ca7bfa460eba",
-			"entry": "scripts/test_maincamerasys.js",
+			"entry": "scripts/main.js",
 			"version": [
 				4,
 				6,
-				0
+				5
 			]
 		}
 	],
@@ -43,32 +43,28 @@
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.10.0-beta"
-		},
-		{
-			"module_name": "@minecraft/server-gametest",
-			"version": "1.0.0-beta"
+			"version": "1.12.0"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
-			"version": "1.2.0-beta"
+			"version": "1.2.0"
 		},
 		{
 			"uuid": "3878e804-61de-46af-a31e-549e3c6d76f7",
 			"version": [
 				4,
 				6,
-				0
+				5
 			]
 		}
 	],
 	"metadata": {
 		"generated_with": {
 			"bridge": [
-				"2.7.15"
+				"2.7.33"
 			],
 			"dash": [
-				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+				"0.11.7"
 			]
 		}
 	}

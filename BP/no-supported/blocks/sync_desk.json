@@ -1,0 +1,165 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:sync_desk",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"ff:is_placed": [
+					0,
+					1
+				],
+				"ff:direction": [
+					0,
+					1,
+					2,
+					3
+				],
+				"ff:multiblock_part": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 10
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					2,
+					-8
+				],
+				"size": [
+					16,
+					7,
+					14
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					2,
+					-8
+				],
+				"size": [
+					16,
+					7,
+					14
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "desk",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "!query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.desk_icon",
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"all"
+								],
+								"block_filter": [
+									"air"
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:multiblock_part') == 0 && query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.desk",
+						"bone_visibility": {
+							"couch_left": false,
+							"couch_corner": false,
+							"couch_middle": false,
+							"couch_right": true,
+							"couch": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:multiblock_part') == 1 && query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.desk",
+						"bone_visibility": {
+							"couch_left": false,
+							"couch_corner": false,
+							"couch_middle": true,
+							"couch_right": false,
+							"couch": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:multiblock_part') == 2 && query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.desk",
+						"bone_visibility": {
+							"couch_left": true,
+							"couch_corner": false,
+							"couch_middle": false,
+							"couch_right": false,
+							"couch": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:direction') == 1",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:direction') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:direction') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

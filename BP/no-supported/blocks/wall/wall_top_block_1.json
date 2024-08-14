@@ -1,0 +1,169 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"menu_category": {
+				"group": "construction",
+				"category": "construction"
+			},
+			"identifier": "fb:wall_top_block_1",
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "wt1",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "wt1",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "wt1",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "wt1",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "wt1",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "wt1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "wt2",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "wt2",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "wt2",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "wt2",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "wt2",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "wt2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "wt3",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "wt3",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "wt3",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "wt3",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "wt3",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "wt3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:wall": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:breathability": "air",
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.wall_blocks"
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
+		"events": {
+			"e:cycle_changer": {
+				"set_block_state": {
+					"p:changer": "q.block_state('p:changer')==2?0:q.block_state('p:changer')+1"
+				},
+				"run_command": {
+					"command": [
+						"playsound lantern.break @p ~~~",
+						"particle foxes:texture ~~~"
+					]
+				}
+			}
+		}
+	}
+}

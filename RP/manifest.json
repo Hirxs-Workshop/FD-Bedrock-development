@@ -1,7 +1,7 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "(HF) FNaF's Build & Decor | Rotting Dreams - Official Release v4.1",
+		"name": "1.21.20 - FNaF's Build & Decor | Rotting Dreams - Official Release v4.4",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
@@ -12,7 +12,7 @@
 		"version": [
 			4,
 			6,
-			0
+			5
 		]
 	},
 	"modules": [
@@ -22,7 +22,7 @@
 			"version": [
 				4,
 				6,
-				0
+				5
 			]
 		}
 	],
@@ -32,7 +32,7 @@
 			"version": [
 				4,
 				6,
-				0
+				5
 			]
 		}
 	],
@@ -67,7 +67,7 @@
 		},
 		{
 			"type": "label",
-			"text": "§r§f- Stilla\n- Big Randy\n- danger bonnie\n- Sno110\n- InkHayden\n- BaconCousinsPartyGG\n- DoorTame\n- Canal do lorajo 1.0\n- TheOfficialCloud\n- Swang_Idiot4039_GAMING\n- v7tor\n- ZachDoesGames"
+			"text": "§r§f- Stilla\n- Big Randy"
 		},
 		{
 			"type": "label",
@@ -93,10 +93,10 @@
 	"metadata": {
 		"generated_with": {
 			"bridge": [
-				"2.7.15"
+				"2.7.33"
 			],
 			"dash": [
-				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+				"0.11.7"
 			]
 		}
 	}

@@ -1,8 +1,0 @@
-{
-	"file_path": "C:\\Users\\chupi\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Your Doors RP\\texts\\es_ES.lang",
-	"file_type": "client_lang",
-	"format_version": 0,
-	"file_uuid": "9ba0001f_1560_4d58_a4bb_0d05cd3acc18",
-	"file_version": 1,
-	"cache_content": "pack.name=Your Doors RP\npack.description=Your Doors Addon RP\ntile.yd:door_coll.name=Door coll\ntile.yd:glass_door.name=Puerta de crital\ntile.yd:door_coll_open.name=Door coll open\ntile.yd:black_glass_block.name=Puerta de cristal tintado de negro\ntile.yd:glass_door_double.name=Puerta de cristal 2\ntile.yd:black_glass_block_double.name=Puerta de cristal tintado de negro 2\ntile.yd:black_iron_glass_door.name=Puerta negra de hierro y cristal\ntile.yd:black_iron_glass_door_double.name=Puerta negra de hierro y cristal 2\ntile.yd:bunker_door.name=Puerta de bunker\ntile.yd:factory_door.name=Puerta de fabrica\ntile.yd:bar_door.name=Puerta del oeste\ntile.yd:shoji_door.name=Puerta shoji\ntile.yd:shoji_door_double.name=Puerta shoji 2\ntile.yd:shoji_door_with_painting.name=Puerta shoji con pintura\ntile.yd:shoji_door_with_painting_double.name=Puerta shoji con pintura 2\ntile.yd:factory_trapdoor.name=Trampilla de fabrica\nitem.yd:glass_trapdoor.name=Trampilla de cristal\n\ntile.yd:glass_trapdoor.name=Trampilla de cristal\ntile.yd:barn_door.name=Puerta de granero\ntile.yd:wooden_door_0.name=Puerta de madera 0\ntile.yd:wooden_door_1.name=Puerta de madera 1"
-}

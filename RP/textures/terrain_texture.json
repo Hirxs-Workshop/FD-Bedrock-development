@@ -22,6 +22,9 @@
 		"4": {
 			"textures": "textures/blocks/shelf/4"
 		},
+		"sync_desk_props": {
+			"textures": "textures/blocks/sync_desk_props"
+		},
 		"5": {
 			"textures": "textures/blocks/shelf/5"
 		},

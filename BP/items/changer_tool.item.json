@@ -1,38 +1,26 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:changer_tool_item",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:icon": {
+				"textures": {
+					"default": "fb_item"
+				}
+			},
 			"minecraft:display_name": {
 				"value": "item.fb_changer_tool_item.name"
 			},
-			"minecraft:icon": {
-				"texture": "fb_item"
-			},
-			"minecraft:creative_category": {
-				"parent": "equipment"
-			},
-			"minecraft:allow_off_hand": true,
-			"minecraft:hand_equipped": true,
-			"minecraft:stacked_by_data": false,
-			"minecraft:max_stack_size": 1,
-			"minecraft:durability": {
-				"max_durability": 100000000,
-				"damage_chance": {
-					"min": 1,
-					"max": 1
-				}
-			},
-			"minecraft:on_use_on": {
-				"on_use_on": {
-					"event": "e:cycle_changer",
-					"target": "block"
-				}
-			}
-		},
-		"events": {}
+			"minecraft:custom_components": [
+				"test:changer_tool"
+			]
+		}
 	}
 }
