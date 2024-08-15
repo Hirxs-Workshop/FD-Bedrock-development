@@ -1,5 +1,3 @@
-![Image](https://raw.githubusercontent.com/Hirxs-MC/FD-Bedrock-development/main/FNAF%E2%80%99S%20DECORATIONS.svg)
-
 > [!NOTE]
 > 🔧 This is a tutorial in which you can make a rotating block using "traits", this in order for you to be able to support 1.21.20 for your block
 
