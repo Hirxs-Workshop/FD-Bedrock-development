@@ -6,7 +6,7 @@
 				"group": "construction",
 				"category": "construction"
 			},
-			"identifier": "fb:wall_top_block_1",
+			"identifier": "fb:fnaf2_wall",
 			"states": {
 				"p:changer": [
 					0,
@@ -21,8 +21,8 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "wt1",
-							"render_method": "alpha_test"
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -31,9 +31,17 @@
 				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
+						"up": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
 						"*": {
-							"texture": "wt2",
-							"render_method": "alpha_test"
+							"texture": "fnaf2_wall_texture_2",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -42,9 +50,17 @@
 				"condition": "q.block_state('p:changer') == 2",
 				"components": {
 					"minecraft:material_instances": {
+						"up": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "fnaf2_wall_texture",
+							"render_method": "opaque"
+						},
 						"*": {
-							"texture": "wt3",
-							"render_method": "alpha_test"
+							"texture": "fnaf_2_wall_middle_confetti",
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -52,7 +68,6 @@
 		],
 		"components": {
 			"tag:wall": {},
-			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 2
 			},
@@ -65,7 +80,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.wall_blocks"
+				"identifier": "geometry.solid_block_2"
 			},
 			"minecraft:collision_box": {
 				"origin": [

@@ -20,27 +20,7 @@
 				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
-						"up": {
-							"texture": "wt12",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "wt12",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "wt12",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "wt12",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "wt12",
-							"render_method": "alpha_test"
-						},
-						"east": {
+						"*": {
 							"texture": "wt12",
 							"render_method": "alpha_test"
 						}
@@ -51,27 +31,7 @@
 				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
-						"up": {
-							"texture": "wt22",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "wt22",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "wt22",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "wt22",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "wt22",
-							"render_method": "alpha_test"
-						},
-						"east": {
+						"*": {
 							"texture": "wt22",
 							"render_method": "alpha_test"
 						}
@@ -82,27 +42,7 @@
 				"condition": "q.block_state('p:changer') == 2",
 				"components": {
 					"minecraft:material_instances": {
-						"up": {
-							"texture": "wt32",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "wt32",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "wt32",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "wt32",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "wt32",
-							"render_method": "alpha_test"
-						},
-						"east": {
+						"*": {
 							"texture": "wt32",
 							"render_method": "alpha_test"
 						}
