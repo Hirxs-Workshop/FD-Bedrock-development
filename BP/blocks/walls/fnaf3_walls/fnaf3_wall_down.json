@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.fnaf_3_dirty",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "fnaf3wall_down",

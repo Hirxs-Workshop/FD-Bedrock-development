@@ -4,14 +4,6 @@
 		"description": {
 			"identifier": "fb:ffd_wall_middle_2",
 			"is_experimental": false,
-			"properties": {
-				"bridge:block_rotation": [
-					2,
-					3,
-					4,
-					5
-				]
-			},
 			"menu_category": {
 				"category": "construction"
 			}
@@ -27,19 +19,7 @@
 					"texture": "new_exterior_ffd_wall_middle",
 					"render_method": "opaque"
 				},
-				"north": {
-					"texture": "new_exterior_ffd_wall_tiles",
-					"render_method": "opaque"
-				},
-				"west": {
-					"texture": "new_exterior_ffd_wall_tiles",
-					"render_method": "opaque"
-				},
-				"south": {
-					"texture": "new_exterior_ffd_wall_tiles",
-					"render_method": "opaque"
-				},
-				"east": {
+				"*": {
 					"texture": "new_exterior_ffd_wall_tiles",
 					"render_method": "opaque"
 				}

@@ -28,7 +28,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.solid_block_2"
+				"identifier": "geometry.stage_floor"
 			},
 			"minecraft:collision_box": {
 				"origin": [
