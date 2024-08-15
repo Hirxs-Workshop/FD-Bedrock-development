@@ -110,9 +110,6 @@
 					16,
 					2
 				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
 			}
 		}
 	}
