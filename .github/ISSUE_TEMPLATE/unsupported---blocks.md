@@ -7,4 +7,9 @@ assignees: ''
 
 ---
 
-- Compatibility issue with this block
+### Compatibility issue with this element
+- Type: Block
+- Issue assigned to: https://github.com/orgs/Hirxs-Workshop/projects/1/views/1
+- FB&D Bedrock v4.4 
+- Branch: Supported 
+ - State: Unreleased
