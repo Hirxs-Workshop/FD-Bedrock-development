@@ -1,0 +1,260 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:wooden_pizzas",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:facing_direction"
+					]
+				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11
+				]
+			}
+		},
+		"components": {
+			"tag:changeable": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_pepperoni_pizza_3",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.new_pizza_1",
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:facing_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_1"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_2"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_3"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_4"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_5"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_6"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 7",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 8",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_3",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 9",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_4",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 10",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_5",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 11",
+				"components": {
+					"minecraft:geometry": "geometry.new_pizza_6",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_pepperoni_pizza_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		]
+	}
+}
