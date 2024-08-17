@@ -1,0 +1,227 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:stars",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"fb:box": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": "geometry.stars2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "stars1",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					0,
+					0,
+					0
+				],
+				"size": [
+					0,
+					0,
+					0
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5.5,
+					0,
+					-5.5
+				],
+				"size": [
+					11,
+					16,
+					11
+				]
+			},
+			"minecraft:custom_components": [
+				"fbd:stars_change_quantity"
+			],
+			"tag:stars": {}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars1_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars1_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars2_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars2_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars3_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "stars3_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		]
+	}
+}
