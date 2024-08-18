@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:bathroom_letter_2",
+			"identifier": "fb:hanging_stars",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,9 +12,16 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1
+				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -25,35 +32,29 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.bathroom_sign_new",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "bathroom_sign_woman",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.hanging_stars",
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
 					0,
-					6
+					0,
+					0
 				],
 				"size": [
-					16,
-					16,
-					2
+					0,
+					0,
+					0
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-5.5,
 					0,
-					6
+					-5.5
 				],
 				"size": [
+					11,
 					16,
-					16,
-					2
+					11
 				]
 			}
 		},
@@ -103,6 +104,32 @@
 							90,
 							0
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "hanging_stars",
+							"render_method": "alpha_test",
+							"geometry": "trash_1",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "hanging_stars_2",
+							"render_method": "alpha_test",
+							"geometry": "trash_2",
+							"ambient_occlusion": false
+						}
 					}
 				}
 			}

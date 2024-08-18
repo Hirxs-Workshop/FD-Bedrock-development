@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:bathroom_letter_2",
+			"identifier": "fb:cleaning_kit",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -25,35 +25,35 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.bathroom_sign_new",
+			"minecraft:geometry": "geometry.cleaning_kit",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "bathroom_sign_woman",
+					"texture": "cleaning_kit",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-2,
 					0,
-					6
+					-2
 				],
 				"size": [
-					16,
-					16,
-					2
+					9,
+					9,
+					9
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-2,
 					0,
-					6
+					-2
 				],
 				"size": [
-					16,
-					16,
-					2
+					9,
+					9,
+					9
 				]
 			}
 		},

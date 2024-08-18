@@ -2,60 +2,36 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:bathroom_letter_2",
-			"menu_category": {
-				"category": "construction"
-			},
+			"identifier": "fb:red_chair",
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": [
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"menu_category": {
+				"category": "items"
 			}
 		},
 		"components": {
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+			"minecraft:geometry": {
+				"identifier": "geometry.chair"
 			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.5
-			},
-			"minecraft:flammable": {
-				"catch_chance_modifier": 30,
-				"destroy_chance_modifier": 30
-			},
-			"minecraft:geometry": "geometry.bathroom_sign_new",
+			"minecraft:map_color": "#AE3A3E",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "bathroom_sign_woman",
+					"texture": "red_chair",
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 10
 			},
-			"minecraft:selection_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			}
+			"minecraft:custom_components": [
+				"fbd:seat_function"
+			]
 		},
 		"permutations": [
 			{

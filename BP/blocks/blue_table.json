@@ -30,8 +30,8 @@
 			"tag:wood": {},
 			"minecraft:tick": {
 				"interval_range": [
-					5,
-					5
+					3,
+					3
 				]
 			},
 			"minecraft:destructible_by_mining": {
@@ -97,6 +97,12 @@
 				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
 					"minecraft:geometry": "geometry.party_table"
+				}
+			},
+			{
+				"condition": "(!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection'))",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.center"
 				}
 			},
 			{

@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:bathroom_letter_2",
+			"identifier": "fb:ceiling_large_light_off",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -21,6 +21,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0.5
 			},
+			"minecraft:light_emission": 0,
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
@@ -28,32 +29,38 @@
 			"minecraft:geometry": "geometry.bathroom_sign_new",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "bathroom_sign_woman",
+					"texture": "celling_large_light_off",
 					"render_method": "alpha_test"
+				},
+				"light": {
+					"texture": "celling_large_light_off",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
-					0,
-					6
+					12,
+					-8
 				],
 				"size": [
 					16,
-					16,
-					2
+					4,
+					16
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
-					0,
-					6
+					12,
+					-8
 				],
 				"size": [
 					16,
-					16,
-					2
+					4,
+					16
 				]
 			}
 		},

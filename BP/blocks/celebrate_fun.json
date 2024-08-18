@@ -1,0 +1,148 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:celebrate_fun_sign",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"ff:is_placed": [
+					0,
+					1
+				],
+				"ff:direction": [
+					0,
+					1,
+					2,
+					3
+				],
+				"ff:width_piece": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 10
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "celebrate_fun_icon",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "!query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.celebrate_fun_sign_icon",
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"all"
+								],
+								"block_filter": [
+									"air"
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:width_piece') == 0 && query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.celebrate_fun_sign"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "celebrate_fun_sign",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:width_piece') == 1 && query.block_state('ff:is_placed')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.celebrate_fun_sign_2"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "celebrate_fun_sign_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:direction') == 1",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:direction') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:direction') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

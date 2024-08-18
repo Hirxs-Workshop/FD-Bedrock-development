@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:bathroom_letter_2",
+			"identifier": "fb:cloud_1",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -25,10 +25,10 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.bathroom_sign_new",
+			"minecraft:geometry": "geometry.cloud_1",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "bathroom_sign_woman",
+					"texture": "bridge_cloud_1",
 					"render_method": "alpha_test"
 				}
 			},

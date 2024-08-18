@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:shelves",
+			"identifier": "fb:dark_party_table",
 			"menu_category": {
 				"category": "construction",
 				"group": "none"
@@ -71,86 +71,86 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "shelves",
+					"texture": "dark_party_table",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:custom_components": [
 				"fbd:blocks_conection_function"
 			],
-			"minecraft:geometry": "geometry.shelves"
+			"minecraft:geometry": "geometry.party_table"
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.center"
+					"minecraft:geometry": "geometry.fd.party_table.center"
 				}
 			},
 			{
 				"condition": "(q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')) || (!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection'))",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.center"
+					"minecraft:geometry": "geometry.fd.party_table.center"
 				}
 			},
 			{
 				"condition": "(!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection'))",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.center"
+					"minecraft:geometry": "geometry.fd.party_table.center"
 				}
 			},
 			{
 				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves"
+					"minecraft:geometry": "geometry.party_table"
 				}
 			},
 			{
 				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.end3"
+					"minecraft:geometry": "geometry.fd.party_table.end3"
 				}
 			},
 			{
 				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.end1"
+					"minecraft:geometry": "geometry.fd.party_table.end1"
 				}
 			},
 			{
 				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.end4"
+					"minecraft:geometry": "geometry.fd.party_table.end4"
 				}
 			},
 			{
 				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.end2"
+					"minecraft:geometry": "geometry.fd.party_table.end2"
 				}
 			},
 			{
 				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.corner2"
+					"minecraft:geometry": "geometry.fd.party_table.corner2"
 				}
 			},
 			{
 				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.corner1"
+					"minecraft:geometry": "geometry.fd.party_table.corner1"
 				}
 			},
 			{
 				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.corner3"
+					"minecraft:geometry": "geometry.fd.party_table.corner3"
 				}
 			},
 			{
 				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:geometry": "geometry.shelves.corner4"
+					"minecraft:geometry": "geometry.fd.party_table.corner4"
 				}
 			}
 		]

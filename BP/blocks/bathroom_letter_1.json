@@ -25,7 +25,7 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.bathroom_sign",
+			"minecraft:geometry": "geometry.bathroom_sign_new",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "bathroom_sign_man",

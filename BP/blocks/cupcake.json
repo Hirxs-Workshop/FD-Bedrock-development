@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:bathroom_letter_2",
+			"identifier": "fb:cupcake_block",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -25,37 +25,40 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.bathroom_sign_new",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "bathroom_sign_woman",
+					"texture": "cupcake_block",
 					"render_method": "alpha_test"
 				}
 			},
+			"minecraft:geometry": "geometry.chica_cake",
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-4,
 					0,
-					6
+					-1
 				],
 				"size": [
-					16,
-					16,
-					2
+					8,
+					13,
+					5
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-4,
 					0,
-					6
+					-1
 				],
 				"size": [
-					16,
-					16,
-					2
+					8,
+					13,
+					5
 				]
-			}
+			},
+			"minecraft:custom_components": [
+				"fb:plushy_sound_interaction"
+			]
 		},
 		"permutations": [
 			{

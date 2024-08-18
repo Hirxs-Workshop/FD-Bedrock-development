@@ -49,7 +49,7 @@
 				]
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.soda_base",
+				"identifier": "geometry.soda_display",
 				"bone_visibility": {
 					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
 					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
