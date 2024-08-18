@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fbd:mansam_plush",
+			"identifier": "fb:dev_plush_polar",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -66,7 +66,7 @@
 		],
 		"components": {
 			"minecraft:geometry": {
-				"identifier": "geometry.mansam_plush"
+				"identifier": "geometry.c_freddy_plushy"
 			},
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,
@@ -102,7 +102,7 @@
 			],
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "mansam",
+					"texture": "dev_plush_polar",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}
