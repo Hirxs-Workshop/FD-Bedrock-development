@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:freddy_plush",
+			"identifier": "fb:gift",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -29,32 +29,33 @@
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:collision_box": {
 				"origin": [
-					-4,
+					-7,
 					0,
-					-2
+					-7
 				],
 				"size": [
-					7,
 					13,
-					6
+					13,
+					13
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-4,
+					-7,
 					0,
-					-2
+					-7
 				],
 				"size": [
-					7,
 					13,
-					6
+					13,
+					13
 				]
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.freddy_plushy",
+				"identifier": "geometry.gift",
 				"bone_visibility": {
 					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
 					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
@@ -63,29 +64,17 @@
 					"side": "q.block_state('minecraft:block_face') != 'up'"
 				}
 			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "freddy_plush",
-					"render_method": "alpha_test"
-				},
-				"lit": {
-					"texture": "freddy_plush",
-					"render_method": "alpha_test"
-				}
-			},
 			"minecraft:placement_filter": {
 				"conditions": [
 					{
 						"allowed_faces": [
-							"up",
-							"side"
+							"up"
 						]
 					}
 				]
 			},
 			"minecraft:custom_components": [
-				"fd:advanced_rotation_v1",
-				"fb:plushy_sound_interaction"
+				"fd:advanced_rotation_v1"
 			]
 		},
 		"permutations": [
@@ -130,27 +119,82 @@
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
-							-4,
+							-7,
 							0,
-							-2
+							-7
 						],
 						"size": [
-							7,
 							13,
-							6
+							13,
+							13
 						]
 					},
 					"minecraft:selection_box": {
 						"origin": [
-							-4,
+							-7,
 							0,
-							-2
+							-7
 						],
 						"size": [
-							7,
 							13,
-							6
+							13,
+							13
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_gifts_5",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

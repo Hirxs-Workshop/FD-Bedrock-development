@@ -1,10 +1,10 @@
-{
+	{
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:golden_freddy_plush",
 			"menu_category": {
-				"category": "nature"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_position": {

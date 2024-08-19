@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:gift_stack",
+			"identifier": "fb:ff2_poster_2",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -16,10 +16,7 @@
 			"states": {
 				"p:changer": [
 					0,
-					1,
-					2,
-					3,
-					4
+					1
 				]
 			}
 		},
@@ -75,68 +72,20 @@
 			{
 				"condition": "q.block_state('p:changer') == 0",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "gift1",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.fnaf_2_poster_2"
 				}
 			},
 			{
 				"condition": "q.block_state('p:changer') == 1",
 				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "gift2",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "gift3",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "gift4",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 4",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "gift5",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
+					"minecraft:geometry": "geometry.fnaf_2_poster_22"
 				}
 			}
 		],
 		"components": {
 			"tag:changeable": {},
 			"minecraft:geometry": {
-				"identifier": "geometry.gift_stack"
+				"identifier": "geometry.fnaf_2_poster_2"
 			},
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,
@@ -169,7 +118,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "gift1",
+					"texture": "fb_fnaf2c",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}
