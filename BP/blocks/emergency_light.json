@@ -2,9 +2,9 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:soda",
+			"identifier": "fd:emergency_light",
 			"menu_category": {
-				"category": "construction"
+				"category": "nature"
 			},
 			"traits": {
 				"minecraft:placement_position": {
@@ -19,63 +19,63 @@
 						"min": 0,
 						"max": 15
 					}
+				},
+				"p:var": {
+					"values": {
+						"min": 0,
+						"max": 1
+					}
 				}
 			}
 		},
 		"components": {
-			"tag:red_soda": {},
 			"minecraft:collision_box": {
 				"origin": [
 					-4,
 					0,
-					-4
+					-2
 				],
 				"size": [
-					8,
-					8,
-					8
+					7,
+					13,
+					6
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-4,
 					0,
-					-4
+					-2
 				],
 				"size": [
-					8,
-					8,
-					8
+					7,
+					13,
+					6
 				]
 			},
 			"minecraft:geometry": {
-				"identifier": "geometry.soda_display",
+				"identifier": "geometry.emergency_light",
 				"bone_visibility": {
-					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
-					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
-					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 2, 4)",
-					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 3, 4)",
-					"side": "q.block_state('minecraft:block_face') != 'up'"
-				}
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "new_soda",
-					"render_method": "alpha_test"
+					"up_0": "q.block_state('minecraft:block_face') == 'down' && !math.mod(q.block_state('fb:rotation'), 4)",
+					"up_22_5": "q.block_state('minecraft:block_face') == 'down' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
+					"up_45": "q.block_state('minecraft:block_face') == 'down' && !math.mod(q.block_state('fb:rotation') - 2, 4)",
+					"up_67_5": "q.block_state('minecraft:block_face') == 'down' && !math.mod(q.block_state('fb:rotation') - 3, 4)",
+					"side": "q.block_state('minecraft:block_face') != 'down'"
 				}
 			},
 			"minecraft:placement_filter": {
 				"conditions": [
 					{
 						"allowed_faces": [
-							"up"
+							"down",
+							"side"
 						]
 					}
 				]
 			},
 			"minecraft:custom_components": [
-				"fd:advanced_rotation_v1",
-				"fbd:soda_remove"
+				"fbd:ar_for_ceiling_blocks",
+				"fbd:emergency_light_switch"
 			]
 		},
 		"permutations": [
@@ -116,31 +116,53 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:block_face') != 'up'",
+				"condition": "q.block_state('minecraft:block_face') != 'down'",
 				"components": {
 					"minecraft:collision_box": {
 						"origin": [
 							-4,
 							0,
-							-4
+							-2
 						],
 						"size": [
-							8,
-							8,
-							8
+							7,
+							13,
+							6
 						]
 					},
 					"minecraft:selection_box": {
 						"origin": [
 							-4,
 							0,
-							-4
+							-2
 						],
 						"size": [
-							8,
-							8,
-							8
+							7,
+							13,
+							6
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:var') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "emergency_light_off",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:var') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "emergency_light_on",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

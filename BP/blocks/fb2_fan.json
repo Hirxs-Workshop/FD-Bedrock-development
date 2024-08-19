@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fd:warning_sign",
+			"identifier": "fb:fb2_deco2",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,6 +12,12 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"fb:block_status": [
+					1,
+					2
+				]
 			}
 		},
 		"components": {
@@ -30,37 +36,40 @@
 					"side"
 				]
 			},
-			"minecraft:geometry": "geometry.warning_sign",
+			"minecraft:geometry": "geometry.fb2_deco2",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "warning_sign_1",
+					"texture": "fb:fb2_deco2",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-7,
 					0,
-					6
+					-5
 				],
 				"size": [
-					16,
-					16,
-					2
+					14,
+					12,
+					8
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-7,
 					0,
-					6
+					-5
 				],
 				"size": [
-					16,
-					16,
-					2
+					14,
+					12,
+					8
 				]
-			}
+			},
+			"minecraft:custom_components": [
+				"fbd:fan_interactive"
+			]
 		},
 		"permutations": [
 			{
@@ -108,6 +117,28 @@
 							90,
 							0
 						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fb:block_status') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fb:fb2_deco2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fb:block_status') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fb:fb2_deco2",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

@@ -26,7 +26,7 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.bathroom_sign_new",
+			"minecraft:geometry": "geometry.celling_large_light",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "celling_large_light_off",

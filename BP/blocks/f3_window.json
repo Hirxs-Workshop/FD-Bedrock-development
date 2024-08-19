@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fd:warning_sign",
+			"identifier": "fb:f3_window",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,53 +12,61 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3
+				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 1
 			},
 			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.5
+				"explosion_resistance": 1
 			},
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:placement_filter": {
-				"allowed_faces": [
-					"side"
-				]
-			},
-			"minecraft:geometry": "geometry.warning_sign",
 			"minecraft:material_instances": {
+				"side": {
+					"texture": "wall2",
+					"render_method": "opaque"
+				},
 				"*": {
-					"texture": "warning_sign_1",
-					"render_method": "alpha_test"
+					"texture": "wall2",
+					"render_method": "blend"
 				}
 			},
+			"minecraft:geometry": "geometry.f3_window_down",
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
-					6
+					-8
 				],
 				"size": [
 					16,
 					16,
-					2
+					16
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
-					6
+					-8
 				],
 				"size": [
 					16,
 					16,
-					2
+					16
 				]
 			}
 		},
@@ -109,6 +117,30 @@
 							0
 						]
 					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.f3_window_up"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.f3_window_down"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.f3_window_middle_down"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.f3_window_middle_up"
 				}
 			}
 		]

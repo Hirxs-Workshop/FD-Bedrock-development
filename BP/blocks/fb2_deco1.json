@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fd:warning_sign",
+			"identifier": "fb:fb2_deco1",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -30,10 +30,10 @@
 					"side"
 				]
 			},
-			"minecraft:geometry": "geometry.warning_sign",
+			"minecraft:geometry": "geometry.fb2_deco1",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "warning_sign_1",
+					"texture": "fb:fb2_deco1",
 					"render_method": "alpha_test"
 				}
 			},
@@ -41,24 +41,24 @@
 				"origin": [
 					-8,
 					0,
-					6
+					-8
 				],
 				"size": [
 					16,
-					16,
-					2
+					2,
+					16
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
-					6
+					-8
 				],
 				"size": [
 					16,
-					16,
-					2
+					2,
+					16
 				]
 			}
 		},

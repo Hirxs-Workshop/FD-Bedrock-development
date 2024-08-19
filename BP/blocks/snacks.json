@@ -73,8 +73,7 @@
 				"conditions": [
 					{
 						"allowed_faces": [
-							"up",
-							"side"
+							"up"
 						]
 					}
 				]

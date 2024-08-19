@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fd:warning_sign",
+			"identifier": "fb:exit",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -26,20 +26,24 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:placement_filter": {
-				"allowed_faces": [
-					"side"
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side"
+						]
+					}
 				]
 			},
-			"minecraft:geometry": "geometry.warning_sign",
+			"minecraft:geometry": "geometry.exit",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "warning_sign_1",
+					"texture": "exit",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-7,
 					0,
 					6
 				],
@@ -51,7 +55,7 @@
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-7,
 					0,
 					6
 				],

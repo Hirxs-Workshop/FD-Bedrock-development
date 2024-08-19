@@ -1,0 +1,56 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:electric_block_on",
+			"is_experimental": false,
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.electric_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electricon",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:custom_components": [
+				"fbd:electric_system_reworked"
+			],
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:map_color": "#646D85",
+			"minecraft:light_dampening": 15,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"tag:wall": {},
+			"tag:electric_on": {},
+			"tag:wires": {}
+		}
+	}
+}
