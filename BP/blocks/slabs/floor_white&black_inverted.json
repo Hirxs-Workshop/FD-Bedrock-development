@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:floor_2_inverted_slab",
+			"identifier": "fd:floor_2_inverted_slab",
 			"menu_category": {
 				"category": "construction"
 			},
