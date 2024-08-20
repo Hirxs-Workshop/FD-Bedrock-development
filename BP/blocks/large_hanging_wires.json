@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:fb2_deco2",
+			"identifier": "fb:large_hanging_wires",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -14,13 +14,15 @@
 				}
 			},
 			"states": {
-				"fb:block_status": [
+				"p:changer": [
+					0,
 					1,
 					2
 				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -31,40 +33,31 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.fb2_deco2",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "fb:fb2_deco2",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.large_hanging_stars",
 			"minecraft:collision_box": {
 				"origin": [
-					-7,
 					0,
-					-5
+					0,
+					0
 				],
 				"size": [
-					14,
-					12,
-					8
+					0,
+					0,
+					0
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-7,
+					-5.5,
 					0,
-					-5
+					-5.5
 				],
 				"size": [
-					14,
-					12,
-					8
+					11,
+					16,
+					11
 				]
-			},
-			"minecraft:custom_components": [
-				"fbd:fan_interactive"
-			]
+			}
 		},
 		"permutations": [
 			{
@@ -116,23 +109,40 @@
 				}
 			},
 			{
-				"condition": "query.block_state('fb:block_status') == 1",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:fb2_deco2",
-							"render_method": "alpha_test"
+							"texture": "large_hanging_wires_1",
+							"render_method": "alpha_test",
+							"geometry": "trash_1",
+							"ambient_occlusion": false
 						}
 					}
 				}
 			},
 			{
-				"condition": "query.block_state('fb:block_status') == 2",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:fb2_deco2",
-							"render_method": "alpha_test"
+							"texture": "large_hanging_wires_2",
+							"render_method": "alpha_test",
+							"geometry": "trash_2",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "large_hanging_wires_3",
+							"render_method": "alpha_test",
+							"geometry": "trash_2",
+							"ambient_occlusion": false
 						}
 					}
 				}

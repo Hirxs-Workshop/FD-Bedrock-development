@@ -25,11 +25,6 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:placement_filter": {
-				"allowed_faces": [
-					"side"
-				]
-			},
 			"minecraft:geometry": "geometry.warning_sign",
 			"minecraft:material_instances": {
 				"*": {

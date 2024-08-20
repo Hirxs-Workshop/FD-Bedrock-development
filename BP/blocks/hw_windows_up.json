@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:fb2_deco2",
+			"identifier": "fb:hw_office_window_up",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,12 +12,6 @@
 						"minecraft:cardinal_direction"
 					]
 				}
-			},
-			"states": {
-				"fb:block_status": [
-					1,
-					2
-				]
 			}
 		},
 		"components": {
@@ -31,40 +25,41 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.fb2_deco2",
+			"minecraft:geometry": "geometry.window_up",
 			"minecraft:material_instances": {
+				"corner": {
+					"texture": "fb:hw_window",
+					"render_method": "opaque"
+				},
 				"*": {
-					"texture": "fb:fb2_deco2",
-					"render_method": "alpha_test"
+					"texture": "fb:hw_window",
+					"render_method": "blend"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-7,
+					-8,
 					0,
-					-5
+					-8
 				],
 				"size": [
-					14,
-					12,
-					8
+					16,
+					16,
+					16
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-7,
+					-8,
 					0,
-					-5
+					-8
 				],
 				"size": [
-					14,
-					12,
-					8
+					16,
+					16,
+					16
 				]
-			},
-			"minecraft:custom_components": [
-				"fbd:fan_interactive"
-			]
+			}
 		},
 		"permutations": [
 			{
@@ -73,7 +68,7 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							180,
+							0,
 							0
 						]
 					}
@@ -85,7 +80,7 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							-90,
+							90,
 							0
 						]
 					}
@@ -97,7 +92,7 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							0,
+							180,
 							0
 						]
 					}
@@ -109,31 +104,9 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							90,
+							-90,
 							0
 						]
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('fb:block_status') == 1",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "fb:fb2_deco2",
-							"render_method": "alpha_test"
-						}
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('fb:block_status') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "fb:fb2_deco2",
-							"render_method": "alpha_test"
-						}
 					}
 				}
 			}

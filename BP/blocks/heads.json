@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:fb2_deco2",
+			"identifier": "fb:animatronic_heads",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -14,13 +14,16 @@
 				}
 			},
 			"states": {
-				"fb:block_status": [
+				"p:changer": [
+					0,
 					1,
-					2
+					2,
+					3
 				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -31,40 +34,31 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.fb2_deco2",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "fb:fb2_deco2",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.freddy_head",
 			"minecraft:collision_box": {
 				"origin": [
-					-7,
+					-6,
 					0,
-					-5
+					-6
 				],
 				"size": [
-					14,
 					12,
-					8
+					12,
+					12
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-7,
+					-6,
 					0,
-					-5
+					-6
 				],
 				"size": [
-					14,
 					12,
-					8
+					12,
+					12
 				]
-			},
-			"minecraft:custom_components": [
-				"fbd:fan_interactive"
-			]
+			}
 		},
 		"permutations": [
 			{
@@ -116,23 +110,53 @@
 				}
 			},
 			{
-				"condition": "query.block_state('fb:block_status') == 1",
+				"condition": "q.block_property('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:fb2_deco2",
-							"render_method": "alpha_test"
+							"minecraft:geometry": "geometry.freddy_head",
+							"texture": "freddy",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
 						}
 					}
 				}
 			},
 			{
-				"condition": "query.block_state('fb:block_status') == 2",
+				"condition": "q.block_property('p:changer') == 1",
 				"components": {
+					"minecraft:geometry": "geometry.bonnie_head",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:fb2_deco2",
-							"render_method": "alpha_test"
+							"texture": "bonnie",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.chica_head",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chica",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.foxy_head",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_foxy_head",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
 						}
 					}
 				}
