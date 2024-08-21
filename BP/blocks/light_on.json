@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fb:light_on",
 			"menu_category": {
-				"category": "construction"
+				"category": "commands"
 			},
 			"traits": {
 				"minecraft:placement_direction": {

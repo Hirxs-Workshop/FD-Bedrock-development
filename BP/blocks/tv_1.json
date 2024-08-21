@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:tv_1",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,11 +12,20 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3
+				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 0.2
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0.5
@@ -25,13 +34,7 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "metal_structure",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.new_monitors_1",
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
@@ -104,6 +107,36 @@
 							0
 						]
 					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.new_monitors_1"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.new_monitors_2"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.new_monitors_3"
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_monitors_blue",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.new_monitors_3"
 				}
 			}
 		]

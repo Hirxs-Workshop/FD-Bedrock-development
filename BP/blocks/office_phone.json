@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:phone",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,9 +12,22 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"fb:channel": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"fbd:phone_function"
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -25,35 +38,35 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "metal_structure",
+					"texture": "ph2",
 					"render_method": "alpha_test"
 				}
 			},
+			"minecraft:geometry": "geometry.phone_1",
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-5,
 					0,
-					-8
+					-5
 				],
 				"size": [
-					16,
-					16,
-					16
+					10,
+					3,
+					11
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-5,
 					0,
-					-8
+					-5
 				],
 				"size": [
-					16,
-					16,
-					16
+					10,
+					3,
+					11
 				]
 			}
 		},
@@ -104,6 +117,42 @@
 							0
 						]
 					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.phone_1"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.phone_2"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.phone_3"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.phone_4"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.phone_5"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.phone_6"
 				}
 			}
 		]

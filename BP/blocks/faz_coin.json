@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fb:faz_coin",
 			"menu_category": {
-				"category": "items"
+				"category": "commands"
 			},
 			"states": {
 				"p:coins": [

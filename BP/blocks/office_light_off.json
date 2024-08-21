@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:office_light_off",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -25,37 +25,38 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
+			"minecraft:geometry": "geometry.light_1",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "metal_structure",
+					"texture": "office_light_off",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
-					0,
+					16,
 					-8
 				],
 				"size": [
 					16,
-					16,
+					2,
 					16
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
-					0,
+					14,
 					-8
 				],
 				"size": [
 					16,
-					16,
+					2,
 					16
 				]
-			}
+			},
+			"minecraft:light_emission": 0
 		},
 		"permutations": [
 			{

@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:paper_2",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,11 +12,20 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3
+				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 0.2
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0.5
@@ -25,35 +34,29 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "metal_structure",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.wall_paper",
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
-					-8
+					6
 				],
 				"size": [
 					16,
 					16,
-					16
+					2
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
-					-8
+					6
 				],
 				"size": [
 					16,
 					16,
-					16
+					2
 				]
 			}
 		},
@@ -103,6 +106,51 @@
 							90,
 							0
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "news_paper",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_3",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

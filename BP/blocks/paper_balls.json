@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:paper_balls",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,11 +12,20 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3
+				]
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 0.2
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0.5
@@ -25,13 +34,7 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "metal_structure",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.trash_1",
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
@@ -40,7 +43,7 @@
 				],
 				"size": [
 					16,
-					16,
+					2,
 					16
 				]
 			},
@@ -52,7 +55,7 @@
 				],
 				"size": [
 					16,
-					16,
+					2,
 					16
 				]
 			}
@@ -103,6 +106,61 @@
 							90,
 							0
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.new_paperballs_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "paperballs",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.new_paperballs_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "paperballs",
+							"render_method": "alpha_test",
+							"geometry": "trash_2",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.new_paperballs_3",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "paperballs",
+							"render_method": "alpha_test",
+							"geometry": "trash_3",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.new_paperballs_4",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "paperballs",
+							"render_method": "alpha_test",
+							"geometry": "trash_3",
+							"ambient_occlusion": false
+						}
 					}
 				}
 			}

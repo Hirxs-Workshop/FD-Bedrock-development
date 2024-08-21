@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:trashcan",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -15,6 +15,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"fbd:trash_cc"
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -25,35 +28,35 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
+			"minecraft:geometry": "geometry.trashcan",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "metal_structure",
+					"texture": "trashcan",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-6,
 					0,
-					-8
+					-6
 				],
 				"size": [
-					16,
-					16,
-					16
+					12,
+					13,
+					12
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-6,
 					0,
-					-8
+					-6
 				],
 				"size": [
-					16,
-					16,
-					16
+					12,
+					13,
+					12
 				]
 			}
 		},

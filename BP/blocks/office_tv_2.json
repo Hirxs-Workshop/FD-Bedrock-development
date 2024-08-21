@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:office_tv_2",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -15,6 +15,7 @@
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -25,35 +26,35 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
+			"minecraft:geometry": "geometry.office_tv_2",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "metal_structure",
+					"texture": "new_tv_2",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
+					-7,
 					0,
-					-8
+					2
 				],
 				"size": [
-					16,
-					16,
-					16
+					14,
+					12,
+					6
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
+					-7,
 					0,
-					-8
+					2
 				],
 				"size": [
-					16,
-					16,
-					16
+					14,
+					12,
+					6
 				]
 			}
 		},

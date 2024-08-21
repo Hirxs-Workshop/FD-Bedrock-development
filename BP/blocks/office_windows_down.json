@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:hw_office_window_down",
+			"identifier": "fb:office_window_down",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -14,12 +14,13 @@
 				}
 			},
 			"states": {
-				"p:changer": {
-					"values": {
-						"min": 0,
-						"max": 1
-					}
-				}
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
 			}
 		},
 		"components": {
@@ -114,12 +115,12 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:hw_window",
+							"texture": "window_corner",
 							"render_method": "blend",
 							"ambient_occlusion": false
 						},
 						"corner": {
-							"texture": "fb:hw_window",
+							"texture": "w_w1",
 							"render_method": "opaque",
 							"ambient_occlusion": false
 						}
@@ -130,14 +131,65 @@
 				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
-						"*": {
-							"texture": "fb:hw_window_2",
-							"render_method": "blend",
+						"corner": {
+							"texture": "w2",
+							"render_method": "opaque",
 							"ambient_occlusion": false
 						},
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
 						"corner": {
-							"texture": "fb:hw_window_2",
+							"texture": "w3",
 							"render_method": "opaque",
+							"ambient_occlusion": false
+						},
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"corner": {
+							"texture": "w4",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						},
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"corner": {
+							"texture": "w5",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						},
+						"*": {
+							"texture": "window_corner",
+							"render_method": "blend",
 							"ambient_occlusion": false
 						}
 					}

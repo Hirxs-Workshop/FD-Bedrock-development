@@ -1,129 +1,133 @@
 {
-    "format_version": "1.20.80",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fb:light_lever",
-            "menu_category": {
-                "category": "construction"
-            },
-            "traits": {
-                "minecraft:placement_direction": {
-                    "enabled_states": [
-                        "minecraft:cardinal_direction"
-                    ]
-                }
-            },
-            "states": {
-                "fb:block_status": [
-                    1,
-                    2
-                ]
-            }
-        },
-        "components": {
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "lever_off",
-                    "render_method": "alpha_test"
-                }
-            },
-            "minecraft:geometry": "geometry.lever_off",
-            "minecraft:custom_components": [
-                "fbd:electric_system_reworked",
-                "fbd:light_lever_interactive"
-            ],
-            "minecraft:collision_box": {
-                "origin": [
-                    -4,
-                    4,
-                    -8
-                ],
-                "size": [
-                    8,
-                    9,
-                    2
-                ]
-            },
-            "minecraft:selection_box": {
-                "origin": [
-                    -4,
-                    4,
-                    -8
-                ],
-                "size": [
-                    8,
-                    9,
-                    2
-                ]
-            },
-            "minecraft:map_color": "#646D85",
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 4
-            },
-            "tag:wall": {},
-            "tag:lever_off_n_on": {}
-        },
-        "permutations": [
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            90,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            180,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [
-                            0,
-                            -90,
-                            0
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('fb:block_status') == 1",
-                "components": {
-                    "minecraft:geometry": "geometry.lever_off"
-                }
-            },
-            {
-                "condition": "q.block_state('fb:block_status') == 2",
-                "components": {
-                    "minecraft:geometry": "geometry.lever_on"
-                }
-            }
-        ]
-    }
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:light_lever",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"fb:block_status": {
+					"value": {
+						"min": 1,
+						"max": 2
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "lever_off",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.lever_off",
+			"minecraft:custom_components": [
+				"fbd:electric_system_reworked",
+				"fbd:light_lever_interactive"
+			],
+			"minecraft:collision_box": {
+				"origin": [
+					-4,
+					4,
+					-8
+				],
+				"size": [
+					8,
+					9,
+					2
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					4,
+					-8
+				],
+				"size": [
+					8,
+					9,
+					2
+				]
+			},
+			"minecraft:map_color": "#646D85",
+			"minecraft:light_dampening": 15,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"tag:wall": {},
+			"tag:electric_on": {},
+			"tag:wires": {}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:block_status') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.lever_off"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:block_status') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.lever_on"
+				}
+			}
+		]
+	}
 }

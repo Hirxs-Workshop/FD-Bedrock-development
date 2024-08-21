@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:wall_light_3",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -12,9 +12,18 @@
 						"minecraft:cardinal_direction"
 					]
 				}
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1
+				]
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"fbd:wall_light_cc"
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
 			},
@@ -25,35 +34,29 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "metal_structure",
-					"render_method": "alpha_test"
-				}
-			},
+			"minecraft:geometry": "geometry.wall_light_3",
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
-					0,
-					-8
+					-4,
+					7,
+					1
 				],
 				"size": [
-					16,
-					16,
-					16
+					8,
+					9,
+					7
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
-					0,
-					-8
+					-4,
+					7,
+					1
 				],
 				"size": [
-					16,
-					16,
-					16
+					8,
+					9,
+					7
 				]
 			}
 		},
@@ -103,6 +106,38 @@
 							90,
 							0
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:light_emission": 12,
+					"minecraft:material_instances": {
+						"light": {
+							"texture": "wl_1_3",
+							"render_method": "blend"
+						},
+						"base": {
+							"texture": "wl_1_3",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "wl_1_3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wl_2_3",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

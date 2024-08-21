@@ -1,0 +1,193 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:stage_sun",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"fbd:block_placed": [
+					0,
+					1
+				],
+				"fbd:direction": [
+					0,
+					1,
+					2,
+					3
+				],
+				"fbd:connected_models": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 10
+			},
+			"minecraft:collision_box": false
+		},
+		"permutations": [
+			{
+				"condition": "!query.block_state('fbd:block_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.sun",
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"side"
+								],
+								"block_filter": [
+									"air"
+								]
+							}
+						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "new_sun"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:connected_models') == 0 && query.block_state('fbd:block_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.sun_part4",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "new_sun"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							6
+						],
+						"size": [
+							16,
+							16,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:connected_models') == 1 && query.block_state('fbd:block_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.sun_part1",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "new_sun"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							6
+						],
+						"size": [
+							16,
+							16,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:connected_models') == 2 && query.block_state('fbd:block_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.sun_part3",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "new_sun"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							6
+						],
+						"size": [
+							16,
+							16,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:connected_models') == 3 && query.block_state('fbd:block_placed')",
+				"components": {
+					"minecraft:geometry": "geometry.sun_part2",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "new_sun"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							6
+						],
+						"size": [
+							16,
+							16,
+							2
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:direction') == 1",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:direction') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fbd:direction') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

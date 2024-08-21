@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:hw_office_window_down",
+			"identifier": "fb:paper_1",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -14,18 +14,21 @@
 				}
 			},
 			"states": {
-				"p:changer": {
-					"values": {
-						"min": 0,
-						"max": 1
-					}
-				}
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
 			}
 		},
 		"components": {
 			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 0.2
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0.5
@@ -34,59 +37,35 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.window_down",
+			"minecraft:geometry": "geometry.paper_1",
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
-					-8
+					6
 				],
 				"size": [
 					16,
 					16,
-					16
+					2
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
-					-8
+					6
 				],
 				"size": [
 					16,
 					16,
-					16
+					2
 				]
 			}
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -98,7 +77,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -110,17 +89,37 @@
 				}
 			},
 			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
 				"condition": "q.block_state('p:changer') == 0",
 				"components": {
+					"minecraft:geometry": "geometry.paper_2",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:hw_window",
-							"render_method": "blend",
-							"ambient_occlusion": false
-						},
-						"corner": {
-							"texture": "fb:hw_window",
-							"render_method": "opaque",
+							"texture": "bridge_paper_1",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}
@@ -129,15 +128,71 @@
 			{
 				"condition": "q.block_state('p:changer') == 1",
 				"components": {
+					"minecraft:geometry": "geometry.paper_1",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "fb:hw_window_2",
-							"render_method": "blend",
-							"ambient_occlusion": false
-						},
-						"corner": {
-							"texture": "fb:hw_window_2",
-							"render_method": "opaque",
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.the_new_wall_paper_2",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.the_new_wall_paper_3",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.the_new_wall_paper_4",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.the_new_wall_paper_5",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_wall_paper_1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.the_new_wall_paper_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "bridge_paper_1",
+							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
 					}

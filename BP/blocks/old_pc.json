@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:metal_structure",
+			"identifier": "fb:old_pc",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -25,10 +25,10 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": "geometry.metal_structure",
+			"minecraft:geometry": "geometry.old_pc",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "metal_structure",
+					"texture": "old_pc",
 					"render_method": "alpha_test"
 				}
 			},
