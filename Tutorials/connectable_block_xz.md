@@ -240,7 +240,7 @@ The legs of our table will be activated depending on the orientation, for exampl
 ### ALSO
 Please note that this tutorial does not add all types of block states, you can add them on your own as this can help you with practice
 
-![](https://media.discordapp.net/attachments/1273381780078071869/1275633600729055253/Screenshot_2024-08-20_190800.png?ex=66c699de&is=66c5485e&hm=5b05c763323f0140135cc4ad37ed0032266e8e33d243ff60a8cb08bb7c1b7b05&=&format=webp&quality=lossless&width=575&height=498)
+![](images/tutorial_img_lossless.png)
 
 _____________________________________
 ## 10 - Adding our script to the BP manifest
