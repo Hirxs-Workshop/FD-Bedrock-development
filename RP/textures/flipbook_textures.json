@@ -14,7 +14,7 @@
   {
     "flipbook_texture": "textures/blocks/help-wanted/hw_fan",
     "atlas_tile": "fb:hw_fan",
-    "ticks_per_frame": 0.01,
+    "ticks_per_frame": 0.1,
     "blend_frames": false,
     "frames": [
       0,

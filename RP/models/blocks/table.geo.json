@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.table",
+				"identifier": "geometry.party_table",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -726,7 +726,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.end1",
+				"identifier": "geometry.fd.party_table.end1",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -1227,7 +1227,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.end2",
+				"identifier": "geometry.fd.party_table.end2",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -1728,7 +1728,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.end3",
+				"identifier": "geometry.fd.party_table.end3",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -2229,7 +2229,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.end4",
+				"identifier": "geometry.fd.party_table.end4",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -2804,7 +2804,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.corner1",
+				"identifier": "geometry.fd.party_table.corner1",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -3157,7 +3157,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.corner2",
+				"identifier": "geometry.fd.party_table.corner2",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -3510,7 +3510,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.corner3",
+				"identifier": "geometry.fd.party_table.corner3",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,
@@ -3863,7 +3863,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.corner4",
+				"identifier": "geometry.fd.party_table.corner4",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -4216,7 +4216,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.fd.table.center",
+				"identifier": "geometry.fd.party_table.center",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,

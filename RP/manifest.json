@@ -6,7 +6,7 @@
 		"min_engine_version": [
 			1,
 			20,
-			10
+			80
 		],
 		"uuid": "3878e804-61de-46af-a31e-549e3c6d76f7",
 		"version": [
@@ -93,7 +93,7 @@
 	"metadata": {
 		"generated_with": {
 			"bridge": [
-				"2.7.33"
+				"2.7.34"
 			],
 			"dash": [
 				"0.11.7"

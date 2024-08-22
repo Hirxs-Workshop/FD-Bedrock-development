@@ -13,11 +13,56 @@
 		"itsme": {
 			"textures": "textures/blocks/itsme"
 		},
+		"bathroom_sign_woman": {
+			"textures": "textures/blocks/bathroom_sign_woman"
+		},
+		"bathroom_sign_man": {
+			"textures": "textures/blocks/bathroom_sign_man"
+		},
+		"celebrate_fun_icon": {
+			"textures": "textures/blocks/celebrate_fun_icon"
+		},
 		"2": {
 			"textures": "textures/blocks/shelf/2"
 		},
 		"3": {
 			"textures": "textures/blocks/shelf/3"
+		},
+		"mansam": {
+			"textures": "textures/blocks/plush/Mansam"
+		},
+		"bonnie_bites_hw": {
+			"textures": "textures/blocks/snacks/bonnie_bites_hw"
+		},
+		"pirate_plunder_bar": {
+			"textures": "textures/blocks/snacks/pirate_plunder_bar"
+		},
+		"freddy_fudge_bar": {
+			"textures": "textures/blocks/snacks/freddy_fudge_bar"
+		},
+		"butter_for_one_hw": {
+			"textures": "textures/blocks/snacks/butter_for_one_hw"
+		},
+		"disappointment_chips_hw": {
+			"textures": "textures/blocks/snacks/disappointment_chips_hw"
+		},
+		"el_chips_hw": {
+			"textures": "textures/blocks/snacks/el_chips_hw"
+		},
+		"fazbar_hw": {
+			"textures": "textures/blocks/snacks/fazbar_hw"
+		},
+		"lemon_chica_bar_hw": {
+			"textures": "textures/blocks/snacks/lemon_chica_bar_hw"
+		},
+		"meat_bites_hw": {
+			"textures": "textures/blocks/snacks/meat_bites_hw"
+		},
+		"meat_bites_xl_hw": {
+			"textures": "textures/blocks/snacks/meat_bites_xl_hw"
+		},
+		"mixed_nuts_hw": {
+			"textures": "textures/blocks/snacks/mixed_nuts_hw"
 		},
 		"4": {
 			"textures": "textures/blocks/shelf/4"

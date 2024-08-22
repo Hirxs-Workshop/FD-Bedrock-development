@@ -1,0 +1,329 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"fb:door_left": {
+		"sound": "stone"
+	},
+	"fb:door_left_corner": {
+		"sound": "stone"
+	},
+	"fb:foxy_room_block": {
+		"sound": "stone",
+		"textures": "foxy_room_block"
+	},
+	"fb:foxy_room_block_blue": {
+		"sound": "stone",
+		"textures": "pirate_cove_block_blue"
+	},
+	"fb:foxy_room_block_red": {
+		"sound": "stone",
+		"textures": "pirate_cove_block_red"
+	},
+	"fb:wall_block_2": {
+		"sound": "stone",
+		"textures": "bridge_wall_block_2"
+	},
+	"fb:wall_block_1": {
+		"sound": "stone",
+		"textures": "bridge_wall_block_1"
+	},
+	"fb:wall_block_3": {
+		"sound": "stone",
+		"textures": "bridge_wall_block_3"
+	},
+	"fb:wall_down_block_1": {
+		"sound": "stone",
+		"textures": "bridge_wall_down_block_1"
+	},
+	"fb:wall_down_block_2": {
+		"sound": "stone",
+		"textures": "bridge_wall_down_block_2"
+	},
+	"fb:wall_down_block_3": {
+		"sound": "stone",
+		"textures": "bridge_wall_down_block_3"
+	},
+	"fb:wall_deco_1": {
+		"sound": "stone",
+		"textures": "bridge_wall_deco_1"
+	},
+	"fb:wall_deco_2": {
+		"sound": "stone",
+		"textures": "bridge_wall_deco_2"
+	},
+	"fb:door_top": {
+		"sound": "stone"
+	},
+	"fb:pizza_1": {
+		"sound": "cloth"
+	},
+	"fb:pizza_2": {
+		"sound": "cloth"
+	},
+	"fb:pizza_mini_1": {
+		"sound": "cloth"
+	},
+	"fb:pizza_mini_2": {
+		"sound": "cloth"
+	},
+	"fb:roof": {
+		"sound": "stone",
+		"textures": "bridge_roof"
+	},
+	"fb:white_roof": {
+		"sound": "stone",
+		"textures": "white_roof"
+	},
+	"fb:gray_roof": {
+		"sound": "stone",
+		"textures": "gray_roof"
+	},
+	"fb:tv_1": {
+		"sound": "glass"
+	},
+	"fb:tv_2": {
+		"sound": "glass"
+	},
+	"fb:tv_3": {
+		"sound": "glass"
+	},
+	"fb:paper_2": {
+		"sound": "cloth"
+	},
+	"fb:paper_1": {
+		"sound": "cloth"
+	},
+	"fb:light_1": {
+		"sound": "glass"
+	},
+	"fb:stars_1": {
+		"sound": "ladder"
+	},
+	"fb:stars_2": {
+		"sound": "ladder"
+	},
+	"fb:stars_3": {
+		"sound": "ladder"
+	},
+	"fb:cables_1": {
+		"sound": "ladder"
+	},
+	"fb:bonnie_plush": {
+		"sound": "cloth"
+	},
+	"fb:golden_freddy_plush": {
+		"sound": "cloth"
+	},
+	"fb:fredbear_plush": {
+		"sound": "cloth"
+	},
+	"fb:spring_bonnie_plush": {
+		"sound": "cloth"
+	},
+	"fb:foxy_plush": {
+		"sound": "cloth"
+	},
+	"fb:chica_plush": {
+		"sound": "cloth"
+	},
+	"fb:freddy_plush": {
+		"sound": "cloth"
+	},
+	"fb:wall_down_4": {
+		"sound": "stone",
+		"textures": "bridge_wall_down_4"
+	},
+	"fb:wall_down_block_5": {
+		"sound": "stone",
+		"textures": "bridge_wall_down_block_5"
+	},
+	"fb:wall_down_block_6": {
+		"sound": "stone",
+		"textures": "bridge_wall_down_block_6"
+	},
+	"fb:trash_1": {
+		"sound": "tuff"
+	},
+	"fb:trash_2": {
+		"sound": "tuff"
+	},
+	"fb:trash_3": {
+		"sound": "tuff"
+	},
+	"fb:bathroom_letter_1": {
+		"sound": "stone"
+	},
+	"fb:bathroom_letter_2": {
+		"sound": "stone"
+	},
+	"fb:paper_3": {
+		"sound": "cloth"
+	},
+	"fb:chair": {
+		"sound": "wood"
+	},
+	"fb:table": {
+		"sound": "wood"
+	},
+	"fb:party_hat_1": {
+		"sound": "cloth"
+	},
+	"fb:party_hat_2": {
+		"sound": "cloth"
+	},
+	"fb:party_hat_3": {
+		"sound": "cloth"
+	},
+	"fb:party_hat_4": {
+		"sound": "cloth"
+	},
+	"fb:floor_4": {
+		"sound": "stone",
+		"textures": "bridge_floor_4"
+	},
+	"fb:cloud_1": {
+		"sound": "snow"
+	},
+	"fb:wed": {
+		"sound": "roots"
+	},
+	"fb:windows_down": {
+		"sound": "glass"
+	},
+	"fb:windows_up": {
+		"sound": "glass"
+	},
+	"fb:party_floor": {
+		"sound": "stone",
+		"textures": "fb_party_floor"
+	},
+	"fb:stage_wall_up": {
+		"sound": "stone",
+		"textures": "fb_stage_wall_up"
+	},
+	"fb:stage_wall_down": {
+		"sound": "stone",
+		"textures": "fb_stage_wall_down"
+	},
+	"fb:stage_wall_2": {
+		"sound": "stone",
+		"textures": "fb_stage_wall_2"
+	},
+	"fb:stage_wall_1": {
+		"sound": "stone",
+		"textures": "fb_stage_wall_1"
+	},
+	"fb:speakers_left": {
+		"sound": "cloth"
+	},
+	"fb:speakers_right": {
+		"sound": "cloth"
+	},
+	"fb:papers_4": {
+		"sound": "stone"
+	},
+	"fb:office_tv_2": {
+		"sound": "stone"
+	},
+	"fb:light_2": {
+		"sound": "stone"
+	},
+	"fb:office_door": {
+		"textures": "office_door",
+		"sound": "metal"
+	},
+	"fb:fan": {
+		"textures": "fan",
+		"sound": "netherite"
+	},
+	"fb:hw_fan": {
+		"textures": "fan",
+		"sound": "netherite"
+	},
+	"fb:hw_fan_2": {
+		"textures": "fan",
+		"sound": "netherite"
+	},
+	"fb:vent_block": {
+		"sound": "netherite",
+		"textures": "fb_vent_block"
+	},
+	"fb:pizza_slice": {
+		"sound": "big_dripleaf"
+	},
+	"fb:pizza_box": {
+		"sound": "big_dripleaf"
+	},
+	"fb:soda": {
+		"sound": "big_dripleaf"
+	},
+	"fb:window": {
+		"sound": "glass"
+	},
+	"fb:hirxs_plush": {
+		"sound": "cloth"
+	},
+	"fb:faz_plush": {
+		"sound": "cloth"
+	},
+	"fb:mura_plush": {
+		"sound": "cloth"
+		// New wall blocks
+	},
+	"fb:wall_middle_purple": {
+		"sound": "stone",
+		"textures": {
+			"down": "fnaf1_wall_side",
+			"side": "fnaf1_wall_tiles_purple",
+			"up": "fnaf1_wall_side"
+		}
+	},
+	"fb:wall_grey_block_1": {
+		"sound": "stone",
+		"textures": "fnaf1_wall_side"
+	},
+	"fb:wall_top_block_1": {
+		"sound": "stone",
+		"textures": {
+			"side": "fnaf1_wall_upper_side_1",
+			"down": "fnaf1_wall_side",
+			"up": "fnaf1_wall_bottom"
+		}
+	},
+	"fb:wall_top_block_var_2": {
+		"sound": "stone",
+		"textures": {
+			"side": "fnaf1_wall_upper_side_2",
+			"down": "fnaf1_wall_side",
+			"up": "fnaf1_wall_bottom"
+		}
+	},
+	"fb:wall_top_block_var_3": {
+		"sound": "stone",
+		"textures": {
+			"side": "fnaf1_wall_upper_side_3",
+			"down": "fnaf1_wall_side",
+			"up": "fnaf1_wall_bottom"
+		}
+	},
+	"fb:stage_curtain_red_block": {
+		"sound": "cloth",
+		"textures": "red_curtain_block"
+	},
+	// Floors
+	"fb:floor_2": {
+		"sound": "deepslate_bricks"
+	},
+	"fb:floor_3": {
+		"sound": "deepslate_bricks"
+	},
+	"fb:floor_5": {
+		"sound": "deepslate_bricks"
+	},
+	"fb:floor_1": {
+		"sound": "deepslate_bricks"
+	}
+}

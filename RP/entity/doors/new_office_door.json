@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:new_office_door",
+			"materials": {
+				"default": "npc"
+			},
+			"textures": {
+				"default": "textures/blocks/office_door_test"
+			},
+			"geometry": {
+				"default": "geometry.office_door_test"
+			},
+			"animations": {
+				"fb_closed_door_ex": "animation.door_close",
+				"fb_open_door_ex": "animation.door_open",
+				"fb_control_door_ex": "controller.animation.fb_control_door_ex"
+			},
+			"scripts": {
+				"animate": [
+					"fb_control_door_ex"
+				]
+			},
+			"sound_effects": {
+				"fb_door": "fb.office_door_close"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"spawn_egg": {
+				"texture": "test_icon"
+			}
+		}
+	}
+}
