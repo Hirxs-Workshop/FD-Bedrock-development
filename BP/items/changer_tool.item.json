@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "fb:changer_tool_item",
 			"menu_category": {
-				"category": "equipment"
+				"category": "equipment",
+				"group": "item.name.equipment"
 			}
 		},
 		"components": {

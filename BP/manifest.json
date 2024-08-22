@@ -6,7 +6,7 @@
 		"min_engine_version": [
 			1,
 			20,
-			10
+			80
 		],
 		"uuid": "0976ac8b-f368-4ae1-93c8-2520f79a2137",
 		"version": [
@@ -43,7 +43,7 @@
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.12.0"
+			"version": "1.14.0-beta"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
@@ -61,7 +61,7 @@
 	"metadata": {
 		"generated_with": {
 			"bridge": [
-				"2.7.33"
+				"2.7.34"
 			],
 			"dash": [
 				"0.11.7"

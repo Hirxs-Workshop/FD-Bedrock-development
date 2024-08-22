@@ -1,0 +1,160 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:phone",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"fb:channel": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:custom_components": [
+				"fbd:phone_function"
+			],
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ph2",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.phone_1",
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					3,
+					11
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					3,
+					11
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.phone_1"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.phone_2"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.phone_3"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.phone_4"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.phone_5"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:channel') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.phone_6"
+				}
+			}
+		]
+	}
+}

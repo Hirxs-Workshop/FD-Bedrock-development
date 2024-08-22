@@ -1,0 +1,12 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:vent_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {}
+	}
+}

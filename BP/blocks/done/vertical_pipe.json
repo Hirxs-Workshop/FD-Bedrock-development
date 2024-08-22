@@ -1,0 +1,1515 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:vertical_pipe",
+			"menu_category": {
+				"category": "construction",
+				"group": "none"
+			},
+			"states": {
+				"x:north_bc": [
+					0,
+					1
+				],
+				"x:south_bc": [
+					0,
+					1
+				],
+				"x:east_bc": [
+					0,
+					1
+				],
+				"x:west_bc": [
+					0,
+					1
+				],
+				"x:above_bc": [
+					0,
+					1
+				],
+				"x:below_bc": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 5,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					10,
+					10
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					10,
+					10
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vertical_pipe",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"fbd:pipes"
+			],
+			"minecraft:geometry": {
+				"identifier": "geometry.pipe_block",
+				"bone_visibility": {
+					"south": false,
+					"east": false,
+					"west": false,
+					"north": false,
+					"up": false,
+					"down": false,
+					"main": false,
+					"east_west": false,
+					"north_south": false,
+					"up_down": true
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			// Above and sides
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			// Pipe sides (two connections)
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			// Sides with below and without above
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": true,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": true,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			// Above and below vertical
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": false,
+							"up_down": true
+						}
+					}
+				}
+			},
+			// Sides with above and without below
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": true,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": true,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			// Sides without above and below
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": true,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": true,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			// Sides without below
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": true,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": true,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": true,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": true,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": false,
+							"up_down": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": false,
+							"up_down": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": false,
+							"up_down": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": false,
+							"up_down": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": false,
+							"east_west": false,
+							"north_south": false,
+							"up_down": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": true,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": true,
+							"up": false,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": true,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": false,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": false,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": true,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pipe_block",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": false,
+							"up": true,
+							"down": true,
+							"main": true,
+							"east_west": false,
+							"north_south": false,
+							"up_down": false
+						}
+					}
+				}
+			}
+		]
+	}
+}
+// "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')"

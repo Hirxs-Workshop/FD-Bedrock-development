@@ -1,0 +1,131 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:toilet",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"fbd:bathroom_vars": [
+					0,
+					1
+				]
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.toilet"
+			},
+			"minecraft:map_color": "#00ff00",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "toilet",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 10
+			},
+			"minecraft:custom_components": [
+				"fbd:seat_function",
+				"fbd:toilet_function"
+			],
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					12,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					12,
+					16
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:block_north": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:bathroom_vars') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_toilet",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.toilet"
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:bathroom_vars') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_toilet",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.toilet_open"
+				}
+			}
+		]
+	}
+}

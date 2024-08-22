@@ -1,0 +1,259 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:faz_coin",
+			"menu_category": {
+				"category": "commands"
+			},
+			"states": {
+				"p:coins": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:light_dampening": 0,
+			"minecraft:light_emission": 0,
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "faz_coin",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:custom_components": [
+				"fbd:add_coins"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:coins') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.faz_coin_1",
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							2,
+							9
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							2,
+							9
+						]
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "q.block_state('p:coins') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.faz_coin_2",
+					"minecraft:collision_box": {
+						"origin": [
+							-5,
+							0,
+							-4
+						],
+						"size": [
+							10,
+							7,
+							9
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5,
+							0,
+							-4
+						],
+						"size": [
+							10,
+							7,
+							9
+						]
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "q.block_state('p:coins') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.faz_coin_3",
+					"minecraft:collision_box": {
+						"origin": [
+							-6,
+							0,
+							-5
+						],
+						"size": [
+							11,
+							6,
+							10
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-6,
+							0,
+							-5
+						],
+						"size": [
+							11,
+							6,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "q.block_state('p:coins') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.faz_coin_4",
+					"minecraft:collision_box": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							8,
+							10
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							8,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "q.block_state('p:coins') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.faz_coin_5",
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							11,
+							8
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							11,
+							8
+						]
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			}
+		]
+	}
+}

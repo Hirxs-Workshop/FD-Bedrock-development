@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fb:arcades",
 			"menu_category": {
-				"category": "nature"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_position": {

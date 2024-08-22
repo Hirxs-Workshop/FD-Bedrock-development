@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:cupcake_golden",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"textures": {
+					"default": "cupcake_golden"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.fb_cupcake_golden.name"
+			},
+			"minecraft:block_placer": {
+				"block": "fb:yellow_cupcake"
+			}
+		}
+	}
+}

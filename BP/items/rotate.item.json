@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:rotate",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:stacked_by_data": false,
+			"minecraft:icon": {
+				"textures": {
+					"default": "fb:rotate"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.fb_rotate.name"
+			}
+		}
+	}
+}

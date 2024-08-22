@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:springlock_suit_chest_d",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.chestplate"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "spring_bonnie_chest_dirty"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_chest"
+			},
+			"minecraft:durability": {
+				"max_durability": 300,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 0.75
+			},
+			"minecraft:mining_speed": 5,
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:emerald",
+							"fb:springlock_suit_chest"
+						],
+						"repair_amount": 10
+					}
+				]
+			},
+			"minecraft:armor": {
+				"protection": 7
+			},
+			"minecraft:display_name": {
+				"value": "Springlocks Chestplate (damaged)"
+			}
+		}
+	}
+}

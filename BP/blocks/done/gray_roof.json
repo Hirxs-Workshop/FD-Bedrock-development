@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:gray_roof",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:map_color": "#181818",
+			"tag:wall": {}
+		}
+	}
+}

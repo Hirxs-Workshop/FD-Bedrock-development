@@ -1,0 +1,319 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:electric_wires_off",
+			"menu_category": {
+				"category": "construction",
+				"group": "none"
+			},
+			"states": {
+				"x:north_bc": [
+					0,
+					1
+				],
+				"x:south_bc": [
+					0,
+					1
+				],
+				"x:east_bc": [
+					0,
+					1
+				],
+				"x:west_bc": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"tag:electric_off": {},
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 5,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"size": [
+					8,
+					1,
+					8
+				],
+				"origin": [
+					-4,
+					0,
+					-4
+				]
+			},
+			"minecraft:collision_box": {
+				"size": [
+					8,
+					1,
+					8
+				],
+				"origin": [
+					-4,
+					0,
+					-4
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electric_wires_off",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"x:wc",
+				"fbd:electric_system_reworked"
+			],
+			"minecraft:geometry": {
+				"identifier": "geometry.floor_wires_on",
+				"bone_visibility": {
+					"south": false,
+					"east": false,
+					"west": false,
+					"north": false
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": true,
+							"west": false,
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": true,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": true,
+							"east": false,
+							"west": false,
+							"north": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && q.block_state('x:east_bc') && q.block_state('x:west_bc')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.floor_wires_on",
+						"bone_visibility": {
+							"south": false,
+							"east": true,
+							"west": true,
+							"north": false
+						}
+					}
+				}
+			}
+		]
+	}
+}

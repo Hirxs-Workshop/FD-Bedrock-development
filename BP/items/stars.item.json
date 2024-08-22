@@ -1,0 +1,24 @@
+	{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fb:stars_item",
+			"category": "construction",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"textures": {
+					"default": "stars1"
+				}
+			},
+			"minecraft:block_placer": {
+				"block": "fb:stars"
+			}
+		}
+	}
+}

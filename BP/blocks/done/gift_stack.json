@@ -134,9 +134,7 @@
 			}
 		],
 		"components": {
-			"minecraft:custom_components": [
-				"fd:changer_tool_function"
-			],
+			"tag:changeable": {},
 			"minecraft:geometry": {
 				"identifier": "geometry.gift_stack"
 			},
