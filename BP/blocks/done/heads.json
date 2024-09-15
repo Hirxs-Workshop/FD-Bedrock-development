@@ -110,7 +110,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -123,7 +123,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:geometry": "geometry.bonnie_head",
 					"minecraft:material_instances": {
@@ -136,7 +136,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 2",
+				"condition": "q.block_state('p:changer') == 2",
 				"components": {
 					"minecraft:geometry": "geometry.chica_head",
 					"minecraft:material_instances": {
@@ -149,7 +149,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 3",
+				"condition": "q.block_state('p:changer') == 3",
 				"components": {
 					"minecraft:geometry": "geometry.foxy_head",
 					"minecraft:material_instances": {

@@ -58,7 +58,7 @@
         },
         "events": {
             "minecraft:entity_spawned": {
-                "run_command": {
+                "queue_command": {
                     "command": [
                         "setblock ~~~ light_block [\"block_light_level\"=12] keep"
                     ]
@@ -70,7 +70,7 @@
                 }
             },
             "fb:despawn_process": {
-                "run_command": {
+                "queue_command": {
                     "command": [
                         "fill ~~~ ~~~ air replace light_block [\"block_light_level\"=12]"
                     ]

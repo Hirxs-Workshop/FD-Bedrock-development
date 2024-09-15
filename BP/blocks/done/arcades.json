@@ -29,6 +29,7 @@
 			}
 		},
 		"components": {
+			"tag:changeable": {},
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
@@ -79,9 +80,11 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"fd:advanced_rotation_v1",
-				"fd:changer_tool_function"
-			]
+				"fd:advanced_rotation_v1"
+			],
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			}
 		},
 		"permutations": [
 			{

@@ -19,6 +19,12 @@
 						"min": 0,
 						"max": 15
 					}
+				},
+				"light:colors": {
+					"values": {
+						"min": 0,
+						"max": 5
+					}
 				}
 			}
 		},
@@ -61,8 +67,7 @@
 				"conditions": [
 					{
 						"allowed_faces": [
-							"down",
-							"side"
+							"down"
 						]
 					}
 				]
@@ -140,6 +145,72 @@
 							13,
 							6
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp9",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp9",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp9",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp9",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp9",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp9",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

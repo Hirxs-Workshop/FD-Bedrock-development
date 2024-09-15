@@ -16,7 +16,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:banjo_sound', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("note.bass");
     }
@@ -25,7 +25,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:guitar_sound', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("note.guitar");
     }
@@ -34,20 +34,20 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:flashlight_on', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("flashlight.click");
-      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb: flashlight")
+      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb:flashlight")
     }
   })
 });
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:flashlight_off', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("flashlight.click");
-      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb: flashlight_off")
+      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb:flashlight_off")
       return;
     }
   })

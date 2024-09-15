@@ -108,7 +108,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:geometry": "geometry.monitor_stack_1",
 					"minecraft:material_instances": {
@@ -121,7 +121,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:geometry": "geometry.monitor_stack_2",
 					"minecraft:material_instances": {

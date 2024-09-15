@@ -77,7 +77,6 @@
 							"couch_right": false,
 							"couch_left": false,
 							"couch": true,
-							"couch_corner": false,
 							"couch_middle": false
 						}
 					}
@@ -92,7 +91,6 @@
 							"couch_right": true,
 							"couch_left": false,
 							"couch": false,
-							"couch_corner": false,
 							"couch_middle": false
 						}
 					}
@@ -107,7 +105,6 @@
 							"couch_right": false,
 							"couch_left": false,
 							"couch": false,
-							"couch_corner": false,
 							"couch_middle": true
 						}
 					}
@@ -122,7 +119,6 @@
 							"couch_right": false,
 							"couch_left": true,
 							"couch": false,
-							"couch_corner": false,
 							"couch_middle": false
 						}
 					}

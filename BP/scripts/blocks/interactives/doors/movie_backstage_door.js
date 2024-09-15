@@ -21,7 +21,7 @@ function dimensionToHeight(dimension) {
 }
 const blockComps = [
   {
-    id: "fbd:pizzeria_doors_cc",
+    id: "fbd:movie_office_cc",
     code: {
       onTick: (data) => {
         redstoneManager.redstonePowerAfterEvent(data.block, {

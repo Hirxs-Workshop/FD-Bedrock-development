@@ -6,7 +6,7 @@
 				"group": "construction",
 				"category": "construction"
 			},
-			"identifier": "fb:in_ffd_wall_floor",
+			"identifier": "fb:ffd_wall_floor",
 			"states": {
 				"p:changer": [
 					0,

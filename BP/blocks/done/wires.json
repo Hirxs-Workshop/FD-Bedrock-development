@@ -1,283 +1,272 @@
 {
-	"format_version": "1.20.80",
-	"minecraft:block": {
-		"description": {
-			"identifier": "fb:wires_props",
-			"menu_category": {
-				"category": "construction"
-			},
-			"traits": {
-				"minecraft:placement_position": {
-					"enabled_states": [
-						"minecraft:vertical_half"
-					]
-				},
-				"minecraft:placement_direction": {
-					"enabled_states": [
-						"minecraft:cardinal_direction"
-					],
-					"y_rotation_offset": 180
-				}
-			},
-			"states": {
-				"p:changer": [
-					0,
-					1,
-					2
-				]
-			}
-		},
-		"components": {
-			"tag:changeable": {},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 1
-			},
-			"minecraft:flammable": {
-				"catch_chance_modifier": 30,
-				"destroy_chance_modifier": 30
-			},
-			"minecraft:geometry": "geometry.wires_2",
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			},
-			"minecraft:selection_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			}
-		},
-		"permutations": [
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'north' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							0,
-							180
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'south' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							180,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'east' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							180,
-							-270,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'west' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							180,
-							270,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'north' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'south' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							180,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'east' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							270,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'west' ",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							-270,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 0",
-				"components": {
-					"minecraft:geometry": "geometry.wires_2",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "wires_wall_2",
-							"render_method": "alpha_test"
-						}
-					},
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							1,
-							16
-						]
-					},
-					"minecraft:collision_box": {
-						"origin": [
-							0,
-							0,
-							0
-						],
-						"size": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 1",
-				"components": {
-					"minecraft:geometry": "geometry.wires_3",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "wires_wall",
-							"render_method": "alpha_test"
-						}
-					},
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							7
-						],
-						"size": [
-							16,
-							16,
-							1
-						]
-					},
-					"minecraft:collision_box": {
-						"origin": [
-							0,
-							0,
-							0
-						],
-						"size": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('p:changer') == 2",
-				"components": {
-					"minecraft:geometry": "geometry.wires_4",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "wires_wall",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "wires_wall_2",
-							"render_method": "alpha_test"
-						},
-						"up": {
-							"texture": "wires_wall",
-							"render_method": "alpha_test"
-						}
-					},
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							0
-						],
-						"size": [
-							16,
-							8,
-							8
-						]
-					},
-					"minecraft:collision_box": {
-						"origin": [
-							0,
-							0,
-							0
-						],
-						"size": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			}
-		]
-	}
+   "format_version": "1.20.80",
+   "minecraft:block": {
+      "description": {
+         "identifier": "fb:wires_props",
+         "menu_category": {
+            "category": "construction"
+         },
+         "traits": {
+            "minecraft:placement_position": {
+               "enabled_states": [
+                  "minecraft:vertical_half"
+               ]
+            },
+            "minecraft:placement_direction": {
+               "enabled_states": [
+                  "minecraft:cardinal_direction"
+               ],
+               "y_rotation_offset": 180
+            }
+         },
+         "states": {
+            "p:changer": [
+               0,
+               1,
+               2
+            ]
+         }
+      },
+      "components": {
+         "tag:changeable": {},
+         "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 1
+         },
+         "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 1
+         },
+         "minecraft:flammable": {
+            "catch_chance_modifier": 30,
+            "destroy_chance_modifier": 30
+         },
+         "minecraft:geometry": "geometry.wires_2",
+         "minecraft:collision_box": false,
+         "minecraft:selection_box": {
+            "origin": [
+               -8,
+               0,
+               6
+            ],
+            "size": [
+               16,
+               16,
+               2
+            ]
+         }
+      },
+      "permutations": [
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'north' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     0,
+                     0,
+                     180
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'south' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     180,
+                     0,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'east' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     180,
+                     -270,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'west' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     180,
+                     270,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'north' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'south' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     0,
+                     180,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'east' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     0,
+                     270,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'west' ",
+            "components": {
+               "minecraft:transformation": {
+                  "rotation": [
+                     0,
+                     -270,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('p:changer') == 0",
+            "components": {
+               "minecraft:geometry": "geometry.wires_2",
+               "minecraft:material_instances": {
+                  "*": {
+                     "texture": "wires_wall_2",
+                     "render_method": "alpha_test"
+                  }
+               },
+               "minecraft:selection_box": {
+                  "origin": [
+                     -8,
+                     0,
+                     -8
+                  ],
+                  "size": [
+                     16,
+                     1,
+                     16
+                  ]
+               },
+               "minecraft:collision_box": {
+                  "origin": [
+                     0,
+                     0,
+                     0
+                  ],
+                  "size": [
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('p:changer') == 1",
+            "components": {
+               "minecraft:geometry": "geometry.wires_3",
+               "minecraft:material_instances": {
+                  "*": {
+                     "texture": "wires_wall",
+                     "render_method": "alpha_test"
+                  }
+               },
+               "minecraft:selection_box": {
+                  "origin": [
+                     -8,
+                     0,
+                     7
+                  ],
+                  "size": [
+                     16,
+                     16,
+                     1
+                  ]
+               },
+               "minecraft:collision_box": {
+                  "origin": [
+                     0,
+                     0,
+                     0
+                  ],
+                  "size": [
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         },
+         {
+            "condition": "q.block_state('p:changer') == 2",
+            "components": {
+               "minecraft:geometry": "geometry.wires_4",
+               "minecraft:material_instances": {
+                  "*": {
+                     "texture": "wires_wall",
+                     "render_method": "alpha_test"
+                  },
+                  "down": {
+                     "texture": "wires_wall_2",
+                     "render_method": "alpha_test"
+                  },
+                  "up": {
+                     "texture": "wires_wall",
+                     "render_method": "alpha_test"
+                  }
+               },
+               "minecraft:selection_box": {
+                  "origin": [
+                     -8,
+                     0,
+                     0
+                  ],
+                  "size": [
+                     16,
+                     8,
+                     8
+                  ]
+               },
+               "minecraft:collision_box": {
+                  "origin": [
+                     0,
+                     0,
+                     0
+                  ],
+                  "size": [
+                     0,
+                     0,
+                     0
+                  ]
+               }
+            }
+         }
+      ]
+   }
 }

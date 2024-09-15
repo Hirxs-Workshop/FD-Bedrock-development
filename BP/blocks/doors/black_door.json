@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "fb:black_door",
 			"menu_category": {
+				"category": "none",
 				"is_hidden_in_commands": false
 			},
 			"states": {

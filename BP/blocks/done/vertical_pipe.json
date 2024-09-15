@@ -35,6 +35,7 @@
 			}
 		},
 		"components": {
+			"tag:pipes_connectable": {},
 			"minecraft:tick": {
 				"interval_range": [
 					3,
